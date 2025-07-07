@@ -1,3 +1,6 @@
+from barony import Barony
+from player_character import PlayerCharacter
+
 class NPC:
     def __init__(self, name, npc_type, barony, estate_level=0):
         self.name = name

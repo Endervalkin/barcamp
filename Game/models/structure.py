@@ -1,11 +1,7 @@
 import json
 import os
-
-structure_path = os.path.join("data", "structure", "StructureData.json")
-
-with open(structure_path, "r", encoding="utf-8") as f:
-    structure_data = json.load(f)
-
+from utils.parsing import parse_name_level, parse_int, parse_structure_requirements
+from utils.di      import get_stability_rating, get_economy_rating, get_loyalty_rating, get_unrest_rating
 
 class Structure:
     def __init__(self, data):

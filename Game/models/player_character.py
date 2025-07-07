@@ -1,4 +1,4 @@
-from Game.engine.resource_ledger import ResourceLedger
+from Game.engine.ledger import ResourceLedger
 
 
 class PlayerCharacter:

@@ -1,6 +1,6 @@
 
-from Game.engine.resource_ledger import ResourceLedger
-
+from Game.engine.ledger import ResourceLedger
+from Game.engine.ledger import BaronyLedger
 from Game.models.player_character import PlayerCharacter
 
 class Barony:

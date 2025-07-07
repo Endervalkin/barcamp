@@ -41,3 +41,4 @@ def parse_csv_to_json(csv_file, json_file):
 
 if __name__ == "__main__":
     parse_csv_to_json("ground_units.csv", "GroundUnits.json")
+

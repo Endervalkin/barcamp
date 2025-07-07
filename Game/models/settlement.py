@@ -1,10 +1,8 @@
+# models/settlement.py
 import json
 import os
-
-structure_path = os.path.join("data", "settlements", "SettlementData.json")
-
-with open(structure_path, "r", encoding="utf-8") as f:
-    structure_data = json.load(f)
+from Game.utils.parsing import *
+from utils.di      import get_stability_rating, get_economy_rating, get_loyalty_rating, get_unrest_rating
 
 class Settlement:
     def __init__(self, data):
@@ -23,7 +21,7 @@ class Settlement:
     def get_required_structures(self):
         return self.upgrade_requirements.get("structures_required", [])
 
-    def can_upgrade(self, current_population, player_needs, player_structures):
+    def can_upgrade(self, player_needs, player_structures):
         # Check needs
         for need, required in self.get_required_needs().items():
             if player_needs.get(need, 0) < required:
@@ -36,8 +34,6 @@ class Settlement:
 
         return True
 
-
-
     def to_dict(self):
         return {
             "name": self.name,
@@ -49,3 +45,11 @@ class Settlement:
             "population_critical": self.population_critical,
             "upgrade_requirements": self.upgrade_requirements
         }
+
+    def calculate_domestic_index(self, population, needs, structure_lvls, base_unrest):
+        sr = get_stability_rating(self.level, **structure_lvls)
+        er = get_economy_rating(self.level, **structure_lvls)
+        avg_needs = sum(needs.values())/len(needs)
+        lr = get_loyalty_rating(self.level, avg_needs, structure_lvls.get("Monuments",0))
+        ur = get_unrest_rating(population, self.population_critical, base_unrest)
+        return {"Stability": sr, "Economy": er, "Loyalty": lr, "Unrest": ur}
