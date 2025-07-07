@@ -1,0 +1,392 @@
+[
+  {
+    "name": "Ballista",
+    "category": "Siege",
+    "armor": 4,
+    "attack": 3,
+    "combat_movement": 1,
+    "range": 3,
+    "damage_reduction": 1,
+    "training_time": 1,
+    "training_cost": {
+      "L": 1,
+      "S": 0,
+      "M": 1,
+      "F": 0,
+      "R": 1,
+      "C": 1
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 0
+    }
+  },
+  {
+    "name": "Battering Ram",
+    "category": "Siege",
+    "armor": 5,
+    "attack": 4,
+    "combat_movement": 0,
+    "range": 0,
+    "damage_reduction": 1,
+    "training_time": 1,
+    "training_cost": {
+      "L": 3,
+      "S": 0,
+      "M": 1,
+      "F": 0,
+      "R": 2,
+      "C": 1
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 0
+    }
+  },
+  {
+    "name": "Catapult",
+    "category": "Siege",
+    "armor": 3,
+    "attack": 4,
+    "combat_movement": 1,
+    "range": 3,
+    "damage_reduction": 1,
+    "training_time": 1,
+    "training_cost": {
+      "L": 1,
+      "S": 1,
+      "M": 0,
+      "F": 0,
+      "R": 1,
+      "C": 1
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 0
+    }
+  },
+  {
+    "name": "Cavalry Trap",
+    "category": "Siege",
+    "armor": 1,
+    "attack": 3,
+    "combat_movement": 0,
+    "range": 0,
+    "damage_reduction": 0,
+    "training_time": 1,
+    "training_cost": {
+      "L": 1,
+      "S": 0,
+      "M": 1,
+      "F": 0,
+      "R": 1,
+      "C": 0
+    },
+    "upkeep": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 0
+    }
+  },
+  {
+    "name": "Gallery",
+    "category": "Siege",
+    "armor": 3,
+    "attack": 0,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 1,
+    "training_time": 1,
+    "training_cost": {
+      "L": 2,
+      "S": 0,
+      "M": 1,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 0
+    }
+  },
+  {
+    "name": "Infantry Trap",
+    "category": "Siege",
+    "armor": 1,
+    "attack": 3,
+    "combat_movement": 0,
+    "range": 0,
+    "damage_reduction": 0,
+    "training_time": 1,
+    "training_cost": {
+      "L": 1,
+      "S": 0,
+      "M": 1,
+      "F": 0,
+      "R": 1,
+      "C": 0
+    },
+    "upkeep": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 0
+    }
+  },
+  {
+    "name": "Iron Ballista",
+    "category": "Siege",
+    "armor": 3,
+    "attack": 4,
+    "combat_movement": 1,
+    "range": 4,
+    "damage_reduction": 1,
+    "training_time": 1,
+    "training_cost": {
+      "L": 1,
+      "S": 0,
+      "M": 2,
+      "F": 0,
+      "R": 2,
+      "C": 1
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 1,
+      "F": 0,
+      "R": 0,
+      "C": 0
+    }
+  },
+  {
+    "name": "Mangonel",
+    "category": "Siege",
+    "armor": 2,
+    "attack": 4,
+    "combat_movement": 1,
+    "range": 2,
+    "damage_reduction": 0,
+    "training_time": 1,
+    "training_cost": {
+      "L": 2,
+      "S": 1,
+      "M": 0,
+      "F": 0,
+      "R": 2,
+      "C": 1
+    },
+    "upkeep": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 1,
+      "C": 0
+    }
+  },
+  {
+    "name": "Mantlet",
+    "category": "Siege",
+    "armor": 2,
+    "attack": 0,
+    "combat_movement": 0,
+    "range": 0,
+    "damage_reduction": 1,
+    "training_time": 1,
+    "training_cost": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 1,
+      "C": 1
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 0
+    }
+  },
+  {
+    "name": "Naval Ram",
+    "category": "Siege",
+    "armor": 2,
+    "attack": 2,
+    "combat_movement": 0,
+    "range": 0,
+    "damage_reduction": 1,
+    "training_time": 1,
+    "training_cost": {
+      "L": 2,
+      "S": 0,
+      "M": 2,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    },
+    "upkeep": {
+      "L": 0,
+      "S": 0,
+      "M": 1,
+      "F": 0,
+      "R": 0,
+      "C": 0
+    }
+  },
+  {
+    "name": "Naval Trap",
+    "category": "Siege",
+    "armor": 1,
+    "attack": 3,
+    "combat_movement": 0,
+    "range": 0,
+    "damage_reduction": 0,
+    "training_time": 1,
+    "training_cost": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 1,
+      "C": 1
+    },
+    "upkeep": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 0
+    }
+  },
+  {
+    "name": "Siege Tower",
+    "category": "Siege",
+    "armor": 0,
+    "attack": 0,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 0,
+    "training_time": 1,
+    "training_cost": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 2,
+      "C": 1
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 1,
+      "F": 0,
+      "R": 0,
+      "C": 0
+    }
+  },
+  {
+    "name": "Springal",
+    "category": "Siege",
+    "armor": 3,
+    "attack": 4,
+    "combat_movement": 2,
+    "range": 3,
+    "damage_reduction": 0,
+    "training_time": 2,
+    "training_cost": {
+      "L": 2,
+      "S": 0,
+      "M": 2,
+      "F": 0,
+      "R": 2,
+      "C": 1
+    },
+    "upkeep": {
+      "L": 0,
+      "S": 0,
+      "M": 1,
+      "F": 0,
+      "R": 0,
+      "C": 0
+    }
+  },
+  {
+    "name": "Trebuchet",
+    "category": "Siege",
+    "armor": 4,
+    "attack": 5,
+    "combat_movement": 1,
+    "range": 4,
+    "damage_reduction": 0,
+    "training_time": 1,
+    "training_cost": {
+      "L": 2,
+      "S": 1,
+      "M": 0,
+      "F": 0,
+      "R": 1,
+      "C": 2
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 1,
+      "C": 0
+    }
+  },
+  {
+    "name": "Wall Trap",
+    "category": "Siege",
+    "armor": 1,
+    "attack": 3,
+    "combat_movement": 0,
+    "range": 0,
+    "damage_reduction": 0,
+    "training_time": 1,
+    "training_cost": {
+      "L": 1,
+      "S": 0,
+      "M": 1,
+      "F": 0,
+      "R": 1,
+      "C": 0
+    },
+    "upkeep": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 0
+    }
+  }
+]

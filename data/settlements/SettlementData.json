@@ -1,0 +1,1310 @@
+[
+  {
+    "name": "Village Inn",
+    "level": 1,
+    "build_turns": 2,
+    "build_cost": {
+      "L": 2,
+      "S": 2,
+      "M": 2,
+      "F": 2,
+      "R": 2,
+      "C": 0
+    },
+    "garrison": 0,
+    "population_base": 100,
+    "population_critical": 2000,
+    "upgrade_requirements": {
+      "needs_required": {
+        "Medical": 0,
+        "Education": 0,
+        "Morale": 0
+      },
+      "structures_required": []
+    }
+  },
+  {
+    "name": "Outpost",
+    "level": 1,
+    "build_turns": 2,
+    "build_cost": {
+      "L": 2,
+      "S": 2,
+      "M": 2,
+      "F": 2,
+      "R": 2,
+      "C": 0
+    },
+    "garrison": 0,
+    "population_base": 100,
+    "population_critical": 2000,
+    "upgrade_requirements": {
+      "needs_required": {
+        "Medical": 0,
+        "Education": 0,
+        "Morale": 0
+      },
+      "structures_required": []
+    }
+  },
+  {
+    "name": "City",
+    "level": 1,
+    "build_turns": 2,
+    "build_cost": {
+      "L": 5,
+      "S": 5,
+      "M": 5,
+      "F": 5,
+      "R": 5,
+      "C": 0
+    },
+    "garrison": 16,
+    "population_base": 1000,
+    "population_critical": 3000,
+    "upgrade_requirements": {
+      "needs_required": {
+        "Medical": 0,
+        "Education": 0,
+        "Morale": 0
+      },
+      "structures_required": []
+    }
+  },
+  {
+    "name": "City",
+    "level": 2,
+    "build_turns": 4,
+    "build_cost": {
+      "L": 10,
+      "S": 10,
+      "M": 10,
+      "F": 10,
+      "R": 10,
+      "C": 0
+    },
+    "garrison": 32,
+    "population_base": 2000,
+    "population_critical": 9000,
+    "upgrade_requirements": {
+      "needs_required": {
+        "Medical": 1,
+        "Education": 1,
+        "Morale": 1
+      },
+      "structures_required": [
+        [
+          {
+            "name": "Walls",
+            "level": 1
+          }
+        ],
+        [
+          {
+            "name": "Market",
+            "level": 1
+          }
+        ],
+        [
+          {
+            "name": "Forge",
+            "level": 1
+          },
+          {
+            "name": "Refinery",
+            "level": 1
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "name": "City",
+    "level": 3,
+    "build_turns": 6,
+    "build_cost": {
+      "L": 20,
+      "S": 20,
+      "M": 20,
+      "F": 20,
+      "R": 20,
+      "C": 0
+    },
+    "garrison": 48,
+    "population_base": 3000,
+    "population_critical": 27000,
+    "upgrade_requirements": {
+      "needs_required": {
+        "Medical": 3,
+        "Education": 3,
+        "Morale": 3
+      },
+      "structures_required": [
+        [
+          {
+            "name": "Walls",
+            "level": 1
+          }
+        ],
+        [
+          {
+            "name": "Market",
+            "level": 2
+          }
+        ],
+        [
+          {
+            "name": "Forge",
+            "level": 2
+          },
+          {
+            "name": "Refinery",
+            "level": 2
+          }
+        ],
+        [
+          {
+            "name": "Garrison",
+            "level": 1
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "name": "City",
+    "level": 4,
+    "build_turns": 8,
+    "build_cost": {
+      "L": 30,
+      "S": 30,
+      "M": 30,
+      "F": 30,
+      "R": 30,
+      "C": 0
+    },
+    "garrison": 64,
+    "population_base": 4000,
+    "population_critical": 81000,
+    "upgrade_requirements": {
+      "needs_required": {
+        "Medical": 5,
+        "Education": 5,
+        "Morale": 5
+      },
+      "structures_required": [
+        [
+          {
+            "name": "Walls",
+            "level": 3
+          }
+        ],
+        [
+          {
+            "name": "Market",
+            "level": 3
+          }
+        ],
+        [
+          {
+            "name": "Forge",
+            "level": 3
+          },
+          {
+            "name": "Refinery",
+            "level": 3
+          }
+        ],
+        [
+          {
+            "name": "Garrison",
+            "level": 2
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "name": "City",
+    "level": 5,
+    "build_turns": 12,
+    "build_cost": {
+      "L": 40,
+      "S": 40,
+      "M": 40,
+      "F": 40,
+      "R": 40,
+      "C": 0
+    },
+    "garrison": 80,
+    "population_base": 5000,
+    "population_critical": 245000,
+    "upgrade_requirements": {
+      "needs_required": {
+        "Medical": 7,
+        "Education": 7,
+        "Morale": 7
+      },
+      "structures_required": [
+        [
+          {
+            "name": "Walls",
+            "level": 3
+          }
+        ],
+        [
+          {
+            "name": "Market",
+            "level": 4
+          }
+        ],
+        [
+          {
+            "name": "Forge",
+            "level": 4
+          },
+          {
+            "name": "Refinery",
+            "level": 4
+          }
+        ],
+        [
+          {
+            "name": "Garrison",
+            "level": 3
+          }
+        ],
+        [
+          {
+            "name": "Grand Library",
+            "level": 1
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "name": "City",
+    "level": 6,
+    "build_turns": 16,
+    "build_cost": {
+      "L": 55,
+      "S": 55,
+      "M": 55,
+      "F": 55,
+      "R": 55,
+      "C": 0
+    },
+    "garrison": 96,
+    "population_base": 6000,
+    "population_critical": 730000,
+    "upgrade_requirements": {
+      "needs_required": {
+        "Medical": 9,
+        "Education": 9,
+        "Morale": 9
+      },
+      "structures_required": [
+        [
+          {
+            "name": "Walls",
+            "level": 3
+          }
+        ],
+        [
+          {
+            "name": "Palisade",
+            "level": 1
+          }
+        ],
+        [
+          {
+            "name": "Market",
+            "level": 4
+          }
+        ],
+        [
+          {
+            "name": "Forge",
+            "level": 4
+          },
+          {
+            "name": "Refinery",
+            "level": 4
+          }
+        ],
+        [
+          {
+            "name": "Garrison",
+            "level": 4
+          }
+        ],
+        [
+          {
+            "name": "Grand Library",
+            "level": 4
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "name": "City",
+    "level": 7,
+    "build_turns": 20,
+    "build_cost": {
+      "L": 65,
+      "S": 65,
+      "M": 65,
+      "F": 65,
+      "R": 65,
+      "C": 0
+    },
+    "garrison": 112,
+    "population_base": 7000,
+    "population_critical": 2200000,
+    "upgrade_requirements": {
+      "needs_required": {
+        "Medical": 11,
+        "Education": 11,
+        "Morale": 11
+      },
+      "structures_required": [
+        [
+          {
+            "name": "Walls",
+            "level": 3
+          }
+        ],
+        [
+          {
+            "name": "Palisade",
+            "level": 1
+          }
+        ],
+        [
+          {
+            "name": "Market",
+            "level": 4
+          }
+        ],
+        [
+          {
+            "name": "Forge",
+            "level": 4
+          },
+          {
+            "name": "Refinery",
+            "level": 4
+          }
+        ],
+        [
+          {
+            "name": "Garrison",
+            "level": 4
+          }
+        ],
+        [
+          {
+            "name": "Grand Library",
+            "level": 4
+          }
+        ],
+        [
+          {
+            "name": "Academy",
+            "level": 1
+          }
+        ],
+        [
+          {
+            "name": "Monument",
+            "level": 4
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "name": "City",
+    "level": 8,
+    "build_turns": 24,
+    "build_cost": {
+      "L": 75,
+      "S": 75,
+      "M": 75,
+      "F": 75,
+      "R": 75,
+      "C": 0
+    },
+    "garrison": 128,
+    "population_base": 8000,
+    "population_critical": 6500000,
+    "upgrade_requirements": {
+      "needs_required": {
+        "Medical": 13,
+        "Education": 13,
+        "Morale": 13
+      },
+      "structures_required": [
+        [
+          {
+            "name": "Walls",
+            "level": 8
+          }
+        ],
+        [
+          {
+            "name": "Palisade",
+            "level": 8
+          }
+        ],
+        [
+          {
+            "name": "Market",
+            "level": 8
+          }
+        ],
+        [
+          {
+            "name": "Forge",
+            "level": 8
+          },
+          {
+            "name": "Refinery",
+            "level": 8
+          }
+        ],
+        [
+          {
+            "name": "Garrison",
+            "level": 8
+          }
+        ],
+        [
+          {
+            "name": "Grand Library",
+            "level": 8
+          }
+        ],
+        [
+          {
+            "name": "Academy",
+            "level": 2
+          }
+        ],
+        [
+          {
+            "name": "Monument",
+            "level": 8
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "name": "City",
+    "level": 9,
+    "build_turns": 30,
+    "build_cost": {
+      "L": 85,
+      "S": 85,
+      "M": 85,
+      "F": 85,
+      "R": 85,
+      "C": 0
+    },
+    "garrison": 144,
+    "population_base": 9000,
+    "population_critical": 13500000,
+    "upgrade_requirements": {
+      "needs_required": {
+        "Medical": 15,
+        "Education": 15,
+        "Morale": 15
+      },
+      "structures_required": [
+        [
+          {
+            "name": "Walls",
+            "level": 9
+          }
+        ],
+        [
+          {
+            "name": "Palisade",
+            "level": 9
+          }
+        ],
+        [
+          {
+            "name": "Market",
+            "level": 9
+          }
+        ],
+        [
+          {
+            "name": "Forge",
+            "level": 9
+          },
+          {
+            "name": "Refinery",
+            "level": 9
+          }
+        ],
+        [
+          {
+            "name": "Garrison",
+            "level": 9
+          }
+        ],
+        [
+          {
+            "name": "Grand Library",
+            "level": 9
+          }
+        ],
+        [
+          {
+            "name": "Academy",
+            "level": 5
+          }
+        ],
+        [
+          {
+            "name": "Monument",
+            "level": 9
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "name": "City",
+    "level": 10,
+    "build_turns": 36,
+    "build_cost": {
+      "L": 100,
+      "S": 100,
+      "M": 100,
+      "F": 100,
+      "R": 100,
+      "C": 0
+    },
+    "garrison": 160,
+    "population_base": 10000,
+    "population_critical": 20000000,
+    "upgrade_requirements": {
+      "needs_required": {
+        "Medical": 17,
+        "Education": 17,
+        "Morale": 17
+      },
+      "structures_required": [
+        [
+          {
+            "name": "Walls",
+            "level": 10
+          }
+        ],
+        [
+          {
+            "name": "Palisade",
+            "level": 10
+          }
+        ],
+        [
+          {
+            "name": "Market",
+            "level": 10
+          }
+        ],
+        [
+          {
+            "name": "Forge",
+            "level": 10
+          },
+          {
+            "name": "Refinery",
+            "level": 10
+          }
+        ],
+        [
+          {
+            "name": "Garrison",
+            "level": 10
+          }
+        ],
+        [
+          {
+            "name": "Grand Library",
+            "level": 10
+          }
+        ],
+        [
+          {
+            "name": "Academy",
+            "level": 10
+          }
+        ],
+        [
+          {
+            "name": "Monument",
+            "level": 10
+          }
+        ],
+        [
+          {
+            "name": "Castle",
+            "level": 1
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Fortress",
+    "level": 1,
+    "build_turns": 2,
+    "build_cost": {
+      "L": 5,
+      "S": 5,
+      "M": 5,
+      "F": 5,
+      "R": 5,
+      "C": 0
+    },
+    "garrison": 24,
+    "population_base": 750,
+    "population_critical": 3000,
+    "upgrade_requirements": {
+      "needs_required": {
+        "Medical": 0,
+        "Education": 0,
+        "Morale": 0
+      },
+      "structures_required": []
+    }
+  },
+  {
+    "name": "Fortress",
+    "level": 2,
+    "build_turns": 4,
+    "build_cost": {
+      "L": 10,
+      "S": 10,
+      "M": 10,
+      "F": 10,
+      "R": 10,
+      "C": 0
+    },
+    "garrison": 48,
+    "population_base": 1500,
+    "population_critical": 9000,
+    "upgrade_requirements": {
+      "needs_required": {
+        "Medical": 1,
+        "Education": 1,
+        "Morale": 1
+      },
+      "structures_required": [
+        [
+          {
+            "name": "Walls",
+            "level": 1
+          }
+        ],
+        [
+          {
+            "name": "Marshall Yard",
+            "level": 1
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Fortress",
+    "level": 3,
+    "build_turns": 6,
+    "build_cost": {
+      "L": 20,
+      "S": 20,
+      "M": 20,
+      "F": 20,
+      "R": 20,
+      "C": 0
+    },
+    "garrison": 72,
+    "population_base": 2250,
+    "population_critical": 27000,
+    "upgrade_requirements": {
+      "needs_required": {
+        "Medical": 3,
+        "Education": 3,
+        "Morale": 3
+      },
+      "structures_required": [
+        [
+          {
+            "name": "Walls",
+            "level": 3
+          }
+        ],
+        [
+          {
+            "name": "Marshall Yard",
+            "level": 2
+          }
+        ],
+        [
+          {
+            "name": "Archery Range",
+            "level": 1
+          }
+        ],
+        [
+          {
+            "name": "Stables",
+            "level": 2
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Fortress",
+    "level": 4,
+    "build_turns": 8,
+    "build_cost": {
+      "L": 30,
+      "S": 30,
+      "M": 30,
+      "F": 30,
+      "R": 30,
+      "C": 0
+    },
+    "garrison": 96,
+    "population_base": 3000,
+    "population_critical": 81000,
+    "upgrade_requirements": {
+      "needs_required": {
+        "Medical": 5,
+        "Education": 5,
+        "Morale": 5
+      },
+      "structures_required": [
+        [
+          {
+            "name": "Walls",
+            "level": 3
+          }
+        ],
+        [
+          {
+            "name": "Marshall Yard",
+            "level": 3
+          }
+        ],
+        [
+          {
+            "name": "Archery Range",
+            "level": 2
+          }
+        ],
+        [
+          {
+            "name": "Stables",
+            "level": 2
+          }
+        ],
+        [
+          {
+            "name": "Engineer Workshop",
+            "level": 1
+          }
+        ],
+        [
+          {
+            "name": "Armorsmith",
+            "level": 1
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Fortress",
+    "level": 5,
+    "build_turns": 12,
+    "build_cost": {
+      "L": 40,
+      "S": 40,
+      "M": 40,
+      "F": 40,
+      "R": 40,
+      "C": 0
+    },
+    "garrison": 120,
+    "population_base": 3750,
+    "population_critical": 245000,
+    "upgrade_requirements": {
+      "needs_required": {
+        "Medical": 7,
+        "Education": 7,
+        "Morale": 7
+      },
+      "structures_required": [
+        [
+          {
+            "name": "Walls",
+            "level": 3
+          }
+        ],
+        [
+          {
+            "name": "Marshall Yard",
+            "level": 4
+          }
+        ],
+        [
+          {
+            "name": "Archery Range",
+            "level": 4
+          }
+        ],
+        [
+          {
+            "name": "Stables",
+            "level": 4
+          }
+        ],
+        [
+          {
+            "name": "Engineer Workshop",
+            "level": 1
+          }
+        ],
+        [
+          {
+            "name": "Armorsmith",
+            "level": 1
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Fortress",
+    "level": 6,
+    "build_turns": 16,
+    "build_cost": {
+      "L": 55,
+      "S": 55,
+      "M": 55,
+      "F": 55,
+      "R": 55,
+      "C": 0
+    },
+    "garrison": 144,
+    "population_base": 4500,
+    "population_critical": 730000,
+    "upgrade_requirements": {
+      "needs_required": {
+        "Medical": 9,
+        "Education": 9,
+        "Morale": 9
+      },
+      "structures_required": [
+        [
+          {
+            "name": "Walls",
+            "level": 3
+          }
+        ],
+        [
+          {
+            "name": "Palisade",
+            "level": 1
+          }
+        ],
+        [
+          {
+            "name": "Marshall Yard",
+            "level": 4
+          }
+        ],
+        [
+          {
+            "name": "Archery Range",
+            "level": 4
+          }
+        ],
+        [
+          {
+            "name": "Stables",
+            "level": 4
+          }
+        ],
+        [
+          {
+            "name": "Engineer Workshop",
+            "level": 4
+          }
+        ],
+        [
+          {
+            "name": "Armorsmith",
+            "level": 4
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Fortress",
+    "level": 7,
+    "build_turns": 20,
+    "build_cost": {
+      "L": 65,
+      "S": 65,
+      "M": 65,
+      "F": 65,
+      "R": 65,
+      "C": 0
+    },
+    "garrison": 168,
+    "population_base": 5250,
+    "population_critical": 2200000,
+    "upgrade_requirements": {
+      "needs_required": {
+        "Medical": 11,
+        "Education": 11,
+        "Morale": 11
+      },
+      "structures_required": [
+        [
+          {
+            "name": "Walls",
+            "level": 3
+          }
+        ],
+        [
+          {
+            "name": "Palisade",
+            "level": 1
+          }
+        ],
+        [
+          {
+            "name": "Moat",
+            "level": 1
+          }
+        ],
+        [
+          {
+            "name": "Marshall Yard",
+            "level": 4
+          }
+        ],
+        [
+          {
+            "name": "Archery Range",
+            "level": 4
+          }
+        ],
+        [
+          {
+            "name": "Stables",
+            "level": 4
+          }
+        ],
+        [
+          {
+            "name": "Engineer Workshop",
+            "level": 4
+          }
+        ],
+        [
+          {
+            "name": "Armorsmith",
+            "level": 4
+          }
+        ],
+        [
+          {
+            "name": "Military Trade School",
+            "level": 3
+          }
+        ],
+        [
+          {
+            "name": "Mage Tower",
+            "level": 4
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Fortress",
+    "level": 8,
+    "build_turns": 24,
+    "build_cost": {
+      "L": 75,
+      "S": 75,
+      "M": 75,
+      "F": 75,
+      "R": 75,
+      "C": 0
+    },
+    "garrison": 192,
+    "population_base": 6000,
+    "population_critical": 6500000,
+    "upgrade_requirements": {
+      "needs_required": {
+        "Medical": 13,
+        "Education": 13,
+        "Morale": 13
+      },
+      "structures_required": [
+        [
+          {
+            "name": "Walls",
+            "level": 8
+          }
+        ],
+        [
+          {
+            "name": "Palisade",
+            "level": 8
+          }
+        ],
+        [
+          {
+            "name": "Moat",
+            "level": 1
+          }
+        ],
+        [
+          {
+            "name": "Marshall Yard",
+            "level": 8
+          }
+        ],
+        [
+          {
+            "name": "Archery Range",
+            "level": 8
+          }
+        ],
+        [
+          {
+            "name": "Stables",
+            "level": 8
+          }
+        ],
+        [
+          {
+            "name": "Engineer Workshop",
+            "level": 8
+          }
+        ],
+        [
+          {
+            "name": "Armorsmith",
+            "level": 8
+          }
+        ],
+        [
+          {
+            "name": "Military Trade School",
+            "level": 8
+          }
+        ],
+        [
+          {
+            "name": "Mage Tower",
+            "level": 8
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Fortress",
+    "level": 9,
+    "build_turns": 30,
+    "build_cost": {
+      "L": 85,
+      "S": 85,
+      "M": 85,
+      "F": 85,
+      "R": 85,
+      "C": 0
+    },
+    "garrison": 216,
+    "population_base": 6750,
+    "population_critical": 13500000,
+    "upgrade_requirements": {
+      "needs_required": {
+        "Medical": 15,
+        "Education": 15,
+        "Morale": 15
+      },
+      "structures_required": [
+        [
+          {
+            "name": "Walls",
+            "level": 9
+          }
+        ],
+        [
+          {
+            "name": "Palisade",
+            "level": 9
+          }
+        ],
+        [
+          {
+            "name": "Moat",
+            "level": 1
+          }
+        ],
+        [
+          {
+            "name": "Marshall Yard",
+            "level": 9
+          }
+        ],
+        [
+          {
+            "name": "Archery Range",
+            "level": 9
+          }
+        ],
+        [
+          {
+            "name": "Stables",
+            "level": 9
+          }
+        ],
+        [
+          {
+            "name": "Engineer Workshop",
+            "level": 9
+          }
+        ],
+        [
+          {
+            "name": "Armorsmith",
+            "level": 9
+          }
+        ],
+        [
+          {
+            "name": "Military Trade School",
+            "level": 9
+          }
+        ],
+        [
+          {
+            "name": "Mage Tower",
+            "level": 9
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "name": "Fortress",
+    "level": 10,
+    "build_turns": 36,
+    "build_cost": {
+      "L": 100,
+      "S": 100,
+      "M": 100,
+      "F": 100,
+      "R": 100,
+      "C": 0
+    },
+    "garrison": 240,
+    "population_base": 7500,
+    "population_critical": 20000000,
+    "upgrade_requirements": {
+      "needs_required": {
+        "Medical": 17,
+        "Education": 17,
+        "Morale": 17
+      },
+      "structures_required": [
+        [
+          {
+            "name": "Walls",
+            "level": 10
+          }
+        ],
+        [
+          {
+            "name": "Palisade",
+            "level": 10
+          }
+        ],
+        [
+          {
+            "name": "Moat",
+            "level": 1
+          }
+        ],
+        [
+          {
+            "name": "Marshall Yard",
+            "level": 10
+          }
+        ],
+        [
+          {
+            "name": "Archery Range",
+            "level": 10
+          }
+        ],
+        [
+          {
+            "name": "Stables",
+            "level": 10
+          }
+        ],
+        [
+          {
+            "name": "Engineer Workshop",
+            "level": 10
+          }
+        ],
+        [
+          {
+            "name": "Armorsmith",
+            "level": 10
+          }
+        ],
+        [
+          {
+            "name": "Military Trade School",
+            "level": 10
+          }
+        ],
+        [
+          {
+            "name": "Mage Tower",
+            "level": 10
+          }
+        ],
+        [
+          {
+            "name": "Castle",
+            "level": 1
+          }
+        ]
+      ]
+    }
+  }
+]

@@ -1,0 +1,6242 @@
+[
+  {
+    "name": "Schooner",
+    "level": 1,
+    "class": 1,
+    "type": "Scout",
+    "armor": 16,
+    "weapon_mount": 1,
+    "attack": 1,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 0,
+    "cargo": 1,
+    "map_movement": 40,
+    "training_time": 1,
+    "training_cost": {
+      "L": 2,
+      "S": 0,
+      "M": 1,
+      "F": 0,
+      "R": 2,
+      "C": 1
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 1
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Schooner",
+    "level": 2,
+    "class": 1,
+    "type": "Scout",
+    "armor": 16,
+    "weapon_mount": 1,
+    "attack": 2,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 0,
+    "cargo": 1,
+    "map_movement": 42,
+    "training_time": 1,
+    "training_cost": {
+      "L": 4,
+      "S": 0,
+      "M": 2,
+      "F": 0,
+      "R": 4,
+      "C": 2
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 2
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Schooner",
+    "level": 3,
+    "class": 1,
+    "type": "Scout",
+    "armor": 16,
+    "weapon_mount": 1,
+    "attack": 2,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 0,
+    "cargo": 2,
+    "map_movement": 44,
+    "training_time": 1,
+    "training_cost": {
+      "L": 6,
+      "S": 0,
+      "M": 3,
+      "F": 0,
+      "R": 6,
+      "C": 3
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 3
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Schooner",
+    "level": 4,
+    "class": 1,
+    "type": "Scout",
+    "armor": 17,
+    "weapon_mount": 1,
+    "attack": 2,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 0,
+    "cargo": 2,
+    "map_movement": 46,
+    "training_time": 1,
+    "training_cost": {
+      "L": 8,
+      "S": 0,
+      "M": 4,
+      "F": 0,
+      "R": 8,
+      "C": 4
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 4
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Schooner",
+    "level": 5,
+    "class": 1,
+    "type": "Scout",
+    "armor": 17,
+    "weapon_mount": 1,
+    "attack": 2,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 0,
+    "cargo": 2,
+    "map_movement": 48,
+    "training_time": 1,
+    "training_cost": {
+      "L": 10,
+      "S": 0,
+      "M": 5,
+      "F": 0,
+      "R": 10,
+      "C": 5
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 5
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Schooner",
+    "level": 6,
+    "class": 1,
+    "type": "Scout",
+    "armor": 17,
+    "weapon_mount": 1,
+    "attack": 2,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 2,
+    "map_movement": 50,
+    "training_time": 1,
+    "training_cost": {
+      "L": 12,
+      "S": 0,
+      "M": 6,
+      "F": 0,
+      "R": 12,
+      "C": 6
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 6
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Schooner",
+    "level": 7,
+    "class": 1,
+    "type": "Scout",
+    "armor": 17,
+    "weapon_mount": 1,
+    "attack": 2,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 2,
+    "map_movement": 52,
+    "training_time": 1,
+    "training_cost": {
+      "L": 14,
+      "S": 0,
+      "M": 7,
+      "F": 0,
+      "R": 14,
+      "C": 7
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 7
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Schooner",
+    "level": 8,
+    "class": 1,
+    "type": "Scout",
+    "armor": 17,
+    "weapon_mount": 1,
+    "attack": 3,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 2,
+    "map_movement": 54,
+    "training_time": 1,
+    "training_cost": {
+      "L": 16,
+      "S": 0,
+      "M": 8,
+      "F": 0,
+      "R": 16,
+      "C": 8
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 8
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Schooner",
+    "level": 9,
+    "class": 1,
+    "type": "Scout",
+    "armor": 17,
+    "weapon_mount": 1,
+    "attack": 3,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 3,
+    "map_movement": 56,
+    "training_time": 1,
+    "training_cost": {
+      "L": 18,
+      "S": 0,
+      "M": 9,
+      "F": 0,
+      "R": 18,
+      "C": 9
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 9
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Schooner",
+    "level": 10,
+    "class": 1,
+    "type": "Scout",
+    "armor": 17,
+    "weapon_mount": 1,
+    "attack": 3,
+    "combat_movement": 5,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 3,
+    "map_movement": 58,
+    "training_time": 1,
+    "training_cost": {
+      "L": 20,
+      "S": 0,
+      "M": 10,
+      "F": 0,
+      "R": 20,
+      "C": 10
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 10
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Brig",
+    "level": 1,
+    "class": 1,
+    "type": "War",
+    "armor": 22,
+    "weapon_mount": 2,
+    "attack": 2,
+    "combat_movement": 1,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 1,
+    "map_movement": 20,
+    "training_time": 2,
+    "training_cost": {
+      "L": 2,
+      "S": 0,
+      "M": 1,
+      "F": 0,
+      "R": 3,
+      "C": 1
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 1
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Brig",
+    "level": 2,
+    "class": 1,
+    "type": "War",
+    "armor": 22,
+    "weapon_mount": 2,
+    "attack": 3,
+    "combat_movement": 1,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 1,
+    "map_movement": 22,
+    "training_time": 2,
+    "training_cost": {
+      "L": 4,
+      "S": 0,
+      "M": 2,
+      "F": 0,
+      "R": 6,
+      "C": 2
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 2
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Brig",
+    "level": 3,
+    "class": 1,
+    "type": "War",
+    "armor": 23,
+    "weapon_mount": 2,
+    "attack": 3,
+    "combat_movement": 1,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 1,
+    "map_movement": 24,
+    "training_time": 2,
+    "training_cost": {
+      "L": 6,
+      "S": 0,
+      "M": 3,
+      "F": 0,
+      "R": 9,
+      "C": 3
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 3
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Brig",
+    "level": 4,
+    "class": 1,
+    "type": "War",
+    "armor": 23,
+    "weapon_mount": 2,
+    "attack": 3,
+    "combat_movement": 1,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 2,
+    "map_movement": 26,
+    "training_time": 2,
+    "training_cost": {
+      "L": 8,
+      "S": 0,
+      "M": 4,
+      "F": 0,
+      "R": 12,
+      "C": 4
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 4
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Brig",
+    "level": 5,
+    "class": 1,
+    "type": "War",
+    "armor": 23,
+    "weapon_mount": 2,
+    "attack": 4,
+    "combat_movement": 1,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 2,
+    "map_movement": 28,
+    "training_time": 2,
+    "training_cost": {
+      "L": 10,
+      "S": 0,
+      "M": 5,
+      "F": 0,
+      "R": 15,
+      "C": 5
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 5
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Brig",
+    "level": 6,
+    "class": 1,
+    "type": "War",
+    "armor": 24,
+    "weapon_mount": 2,
+    "attack": 4,
+    "combat_movement": 1,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 2,
+    "map_movement": 30,
+    "training_time": 2,
+    "training_cost": {
+      "L": 12,
+      "S": 0,
+      "M": 6,
+      "F": 0,
+      "R": 18,
+      "C": 6
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 6
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Brig",
+    "level": 7,
+    "class": 1,
+    "type": "War",
+    "armor": 24,
+    "weapon_mount": 2,
+    "attack": 4,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 2,
+    "map_movement": 32,
+    "training_time": 2,
+    "training_cost": {
+      "L": 14,
+      "S": 0,
+      "M": 7,
+      "F": 0,
+      "R": 21,
+      "C": 7
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 7
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Brig",
+    "level": 8,
+    "class": 1,
+    "type": "War",
+    "armor": 25,
+    "weapon_mount": 2,
+    "attack": 4,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 2,
+    "map_movement": 34,
+    "training_time": 2,
+    "training_cost": {
+      "L": 16,
+      "S": 0,
+      "M": 8,
+      "F": 0,
+      "R": 24,
+      "C": 8
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 8
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Brig",
+    "level": 9,
+    "class": 1,
+    "type": "War",
+    "armor": 25,
+    "weapon_mount": 2,
+    "attack": 5,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 2,
+    "map_movement": 36,
+    "training_time": 2,
+    "training_cost": {
+      "L": 18,
+      "S": 0,
+      "M": 9,
+      "F": 0,
+      "R": 27,
+      "C": 9
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 9
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Brig",
+    "level": 10,
+    "class": 1,
+    "type": "War",
+    "armor": 25,
+    "weapon_mount": 2,
+    "attack": 5,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 3,
+    "map_movement": 38,
+    "training_time": 2,
+    "training_cost": {
+      "L": 20,
+      "S": 0,
+      "M": 10,
+      "F": 0,
+      "R": 30,
+      "C": 10
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 10
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Galeas",
+    "level": 1,
+    "class": 1,
+    "type": "Merchant",
+    "armor": 16,
+    "weapon_mount": 0,
+    "attack": 1,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 0,
+    "cargo": 2,
+    "map_movement": 30,
+    "training_time": 1,
+    "training_cost": {
+      "L": 2,
+      "S": 0,
+      "M": 1,
+      "F": 0,
+      "R": 2,
+      "C": 1
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 1
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Galeas",
+    "level": 2,
+    "class": 1,
+    "type": "Merchant",
+    "armor": 16,
+    "weapon_mount": 0,
+    "attack": 1,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 0,
+    "cargo": 3,
+    "map_movement": 32,
+    "training_time": 1,
+    "training_cost": {
+      "L": 4,
+      "S": 0,
+      "M": 2,
+      "F": 0,
+      "R": 4,
+      "C": 2
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 2
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 3
+    }
+  },
+  {
+    "name": "Galeas",
+    "level": 3,
+    "class": 1,
+    "type": "Merchant",
+    "armor": 17,
+    "weapon_mount": 0,
+    "attack": 1,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 0,
+    "cargo": 3,
+    "map_movement": 34,
+    "training_time": 1,
+    "training_cost": {
+      "L": 6,
+      "S": 0,
+      "M": 3,
+      "F": 0,
+      "R": 6,
+      "C": 3
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 3
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 3
+    }
+  },
+  {
+    "name": "Galeas",
+    "level": 4,
+    "class": 1,
+    "type": "Merchant",
+    "armor": 17,
+    "weapon_mount": 0,
+    "attack": 2,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 0,
+    "cargo": 3,
+    "map_movement": 36,
+    "training_time": 1,
+    "training_cost": {
+      "L": 8,
+      "S": 0,
+      "M": 4,
+      "F": 0,
+      "R": 8,
+      "C": 4
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 4
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 3
+    }
+  },
+  {
+    "name": "Galeas",
+    "level": 5,
+    "class": 1,
+    "type": "Merchant",
+    "armor": 17,
+    "weapon_mount": 0,
+    "attack": 2,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 0,
+    "cargo": 4,
+    "map_movement": 38,
+    "training_time": 1,
+    "training_cost": {
+      "L": 10,
+      "S": 0,
+      "M": 5,
+      "F": 0,
+      "R": 10,
+      "C": 5
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 5
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 4
+    }
+  },
+  {
+    "name": "Galeas",
+    "level": 6,
+    "class": 1,
+    "type": "Merchant",
+    "armor": 18,
+    "weapon_mount": 0,
+    "attack": 2,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 4,
+    "map_movement": 40,
+    "training_time": 1,
+    "training_cost": {
+      "L": 12,
+      "S": 0,
+      "M": 6,
+      "F": 0,
+      "R": 12,
+      "C": 6
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 6
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 4
+    }
+  },
+  {
+    "name": "Galeas",
+    "level": 7,
+    "class": 1,
+    "type": "Merchant",
+    "armor": 18,
+    "weapon_mount": 0,
+    "attack": 2,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 4,
+    "map_movement": 42,
+    "training_time": 1,
+    "training_cost": {
+      "L": 14,
+      "S": 0,
+      "M": 7,
+      "F": 0,
+      "R": 14,
+      "C": 7
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 7
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 4
+    }
+  },
+  {
+    "name": "Galeas",
+    "level": 8,
+    "class": 1,
+    "type": "Merchant",
+    "armor": 18,
+    "weapon_mount": 0,
+    "attack": 3,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 4,
+    "map_movement": 44,
+    "training_time": 1,
+    "training_cost": {
+      "L": 16,
+      "S": 0,
+      "M": 8,
+      "F": 0,
+      "R": 16,
+      "C": 8
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 8
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 4
+    }
+  },
+  {
+    "name": "Galeas",
+    "level": 9,
+    "class": 1,
+    "type": "Merchant",
+    "armor": 19,
+    "weapon_mount": 0,
+    "attack": 3,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 4,
+    "map_movement": 46,
+    "training_time": 1,
+    "training_cost": {
+      "L": 18,
+      "S": 0,
+      "M": 9,
+      "F": 0,
+      "R": 18,
+      "C": 9
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 9
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 4
+    }
+  },
+  {
+    "name": "Galeas",
+    "level": 10,
+    "class": 1,
+    "type": "Merchant",
+    "armor": 19,
+    "weapon_mount": 0,
+    "attack": 3,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 4,
+    "map_movement": 48,
+    "training_time": 1,
+    "training_cost": {
+      "L": 20,
+      "S": 0,
+      "M": 10,
+      "F": 0,
+      "R": 20,
+      "C": 10
+    },
+    "upkeep": {
+      "L": 1,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 0,
+      "C": 10
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 4
+    }
+  },
+  {
+    "name": "Corvette",
+    "level": 1,
+    "class": 2,
+    "type": "Scout",
+    "armor": 22,
+    "weapon_mount": 2,
+    "attack": 1,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 2,
+    "map_movement": 40,
+    "training_time": 2,
+    "training_cost": {
+      "L": 3,
+      "S": 0,
+      "M": 1,
+      "F": 0,
+      "R": 3,
+      "C": 2
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 2
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Corvette",
+    "level": 2,
+    "class": 2,
+    "type": "Scout",
+    "armor": 22,
+    "weapon_mount": 2,
+    "attack": 2,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 2,
+    "map_movement": 42,
+    "training_time": 2,
+    "training_cost": {
+      "L": 6,
+      "S": 0,
+      "M": 2,
+      "F": 0,
+      "R": 6,
+      "C": 4
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 4
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Corvette",
+    "level": 3,
+    "class": 2,
+    "type": "Scout",
+    "armor": 22,
+    "weapon_mount": 2,
+    "attack": 2,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 3,
+    "map_movement": 44,
+    "training_time": 2,
+    "training_cost": {
+      "L": 9,
+      "S": 0,
+      "M": 3,
+      "F": 0,
+      "R": 9,
+      "C": 6
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 6
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Corvette",
+    "level": 4,
+    "class": 2,
+    "type": "Scout",
+    "armor": 23,
+    "weapon_mount": 2,
+    "attack": 2,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 3,
+    "map_movement": 46,
+    "training_time": 2,
+    "training_cost": {
+      "L": 12,
+      "S": 0,
+      "M": 4,
+      "F": 0,
+      "R": 12,
+      "C": 8
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 8
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Corvette",
+    "level": 5,
+    "class": 2,
+    "type": "Scout",
+    "armor": 23,
+    "weapon_mount": 2,
+    "attack": 2,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 3,
+    "map_movement": 48,
+    "training_time": 2,
+    "training_cost": {
+      "L": 15,
+      "S": 0,
+      "M": 5,
+      "F": 0,
+      "R": 15,
+      "C": 10
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 10
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Corvette",
+    "level": 6,
+    "class": 2,
+    "type": "Scout",
+    "armor": 23,
+    "weapon_mount": 2,
+    "attack": 2,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 3,
+    "map_movement": 50,
+    "training_time": 2,
+    "training_cost": {
+      "L": 18,
+      "S": 0,
+      "M": 6,
+      "F": 0,
+      "R": 18,
+      "C": 12
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 12
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Corvette",
+    "level": 7,
+    "class": 2,
+    "type": "Scout",
+    "armor": 23,
+    "weapon_mount": 2,
+    "attack": 2,
+    "combat_movement": 5,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 3,
+    "map_movement": 52,
+    "training_time": 2,
+    "training_cost": {
+      "L": 21,
+      "S": 0,
+      "M": 7,
+      "F": 0,
+      "R": 21,
+      "C": 14
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 14
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Corvette",
+    "level": 8,
+    "class": 2,
+    "type": "Scout",
+    "armor": 23,
+    "weapon_mount": 2,
+    "attack": 3,
+    "combat_movement": 5,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 3,
+    "map_movement": 54,
+    "training_time": 2,
+    "training_cost": {
+      "L": 24,
+      "S": 0,
+      "M": 8,
+      "F": 0,
+      "R": 24,
+      "C": 16
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 16
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Corvette",
+    "level": 9,
+    "class": 2,
+    "type": "Scout",
+    "armor": 23,
+    "weapon_mount": 2,
+    "attack": 3,
+    "combat_movement": 5,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 4,
+    "map_movement": 56,
+    "training_time": 2,
+    "training_cost": {
+      "L": 27,
+      "S": 0,
+      "M": 9,
+      "F": 0,
+      "R": 27,
+      "C": 18
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 18
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Corvette",
+    "level": 10,
+    "class": 2,
+    "type": "Scout",
+    "armor": 23,
+    "weapon_mount": 2,
+    "attack": 3,
+    "combat_movement": 6,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 4,
+    "map_movement": 58,
+    "training_time": 2,
+    "training_cost": {
+      "L": 30,
+      "S": 0,
+      "M": 10,
+      "F": 0,
+      "R": 30,
+      "C": 20
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 20
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Frigate",
+    "level": 1,
+    "class": 2,
+    "type": "War",
+    "armor": 32,
+    "weapon_mount": 3,
+    "attack": 3,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 1,
+    "map_movement": 20,
+    "training_time": 2,
+    "training_cost": {
+      "L": 3,
+      "S": 0,
+      "M": 1,
+      "F": 0,
+      "R": 4,
+      "C": 2
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 2
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Frigate",
+    "level": 2,
+    "class": 2,
+    "type": "War",
+    "armor": 32,
+    "weapon_mount": 3,
+    "attack": 4,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 1,
+    "map_movement": 22,
+    "training_time": 2,
+    "training_cost": {
+      "L": 6,
+      "S": 0,
+      "M": 2,
+      "F": 0,
+      "R": 8,
+      "C": 4
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 4
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Frigate",
+    "level": 3,
+    "class": 2,
+    "type": "War",
+    "armor": 33,
+    "weapon_mount": 3,
+    "attack": 4,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 1,
+    "map_movement": 24,
+    "training_time": 2,
+    "training_cost": {
+      "L": 9,
+      "S": 0,
+      "M": 3,
+      "F": 0,
+      "R": 12,
+      "C": 6
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 6
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Frigate",
+    "level": 4,
+    "class": 2,
+    "type": "War",
+    "armor": 33,
+    "weapon_mount": 3,
+    "attack": 4,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 2,
+    "map_movement": 26,
+    "training_time": 2,
+    "training_cost": {
+      "L": 12,
+      "S": 0,
+      "M": 4,
+      "F": 0,
+      "R": 16,
+      "C": 8
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 8
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Frigate",
+    "level": 5,
+    "class": 2,
+    "type": "War",
+    "armor": 33,
+    "weapon_mount": 3,
+    "attack": 5,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 2,
+    "map_movement": 28,
+    "training_time": 2,
+    "training_cost": {
+      "L": 15,
+      "S": 0,
+      "M": 5,
+      "F": 0,
+      "R": 20,
+      "C": 10
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 10
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Frigate",
+    "level": 6,
+    "class": 2,
+    "type": "War",
+    "armor": 34,
+    "weapon_mount": 3,
+    "attack": 5,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 2,
+    "map_movement": 30,
+    "training_time": 2,
+    "training_cost": {
+      "L": 18,
+      "S": 0,
+      "M": 6,
+      "F": 0,
+      "R": 24,
+      "C": 12
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 12
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Frigate",
+    "level": 7,
+    "class": 2,
+    "type": "War",
+    "armor": 34,
+    "weapon_mount": 3,
+    "attack": 5,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 2,
+    "map_movement": 32,
+    "training_time": 2,
+    "training_cost": {
+      "L": 21,
+      "S": 0,
+      "M": 7,
+      "F": 0,
+      "R": 28,
+      "C": 14
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 14
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Frigate",
+    "level": 8,
+    "class": 2,
+    "type": "War",
+    "armor": 35,
+    "weapon_mount": 3,
+    "attack": 5,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 2,
+    "map_movement": 34,
+    "training_time": 2,
+    "training_cost": {
+      "L": 24,
+      "S": 0,
+      "M": 8,
+      "F": 0,
+      "R": 32,
+      "C": 16
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 16
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Frigate",
+    "level": 9,
+    "class": 2,
+    "type": "War",
+    "armor": 35,
+    "weapon_mount": 3,
+    "attack": 6,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 2,
+    "map_movement": 36,
+    "training_time": 2,
+    "training_cost": {
+      "L": 27,
+      "S": 0,
+      "M": 9,
+      "F": 0,
+      "R": 36,
+      "C": 18
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 18
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Frigate",
+    "level": 10,
+    "class": 2,
+    "type": "War",
+    "armor": 35,
+    "weapon_mount": 3,
+    "attack": 6,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 3,
+    "map_movement": 38,
+    "training_time": 2,
+    "training_cost": {
+      "L": 30,
+      "S": 0,
+      "M": 10,
+      "F": 0,
+      "R": 40,
+      "C": 20
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 20
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Flute",
+    "level": 1,
+    "class": 2,
+    "type": "Merchant",
+    "armor": 22,
+    "weapon_mount": 1,
+    "attack": 1,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 3,
+    "map_movement": 30,
+    "training_time": 2,
+    "training_cost": {
+      "L": 3,
+      "S": 0,
+      "M": 1,
+      "F": 0,
+      "R": 3,
+      "C": 2
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 2
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 3
+    }
+  },
+  {
+    "name": "Flute",
+    "level": 2,
+    "class": 2,
+    "type": "Merchant",
+    "armor": 22,
+    "weapon_mount": 1,
+    "attack": 1,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 4,
+    "map_movement": 32,
+    "training_time": 2,
+    "training_cost": {
+      "L": 6,
+      "S": 0,
+      "M": 2,
+      "F": 0,
+      "R": 6,
+      "C": 4
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 4
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 4
+    }
+  },
+  {
+    "name": "Flute",
+    "level": 3,
+    "class": 2,
+    "type": "Merchant",
+    "armor": 23,
+    "weapon_mount": 1,
+    "attack": 1,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 4,
+    "map_movement": 34,
+    "training_time": 2,
+    "training_cost": {
+      "L": 9,
+      "S": 0,
+      "M": 3,
+      "F": 0,
+      "R": 9,
+      "C": 6
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 6
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 4
+    }
+  },
+  {
+    "name": "Flute",
+    "level": 4,
+    "class": 2,
+    "type": "Merchant",
+    "armor": 23,
+    "weapon_mount": 1,
+    "attack": 2,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 4,
+    "map_movement": 36,
+    "training_time": 2,
+    "training_cost": {
+      "L": 12,
+      "S": 0,
+      "M": 4,
+      "F": 0,
+      "R": 12,
+      "C": 8
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 8
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 4
+    }
+  },
+  {
+    "name": "Flute",
+    "level": 5,
+    "class": 2,
+    "type": "Merchant",
+    "armor": 23,
+    "weapon_mount": 1,
+    "attack": 2,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 4,
+    "map_movement": 38,
+    "training_time": 2,
+    "training_cost": {
+      "L": 15,
+      "S": 0,
+      "M": 5,
+      "F": 0,
+      "R": 15,
+      "C": 10
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 10
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 4
+    }
+  },
+  {
+    "name": "Flute",
+    "level": 6,
+    "class": 2,
+    "type": "Merchant",
+    "armor": 24,
+    "weapon_mount": 1,
+    "attack": 2,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 5,
+    "map_movement": 40,
+    "training_time": 2,
+    "training_cost": {
+      "L": 18,
+      "S": 0,
+      "M": 6,
+      "F": 0,
+      "R": 18,
+      "C": 12
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 12
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 5
+    }
+  },
+  {
+    "name": "Flute",
+    "level": 7,
+    "class": 2,
+    "type": "Merchant",
+    "armor": 24,
+    "weapon_mount": 1,
+    "attack": 2,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 5,
+    "map_movement": 42,
+    "training_time": 2,
+    "training_cost": {
+      "L": 21,
+      "S": 0,
+      "M": 7,
+      "F": 0,
+      "R": 21,
+      "C": 14
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 14
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 5
+    }
+  },
+  {
+    "name": "Flute",
+    "level": 8,
+    "class": 2,
+    "type": "Merchant",
+    "armor": 24,
+    "weapon_mount": 1,
+    "attack": 3,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 5,
+    "map_movement": 44,
+    "training_time": 2,
+    "training_cost": {
+      "L": 24,
+      "S": 0,
+      "M": 8,
+      "F": 0,
+      "R": 24,
+      "C": 16
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 16
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 5
+    }
+  },
+  {
+    "name": "Flute",
+    "level": 9,
+    "class": 2,
+    "type": "Merchant",
+    "armor": 25,
+    "weapon_mount": 1,
+    "attack": 3,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 5,
+    "map_movement": 46,
+    "training_time": 2,
+    "training_cost": {
+      "L": 27,
+      "S": 0,
+      "M": 9,
+      "F": 0,
+      "R": 27,
+      "C": 18
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 18
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 5
+    }
+  },
+  {
+    "name": "Flute",
+    "level": 10,
+    "class": 2,
+    "type": "Merchant",
+    "armor": 25,
+    "weapon_mount": 1,
+    "attack": 3,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 5,
+    "map_movement": 48,
+    "training_time": 2,
+    "training_cost": {
+      "L": 30,
+      "S": 0,
+      "M": 10,
+      "F": 0,
+      "R": 30,
+      "C": 20
+    },
+    "upkeep": {
+      "L": 2,
+      "S": 0,
+      "M": 0,
+      "F": 2,
+      "R": 0,
+      "C": 20
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 5
+    }
+  },
+  {
+    "name": "Polacca",
+    "level": 1,
+    "class": 3,
+    "type": "Scout",
+    "armor": 32,
+    "weapon_mount": 3,
+    "attack": 3,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 2,
+    "map_movement": 40,
+    "training_time": 2,
+    "training_cost": {
+      "L": 5,
+      "S": 0,
+      "M": 2,
+      "F": 0,
+      "R": 5,
+      "C": 3
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 3
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Polacca",
+    "level": 2,
+    "class": 3,
+    "type": "Scout",
+    "armor": 32,
+    "weapon_mount": 3,
+    "attack": 4,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 2,
+    "map_movement": 42,
+    "training_time": 2,
+    "training_cost": {
+      "L": 10,
+      "S": 0,
+      "M": 4,
+      "F": 0,
+      "R": 10,
+      "C": 6
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 6
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Polacca",
+    "level": 3,
+    "class": 3,
+    "type": "Scout",
+    "armor": 32,
+    "weapon_mount": 3,
+    "attack": 4,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 3,
+    "map_movement": 44,
+    "training_time": 2,
+    "training_cost": {
+      "L": 15,
+      "S": 0,
+      "M": 6,
+      "F": 0,
+      "R": 15,
+      "C": 9
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 9
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Polacca",
+    "level": 4,
+    "class": 3,
+    "type": "Scout",
+    "armor": 33,
+    "weapon_mount": 3,
+    "attack": 4,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 3,
+    "map_movement": 46,
+    "training_time": 2,
+    "training_cost": {
+      "L": 20,
+      "S": 0,
+      "M": 8,
+      "F": 0,
+      "R": 20,
+      "C": 12
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 12
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Polacca",
+    "level": 5,
+    "class": 3,
+    "type": "Scout",
+    "armor": 33,
+    "weapon_mount": 3,
+    "attack": 4,
+    "combat_movement": 5,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 3,
+    "map_movement": 48,
+    "training_time": 2,
+    "training_cost": {
+      "L": 25,
+      "S": 0,
+      "M": 10,
+      "F": 0,
+      "R": 25,
+      "C": 15
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 15
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Polacca",
+    "level": 6,
+    "class": 3,
+    "type": "Scout",
+    "armor": 33,
+    "weapon_mount": 3,
+    "attack": 4,
+    "combat_movement": 5,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 3,
+    "map_movement": 50,
+    "training_time": 2,
+    "training_cost": {
+      "L": 30,
+      "S": 0,
+      "M": 12,
+      "F": 0,
+      "R": 30,
+      "C": 18
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 18
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Polacca",
+    "level": 7,
+    "class": 3,
+    "type": "Scout",
+    "armor": 33,
+    "weapon_mount": 3,
+    "attack": 4,
+    "combat_movement": 6,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 3,
+    "map_movement": 52,
+    "training_time": 2,
+    "training_cost": {
+      "L": 35,
+      "S": 0,
+      "M": 14,
+      "F": 0,
+      "R": 35,
+      "C": 21
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 21
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Polacca",
+    "level": 8,
+    "class": 3,
+    "type": "Scout",
+    "armor": 33,
+    "weapon_mount": 3,
+    "attack": 5,
+    "combat_movement": 6,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 3,
+    "map_movement": 54,
+    "training_time": 2,
+    "training_cost": {
+      "L": 40,
+      "S": 0,
+      "M": 16,
+      "F": 0,
+      "R": 40,
+      "C": 24
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 24
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Polacca",
+    "level": 9,
+    "class": 3,
+    "type": "Scout",
+    "armor": 33,
+    "weapon_mount": 3,
+    "attack": 5,
+    "combat_movement": 6,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 4,
+    "map_movement": 56,
+    "training_time": 2,
+    "training_cost": {
+      "L": 45,
+      "S": 0,
+      "M": 18,
+      "F": 0,
+      "R": 45,
+      "C": 27
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 27
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Polacca",
+    "level": 10,
+    "class": 3,
+    "type": "Scout",
+    "armor": 33,
+    "weapon_mount": 3,
+    "attack": 5,
+    "combat_movement": 7,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 4,
+    "map_movement": 58,
+    "training_time": 2,
+    "training_cost": {
+      "L": 50,
+      "S": 0,
+      "M": 20,
+      "F": 0,
+      "R": 50,
+      "C": 30
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 30
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Man o War",
+    "level": 1,
+    "class": 3,
+    "type": "War",
+    "armor": 44,
+    "weapon_mount": 4,
+    "attack": 4,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 2,
+    "map_movement": 20,
+    "training_time": 3,
+    "training_cost": {
+      "L": 5,
+      "S": 0,
+      "M": 2,
+      "F": 0,
+      "R": 6,
+      "C": 3
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 3
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Man o War",
+    "level": 2,
+    "class": 3,
+    "type": "War",
+    "armor": 44,
+    "weapon_mount": 4,
+    "attack": 5,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 2,
+    "map_movement": 22,
+    "training_time": 3,
+    "training_cost": {
+      "L": 10,
+      "S": 0,
+      "M": 4,
+      "F": 0,
+      "R": 12,
+      "C": 6
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 6
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Man o War",
+    "level": 3,
+    "class": 3,
+    "type": "War",
+    "armor": 45,
+    "weapon_mount": 4,
+    "attack": 5,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 2,
+    "map_movement": 24,
+    "training_time": 3,
+    "training_cost": {
+      "L": 15,
+      "S": 0,
+      "M": 6,
+      "F": 0,
+      "R": 18,
+      "C": 9
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 9
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Man o War",
+    "level": 4,
+    "class": 3,
+    "type": "War",
+    "armor": 45,
+    "weapon_mount": 4,
+    "attack": 5,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 3,
+    "map_movement": 26,
+    "training_time": 3,
+    "training_cost": {
+      "L": 20,
+      "S": 0,
+      "M": 8,
+      "F": 0,
+      "R": 24,
+      "C": 12
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 12
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Man o War",
+    "level": 5,
+    "class": 3,
+    "type": "War",
+    "armor": 45,
+    "weapon_mount": 4,
+    "attack": 6,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 3,
+    "map_movement": 28,
+    "training_time": 3,
+    "training_cost": {
+      "L": 25,
+      "S": 0,
+      "M": 10,
+      "F": 0,
+      "R": 30,
+      "C": 15
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 15
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Man o War",
+    "level": 6,
+    "class": 3,
+    "type": "War",
+    "armor": 46,
+    "weapon_mount": 4,
+    "attack": 6,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 3,
+    "map_movement": 30,
+    "training_time": 3,
+    "training_cost": {
+      "L": 30,
+      "S": 0,
+      "M": 12,
+      "F": 0,
+      "R": 36,
+      "C": 18
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 18
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Man o War",
+    "level": 7,
+    "class": 3,
+    "type": "War",
+    "armor": 46,
+    "weapon_mount": 4,
+    "attack": 6,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 3,
+    "map_movement": 32,
+    "training_time": 3,
+    "training_cost": {
+      "L": 35,
+      "S": 0,
+      "M": 14,
+      "F": 0,
+      "R": 42,
+      "C": 21
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 21
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Man o War",
+    "level": 8,
+    "class": 3,
+    "type": "War",
+    "armor": 47,
+    "weapon_mount": 4,
+    "attack": 6,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 3,
+    "map_movement": 34,
+    "training_time": 3,
+    "training_cost": {
+      "L": 40,
+      "S": 0,
+      "M": 16,
+      "F": 0,
+      "R": 48,
+      "C": 24
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 24
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Man o War",
+    "level": 9,
+    "class": 3,
+    "type": "War",
+    "armor": 47,
+    "weapon_mount": 4,
+    "attack": 7,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 3,
+    "map_movement": 36,
+    "training_time": 3,
+    "training_cost": {
+      "L": 45,
+      "S": 0,
+      "M": 18,
+      "F": 0,
+      "R": 54,
+      "C": 27
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 27
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Man o War",
+    "level": 10,
+    "class": 3,
+    "type": "War",
+    "armor": 47,
+    "weapon_mount": 4,
+    "attack": 7,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 4,
+    "map_movement": 38,
+    "training_time": 3,
+    "training_cost": {
+      "L": 50,
+      "S": 0,
+      "M": 20,
+      "F": 0,
+      "R": 60,
+      "C": 30
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 30
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Galleon",
+    "level": 1,
+    "class": 3,
+    "type": "Merchant",
+    "armor": 32,
+    "weapon_mount": 2,
+    "attack": 2,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 4,
+    "map_movement": 30,
+    "training_time": 2,
+    "training_cost": {
+      "L": 5,
+      "S": 0,
+      "M": 2,
+      "F": 0,
+      "R": 5,
+      "C": 3
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 3
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 4
+    }
+  },
+  {
+    "name": "Galleon",
+    "level": 2,
+    "class": 3,
+    "type": "Merchant",
+    "armor": 32,
+    "weapon_mount": 2,
+    "attack": 2,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 5,
+    "map_movement": 32,
+    "training_time": 2,
+    "training_cost": {
+      "L": 10,
+      "S": 0,
+      "M": 4,
+      "F": 0,
+      "R": 10,
+      "C": 6
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 6
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 5
+    }
+  },
+  {
+    "name": "Galleon",
+    "level": 3,
+    "class": 3,
+    "type": "Merchant",
+    "armor": 33,
+    "weapon_mount": 2,
+    "attack": 2,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 5,
+    "map_movement": 34,
+    "training_time": 2,
+    "training_cost": {
+      "L": 15,
+      "S": 0,
+      "M": 6,
+      "F": 0,
+      "R": 15,
+      "C": 9
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 9
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 5
+    }
+  },
+  {
+    "name": "Galleon",
+    "level": 4,
+    "class": 3,
+    "type": "Merchant",
+    "armor": 33,
+    "weapon_mount": 2,
+    "attack": 3,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 5,
+    "map_movement": 36,
+    "training_time": 2,
+    "training_cost": {
+      "L": 20,
+      "S": 0,
+      "M": 8,
+      "F": 0,
+      "R": 20,
+      "C": 12
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 12
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 5
+    }
+  },
+  {
+    "name": "Galleon",
+    "level": 5,
+    "class": 3,
+    "type": "Merchant",
+    "armor": 33,
+    "weapon_mount": 2,
+    "attack": 3,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 6,
+    "map_movement": 38,
+    "training_time": 2,
+    "training_cost": {
+      "L": 25,
+      "S": 0,
+      "M": 10,
+      "F": 0,
+      "R": 25,
+      "C": 15
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 15
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 6
+    }
+  },
+  {
+    "name": "Galleon",
+    "level": 6,
+    "class": 3,
+    "type": "Merchant",
+    "armor": 34,
+    "weapon_mount": 2,
+    "attack": 3,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 6,
+    "map_movement": 40,
+    "training_time": 2,
+    "training_cost": {
+      "L": 30,
+      "S": 0,
+      "M": 12,
+      "F": 0,
+      "R": 30,
+      "C": 18
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 18
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 6
+    }
+  },
+  {
+    "name": "Galleon",
+    "level": 7,
+    "class": 3,
+    "type": "Merchant",
+    "armor": 34,
+    "weapon_mount": 2,
+    "attack": 3,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 6,
+    "map_movement": 42,
+    "training_time": 2,
+    "training_cost": {
+      "L": 35,
+      "S": 0,
+      "M": 14,
+      "F": 0,
+      "R": 35,
+      "C": 21
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 21
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 6
+    }
+  },
+  {
+    "name": "Galleon",
+    "level": 8,
+    "class": 3,
+    "type": "Merchant",
+    "armor": 34,
+    "weapon_mount": 2,
+    "attack": 4,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 6,
+    "map_movement": 44,
+    "training_time": 2,
+    "training_cost": {
+      "L": 40,
+      "S": 0,
+      "M": 16,
+      "F": 0,
+      "R": 40,
+      "C": 24
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 24
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 6
+    }
+  },
+  {
+    "name": "Galleon",
+    "level": 9,
+    "class": 3,
+    "type": "Merchant",
+    "armor": 35,
+    "weapon_mount": 2,
+    "attack": 4,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 6,
+    "map_movement": 46,
+    "training_time": 2,
+    "training_cost": {
+      "L": 45,
+      "S": 0,
+      "M": 18,
+      "F": 0,
+      "R": 45,
+      "C": 27
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 27
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 6
+    }
+  },
+  {
+    "name": "Galleon",
+    "level": 10,
+    "class": 3,
+    "type": "Merchant",
+    "armor": 35,
+    "weapon_mount": 2,
+    "attack": 4,
+    "combat_movement": 5,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 6,
+    "map_movement": 48,
+    "training_time": 2,
+    "training_cost": {
+      "L": 50,
+      "S": 0,
+      "M": 20,
+      "F": 0,
+      "R": 50,
+      "C": 30
+    },
+    "upkeep": {
+      "L": 3,
+      "S": 0,
+      "M": 0,
+      "F": 3,
+      "R": 0,
+      "C": 30
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 6
+    }
+  },
+  {
+    "name": "Xebec",
+    "level": 1,
+    "class": 4,
+    "type": "Scout",
+    "armor": 44,
+    "weapon_mount": 4,
+    "attack": 3,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 2,
+    "map_movement": 40,
+    "training_time": 3,
+    "training_cost": {
+      "L": 6,
+      "S": 0,
+      "M": 2,
+      "F": 0,
+      "R": 5,
+      "C": 4
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 4
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Xebec",
+    "level": 2,
+    "class": 4,
+    "type": "Scout",
+    "armor": 44,
+    "weapon_mount": 4,
+    "attack": 4,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 2,
+    "map_movement": 42,
+    "training_time": 3,
+    "training_cost": {
+      "L": 12,
+      "S": 0,
+      "M": 4,
+      "F": 0,
+      "R": 10,
+      "C": 8
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 8
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Xebec",
+    "level": 3,
+    "class": 4,
+    "type": "Scout",
+    "armor": 44,
+    "weapon_mount": 4,
+    "attack": 4,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 3,
+    "map_movement": 44,
+    "training_time": 3,
+    "training_cost": {
+      "L": 18,
+      "S": 0,
+      "M": 6,
+      "F": 0,
+      "R": 15,
+      "C": 12
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 12
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Xebec",
+    "level": 4,
+    "class": 4,
+    "type": "Scout",
+    "armor": 45,
+    "weapon_mount": 4,
+    "attack": 4,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 3,
+    "map_movement": 46,
+    "training_time": 3,
+    "training_cost": {
+      "L": 24,
+      "S": 0,
+      "M": 8,
+      "F": 0,
+      "R": 20,
+      "C": 16
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 16
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Xebec",
+    "level": 5,
+    "class": 4,
+    "type": "Scout",
+    "armor": 45,
+    "weapon_mount": 4,
+    "attack": 4,
+    "combat_movement": 5,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 3,
+    "map_movement": 48,
+    "training_time": 3,
+    "training_cost": {
+      "L": 30,
+      "S": 0,
+      "M": 10,
+      "F": 0,
+      "R": 25,
+      "C": 20
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 20
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Xebec",
+    "level": 6,
+    "class": 4,
+    "type": "Scout",
+    "armor": 45,
+    "weapon_mount": 4,
+    "attack": 4,
+    "combat_movement": 5,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 3,
+    "map_movement": 50,
+    "training_time": 3,
+    "training_cost": {
+      "L": 36,
+      "S": 0,
+      "M": 12,
+      "F": 0,
+      "R": 30,
+      "C": 24
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 24
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Xebec",
+    "level": 7,
+    "class": 4,
+    "type": "Scout",
+    "armor": 45,
+    "weapon_mount": 4,
+    "attack": 4,
+    "combat_movement": 6,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 3,
+    "map_movement": 52,
+    "training_time": 3,
+    "training_cost": {
+      "L": 42,
+      "S": 0,
+      "M": 14,
+      "F": 0,
+      "R": 35,
+      "C": 28
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 28
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Xebec",
+    "level": 8,
+    "class": 4,
+    "type": "Scout",
+    "armor": 45,
+    "weapon_mount": 4,
+    "attack": 5,
+    "combat_movement": 6,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 3,
+    "map_movement": 54,
+    "training_time": 3,
+    "training_cost": {
+      "L": 48,
+      "S": 0,
+      "M": 16,
+      "F": 0,
+      "R": 40,
+      "C": 32
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 32
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Xebec",
+    "level": 9,
+    "class": 4,
+    "type": "Scout",
+    "armor": 45,
+    "weapon_mount": 4,
+    "attack": 5,
+    "combat_movement": 6,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 4,
+    "map_movement": 56,
+    "training_time": 3,
+    "training_cost": {
+      "L": 54,
+      "S": 0,
+      "M": 18,
+      "F": 0,
+      "R": 45,
+      "C": 36
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 36
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Xebec",
+    "level": 10,
+    "class": 4,
+    "type": "Scout",
+    "armor": 45,
+    "weapon_mount": 4,
+    "attack": 5,
+    "combat_movement": 7,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 4,
+    "map_movement": 58,
+    "training_time": 3,
+    "training_cost": {
+      "L": 60,
+      "S": 0,
+      "M": 20,
+      "F": 0,
+      "R": 50,
+      "C": 40
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 40
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Ship of the Line",
+    "level": 1,
+    "class": 4,
+    "type": "War",
+    "armor": 54,
+    "weapon_mount": 5,
+    "attack": 4,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 2,
+    "map_movement": 20,
+    "training_time": 3,
+    "training_cost": {
+      "L": 6,
+      "S": 0,
+      "M": 2,
+      "F": 0,
+      "R": 6,
+      "C": 4
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 4
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Ship of the Line",
+    "level": 2,
+    "class": 4,
+    "type": "War",
+    "armor": 54,
+    "weapon_mount": 5,
+    "attack": 5,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 2,
+    "map_movement": 22,
+    "training_time": 3,
+    "training_cost": {
+      "L": 12,
+      "S": 0,
+      "M": 4,
+      "F": 0,
+      "R": 12,
+      "C": 8
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 8
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Ship of the Line",
+    "level": 3,
+    "class": 4,
+    "type": "War",
+    "armor": 55,
+    "weapon_mount": 5,
+    "attack": 5,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 2,
+    "map_movement": 24,
+    "training_time": 3,
+    "training_cost": {
+      "L": 18,
+      "S": 0,
+      "M": 6,
+      "F": 0,
+      "R": 18,
+      "C": 12
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 12
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Ship of the Line",
+    "level": 4,
+    "class": 4,
+    "type": "War",
+    "armor": 55,
+    "weapon_mount": 5,
+    "attack": 5,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 3,
+    "map_movement": 26,
+    "training_time": 3,
+    "training_cost": {
+      "L": 24,
+      "S": 0,
+      "M": 8,
+      "F": 0,
+      "R": 24,
+      "C": 16
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 16
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Ship of the Line",
+    "level": 5,
+    "class": 4,
+    "type": "War",
+    "armor": 55,
+    "weapon_mount": 5,
+    "attack": 6,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 3,
+    "map_movement": 28,
+    "training_time": 3,
+    "training_cost": {
+      "L": 30,
+      "S": 0,
+      "M": 10,
+      "F": 0,
+      "R": 30,
+      "C": 20
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 20
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Ship of the Line",
+    "level": 6,
+    "class": 4,
+    "type": "War",
+    "armor": 56,
+    "weapon_mount": 5,
+    "attack": 6,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 5,
+    "cargo": 3,
+    "map_movement": 30,
+    "training_time": 3,
+    "training_cost": {
+      "L": 36,
+      "S": 0,
+      "M": 12,
+      "F": 0,
+      "R": 36,
+      "C": 24
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 24
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Ship of the Line",
+    "level": 7,
+    "class": 4,
+    "type": "War",
+    "armor": 56,
+    "weapon_mount": 5,
+    "attack": 6,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 5,
+    "cargo": 3,
+    "map_movement": 32,
+    "training_time": 3,
+    "training_cost": {
+      "L": 42,
+      "S": 0,
+      "M": 14,
+      "F": 0,
+      "R": 42,
+      "C": 28
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 28
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Ship of the Line",
+    "level": 8,
+    "class": 4,
+    "type": "War",
+    "armor": 57,
+    "weapon_mount": 5,
+    "attack": 6,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 5,
+    "cargo": 3,
+    "map_movement": 34,
+    "training_time": 3,
+    "training_cost": {
+      "L": 48,
+      "S": 0,
+      "M": 16,
+      "F": 0,
+      "R": 48,
+      "C": 32
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 32
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Ship of the Line",
+    "level": 9,
+    "class": 4,
+    "type": "War",
+    "armor": 57,
+    "weapon_mount": 5,
+    "attack": 7,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 5,
+    "cargo": 3,
+    "map_movement": 36,
+    "training_time": 3,
+    "training_cost": {
+      "L": 54,
+      "S": 0,
+      "M": 18,
+      "F": 0,
+      "R": 54,
+      "C": 36
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 36
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Ship of the Line",
+    "level": 10,
+    "class": 4,
+    "type": "War",
+    "armor": 57,
+    "weapon_mount": 5,
+    "attack": 7,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 5,
+    "cargo": 4,
+    "map_movement": 38,
+    "training_time": 3,
+    "training_cost": {
+      "L": 60,
+      "S": 0,
+      "M": 20,
+      "F": 0,
+      "R": 60,
+      "C": 40
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 40
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Iselman",
+    "level": 1,
+    "class": 4,
+    "type": "Merchant",
+    "armor": 44,
+    "weapon_mount": 3,
+    "attack": 2,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 4,
+    "map_movement": 30,
+    "training_time": 3,
+    "training_cost": {
+      "L": 6,
+      "S": 0,
+      "M": 2,
+      "F": 0,
+      "R": 5,
+      "C": 4
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 4
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 4
+    }
+  },
+  {
+    "name": "Iselman",
+    "level": 2,
+    "class": 4,
+    "type": "Merchant",
+    "armor": 44,
+    "weapon_mount": 3,
+    "attack": 2,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 5,
+    "map_movement": 32,
+    "training_time": 3,
+    "training_cost": {
+      "L": 12,
+      "S": 0,
+      "M": 4,
+      "F": 0,
+      "R": 10,
+      "C": 8
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 8
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 5
+    }
+  },
+  {
+    "name": "Iselman",
+    "level": 3,
+    "class": 4,
+    "type": "Merchant",
+    "armor": 45,
+    "weapon_mount": 3,
+    "attack": 2,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 5,
+    "map_movement": 34,
+    "training_time": 3,
+    "training_cost": {
+      "L": 18,
+      "S": 0,
+      "M": 6,
+      "F": 0,
+      "R": 15,
+      "C": 12
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 12
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 5
+    }
+  },
+  {
+    "name": "Iselman",
+    "level": 4,
+    "class": 4,
+    "type": "Merchant",
+    "armor": 45,
+    "weapon_mount": 3,
+    "attack": 3,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 5,
+    "map_movement": 36,
+    "training_time": 3,
+    "training_cost": {
+      "L": 24,
+      "S": 0,
+      "M": 8,
+      "F": 0,
+      "R": 20,
+      "C": 16
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 16
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 5
+    }
+  },
+  {
+    "name": "Iselman",
+    "level": 5,
+    "class": 4,
+    "type": "Merchant",
+    "armor": 45,
+    "weapon_mount": 3,
+    "attack": 3,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 6,
+    "map_movement": 38,
+    "training_time": 3,
+    "training_cost": {
+      "L": 30,
+      "S": 0,
+      "M": 10,
+      "F": 0,
+      "R": 25,
+      "C": 20
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 20
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 6
+    }
+  },
+  {
+    "name": "Iselman",
+    "level": 6,
+    "class": 4,
+    "type": "Merchant",
+    "armor": 46,
+    "weapon_mount": 3,
+    "attack": 3,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 6,
+    "map_movement": 40,
+    "training_time": 3,
+    "training_cost": {
+      "L": 36,
+      "S": 0,
+      "M": 12,
+      "F": 0,
+      "R": 30,
+      "C": 24
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 24
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 6
+    }
+  },
+  {
+    "name": "Iselman",
+    "level": 7,
+    "class": 4,
+    "type": "Merchant",
+    "armor": 46,
+    "weapon_mount": 3,
+    "attack": 3,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 6,
+    "map_movement": 42,
+    "training_time": 3,
+    "training_cost": {
+      "L": 42,
+      "S": 0,
+      "M": 14,
+      "F": 0,
+      "R": 35,
+      "C": 28
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 28
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 6
+    }
+  },
+  {
+    "name": "Iselman",
+    "level": 8,
+    "class": 4,
+    "type": "Merchant",
+    "armor": 46,
+    "weapon_mount": 3,
+    "attack": 4,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 6,
+    "map_movement": 44,
+    "training_time": 3,
+    "training_cost": {
+      "L": 48,
+      "S": 0,
+      "M": 16,
+      "F": 0,
+      "R": 40,
+      "C": 32
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 32
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 6
+    }
+  },
+  {
+    "name": "Iselman",
+    "level": 9,
+    "class": 4,
+    "type": "Merchant",
+    "armor": 47,
+    "weapon_mount": 3,
+    "attack": 4,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 6,
+    "map_movement": 46,
+    "training_time": 3,
+    "training_cost": {
+      "L": 54,
+      "S": 0,
+      "M": 18,
+      "F": 0,
+      "R": 45,
+      "C": 36
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 36
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 6
+    }
+  },
+  {
+    "name": "Iselman",
+    "level": 10,
+    "class": 4,
+    "type": "Merchant",
+    "armor": 47,
+    "weapon_mount": 3,
+    "attack": 4,
+    "combat_movement": 5,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 6,
+    "map_movement": 48,
+    "training_time": 3,
+    "training_cost": {
+      "L": 60,
+      "S": 0,
+      "M": 20,
+      "F": 0,
+      "R": 50,
+      "C": 40
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 4,
+      "R": 0,
+      "C": 40
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 6
+    }
+  },
+  {
+    "name": "Skycutter",
+    "level": 1,
+    "class": 5,
+    "type": "War",
+    "armor": 28,
+    "weapon_mount": 2,
+    "attack": 3,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 2,
+    "map_movement": 20,
+    "training_time": 12,
+    "training_cost": {
+      "L": 14,
+      "S": 0,
+      "M": 8,
+      "F": 0,
+      "R": 14,
+      "C": 12
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 4
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Skycutter",
+    "level": 2,
+    "class": 5,
+    "type": "War",
+    "armor": 28,
+    "weapon_mount": 2,
+    "attack": 4,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 2,
+    "map_movement": 24,
+    "training_time": 12,
+    "training_cost": {
+      "L": 28,
+      "S": 0,
+      "M": 16,
+      "F": 0,
+      "R": 28,
+      "C": 24
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 8
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Skycutter",
+    "level": 3,
+    "class": 5,
+    "type": "War",
+    "armor": 29,
+    "weapon_mount": 2,
+    "attack": 4,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 2,
+    "map_movement": 28,
+    "training_time": 12,
+    "training_cost": {
+      "L": 42,
+      "S": 0,
+      "M": 24,
+      "F": 0,
+      "R": 42,
+      "C": 36
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 12
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Skycutter",
+    "level": 4,
+    "class": 5,
+    "type": "War",
+    "armor": 29,
+    "weapon_mount": 2,
+    "attack": 4,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 3,
+    "map_movement": 32,
+    "training_time": 12,
+    "training_cost": {
+      "L": 56,
+      "S": 0,
+      "M": 32,
+      "F": 0,
+      "R": 56,
+      "C": 48
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 16
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Skycutter",
+    "level": 5,
+    "class": 5,
+    "type": "War",
+    "armor": 29,
+    "weapon_mount": 2,
+    "attack": 5,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 3,
+    "map_movement": 36,
+    "training_time": 12,
+    "training_cost": {
+      "L": 70,
+      "S": 0,
+      "M": 40,
+      "F": 0,
+      "R": 70,
+      "C": 60
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 20
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Skycutter",
+    "level": 6,
+    "class": 5,
+    "type": "War",
+    "armor": 30,
+    "weapon_mount": 2,
+    "attack": 5,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 3,
+    "map_movement": 40,
+    "training_time": 12,
+    "training_cost": {
+      "L": 84,
+      "S": 0,
+      "M": 48,
+      "F": 0,
+      "R": 84,
+      "C": 72
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 24
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Skycutter",
+    "level": 7,
+    "class": 5,
+    "type": "War",
+    "armor": 30,
+    "weapon_mount": 2,
+    "attack": 5,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 3,
+    "map_movement": 44,
+    "training_time": 12,
+    "training_cost": {
+      "L": 98,
+      "S": 0,
+      "M": 56,
+      "F": 0,
+      "R": 98,
+      "C": 84
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 28
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Skycutter",
+    "level": 8,
+    "class": 5,
+    "type": "War",
+    "armor": 31,
+    "weapon_mount": 2,
+    "attack": 5,
+    "combat_movement": 5,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 3,
+    "map_movement": 48,
+    "training_time": 12,
+    "training_cost": {
+      "L": 112,
+      "S": 0,
+      "M": 64,
+      "F": 0,
+      "R": 112,
+      "C": 96
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 32
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Skycutter",
+    "level": 9,
+    "class": 5,
+    "type": "War",
+    "armor": 31,
+    "weapon_mount": 2,
+    "attack": 6,
+    "combat_movement": 5,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 3,
+    "map_movement": 52,
+    "training_time": 12,
+    "training_cost": {
+      "L": 126,
+      "S": 0,
+      "M": 72,
+      "F": 0,
+      "R": 126,
+      "C": 108
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 36
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Skycutter",
+    "level": 10,
+    "class": 5,
+    "type": "War",
+    "armor": 31,
+    "weapon_mount": 2,
+    "attack": 6,
+    "combat_movement": 5,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 4,
+    "map_movement": 56,
+    "training_time": 12,
+    "training_cost": {
+      "L": 140,
+      "S": 0,
+      "M": 80,
+      "F": 0,
+      "R": 140,
+      "C": 120
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 40
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Scout Dirigible",
+    "level": 1,
+    "class": 5,
+    "type": "Scout",
+    "armor": 16,
+    "weapon_mount": 2,
+    "attack": 1,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 2,
+    "map_movement": 40,
+    "training_time": 5,
+    "training_cost": {
+      "L": 10,
+      "S": 0,
+      "M": 8,
+      "F": 0,
+      "R": 14,
+      "C": 12
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 1
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Scout Dirigible",
+    "level": 2,
+    "class": 5,
+    "type": "Scout",
+    "armor": 16,
+    "weapon_mount": 2,
+    "attack": 2,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 2,
+    "map_movement": 42,
+    "training_time": 5,
+    "training_cost": {
+      "L": 20,
+      "S": 0,
+      "M": 16,
+      "F": 0,
+      "R": 28,
+      "C": 24
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 2
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "Scout Dirigible",
+    "level": 3,
+    "class": 5,
+    "type": "Scout",
+    "armor": 16,
+    "weapon_mount": 2,
+    "attack": 2,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 3,
+    "map_movement": 44,
+    "training_time": 5,
+    "training_cost": {
+      "L": 30,
+      "S": 0,
+      "M": 24,
+      "F": 0,
+      "R": 42,
+      "C": 36
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 3
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Scout Dirigible",
+    "level": 4,
+    "class": 5,
+    "type": "Scout",
+    "armor": 17,
+    "weapon_mount": 2,
+    "attack": 2,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 3,
+    "map_movement": 46,
+    "training_time": 5,
+    "training_cost": {
+      "L": 40,
+      "S": 0,
+      "M": 32,
+      "F": 0,
+      "R": 56,
+      "C": 48
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 4
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Scout Dirigible",
+    "level": 5,
+    "class": 5,
+    "type": "Scout",
+    "armor": 17,
+    "weapon_mount": 2,
+    "attack": 2,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 1,
+    "cargo": 3,
+    "map_movement": 48,
+    "training_time": 5,
+    "training_cost": {
+      "L": 50,
+      "S": 0,
+      "M": 40,
+      "F": 0,
+      "R": 70,
+      "C": 60
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 5
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Scout Dirigible",
+    "level": 6,
+    "class": 5,
+    "type": "Scout",
+    "armor": 17,
+    "weapon_mount": 2,
+    "attack": 2,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 3,
+    "map_movement": 50,
+    "training_time": 5,
+    "training_cost": {
+      "L": 60,
+      "S": 0,
+      "M": 48,
+      "F": 0,
+      "R": 84,
+      "C": 72
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 6
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Scout Dirigible",
+    "level": 7,
+    "class": 5,
+    "type": "Scout",
+    "armor": 17,
+    "weapon_mount": 2,
+    "attack": 2,
+    "combat_movement": 5,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 3,
+    "map_movement": 52,
+    "training_time": 5,
+    "training_cost": {
+      "L": 70,
+      "S": 0,
+      "M": 56,
+      "F": 0,
+      "R": 98,
+      "C": 84
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 7
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Scout Dirigible",
+    "level": 8,
+    "class": 5,
+    "type": "Scout",
+    "armor": 17,
+    "weapon_mount": 2,
+    "attack": 3,
+    "combat_movement": 5,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 3,
+    "map_movement": 54,
+    "training_time": 5,
+    "training_cost": {
+      "L": 80,
+      "S": 0,
+      "M": 64,
+      "F": 0,
+      "R": 112,
+      "C": 96
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 8
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Scout Dirigible",
+    "level": 9,
+    "class": 5,
+    "type": "Scout",
+    "armor": 17,
+    "weapon_mount": 2,
+    "attack": 3,
+    "combat_movement": 5,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 4,
+    "map_movement": 56,
+    "training_time": 5,
+    "training_cost": {
+      "L": 90,
+      "S": 0,
+      "M": 72,
+      "F": 0,
+      "R": 126,
+      "C": 108
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 9
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Scout Dirigible",
+    "level": 10,
+    "class": 5,
+    "type": "Scout",
+    "armor": 17,
+    "weapon_mount": 2,
+    "attack": 3,
+    "combat_movement": 6,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 4,
+    "map_movement": 58,
+    "training_time": 5,
+    "training_cost": {
+      "L": 100,
+      "S": 0,
+      "M": 80,
+      "F": 0,
+      "R": 140,
+      "C": 120
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 10
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "War Airliner",
+    "level": 1,
+    "class": 5,
+    "type": "War",
+    "armor": 32,
+    "weapon_mount": 3,
+    "attack": 3,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 2,
+    "map_movement": 20,
+    "training_time": 6,
+    "training_cost": {
+      "L": 14,
+      "S": 0,
+      "M": 8,
+      "F": 0,
+      "R": 14,
+      "C": 12
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 1
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "War Airliner",
+    "level": 2,
+    "class": 5,
+    "type": "War",
+    "armor": 32,
+    "weapon_mount": 3,
+    "attack": 4,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 2,
+    "map_movement": 22,
+    "training_time": 6,
+    "training_cost": {
+      "L": 28,
+      "S": 0,
+      "M": 16,
+      "F": 0,
+      "R": 28,
+      "C": 24
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 2
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "War Airliner",
+    "level": 3,
+    "class": 5,
+    "type": "War",
+    "armor": 33,
+    "weapon_mount": 3,
+    "attack": 4,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 2,
+    "map_movement": 24,
+    "training_time": 6,
+    "training_cost": {
+      "L": 42,
+      "S": 0,
+      "M": 24,
+      "F": 0,
+      "R": 42,
+      "C": 36
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 3
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 1
+    }
+  },
+  {
+    "name": "War Airliner",
+    "level": 4,
+    "class": 5,
+    "type": "War",
+    "armor": 33,
+    "weapon_mount": 3,
+    "attack": 4,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 3,
+    "map_movement": 26,
+    "training_time": 6,
+    "training_cost": {
+      "L": 56,
+      "S": 0,
+      "M": 32,
+      "F": 0,
+      "R": 56,
+      "C": 48
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 4
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "War Airliner",
+    "level": 5,
+    "class": 5,
+    "type": "War",
+    "armor": 33,
+    "weapon_mount": 3,
+    "attack": 5,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 3,
+    "map_movement": 28,
+    "training_time": 6,
+    "training_cost": {
+      "L": 70,
+      "S": 0,
+      "M": 40,
+      "F": 0,
+      "R": 70,
+      "C": 60
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 5
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "War Airliner",
+    "level": 6,
+    "class": 5,
+    "type": "War",
+    "armor": 34,
+    "weapon_mount": 3,
+    "attack": 5,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 3,
+    "map_movement": 30,
+    "training_time": 6,
+    "training_cost": {
+      "L": 84,
+      "S": 0,
+      "M": 48,
+      "F": 0,
+      "R": 84,
+      "C": 72
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 6
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "War Airliner",
+    "level": 7,
+    "class": 5,
+    "type": "War",
+    "armor": 34,
+    "weapon_mount": 3,
+    "attack": 5,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 3,
+    "map_movement": 32,
+    "training_time": 6,
+    "training_cost": {
+      "L": 98,
+      "S": 0,
+      "M": 56,
+      "F": 0,
+      "R": 98,
+      "C": 84
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 7
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "War Airliner",
+    "level": 8,
+    "class": 5,
+    "type": "War",
+    "armor": 35,
+    "weapon_mount": 3,
+    "attack": 5,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 3,
+    "map_movement": 34,
+    "training_time": 6,
+    "training_cost": {
+      "L": 112,
+      "S": 0,
+      "M": 64,
+      "F": 0,
+      "R": 112,
+      "C": 96
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 8
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "War Airliner",
+    "level": 9,
+    "class": 5,
+    "type": "War",
+    "armor": 35,
+    "weapon_mount": 3,
+    "attack": 6,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 3,
+    "map_movement": 36,
+    "training_time": 6,
+    "training_cost": {
+      "L": 126,
+      "S": 0,
+      "M": 72,
+      "F": 0,
+      "R": 126,
+      "C": 108
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 9
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "War Airliner",
+    "level": 10,
+    "class": 5,
+    "type": "War",
+    "armor": 35,
+    "weapon_mount": 3,
+    "attack": 6,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 4,
+    "cargo": 4,
+    "map_movement": 38,
+    "training_time": 6,
+    "training_cost": {
+      "L": 140,
+      "S": 0,
+      "M": 80,
+      "F": 0,
+      "R": 140,
+      "C": 120
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 10
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 2
+    }
+  },
+  {
+    "name": "Merchant Zeppelin",
+    "level": 1,
+    "class": 5,
+    "type": "Merchant",
+    "armor": 22,
+    "weapon_mount": 1,
+    "attack": 1,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 4,
+    "map_movement": 32,
+    "training_time": 5,
+    "training_cost": {
+      "L": 14,
+      "S": 0,
+      "M": 8,
+      "F": 0,
+      "R": 14,
+      "C": 12
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 1
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 4
+    }
+  },
+  {
+    "name": "Merchant Zeppelin",
+    "level": 2,
+    "class": 5,
+    "type": "Merchant",
+    "armor": 22,
+    "weapon_mount": 1,
+    "attack": 1,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 5,
+    "map_movement": 34,
+    "training_time": 5,
+    "training_cost": {
+      "L": 28,
+      "S": 0,
+      "M": 16,
+      "F": 0,
+      "R": 28,
+      "C": 24
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 2
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 5
+    }
+  },
+  {
+    "name": "Merchant Zeppelin",
+    "level": 3,
+    "class": 5,
+    "type": "Merchant",
+    "armor": 23,
+    "weapon_mount": 1,
+    "attack": 1,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 5,
+    "map_movement": 36,
+    "training_time": 5,
+    "training_cost": {
+      "L": 42,
+      "S": 0,
+      "M": 24,
+      "F": 0,
+      "R": 42,
+      "C": 36
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 3
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 5
+    }
+  },
+  {
+    "name": "Merchant Zeppelin",
+    "level": 4,
+    "class": 5,
+    "type": "Merchant",
+    "armor": 23,
+    "weapon_mount": 1,
+    "attack": 2,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 5,
+    "map_movement": 38,
+    "training_time": 5,
+    "training_cost": {
+      "L": 56,
+      "S": 0,
+      "M": 32,
+      "F": 0,
+      "R": 56,
+      "C": 48
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 4
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 5
+    }
+  },
+  {
+    "name": "Merchant Zeppelin",
+    "level": 5,
+    "class": 5,
+    "type": "Merchant",
+    "armor": 23,
+    "weapon_mount": 1,
+    "attack": 2,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 2,
+    "cargo": 6,
+    "map_movement": 40,
+    "training_time": 5,
+    "training_cost": {
+      "L": 70,
+      "S": 0,
+      "M": 40,
+      "F": 0,
+      "R": 70,
+      "C": 60
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 5
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 6
+    }
+  },
+  {
+    "name": "Merchant Zeppelin",
+    "level": 6,
+    "class": 5,
+    "type": "Merchant",
+    "armor": 24,
+    "weapon_mount": 1,
+    "attack": 2,
+    "combat_movement": 2,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 6,
+    "map_movement": 42,
+    "training_time": 5,
+    "training_cost": {
+      "L": 84,
+      "S": 0,
+      "M": 48,
+      "F": 0,
+      "R": 84,
+      "C": 72
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 6
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 6
+    }
+  },
+  {
+    "name": "Merchant Zeppelin",
+    "level": 7,
+    "class": 5,
+    "type": "Merchant",
+    "armor": 24,
+    "weapon_mount": 1,
+    "attack": 2,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 6,
+    "map_movement": 44,
+    "training_time": 5,
+    "training_cost": {
+      "L": 98,
+      "S": 0,
+      "M": 56,
+      "F": 0,
+      "R": 98,
+      "C": 84
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 7
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 6
+    }
+  },
+  {
+    "name": "Merchant Zeppelin",
+    "level": 8,
+    "class": 5,
+    "type": "Merchant",
+    "armor": 24,
+    "weapon_mount": 1,
+    "attack": 3,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 6,
+    "map_movement": 46,
+    "training_time": 5,
+    "training_cost": {
+      "L": 112,
+      "S": 0,
+      "M": 64,
+      "F": 0,
+      "R": 112,
+      "C": 96
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 8
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 6
+    }
+  },
+  {
+    "name": "Merchant Zeppelin",
+    "level": 9,
+    "class": 5,
+    "type": "Merchant",
+    "armor": 25,
+    "weapon_mount": 1,
+    "attack": 3,
+    "combat_movement": 3,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 6,
+    "map_movement": 48,
+    "training_time": 5,
+    "training_cost": {
+      "L": 126,
+      "S": 0,
+      "M": 72,
+      "F": 0,
+      "R": 126,
+      "C": 108
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 9
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 6
+    }
+  },
+  {
+    "name": "Merchant Zeppelin",
+    "level": 10,
+    "class": 5,
+    "type": "Merchant",
+    "armor": 25,
+    "weapon_mount": 1,
+    "attack": 3,
+    "combat_movement": 4,
+    "range": 0,
+    "damage_reduction": 3,
+    "cargo": 6,
+    "map_movement": 50,
+    "training_time": 5,
+    "training_cost": {
+      "L": 140,
+      "S": 0,
+      "M": 80,
+      "F": 0,
+      "R": 140,
+      "C": 120
+    },
+    "upkeep": {
+      "L": 4,
+      "S": 0,
+      "M": 0,
+      "F": 1,
+      "R": 4,
+      "C": 10
+    },
+    "production": {
+      "L": 0,
+      "S": 0,
+      "M": 0,
+      "F": 0,
+      "R": 0,
+      "C": 6
+    }
+  }
+]
