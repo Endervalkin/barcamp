@@ -1,12 +1,7 @@
-try:
-    from game.resource_ledger import ResourceLedger
-except ModuleNotFoundError:
-    from resource_ledger import ResourceLedger
 
-try:
-    from game.player_character import PlayerCharacter
-except ModuleNotFoundError:
-    from player_character import PlayerCharacter
+from Game.engine.resource_ledger import ResourceLedger
+
+from Game.models.player_character import PlayerCharacter
 
 class Barony:
     def __init__(self, name, baron=None):
@@ -14,7 +9,7 @@ class Barony:
         self.baron = baron              # PlayerCharacter object
         self.members = set()            # PlayerCharacter objects
         self.ledger = ResourceLedger()  # ResourceLedger object for shared resources
-        self.resources = {"L": 0, "S": 0, "M": 0, "F": 0, "R": 0, "C": 0}
+        self.resources = {"L": 0, "S": 0, "M": 0, "F": 0, "R": 0, "C": 0} # Shared resources
         self.settlements = []           # Shared settlements
         self.troops = []                # Shared troop units
         self.structures = []            # Shared structures

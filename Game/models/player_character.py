@@ -1,4 +1,5 @@
-from game.resource_ledger import ResourceLedger
+from Game.engine.resource_ledger import ResourceLedger
+
 
 class PlayerCharacter:
     def __init__(self, name, skills=None, barony=None, role="Member"):
@@ -7,7 +8,7 @@ class PlayerCharacter:
         self.skills = skills or []
         self.barony = barony
         self.ledger = ResourceLedger()
-        self.personal_resources = {"L": 0, "S": 0, "M": 0, "F": 0, "R": 0, "C": 0}
+        self.personal_resources = {"L": 0, "S": 0, "M": 0, "F": 0, "R": 0, "C": 0} # Personal resources
         self.personal_settlements = []
         self.personal_troops = []
 
