@@ -1,7 +1,7 @@
 # models/settlement.py
 import json
 import os
-from Game.utils.parsing import *
+from utils.parsing import *
 from utils.di      import get_stability_rating, get_economy_rating, get_loyalty_rating, get_unrest_rating
 
 class Settlement:

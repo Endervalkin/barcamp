@@ -1,7 +1,7 @@
 
-from Game.engine.ledger import ResourceLedger
-from Game.engine.ledger import BaronyLedger
-from Game.models.player_character import PlayerCharacter
+from engine.ledger import ResourceLedger
+from engine.ledger import BaronyLedger
+from Game.models.characters import PlayerCharacter
 
 class Barony:
     def __init__(self, name, baron=None):

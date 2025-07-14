@@ -1,11 +1,22 @@
+from models.settlement import Settlement
+from models.structure import Structure
+from Game.models.characters import PlayerCharacter
+from Game.models.homeward import NPC
+from models.homeward import Homeward
+from models.barony import Barony
+
 class TurnEngine:
-    def __init__(self, baronies, settlements, structures, characters, npcs, homewards):
+    def __init__(self, baronies, settlements, structures, characters, npcs, homewards,di_map):
         self.baronies = baronies            # list of Barony
         self.settlements = settlements      # list of Settlement
         self.structures = structures        # list of Structure
         self.characters = characters        # list of PlayerCharacter
         self.npcs = npcs                    # list of NPC
         self.homewards = homewards          # list of Homeward
+        self.di_map = di_map                # dict of DI ratings per settlement
+
+        self.turn_pool = {}  # Dict to track turns available for each actor
+        self.action_enginge = None  # Instance of ActionEngine
 
     def execute_month(self):
         self.apply_upkeep()
@@ -13,6 +24,45 @@ class TurnEngine:
         self.process_turns()
         self.calculate_domestic_index()
         self.process_resource_production()
+        self.update_ledgers_and_taxes()
+
+    def execute_month(self, current_month, target_barony):
+            print(f"📅 Executing Turn: {current_month} for Barony: {target_barony.name}")
+
+            # STEP 1: Apply upkeep and ledger flow
+            prev_balance = target_barony.ledger.balance.copy()
+            engine = TurnLogEngine(previous_balance=prev_balance, tax_exempt=target_barony.tax_exempt)
+            engine.apply_inputs(
+                production=target_barony.get_production(),      # assumes method exists
+                upkeep=target_barony.get_upkeep(),              # assumes method exists
+                coin_subs=target_barony.get_coin_subs(),        # optional
+                road_cost=target_barony.get_road_upkeep()       # optional
+            )
+            final, taxes, net = engine.calculate_final()
+            target_barony.ledger.submit_month(current_month,
+                                            production=target_barony.get_production(),
+                                            upkeep=target_barony.get_upkeep(),
+                                            coin_subs=target_barony.get_coin_subs(),
+                                            road_cost=target_barony.get_road_upkeep())
+
+            # STEP 2: Allocate turns
+            allocator = TurnAllocator(
+                self.characters, self.settlements,
+                self.structures, self.npcs,
+                self.homewards, self.di_map
+            )
+            self.turn_pool = allocator.allocate()
+
+            # STEP 3: Create ActionEngine for tracking actions
+            self.action_engine = ActionEngine(target_barony.ledger, self.turn_pool)
+
+            # STEP 4: DI update (optional here, detailed below)
+            # DI could be logged per-settlement or stored on each Settlement object
+
+            print("✅ Turn executed. Turns allocated + ledger updated.")
+    
+    def get_turns_summary(self):
+        return {actor_id: turns for actor_id, turns in self.turn_pool.items()}
 
 
 
@@ -42,3 +92,70 @@ def get_turns(self):
     turns = (total_levels // 7) * self.level
     return max(turns, 0)
 
+class ActionEngine:
+    def __init__(self, ledger, turn_tracker):
+        self.ledger = ledger              # Instance of BaronyLedger or PlayerLedger
+        self.turn_tracker = turn_tracker # Dict {actor_id: turns_remaining}
+        self.action_log = []             # Each entry: dict with actor, action, cost, timestamp
+
+    def perform_action(self, actor, action_type, details, cost=None, turn_cost=1):
+        # Check turn availability
+        if self.turn_tracker.get(actor.id, 0) < turn_cost:
+            return f"❌ {actor.name} has no turns remaining."
+
+        # Validate resources
+        if cost and not self.ledger.ledger.spend(cost, purpose=action_type, by=actor.name):
+            return f"💰 {actor.name} lacks resources for {action_type}."
+
+        # Spend turn(s)
+        self.turn_tracker[actor.id] -= turn_cost
+
+        # Log it
+        self.action_log.append({
+            "actor": actor.name,
+            "type": action_type,
+            "details": details,
+            "cost": cost or {},
+            "turns_spent": turn_cost
+        })
+
+        return f"✅ {actor.name} performed {action_type}: {details}"
+
+class TurnAllocator:
+    def __init__(self, characters, settlements, structures, npcs, homewards, di_map):
+        self.characters = characters
+        self.settlements = settlements
+        self.structures = structures
+        self.npcs = npcs
+        self.homewards = homewards
+        self.di_map = di_map  # Dict of DI ratings per settlement
+
+    def allocate(self):
+        turn_pool = {}
+
+        # Player Characters → 2 base turns
+        for pc in self.characters:
+            turn_pool[pc.id] = 2
+
+        # NPCs → 1 or 2 turns if housed in active Estate
+        for npc in self.npcs:
+            estate = npc.estate
+            if estate and estate.is_active():
+                turn_pool[npc.id] = npc.get_monthly_turns()
+
+        # Settlements → variable turns
+        for settlement in self.settlements:
+            di = self.di_map.get(settlement.id, {})
+            turns = settlement.get_monthly_turns(di)
+            turn_pool[settlement.id] = turns
+
+        # Structures → typically 1 turn if active
+        for structure in self.structures:
+            if structure.is_active():
+                turn_pool[structure.id] = structure.get_monthly_turns()
+
+        # Homewards → depends on creature power + level
+        for hw in self.homewards:
+            turn_pool[hw.id] = hw.get_turns()
+
+        return turn_pool

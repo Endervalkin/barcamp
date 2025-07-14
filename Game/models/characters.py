@@ -1,4 +1,4 @@
-from Game.engine.ledger import ResourceLedger
+from engine.ledger import ResourceLedger
 
 
 class PlayerCharacter:
@@ -20,3 +20,9 @@ class PlayerCharacter:
     
     def can_spend_from_barony(self):
         return self.role in ["Baron", "Steward", "Court Noble", "Member"]
+    
+class NPC:
+    def __init__(self, name, npc_type, estate_level=0):
+        self.name = name
+        self.turns_remaining = 2 if npc_type == "Tier2" else 1
+        self.estate_level = estate_level

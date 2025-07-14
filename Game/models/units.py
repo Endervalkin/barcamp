@@ -1,7 +1,7 @@
 import json
 import os
 from utils.parsing import parse_name_level, parse_int, parse_structure_requirements
-from utils.di      import stability_rating, economy_rating, loyalty_rating, unrest_rating
+from utils.di      import get_stability_rating, get_economy_rating, get_loyalty_rating, get_unrest_rating
 
 # Ensure relative import works if running from another location
 UNIT_PATH = os.path.abspath(os.path.join("data", "units"))
