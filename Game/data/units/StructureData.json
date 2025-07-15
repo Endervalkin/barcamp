@@ -1817,7 +1817,9 @@
       "Outpost": false,
       "City": false,
       "Fortress": true
-    }
+    },
+    "can_train": ["Archers"],
+    "max_unit_level": 1
   },
   {
     "name": "Archery Range",
@@ -1851,7 +1853,9 @@
       "Outpost": false,
       "City": false,
       "Fortress": true
-    }
+    },
+    "can_train": ["Archers"],
+    "max_unit_level": 2
   },
   {
     "name": "Archery Range",
@@ -1885,7 +1889,9 @@
       "Outpost": false,
       "City": false,
       "Fortress": true
-    }
+    },
+    "can_train": ["Archers"],
+    "max_unit_level": 3
   },
   {
     "name": "Archery Range",
@@ -1919,7 +1925,9 @@
       "Outpost": false,
       "City": false,
       "Fortress": true
-    }
+    },
+    "can_train": ["Archers"],
+    "max_unit_level": 4
   },
   {
     "name": "Archery Range",
@@ -1953,7 +1961,9 @@
       "Outpost": false,
       "City": false,
       "Fortress": true
-    }
+    },
+    "can_train": ["Archers"],
+    "max_unit_level": 5
   },
   {
     "name": "Archery Range",
@@ -1987,7 +1997,9 @@
       "Outpost": false,
       "City": false,
       "Fortress": true
-    }
+    },
+    "can_train": ["Archers"],
+    "max_unit_level": 6
   },
   {
     "name": "Archery Range",
@@ -2021,7 +2033,9 @@
       "Outpost": false,
       "City": false,
       "Fortress": true
-    }
+    },
+    "can_train": ["Archers"],
+    "max_unit_level": 7
   },
   {
     "name": "Archery Range",
@@ -2055,7 +2069,9 @@
       "Outpost": false,
       "City": false,
       "Fortress": true
-    }
+    },
+    "can_train": ["Archers"],
+    "max_unit_level": 8
   },
   {
     "name": "Archery Range",
@@ -2089,7 +2105,9 @@
       "Outpost": false,
       "City": false,
       "Fortress": true
-    }
+    },
+    "can_train": ["Archers"],
+    "max_unit_level": 9
   },
   {
     "name": "Archery Range",
@@ -2123,7 +2141,9 @@
       "Outpost": false,
       "City": false,
       "Fortress": true
-    }
+    },
+    "can_train": ["Archers"],
+    "max_unit_level": 10
   },
   {
     "name": "Archive",

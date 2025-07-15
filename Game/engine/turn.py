@@ -4,6 +4,11 @@ from Game.models.characters import PlayerCharacter
 from Game.models.homeward import NPC
 from models.homeward import Homeward
 from models.barony import Barony
+from models.units import Units
+from engine.action_handlers.structure_actions import build_structure, upgrade_structure, upgrade_settlement
+from engine.action_handlers.settlement_actions import build_settlement
+
+
 
 class TurnEngine:
     def __init__(self, baronies, settlements, structures, characters, npcs, homewards,di_map):
@@ -60,6 +65,16 @@ class TurnEngine:
             # DI could be logged per-settlement or stored on each Settlement object
 
             print("✅ Turn executed. Turns allocated + ledger updated.")
+    
+    for settlement in self.settlements:
+        di_scores = settlement.calculate_domestic_index(
+            population=settlement.population,
+            needs=settlement.get_needs(),
+            structure_lvls=settlement.get_structure_levels(),
+            base_unrest=settlement.base_unrest
+        )   
+        settlement.set_di(di_scores)
+        self.di_map[settlement.id] = di_scores
     
     def get_turns_summary(self):
         return {actor_id: turns for actor_id, turns in self.turn_pool.items()}
@@ -159,3 +174,146 @@ class TurnAllocator:
             turn_pool[hw.id] = hw.get_turns()
 
         return turn_pool
+    
+class TurnPlanner:
+    def __init__(self, action_engine, turn_pool):
+        self.action_engine = action_engine
+        self.turn_pool = turn_pool
+
+    def plan_turn(self, actor):
+        if chosen_action == "Build Structure":
+            structure_data = select_structure_to_build(actor)
+            if structure_data:
+                result = build_structure(actor, structure_data, self.action_engine)
+            else:
+                result = f"⚠️ No valid structures to build for {actor.name}."
+
+        elif chosen_action == "Upgrade Structure":
+            result = upgrade_structure(actor, self.action_engine)
+        
+        elif chosen_action == "Upgrade Settlement":
+            result = upgrade_settlement(actor, self.action_engine)
+            print(result)
+
+        elif chosen_action == "Build Settlement":
+            location_data = {
+                "valid": True,
+                "type": "City",
+                "coords": (4, 6)
+            }
+            result = build_settlement(actor, location_data, self.action_engine)
+            print(result)
+        else:
+            result = f"🔧 {actor.name} performed {chosen_action} (stubbed)."
+        
+        
+
+    def spend_turn(self, actor, action_type, details, cost=None, turn_cost=1):
+        turns = self.turn_pool.get(actor.id, 0)
+        if turns < turn_cost:
+            return f"❌ {actor.name} has no turns left."
+
+        result = self.action_engine.perform_action(actor, action_type, details, cost, turn_cost)
+        return result
+
+    def plan_turn(self, actor):
+        actions = self.get_available_actions(actor)
+        print(f"\n🎯 {actor.name} has {self.turn_pool.get(actor.id, 0)} turn(s). Available actions:")
+        for i, action in enumerate(actions):
+            print(f"  {i+1}. {action}")
+
+        # This can later be replaced by GUI input, CLI prompt, or AI automation
+        # For now, stub in a default action
+        chosen = actions[0] if actions else None
+        if chosen:
+            result = self.spend_turn(actor, chosen, "Default Detail")
+            print(result)
+
+    def get_available_actions(self, actor):
+        # PLAYER CHARACTERS
+        if isinstance(actor, PlayerCharacter):
+            return [
+                "Build Structure",
+                "Upgrade Structure",
+                "Build Settlement",
+                "Upgrade Settlement",
+                "Cast Leyline Spell",
+                "Gather Resources",
+                "Train Units",
+                "Research City Techonology",
+                "Build Road",
+                "Upgrade Road",
+                "Travel"
+            ]
+
+        # NON-PLAYER CHARACTERS (NPCs)
+        elif isinstance(actor, PC_npc):
+            available = [
+                "Build Structure",
+                "Upgrade Structure",
+                "Upgrade Settlement",
+                "Cast Leyline Spell",
+                "Gather Resources",
+                "Train Units",
+                "Research City Techonology",
+                "Build Road",
+                "Upgrade Road",
+                "Travel"
+            ]
+            return available
+
+        # SETTLEMENTS
+        elif isinstance(actor, Settlement):
+            actions = []
+            if actor.can_build_structure():
+                actions.append("Build Structure")
+            if actor.can_upgrade_structure():
+                actions.append("Upgrade Structure")
+            if actor.can_upgrade_self():
+                actions.append("Upgrade Settlement")
+            if actor.can_research_city_technology():
+                actions.append("Research City Technology")
+            if actor.has_road_access():
+                actions.append("Build Road")
+                actions.append("Upgrade Road")
+            return actions            
+
+        # STRUCTURES
+        elif isinstance(actor, Structure):
+            options = []
+            if actor.can_train_units:
+                options.append("Train Units")
+            if actor.can_train_ships:
+                options.append("Build Ship")
+            if actor.can_train_siege_weapons:
+                options.append("Build Siege Weapon")    
+            if actor.can_produce_resources:
+                options.append("Initiate Production")
+            return options
+
+        # HOMEWARDS
+        elif isinstance(actor, Homeward):
+            return [
+                "Build Structure",
+                "Upgrade Structure",
+                "Upgrade Settlement"
+            ]
+
+        # TROOPS
+        elif isinstance(actor, Troops):
+            return [
+                "Scout",
+                "Engage in Combat",
+                "Defend Settlement",
+                "Garrison Settlement"
+            ]
+        # SHIPS
+        elif isinstance(actor, Ship):
+            return [
+                "Sail",
+                "Engage in Naval Combat",
+                "Trade with Port"
+            ]
+        # DEFAULT
+        else:
+            return []

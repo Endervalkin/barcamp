@@ -1,0 +1,48 @@
+Next, let's build actions for Structures to take. Structures only have 1 turn per month
+
+Lumber Mill, Quarry, Basic Mine, Farm, Fishing Camp, Refinery, Forge, Rare Mine, Harbor, Market, Casino, and Airship Port only produce resources. Lumber Mill produces Lumber, or L. Quarry produces Stone, Basic Mine produces Metal Ore. Farm and Fishing Camp produce Food. Refinery, Forge, and Rare Mine produce Refined Goods. Harbor, Market, Casino and Airship Port produce Coin. In all the various data jsons, Lumber is L, Stone is S, Metal Ore is M, Food is F, Refined Goods is R, and Coin is C.
+
+For structures that train any unit, ship, or airship it can only train one unit up to it's maximum level. 
+Arenas can only train Gladiator units.
+
+Sanatoriums can only train Casters, Healer units.
+
+Shipyards can build any class 1-4 ship. The level of the shipyard determines the class of the ship that can be built there. So a level 1 shipyard can only build class 1 ships at level 1. A level 2 shipyard can build either a class 1 ship at level 1 or level 2 or a class 2 ship at level 1. Basically it's class times level of the ship cannot be greater than the level of the shipyard.
+
+Airship yards can only build class 5 ships, which are only airships. The Skycutter ship is a special ship a player has to unlock, which will go into detail later of how a player unlocks that. Since this structure can only build class 5 ships, it is still limited by the level of the airship it can build which is equal to the level of the Airship
+
+Trade Schools, when built, will have a selected type of what kind of Skilled Worker it can train later. Skilled Workers are defined in StructureData.json. There are Skilled Worker Coin, Food, Lumber, Metal Ore, Refined Goods, Stone, Medical, Education, Morale, and Vice. Trade Schools can train one skilled work per month, per level of the Trade School. So a Trade School (Lumber Jack) Level 1 can train 1 Skilled Worker (Lumber) per month where as a Trade School (Lumber Jack) Level 5 can train 5 Skilled Worker (Lumber) per month. Skilled Workers attach to the appropriate structure it can help assist. So if it produces Coin, it can attach to any kind of Structure that produces coin. There is a limit of how many skilled workers can work at a structure. The limit is equal to level of that structure. So a Level 1 Farm can only have one Skilled Worker (Food) working there and a Level 5 Farm can have five Skilled Worker (Food) working there. Once the Skilled worker is trained, the player will need to decide where to send the skilled worker, whether it's at a structure in the current settlement or another at a structure in a different settlement they control. 
+
+Grand Libraries function similar to Trade Schools except players can define what is taught there. Sometime what is taught there has no barring on BarCamp but rather the Live Action Role Playing game called Cerroneth this game is attached to. Players can learn new skills based on what is taught there. We will need to build in a game manager approval system for this later as there are restricted skills that cannot be taught here. Academies function in the same manner as Grand Libraries but with a more defined set of skills that can be taught here and again will require a game manager approval.
+
+Mint requires players to work. It produces gold for the Live Action Role Playing game so this will eventually need to notify the game manager to provide gold at the LARP game. We will work on this later. Gold is not Coin.
+
+Taverns can be used to hire Irregular Troops. Irregular Troops are only level 1. They cannot level up. The level of the tavern determines how many level 1 Irregular Troops can be hired here. The options for Irregular Troops are Irregular Archers, Irregular Cavalry, and Irregular Infantry. 
+
+Brewery, Garrison, Theatre, Warehouse, Crypt, Lighthouse, Monument, Walls, and Tower do not have turns. Some just increase or decrease a settlement need or DI, or provide some other function. 
+
+Archery Range can train Archer units. It can train an Archer unit equal to its level.
+
+Archive can retrain an infantry unit (Commandos, Footmen, Guardsmen) into Runesmiths. The unit being retrained cannot be higher level than the Archive's level. The Runesmith that is produced is equal to the level of the unit that was retrained. A simple delete and add. The player can then garrison at the settlement it's at or send it to a different settlement that has an available garrison slot. Archives are restricted structures that require game manager approval before being built.
+
+Chapter House can retrain an infantry unit or cavalry unit into a Light Knight or Dark Knight of the appropriate type. Light Knight or Dark Knight is determined at the time of building the Chapter House. This is a restricted structure that requires approval from game manager before being built. Archers, Gladiators, any Irregular troops, and any Casters cannot be retrained here. If the Chapter House is a Light Knight Chapter then as an example a Guardsmen less than or equal to the level of the Chapter House can be retrained into Light Knight, Guardsmen equal to the unit's level that was trained. 
+
+Alchemy Laboratory can produce alchemy items that can be attached to troops that have Alchemist Training. I will need to define the alchemical items and what they do in combat later. For each level it produces one Alchemy point automatically and must be used that turn. the points do not accumulate over time. It can then spend these points to produce the following with their cost respectively: Cure Elixir, 1 points, Lesser Acid Attack 1 points, Greater Acid Attack 3 points, Vorpal Coating +1 2 points, Vorpal Coating +2 4 points. What is produced can be stockpiled, assigned to units with the appropriate training at the settlement, or transported to units with the appropriate training at another settlement. 
+
+Engineer's Workshop can train siege weapons. It can train one siege weapon at a time per level of the structure.
+
+Armorsmith can produce one of two items that can be attached to units. The items are Silver Weapons and Master Work Armor. Silver Weapon which gives +1 attack to any unit excluding any Caster unit and any Irregular Troops. Master Work Armor gives +1 armor to any unit excluding Irregular Troops. The items produced can be pooled for later use or attached to a unit at the settlement, or transported to a unit that's at another settlement. 
+
+Mage's Tower, when built the player must select Caster, Celestial Generalist or Caster, Earth Generalist to determine which kind of caster can be trained here. Later a player can specialize the Mage's Tower to a specific kind of caster. Once specialized the Mage's Tower can only produce that kind of caster. The list of specializations are Healer, Druid, Necromancer, Confinist, and Elementalist. The Mage Tower can only train a Caster unit up to the level of the Mage's Tower. Mage Tower's can also be used by Player Characters to cast Leyline Rituals. We will define that later. Mage's Towers can also produce wands that can be attached to any Caster unit, regardless of type. Wands give +1 attack to the Caster. The items produced can be pooled for later use, attached to a Caster unit at the settlement, or transported to a Caster unit that's at another settlement.
+
+Marshall Yards can be used to train Footmen, Guardsmen, or Commandos. The unit trained can be trained up to the level of the Marshall Yard. 
+
+Military Trade School can be used to specialize units. When the Military Trade School is built the player will select one of the many options for training it can provide. The options are Expert Rider (Cavalry, Light Knight Cavalry, or Dark Knight Cavalry only), Favor Enemy (This will be expanded upon later), Combat Engineer(Any non Cavalry, non Caster, and non Irregular troops), Volley Fire (Archers only), Siege Magic (Caster type units only), Navigate, Terrain Training (This will be expanded upon later), First Aid, Alchemist, Poisoner, and Scribe. The Military Trade School can train one unit in it's given area per it's structure level.
+
+Posion Magazine operates the same as Alchemy Laboratory except its options and point costs are Cause Damage 1 point, Charm 2 Points, Paralysis 3 points, Berserk 4 points, and Agony 4 points. These can only be attached to units with Poisoner training. What is produced can be stockpiled, assigned to units with the appropriate training at the settlement, or transported to units with the appropriate training at another settlement. 
+
+Potion Brewery operates the same as Alchemy Laboratory but any troop can used what is produced here without training. Here are the options and point costs for what it produces. Generic Potion 1 point, Bless 2 points. Toxin Shield 3 points, Spirit Armor 4 points and Defend 4 points. 
+
+Scriviner operates the same as Alchemy Laboratory except the produced scrolls can only be assigned to units with Scribe training. Here is the list of the options and point costs as well as specific Caster units or units with Scribe that use the scrolls. To simplify this Caster, Celestial Generalist will be refered to as CG, Caster Confinist will be refered to as Con, Caster Elementalist will be refered to as Ele, and units with Scribe will be Scribe. Mage Armor 2 points (CG, Con, ELe, Scribe), Major Spell Shield 4 points (CG, Con, ELe, Scribe), Slow 2 points (Con), Trap 1 point (CG, Con, Scribe), Imprison 4 points (Con), Enchant Blade 1 point (CG, Scribe), Doom 5 points (CG, Scribe), Elemental Blade 1 point (Ele), Elemental Shield 4 points (Ele), Elemental Blast 5 points (Ele). 
+
+Stables can be used to train Cavalry. The unit trained can be trained up to the level of the Cavalry. 
