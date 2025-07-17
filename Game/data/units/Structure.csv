@@ -1,544 +1,544 @@
-Name,Level,build_turns,build_cost_L,build_cost_S,build_cost_M,build_cost_F,build_cost_R,build_cost_C,production_L,production_S,production_M,production_F,production_R,production_C,upkeep_L,upkeep_S,upkeep_M,upkeep_F,upkeep_R,upkeep_C,settlement_needs_Med,settlement_needs_Edu,settlement_needs_Mor,domestic_index_Stability,domestic_index_Economy,domestic_index_Loyalty,domestic_index_Unrest,Garrison,Population,building_location_Village_Inn,building_location_Outpost,building_location_City,building_location_Fortress,structure_role,can_train,build_type,max_unit_level,requires_specialization,specialization_options,train_limit_per_turn,produces_items,produce_item_limit_per_turn,can_cast_rituals,max_build_formula,requires_approval
-Academy,1,8,15,15,15,15,15,5,0,0,0,0,0,0,0,0,0,5,5,5,0,2,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",,,,,,,,,FALSE,,FALSE
-Academy,2,8,16,16,16,16,16,6,0,0,0,0,0,0,0,0,0,10,10,10,0,4,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",,,,,,,,,FALSE,,FALSE
-Academy,3,8,17,17,17,17,17,7,0,0,0,0,0,0,0,0,0,15,15,15,0,6,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",,,,,,,,,FALSE,,FALSE
-Academy,4,8,18,18,18,18,18,8,0,0,0,0,0,0,0,0,0,20,20,20,0,8,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",,,,,,,,,FALSE,,FALSE
-Academy,5,8,19,19,19,19,19,9,0,0,0,0,0,0,0,0,0,25,25,25,0,10,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",,,,,,,,,FALSE,,FALSE
-Academy,6,8,20,20,20,20,20,10,0,0,0,0,0,0,0,0,0,30,30,30,0,12,0,0,0,0,0,0,1200,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",,,,,,,,,FALSE,,FALSE
-Academy,7,8,21,21,21,21,21,11,0,0,0,0,0,0,0,0,0,35,35,35,0,14,0,0,0,0,0,0,1400,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",,,,,,,,,FALSE,,FALSE
-Academy,8,8,22,22,22,22,22,12,0,0,0,0,0,0,0,0,0,40,40,40,0,16,0,0,0,0,0,0,1600,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",,,,,,,,,FALSE,,FALSE
-Academy,9,8,23,23,23,23,23,13,0,0,0,0,0,0,0,0,0,45,45,45,0,18,0,0,0,0,0,0,1800,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",,,,,,,,,FALSE,,FALSE
-Academy,10,8,24,24,24,24,24,14,0,0,0,0,0,0,0,0,0,50,50,50,0,20,0,0,0,0,0,0,2000,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",,,,,,,,,FALSE,,FALSE
-Airship Yard,1,4,10,6,4,0,8,0,0,0,0,0,0,0,1,0,0,0,2,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,TRUE,airship builder,Airship,airship,1,,,1,,,FALSE,,TRUE
-Airship Yard,2,4,12,8,6,0,10,0,0,0,0,0,0,0,2,0,0,0,3,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,TRUE,airship builder,Airship,airship,2,,,1,,,FALSE,,TRUE
-Airship Yard,3,4,14,10,8,0,12,0,0,0,0,0,0,0,3,0,0,0,4,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,TRUE,airship builder,Airship,airship,3,,,1,,,FALSE,,TRUE
-Airship Yard,4,4,16,12,10,0,14,0,0,0,0,0,0,0,4,0,0,0,5,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,TRUE,airship builder,Airship,airship,4,,,1,,,FALSE,,TRUE
-Airship Yard,5,6,18,14,12,0,16,0,0,0,0,0,0,0,5,0,1,0,6,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,TRUE,airship builder,Airship,airship,5,,,1,,,FALSE,,TRUE
-Airship Yard,6,6,20,16,14,0,18,0,0,0,0,0,0,0,6,0,2,0,7,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,TRUE,TRUE,airship builder,Airship,airship,6,,,1,,,FALSE,,TRUE
-Airship Yard,7,6,22,18,16,0,20,0,0,0,0,0,0,0,7,0,3,0,8,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,TRUE,TRUE,airship builder,Airship,airship,7,,,1,,,FALSE,,TRUE
-Airship Yard,8,6,24,20,18,0,22,0,0,0,0,0,0,0,8,0,4,0,9,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,TRUE,TRUE,airship builder,Airship,airship,8,,,1,,,FALSE,,TRUE
-Airship Yard,9,6,26,22,20,0,24,0,0,0,0,0,0,0,9,0,5,0,10,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,TRUE,TRUE,airship builder,Airship,airship,9,,,1,,,FALSE,,TRUE
-Airship Yard,10,8,28,24,22,0,26,0,0,0,0,0,0,0,10,0,6,0,11,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,TRUE,TRUE,airship builder,Airship,airship,10,,,1,,,FALSE,,TRUE
-Airship Dry Dock,1,4,10,4,0,0,10,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,100,FALSE,FALSE,TRUE,TRUE,airship repair,,,,,,,,,FALSE,,TRUE
-Airship Dry Dock,2,4,12,6,0,0,12,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,TRUE,airship repair,,,,,,,,,FALSE,,TRUE
-Airship Dry Dock,3,4,14,8,0,0,14,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,300,FALSE,FALSE,TRUE,TRUE,airship repair,,,,,,,,,FALSE,,TRUE
-Airship Dry Dock,4,4,16,10,0,0,16,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,TRUE,airship repair,,,,,,,,,FALSE,,TRUE
-Airship Dry Dock,5,6,18,12,0,0,18,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,500,FALSE,FALSE,TRUE,TRUE,airship repair,,,,,,,,,FALSE,,TRUE
-Airship Dry Dock,6,6,20,14,0,0,20,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,TRUE,airship repair,,,,,,,,,FALSE,,TRUE
-Airship Dry Dock,7,6,22,16,0,0,22,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,700,FALSE,FALSE,TRUE,TRUE,airship repair,,,,,,,,,FALSE,,TRUE
-Airship Dry Dock,8,6,24,18,0,0,24,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,TRUE,airship repair,,,,,,,,,FALSE,,TRUE
-Airship Dry Dock,9,6,26,20,0,0,26,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,900,FALSE,FALSE,TRUE,TRUE,airship repair,,,,,,,,,FALSE,,TRUE
-Airship Dry Dock,10,8,28,22,0,0,28,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,TRUE,airship repair,,,,,,,,,FALSE,,TRUE
-Airship Port,1,4,10,4,0,0,10,0,0,0,0,0,0,3,1,1,1,0,0,0,0,0,0,0,1,0,0,0,200,FALSE,FALSE,TRUE,TRUE,"resource production, di support",,,,,,,,,FALSE,,TRUE
-Airship Port,2,4,12,6,0,0,12,0,0,0,0,0,0,6,2,2,2,0,0,0,0,0,0,0,2,0,0,0,400,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,TRUE
-Airship Port,3,4,14,8,0,0,14,0,0,0,0,0,0,9,3,3,3,0,0,0,0,0,0,0,3,0,0,0,600,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,TRUE
-Airship Port,4,4,16,10,0,0,16,0,0,0,0,0,0,12,4,4,4,0,0,0,0,0,0,0,4,0,0,0,800,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,TRUE
-Airship Port,5,6,18,12,0,0,18,0,0,0,0,0,0,15,5,5,5,0,0,0,0,0,0,0,5,0,0,0,1000,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,TRUE
-Airship Port,6,6,20,14,0,0,20,0,0,0,0,0,0,18,6,6,6,0,0,0,0,0,0,0,6,0,0,0,1200,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,TRUE
-Airship Port,7,6,22,16,0,0,22,0,0,0,0,0,0,21,7,7,7,0,0,0,0,0,0,0,7,0,0,0,1400,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,TRUE
-Airship Port,8,6,24,18,0,0,24,0,0,0,0,0,0,24,8,8,8,0,0,0,0,0,0,0,8,0,0,0,1600,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,TRUE
-Airship Port,9,6,26,20,0,0,26,0,0,0,0,0,0,27,9,9,9,0,0,0,0,0,0,0,9,0,0,0,1800,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,TRUE
-Airship Port,10,8,28,22,0,0,28,0,0,0,0,0,0,30,10,10,10,0,0,0,0,0,0,0,10,0,0,0,2000,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,TRUE
-Alchemy Laboratory,1,2,2,3,2,0,3,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Cure Elixir 1 point | Lesser Acid Attack 1 points |Greater Acid Attack 3 points | Vorpal Coating +1 2 points | Vorpal Coating +2 4 points,1,FALSE,,FALSE
-Alchemy Laboratory,2,2,3,4,3,0,4,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Cure Elixir 1 point | Lesser Acid Attack 1 points |Greater Acid Attack 3 points | Vorpal Coating +1 2 points | Vorpal Coating +2 4 points,2,FALSE,,FALSE
-Alchemy Laboratory,3,2,4,5,4,0,5,0,0,0,0,0,0,0,3,0,0,0,3,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Cure Elixir 1 point | Lesser Acid Attack 1 points |Greater Acid Attack 3 points | Vorpal Coating +1 2 points | Vorpal Coating +2 4 points,3,FALSE,,FALSE
-Alchemy Laboratory,4,2,5,6,5,0,6,0,0,0,0,0,0,0,4,0,0,0,4,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Cure Elixir 1 point | Lesser Acid Attack 1 points |Greater Acid Attack 3 points | Vorpal Coating +1 2 points | Vorpal Coating +2 4 points,4,FALSE,,FALSE
-Alchemy Laboratory,5,3,6,7,6,0,7,0,0,0,0,0,0,0,5,0,0,0,5,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Cure Elixir 1 point | Lesser Acid Attack 1 points |Greater Acid Attack 3 points | Vorpal Coating +1 2 points | Vorpal Coating +2 4 points,5,FALSE,,FALSE
-Alchemy Laboratory,6,3,7,8,7,0,8,0,0,0,0,0,0,0,6,0,0,0,6,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Cure Elixir 1 point | Lesser Acid Attack 1 points |Greater Acid Attack 3 points | Vorpal Coating +1 2 points | Vorpal Coating +2 4 points,6,FALSE,,FALSE
-Alchemy Laboratory,7,3,8,9,8,0,9,0,0,0,0,0,0,0,7,0,0,0,7,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Cure Elixir 1 point | Lesser Acid Attack 1 points |Greater Acid Attack 3 points | Vorpal Coating +1 2 points | Vorpal Coating +2 4 points,7,FALSE,,FALSE
-Alchemy Laboratory,8,3,9,10,9,0,10,0,0,0,0,0,0,0,8,0,0,0,8,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Cure Elixir 1 point | Lesser Acid Attack 1 points |Greater Acid Attack 3 points | Vorpal Coating +1 2 points | Vorpal Coating +2 4 points,8,FALSE,,FALSE
-Alchemy Laboratory,9,3,10,11,10,0,11,0,0,0,0,0,0,0,9,0,0,0,9,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Cure Elixir 1 point | Lesser Acid Attack 1 points |Greater Acid Attack 3 points | Vorpal Coating +1 2 points | Vorpal Coating +2 4 points,9,FALSE,,FALSE
-Alchemy Laboratory,10,4,11,12,11,0,12,0,0,0,0,0,0,0,10,0,0,0,10,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Cure Elixir 1 point | Lesser Acid Attack 1 points |Greater Acid Attack 3 points | Vorpal Coating +1 2 points | Vorpal Coating +2 4 points,10,FALSE,,FALSE
-Archery Range,1,1,2,0,2,0,5,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",Archers,,1,FALSE,,1,,,FALSE,,FALSE
-Archery Range,2,1,3,0,3,0,6,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",Archers,,2,FALSE,,1,,,FALSE,,FALSE
-Archery Range,3,1,4,0,4,0,7,0,0,0,0,0,0,0,3,0,0,0,3,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",Archers,,3,FALSE,,1,,,FALSE,,FALSE
-Archery Range,4,1,5,0,5,0,8,0,0,0,0,0,0,0,4,0,0,0,4,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",Archers,,4,FALSE,,1,,,FALSE,,FALSE
-Archery Range,5,2,6,0,6,0,9,0,0,0,0,0,0,0,5,0,0,0,5,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",Archers,,5,FALSE,,1,,,FALSE,,FALSE
-Archery Range,6,2,7,0,7,0,10,0,0,0,0,0,0,0,6,0,0,0,6,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",Archers,,6,FALSE,,1,,,FALSE,,FALSE
-Archery Range,7,2,8,0,8,0,11,0,0,0,0,0,0,0,7,0,0,0,7,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",Archers,,7,FALSE,,1,,,FALSE,,FALSE
-Archery Range,8,2,9,0,9,0,12,0,0,0,0,0,0,0,8,0,0,0,8,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",Archers,,8,FALSE,,1,,,FALSE,,FALSE
-Archery Range,9,2,10,0,10,0,13,0,0,0,0,0,0,0,9,0,0,0,9,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",Archers,,9,FALSE,,1,,,FALSE,,FALSE
-Archery Range,10,3,11,0,11,0,14,0,0,0,0,0,0,0,10,0,0,0,10,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",Archers,,10,FALSE,,1,,,FALSE,,FALSE
-Archive,1,4,3,4,3,0,4,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,"convert troops, retrain troops",Runesmith,,1,,,1,,,FALSE,,TRUE
-Archive,2,4,4,5,4,0,5,0,0,0,0,0,0,0,0,2,2,0,2,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,convert troops,Runesmith,,2,,,1,,,FALSE,,TRUE
-Archive,3,4,5,6,5,0,6,0,0,0,0,0,0,0,0,3,3,0,3,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,convert troops,Runesmith,,3,,,1,,,FALSE,,TRUE
-Archive,4,4,6,7,6,0,7,0,0,0,0,0,0,0,0,4,4,0,4,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,convert troops,Runesmith,,4,,,1,,,FALSE,,TRUE
-Archive,5,4,7,8,7,0,8,0,0,0,0,0,0,0,0,5,5,0,5,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,convert troops,Runesmith,,5,,,1,,,FALSE,,TRUE
-Archive,6,4,8,9,8,0,9,0,0,0,0,0,0,0,0,6,6,0,6,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,convert troops,Runesmith,,6,,,1,,,FALSE,,TRUE
-Archive,7,4,9,10,9,0,10,0,0,0,0,0,0,0,0,7,7,0,7,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,convert troops,Runesmith,,7,,,1,,,FALSE,,TRUE
-Archive,8,4,10,11,10,0,11,0,0,0,0,0,0,0,0,8,8,0,8,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,convert troops,Runesmith,,8,,,1,,,FALSE,,TRUE
-Archive,9,4,11,12,11,0,12,0,0,0,0,0,0,0,0,9,9,0,9,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,convert troops,Runesmith,,9,,,1,,,FALSE,,TRUE
-Archive,10,4,12,13,12,0,13,0,0,0,0,0,0,0,0,10,10,0,10,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,convert troops,Runesmith,,10,,,1,,,FALSE,,TRUE
-Arena,1,1,2,1,0,0,2,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,200,FALSE,FALSE,TRUE,FALSE,"train troops, retrain troops",Gladiators,,1,FALSE,,1,,,FALSE,,FALSE
-Arena,2,1,3,2,0,0,3,2,0,0,0,0,0,0,2,0,0,0,2,0,0,0,2,0,0,2,0,0,400,FALSE,FALSE,TRUE,FALSE,"train troops, retrain troops",Gladiators,,2,FALSE,,1,,,FALSE,,FALSE
-Arena,3,1,4,3,0,0,4,3,0,0,0,0,0,0,3,0,0,0,3,0,0,0,3,0,0,3,0,0,600,FALSE,FALSE,TRUE,FALSE,"train troops, retrain troops",Gladiators,,3,FALSE,,1,,,FALSE,,FALSE
-Arena,4,1,5,4,0,0,5,4,0,0,0,0,0,0,4,0,0,0,4,0,0,0,4,0,0,4,0,0,800,FALSE,FALSE,TRUE,FALSE,"train troops, retrain troops",Gladiators,,4,FALSE,,1,,,FALSE,,FALSE
-Arena,5,2,6,5,0,0,6,5,0,0,0,0,0,0,5,0,0,0,5,0,0,0,5,0,0,5,0,0,1000,FALSE,FALSE,TRUE,FALSE,"train troops, retrain troops",Gladiators,,5,FALSE,,1,,,FALSE,,FALSE
-Arena,6,2,7,6,0,0,7,6,0,0,0,0,0,0,6,0,0,0,6,0,0,0,6,0,0,6,0,0,1200,FALSE,FALSE,TRUE,FALSE,"train troops, retrain troops",Gladiators,,6,FALSE,,1,,,FALSE,,FALSE
-Arena,7,2,8,7,0,0,8,7,0,0,0,0,0,0,7,0,0,0,7,0,0,0,7,0,0,7,0,0,1400,FALSE,FALSE,TRUE,FALSE,"train troops, retrain troops",Gladiators,,7,FALSE,,1,,,FALSE,,FALSE
-Arena,8,2,9,8,0,0,9,8,0,0,0,0,0,0,8,0,0,0,8,0,0,0,8,0,0,8,0,0,1600,FALSE,FALSE,TRUE,FALSE,"train troops, retrain troops",Gladiators,,8,FALSE,,1,,,FALSE,,FALSE
-Arena,9,2,10,9,0,0,10,9,0,0,0,0,0,0,9,0,0,0,9,0,0,0,9,0,0,9,0,0,1800,FALSE,FALSE,TRUE,FALSE,"train troops, retrain troops",Gladiators,,9,FALSE,,1,,,FALSE,,FALSE
-Arena,10,3,11,10,0,0,11,10,0,0,0,0,0,0,10,0,0,0,10,0,0,0,10,0,0,10,0,0,2000,FALSE,FALSE,TRUE,FALSE,"train troops, retrain troops",Gladiators,,10,FALSE,,1,,,FALSE,,FALSE
-Armorsmith,1,2,2,3,4,0,3,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Silver Weapons| Masterwork Armor,1,FALSE,,FALSE
-Armorsmith,2,2,3,4,5,0,4,0,0,0,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Silver Weapons| Masterwork Armor,2,FALSE,,FALSE
-Armorsmith,3,2,4,5,6,0,5,0,0,0,0,0,0,0,3,0,3,0,0,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Silver Weapons| Masterwork Armor,3,FALSE,,FALSE
-Armorsmith,4,2,5,6,7,0,6,0,0,0,0,0,0,0,4,0,4,0,0,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Silver Weapons| Masterwork Armor,4,FALSE,,FALSE
-Armorsmith,5,3,6,7,8,0,7,0,0,0,0,0,0,0,5,0,5,0,0,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Silver Weapons| Masterwork Armor,5,FALSE,,FALSE
-Armorsmith,6,3,7,8,9,0,8,0,0,0,0,0,0,0,6,0,6,0,0,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Silver Weapons| Masterwork Armor,6,FALSE,,FALSE
-Armorsmith,7,3,8,9,10,0,9,0,0,0,0,0,0,0,7,0,7,0,0,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Silver Weapons| Masterwork Armor,7,FALSE,,FALSE
-Armorsmith,8,3,9,10,11,0,10,0,0,0,0,0,0,0,8,0,8,0,0,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Silver Weapons| Masterwork Armor,8,FALSE,,FALSE
-Armorsmith,9,3,10,11,12,0,11,0,0,0,0,0,0,0,9,0,9,0,0,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Silver Weapons| Masterwork Armor,9,FALSE,,FALSE
-Armorsmith,10,4,11,12,13,0,12,0,0,0,0,0,0,0,10,0,10,0,0,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Silver Weapons| Masterwork Armor,10,FALSE,,FALSE
-Basic Mine,1,1,2,2,1,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Basic Mine,2,1,3,3,2,0,0,0,0,0,10,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,200,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Basic Mine,3,1,4,4,6,0,0,0,0,0,15,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,300,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Basic Mine,4,1,5,5,4,0,0,0,0,0,20,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,400,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Basic Mine,5,2,6,6,5,0,0,0,0,0,25,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,500,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Basic Mine,6,2,7,7,6,0,0,0,0,0,30,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,600,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Basic Mine,7,2,8,8,7,0,0,0,0,0,35,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,700,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Basic Mine,8,2,9,9,8,0,0,0,0,0,40,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,800,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Basic Mine,9,2,10,10,9,0,0,0,0,0,45,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,900,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Basic Mine,10,3,11,11,10,0,0,0,0,0,50,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,1000,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Brewery,1,1,2,4,0,0,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,200,FALSE,FALSE,TRUE,FALSE,di support,,,,,,,,,FALSE,,FALSE
-Brewery,2,1,3,5,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,2,0,400,FALSE,FALSE,TRUE,FALSE,di support,,,,,,,,,FALSE,,FALSE
-Brewery,3,1,4,6,0,0,4,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,3,0,0,0,3,0,600,FALSE,FALSE,TRUE,FALSE,di support,,,,,,,,,FALSE,,FALSE
-Brewery,4,1,5,7,0,0,5,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,4,0,0,0,4,0,800,FALSE,FALSE,TRUE,FALSE,di support,,,,,,,,,FALSE,,FALSE
-Brewery,5,2,6,8,0,0,6,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,5,0,0,0,5,0,1000,FALSE,FALSE,TRUE,FALSE,di support,,,,,,,,,FALSE,,FALSE
-Brewery,6,2,7,9,0,0,7,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,6,0,0,0,6,0,1200,FALSE,FALSE,TRUE,FALSE,di support,,,,,,,,,FALSE,,FALSE
-Brewery,7,2,8,10,0,0,8,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,7,0,0,0,7,0,1400,FALSE,FALSE,TRUE,FALSE,di support,,,,,,,,,FALSE,,FALSE
-Brewery,8,2,9,11,0,0,9,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,8,0,0,0,8,0,1600,FALSE,FALSE,TRUE,FALSE,di support,,,,,,,,,FALSE,,FALSE
-Brewery,9,2,10,12,0,0,10,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,9,0,0,0,9,0,1800,FALSE,FALSE,TRUE,FALSE,di support,,,,,,,,,FALSE,,FALSE
-Brewery,10,3,11,13,0,0,11,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,10,0,0,0,10,0,2000,FALSE,FALSE,TRUE,FALSE,di support,,,,,,,,,FALSE,,FALSE
-Casino,1,2,4,4,2,0,4,0,0,0,0,0,0,5,2,2,0,0,1,0,0,0,1,0,0,0,1,0,200,FALSE,FALSE,TRUE,FALSE,"di support, resource production",,,,,,,,,FALSE,,FALSE
-Casino,2,2,5,5,3,0,5,0,0,0,0,0,0,10,3,3,0,0,2,0,0,0,2,0,0,0,2,0,400,FALSE,FALSE,TRUE,FALSE,"di support, resource production",,,,,,,,,FALSE,,FALSE
-Casino,3,2,6,6,4,0,6,0,0,0,0,0,0,15,4,4,0,0,3,0,0,0,3,0,0,0,3,0,600,FALSE,FALSE,TRUE,FALSE,"di support, resource production",,,,,,,,,FALSE,,FALSE
-Casino,4,2,7,7,5,0,7,0,0,0,0,0,0,20,5,5,0,0,4,0,0,0,4,0,0,0,4,0,800,FALSE,FALSE,TRUE,FALSE,"di support, resource production",,,,,,,,,FALSE,,FALSE
-Casino,5,3,8,8,6,0,8,0,0,0,0,0,0,25,6,6,0,0,5,0,0,0,5,0,0,0,5,0,1000,FALSE,FALSE,TRUE,FALSE,"di support, resource production",,,,,,,,,FALSE,,FALSE
-Casino,6,3,9,9,7,0,9,0,0,0,0,0,0,30,7,7,0,0,6,0,0,0,6,0,0,0,6,0,1200,FALSE,FALSE,TRUE,FALSE,"di support, resource production",,,,,,,,,FALSE,,FALSE
-Casino,7,3,10,10,8,0,10,0,0,0,0,0,0,35,8,8,0,0,7,0,0,0,7,0,0,0,7,0,1400,FALSE,FALSE,TRUE,FALSE,"di support, resource production",,,,,,,,,FALSE,,FALSE
-Casino,8,3,11,11,9,0,11,0,0,0,0,0,0,40,9,9,0,0,8,0,0,0,8,0,0,0,8,0,1600,FALSE,FALSE,TRUE,FALSE,"di support, resource production",,,,,,,,,FALSE,,FALSE
-Casino,9,3,12,12,10,0,12,0,0,0,0,0,0,45,10,10,0,0,9,0,0,0,9,0,0,0,9,0,1800,FALSE,FALSE,TRUE,FALSE,"di support, resource production",,,,,,,,,FALSE,,FALSE
-Casino,10,4,13,13,11,0,13,0,0,0,0,0,0,50,11,11,0,0,10,0,0,0,10,0,0,0,10,0,2000,FALSE,FALSE,TRUE,FALSE,"di support, resource production",,,,,,,,,FALSE,,FALSE
-Chapter House,1,4,0,2,2,0,6,3,0,0,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,"convert troops, retrain troops",Knights,,1,TRUE,Light Knights | Dark Knights,1,,,FALSE,,TRUE
-Chapter House,2,4,0,3,3,0,7,4,0,0,0,0,0,0,0,0,0,0,3,2,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,"convert troops, retrain troops",Knights,,2,TRUE,Light Knights | Dark Knights,1,,,FALSE,,TRUE
-Chapter House,3,4,0,4,4,0,8,5,0,0,0,0,0,0,0,0,0,0,4,3,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,"convert troops, retrain troops",Knights,,3,TRUE,Light Knights | Dark Knights,1,,,FALSE,,TRUE
-Chapter House,4,4,0,5,5,0,9,6,0,0,0,0,0,0,0,0,0,0,5,4,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,"convert troops, retrain troops",Knights,,4,TRUE,Light Knights | Dark Knights,1,,,FALSE,,TRUE
-Chapter House,5,4,0,6,6,0,10,7,0,0,0,0,0,0,0,0,0,0,6,5,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,"convert troops, retrain troops",Knights,,5,TRUE,Light Knights | Dark Knights,1,,,FALSE,,TRUE
-Chapter House,6,4,0,7,7,0,11,8,0,0,0,0,0,0,0,0,0,0,7,6,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,"convert troops, retrain troops",Knights,,6,TRUE,Light Knights | Dark Knights,1,,,FALSE,,TRUE
-Chapter House,7,4,0,8,8,0,12,9,0,0,0,0,0,0,0,0,0,0,8,7,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,"convert troops, retrain troops",Knights,,7,TRUE,Light Knights | Dark Knights,1,,,FALSE,,TRUE
-Chapter House,8,4,0,9,9,0,13,10,0,0,0,0,0,0,0,0,0,0,9,8,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,"convert troops, retrain troops",Knights,,8,TRUE,Light Knights | Dark Knights,1,,,FALSE,,TRUE
-Chapter House,9,4,0,10,10,0,14,11,0,0,0,0,0,0,0,0,0,0,10,9,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,"convert troops, retrain troops",Knights,,9,TRUE,Light Knights | Dark Knights,1,,,FALSE,,TRUE
-Chapter House,10,4,0,11,11,0,15,12,0,0,0,0,0,0,0,0,0,0,11,10,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,"convert troops, retrain troops",Knights,,10,TRUE,Light Knights | Dark Knights,1,,,FALSE,,TRUE
-Crypt,1,1,0,2,0,0,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,100,TRUE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Crypt,2,1,0,3,0,0,3,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,2,0,0,0,0,0,200,TRUE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Crypt,3,1,0,4,0,0,4,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,3,0,0,0,0,0,300,TRUE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Crypt,4,1,0,5,0,0,5,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,4,0,0,0,0,0,400,TRUE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Crypt,5,2,0,6,0,0,6,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,5,0,0,0,0,0,500,TRUE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Crypt,6,2,0,7,0,0,7,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,6,0,0,0,0,0,600,TRUE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Crypt,7,2,0,8,0,0,8,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,7,0,0,0,0,0,700,TRUE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Crypt,8,2,0,9,0,0,9,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,8,0,0,0,0,0,800,TRUE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Crypt,9,2,0,10,0,0,10,0,0,0,0,0,0,0,0,9,0,0,0,0,0,0,9,0,0,0,0,0,900,TRUE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Crypt,10,3,0,11,0,0,11,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,10,0,0,0,0,0,1000,TRUE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Drydock,1,1,2,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,100,TRUE,TRUE,TRUE,TRUE,ship repair,,,,,,,,,FALSE,,FALSE
-Drydock,2,1,3,2,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,200,TRUE,TRUE,TRUE,TRUE,ship repair,,,,,,,,,FALSE,,FALSE
-Drydock,3,1,4,3,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,300,TRUE,TRUE,TRUE,TRUE,ship repair,,,,,,,,,FALSE,,FALSE
-Drydock,4,1,5,4,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,400,TRUE,TRUE,TRUE,TRUE,ship repair,,,,,,,,,FALSE,,FALSE
-Drydock,5,1,6,5,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,500,TRUE,TRUE,TRUE,TRUE,ship repair,,,,,,,,,FALSE,,FALSE
-Drydock,6,2,7,6,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,600,TRUE,TRUE,TRUE,TRUE,ship repair,,,,,,,,,FALSE,,FALSE
-Drydock,7,2,8,7,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,700,TRUE,TRUE,TRUE,TRUE,ship repair,,,,,,,,,FALSE,,FALSE
-Drydock,8,2,9,8,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,800,TRUE,TRUE,TRUE,TRUE,ship repair,,,,,,,,,FALSE,,FALSE
-Drydock,9,2,10,9,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,900,TRUE,TRUE,TRUE,TRUE,ship repair,,,,,,,,,FALSE,,FALSE
-Drydock,10,3,11,10,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,1000,TRUE,TRUE,TRUE,TRUE,ship repair,,,,,,,,,FALSE,,FALSE
-Engineer's Workshop,1,2,3,3,5,0,3,0,0,0,0,0,0,0,0,2,0,0,2,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,siege weapon builder,Siege Weapons,,,FALSE,,1,,,FALSE,,FALSE
-Engineer's Workshop,2,2,4,4,6,0,4,0,0,0,0,0,0,0,0,4,0,0,4,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,siege weapon builder,Siege Weapons,,,FALSE,,2,,,FALSE,,FALSE
-Engineer's Workshop,3,2,5,5,7,0,5,0,0,0,0,0,0,0,0,6,0,0,6,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,siege weapon builder,Siege Weapons,,,FALSE,,3,,,FALSE,,FALSE
-Engineer's Workshop,4,2,6,6,8,0,6,0,0,0,0,0,0,0,0,8,0,0,8,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,siege weapon builder,Siege Weapons,,,FALSE,,4,,,FALSE,,FALSE
-Engineer's Workshop,5,3,7,7,9,0,7,0,0,0,0,0,0,0,0,10,0,0,10,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,siege weapon builder,Siege Weapons,,,FALSE,,5,,,FALSE,,FALSE
-Engineer's Workshop,6,3,8,8,10,0,8,0,0,0,0,0,0,0,0,12,0,0,12,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,siege weapon builder,Siege Weapons,,,FALSE,,6,,,FALSE,,FALSE
-Engineer's Workshop,7,3,9,9,11,0,9,0,0,0,0,0,0,0,0,14,0,0,14,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,siege weapon builder,Siege Weapons,,,FALSE,,7,,,FALSE,,FALSE
-Engineer's Workshop,8,3,10,10,12,0,10,0,0,0,0,0,0,0,0,16,0,0,16,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,siege weapon builder,Siege Weapons,,,FALSE,,8,,,FALSE,,FALSE
-Engineer's Workshop,9,3,11,11,13,0,11,0,0,0,0,0,0,0,0,18,0,0,18,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,siege weapon builder,Siege Weapons,,,FALSE,,9,,,FALSE,,FALSE
-Engineer's Workshop,10,4,12,12,14,0,12,0,0,0,0,0,0,0,0,20,0,0,20,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,siege weapon builder,Siege Weapons,,,FALSE,,10,,,FALSE,,FALSE
-Farm,1,1,1,1,1,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Farm,2,1,2,2,2,0,0,0,0,0,0,10,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,200,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Farm,3,1,3,3,3,0,0,0,0,0,0,15,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,300,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Farm,4,1,4,4,4,0,0,0,0,0,0,20,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,400,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Farm,5,2,5,5,5,0,0,0,0,0,0,25,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,500,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Farm,6,2,6,6,6,0,0,0,0,0,0,30,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,600,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Farm,7,2,7,7,7,0,0,0,0,0,0,35,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,700,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Farm,8,2,8,8,8,0,0,0,0,0,0,40,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,800,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Farm,9,2,9,9,9,0,0,0,0,0,0,45,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,900,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Farm,10,3,10,10,10,0,0,0,0,0,0,50,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,1000,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Fishing Camp,1,1,1,1,1,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Fishing Camp,2,1,2,2,2,0,0,0,0,0,0,10,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,200,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Fishing Camp,3,1,3,3,3,0,0,0,0,0,0,15,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,300,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Fishing Camp,4,1,4,4,4,0,0,0,0,0,0,20,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,400,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Fishing Camp,5,2,5,5,5,0,0,0,0,0,0,25,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,500,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Fishing Camp,6,2,6,6,6,0,0,0,0,0,0,30,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,600,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Fishing Camp,7,2,7,7,7,0,0,0,0,0,0,35,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,700,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Fishing Camp,8,2,8,8,8,0,0,0,0,0,0,40,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,800,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Fishing Camp,9,2,9,9,9,0,0,0,0,0,0,45,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,900,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Fishing Camp,10,3,10,10,10,0,0,0,0,0,0,50,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,1000,TRUE,TRUE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Focusing Array,1,2,2,2,5,0,4,0,0,0,0,0,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,TRUE,project leyline ritual,,,,,,,,,TRUE,,FALSE
-Focusing Array,2,2,3,3,6,0,5,0,0,0,0,0,0,0,0,0,4,0,4,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,TRUE,project leyline ritual,,,,,,,,,TRUE,,FALSE
-Focusing Array,3,2,4,4,7,0,6,0,0,0,0,0,0,0,0,0,6,0,6,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,TRUE,project leyline ritual,,,,,,,,,TRUE,,FALSE
-Focusing Array,4,2,5,5,8,0,7,0,0,0,0,0,0,0,0,0,8,0,8,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,TRUE,project leyline ritual,,,,,,,,,TRUE,,FALSE
-Focusing Array,5,4,6,6,9,0,8,0,0,0,0,0,0,0,0,0,10,0,10,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,TRUE,project leyline ritual,,,,,,,,,TRUE,,FALSE
-Focusing Array,6,4,7,7,10,0,9,0,0,0,0,0,0,0,0,0,12,0,12,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,TRUE,TRUE,project leyline ritual,,,,,,,,,TRUE,,FALSE
-Focusing Array,7,4,8,8,11,0,10,0,0,0,0,0,0,0,0,0,14,0,14,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,TRUE,TRUE,project leyline ritual,,,,,,,,,TRUE,,FALSE
-Focusing Array,8,4,9,9,12,0,11,0,0,0,0,0,0,0,0,0,16,0,16,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,TRUE,TRUE,project leyline ritual,,,,,,,,,TRUE,,FALSE
-Focusing Array,9,4,10,10,13,0,12,0,0,0,0,0,0,0,0,0,18,0,18,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,TRUE,TRUE,project leyline ritual,,,,,,,,,TRUE,,FALSE
-Focusing Array,10,6,11,11,14,0,13,0,0,0,0,0,0,0,0,0,20,0,20,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,TRUE,TRUE,project leyline ritual,,,,,,,,,TRUE,,FALSE
-Forge,1,1,3,3,3,0,0,0,0,0,0,0,5,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Forge,2,1,4,4,4,0,0,0,0,0,0,0,10,0,2,2,2,0,0,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Forge,3,1,5,5,5,0,0,0,0,0,0,0,15,0,3,3,3,0,0,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Forge,4,1,6,6,6,0,0,0,0,0,0,0,20,0,4,4,4,0,0,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Forge,5,2,7,7,7,0,1,0,0,0,0,0,25,0,5,5,5,0,0,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Forge,6,2,8,8,8,0,2,0,0,0,0,0,30,0,6,6,6,0,0,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Forge,7,2,9,9,9,0,3,0,0,0,0,0,35,0,7,7,7,0,0,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Forge,8,2,10,10,10,0,4,0,0,0,0,0,40,0,8,8,8,0,0,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Forge,9,2,11,11,11,0,5,0,0,0,0,0,45,0,9,9,9,0,0,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Forge,10,3,12,12,12,0,6,0,0,0,0,0,50,0,10,10,10,0,0,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Garrison,1,1,1,2,1,1,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,4,200,FALSE,TRUE,TRUE,TRUE,"house troops, di support",,,,,,,,,FALSE,,FALSE
-Garrison,2,1,2,3,2,2,3,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,8,400,FALSE,TRUE,TRUE,TRUE,"house troops, di support",,,,,,,,,FALSE,,FALSE
-Garrison,3,1,3,4,3,3,4,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,3,0,0,0,12,600,FALSE,TRUE,TRUE,TRUE,"house troops, di support",,,,,,,,,FALSE,,FALSE
-Garrison,4,1,4,5,4,4,5,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,4,0,0,0,16,800,FALSE,TRUE,TRUE,TRUE,"house troops, di support",,,,,,,,,FALSE,,FALSE
-Garrison,5,2,5,6,5,5,6,0,0,0,0,0,0,0,0,5,0,0,1,0,0,0,0,5,0,0,0,20,1000,FALSE,TRUE,TRUE,TRUE,"house troops, di support",,,,,,,,,FALSE,,FALSE
-Garrison,6,2,6,7,6,6,7,0,0,0,0,0,0,0,0,6,0,0,2,0,0,0,0,6,0,0,0,24,1200,FALSE,TRUE,TRUE,TRUE,"house troops, di support",,,,,,,,,FALSE,,FALSE
-Garrison,7,2,7,8,7,7,8,0,0,0,0,0,0,0,0,7,0,0,3,0,0,0,0,7,0,0,0,28,1400,FALSE,TRUE,TRUE,TRUE,"house troops, di support",,,,,,,,,FALSE,,FALSE
-Garrison,8,2,8,9,8,8,9,0,0,0,0,0,0,0,0,8,0,0,4,0,0,0,0,8,0,0,0,32,1600,FALSE,TRUE,TRUE,TRUE,"house troops, di support",,,,,,,,,FALSE,,FALSE
-Garrison,9,2,9,10,9,9,10,0,0,0,0,0,0,0,0,9,0,0,5,0,0,0,0,9,0,0,0,36,1800,FALSE,TRUE,TRUE,TRUE,"house troops, di support",,,,,,,,,FALSE,,FALSE
-Garrison,10,3,10,11,10,10,11,0,0,0,0,0,0,0,0,10,0,0,6,0,0,0,0,10,0,0,0,40,2000,FALSE,TRUE,TRUE,TRUE,"house troops, di support",,,,,,,,,FALSE,,FALSE
-Grand Library,1,2,5,5,2,5,5,2,0,0,0,0,0,0,0,1,1,0,1,0,0,2,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",,,,,,,,,FALSE,,FALSE
-Grand Library,2,2,6,6,3,6,6,3,0,0,0,0,0,0,0,2,2,0,2,0,0,3,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",,,,,,,,,FALSE,,FALSE
-Grand Library,3,2,7,7,4,7,7,4,0,0,0,0,0,0,0,3,3,0,3,0,0,4,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",,,,,,,,,FALSE,,FALSE
-Grand Library,4,2,8,8,5,8,8,5,0,0,0,0,0,0,0,4,4,0,4,0,0,5,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",,,,,,,,,FALSE,,FALSE
-Grand Library,5,4,9,9,6,9,9,6,0,0,0,0,0,0,0,5,5,0,5,0,0,6,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",,,,,,,,,FALSE,,FALSE
-Grand Library,6,4,10,10,7,10,10,7,0,0,0,0,0,0,0,6,6,0,6,0,0,7,0,0,0,0,0,0,1200,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",,,,,,,,,FALSE,,FALSE
-Grand Library,7,4,11,11,8,11,11,8,0,0,0,0,0,0,0,7,7,0,7,0,0,8,0,0,0,0,0,0,1400,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",,,,,,,,,FALSE,,FALSE
-Grand Library,8,4,12,12,9,12,12,9,0,0,0,0,0,0,0,8,8,0,8,0,0,9,0,0,0,0,0,0,1600,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",,,,,,,,,FALSE,,FALSE
-Grand Library,9,4,13,13,10,13,13,10,0,0,0,0,0,0,0,9,9,0,9,0,0,10,0,0,0,0,0,0,1800,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",,,,,,,,,FALSE,,FALSE
-Grand Library,10,4,14,14,11,14,14,11,0,0,0,0,0,0,0,10,10,0,10,0,0,11,0,0,0,0,0,0,2000,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",,,,,,,,,FALSE,,FALSE
-Harbor,1,2,5,2,0,0,5,0,0,0,0,0,0,3,1,1,1,0,0,0,0,0,0,0,1,0,0,0,200,FALSE,FALSE,TRUE,TRUE,"resource production, di support",,,,,,,,,FALSE,,FALSE
-Harbor,2,2,6,3,0,0,6,0,0,0,0,0,0,6,2,2,2,0,0,0,0,0,0,0,2,0,0,0,400,FALSE,FALSE,TRUE,TRUE,"resource production, di support",,,,,,,,,FALSE,,FALSE
-Harbor,3,2,7,4,0,0,7,0,0,0,0,0,0,9,3,3,3,0,0,0,0,0,0,0,3,0,0,0,600,FALSE,FALSE,TRUE,TRUE,"resource production, di support",,,,,,,,,FALSE,,FALSE
-Harbor,4,2,8,5,0,0,8,0,0,0,0,0,0,12,4,4,4,0,0,0,0,0,0,0,4,0,0,0,800,FALSE,FALSE,TRUE,TRUE,"resource production, di support",,,,,,,,,FALSE,,FALSE
-Harbor,5,3,9,6,0,0,9,0,0,0,0,0,0,15,5,5,5,0,0,0,0,0,0,0,5,0,0,0,1000,FALSE,FALSE,TRUE,TRUE,"resource production, di support",,,,,,,,,FALSE,,FALSE
-Harbor,6,3,10,7,0,0,10,0,0,0,0,0,0,18,6,6,6,0,0,0,0,0,0,0,6,0,0,0,1200,FALSE,FALSE,TRUE,TRUE,"resource production, di support",,,,,,,,,FALSE,,FALSE
-Harbor,7,3,11,8,0,0,11,0,0,0,0,0,0,21,7,7,7,0,0,0,0,0,0,0,7,0,0,0,1400,FALSE,FALSE,TRUE,TRUE,"resource production, di support",,,,,,,,,FALSE,,FALSE
-Harbor,8,3,12,9,0,0,12,0,0,0,0,0,0,24,8,8,8,0,0,0,0,0,0,0,8,0,0,0,1600,FALSE,FALSE,TRUE,TRUE,"resource production, di support",,,,,,,,,FALSE,,FALSE
-Harbor,9,3,13,10,0,0,13,0,0,0,0,0,0,27,9,9,9,0,0,0,0,0,0,0,9,0,0,0,1800,FALSE,FALSE,TRUE,TRUE,"resource production, di support",,,,,,,,,FALSE,,FALSE
-Harbor,10,4,14,11,0,0,14,0,0,0,0,0,0,30,10,10,10,0,0,0,0,0,0,0,10,0,0,0,2000,FALSE,FALSE,TRUE,TRUE,"resource production, di support",,,,,,,,,FALSE,,FALSE
-Leyline Observation Tower,1,2,4,4,6,0,2,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,0,0,100,TRUE,TRUE,TRUE,TRUE,detect leyline ritual,,,,,,,,,FALSE,,FALSE
-Leyline Observation Tower,2,2,5,5,7,0,3,0,0,0,0,0,0,0,2,2,0,0,2,0,0,0,0,2,0,0,0,0,200,TRUE,TRUE,TRUE,TRUE,detect leyline ritual,,,,,,,,,FALSE,,FALSE
-Leyline Observation Tower,3,2,6,6,8,0,4,0,0,0,0,0,0,0,3,3,0,0,3,0,0,0,0,3,0,0,0,0,300,TRUE,TRUE,TRUE,TRUE,detect leyline ritual,,,,,,,,,FALSE,,FALSE
-Leyline Observation Tower,4,2,7,7,9,0,5,0,0,0,0,0,0,0,4,4,0,0,4,0,0,0,0,4,0,0,0,0,400,TRUE,TRUE,TRUE,TRUE,detect leyline ritual,,,,,,,,,FALSE,,FALSE
-Leyline Observation Tower,5,3,8,8,10,0,6,0,0,0,0,0,0,0,5,5,0,0,5,0,0,0,0,5,0,0,0,0,500,TRUE,TRUE,TRUE,TRUE,detect leyline ritual,,,,,,,,,FALSE,,FALSE
-Leyline Observation Tower,6,3,9,9,11,0,7,0,0,0,0,0,0,0,6,6,0,0,6,0,0,0,0,6,0,0,0,0,600,TRUE,TRUE,TRUE,TRUE,detect leyline ritual,,,,,,,,,FALSE,,FALSE
-Leyline Observation Tower,7,3,10,10,12,0,8,0,0,0,0,0,0,0,7,7,0,0,7,0,0,0,0,7,0,0,0,0,700,TRUE,TRUE,TRUE,TRUE,detect leyline ritual,,,,,,,,,FALSE,,FALSE
-Leyline Observation Tower,8,3,11,11,13,0,9,0,0,0,0,0,0,0,8,8,0,0,8,0,0,0,0,8,0,0,0,0,800,TRUE,TRUE,TRUE,TRUE,detect leyline ritual,,,,,,,,,FALSE,,FALSE
-Leyline Observation Tower,9,3,12,12,14,0,10,0,0,0,0,0,0,0,9,9,0,0,9,0,0,0,0,9,0,0,0,0,900,TRUE,TRUE,TRUE,TRUE,detect leyline ritual,,,,,,,,,FALSE,,FALSE
-Leyline Observation Tower,10,4,13,13,15,0,11,0,0,0,0,0,0,0,10,10,0,0,10,0,0,0,0,10,0,0,0,0,1000,TRUE,TRUE,TRUE,TRUE,detect leyline ritual,,,,,,,,,FALSE,,FALSE
-Lighthouse,1,2,5,5,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,100,TRUE,TRUE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Lighthouse,2,2,6,6,0,0,2,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,0,200,TRUE,TRUE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Lighthouse,3,2,7,7,0,0,3,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,3,0,0,0,0,300,TRUE,TRUE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Lighthouse,4,2,8,8,0,0,4,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,4,0,0,0,0,400,TRUE,TRUE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Lighthouse,5,3,9,9,0,0,5,0,0,0,0,0,0,0,0,5,0,0,1,0,0,0,0,5,0,0,0,0,500,TRUE,TRUE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Lighthouse,6,3,10,10,0,0,6,0,0,0,0,0,0,0,0,6,0,0,2,0,0,0,0,6,0,0,0,0,600,TRUE,TRUE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Lighthouse,7,3,11,11,0,0,7,0,0,0,0,0,0,0,0,7,0,0,3,0,0,0,0,7,0,0,0,0,700,TRUE,TRUE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Lighthouse,8,3,12,12,0,0,8,0,0,0,0,0,0,0,0,8,0,0,4,0,0,0,0,8,0,0,0,0,800,TRUE,TRUE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Lighthouse,9,3,13,13,0,0,9,0,0,0,0,0,0,0,0,9,0,0,5,0,0,0,0,9,0,0,0,0,900,TRUE,TRUE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Lighthouse,10,4,14,14,0,0,10,0,0,0,0,0,0,0,0,10,0,0,6,0,0,0,0,10,0,0,0,0,1000,TRUE,TRUE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Lumber Mill,1,1,1,2,2,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,TRUE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Lumber Mill,2,1,2,3,3,0,0,0,10,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,200,TRUE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Lumber Mill,3,1,3,4,4,0,0,0,15,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,300,TRUE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Lumber Mill,4,1,4,5,5,0,0,0,20,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,400,TRUE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Lumber Mill,5,2,5,6,6,0,0,0,25,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,500,TRUE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Lumber Mill,6,2,6,7,7,0,0,0,30,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,600,TRUE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Lumber Mill,7,2,7,8,8,0,0,0,35,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,700,TRUE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Lumber Mill,8,2,8,9,9,0,0,0,40,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,800,TRUE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Lumber Mill,9,2,9,10,10,0,0,0,45,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,900,TRUE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Lumber Mill,10,3,10,11,11,0,0,0,50,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,1000,TRUE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Mage's Tower,1,2,5,2,2,0,2,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops, item production, cast leyline ritual",Casters,,1,TRUE,"Celestial Generalist, Earth Generalist, Healer, Druid, Necromancer, Confinist, Elementalist",1,Wand,,TRUE,,FALSE
-Mage's Tower,2,2,6,3,3,0,3,0,0,0,0,0,0,0,2,2,2,0,0,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops, item production, cast leyline ritual",Casters,,2,TRUE,"Celestial Generalist, Earth Generalist, Healer, Druid, Necromancer, Confinist, Elementalist",1,Wand,,TRUE,,FALSE
-Mage's Tower,3,2,7,4,4,0,4,0,0,0,0,0,0,0,3,3,3,0,0,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops, item production, cast leyline ritual",Casters,,3,TRUE,"Celestial Generalist, Earth Generalist, Healer, Druid, Necromancer, Confinist, Elementalist",1,Wand,,TRUE,,FALSE
-Mage's Tower,4,2,8,5,5,0,5,0,0,0,0,0,0,0,4,4,4,0,0,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops, item production, cast leyline ritual",Casters,,4,TRUE,"Celestial Generalist, Earth Generalist, Healer, Druid, Necromancer, Confinist, Elementalist",1,Wand,,TRUE,,FALSE
-Mage's Tower,5,3,9,6,6,0,6,0,0,0,0,0,0,0,5,5,5,0,0,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops, item production, cast leyline ritual",Casters,,5,TRUE,"Celestial Generalist, Earth Generalist, Healer, Druid, Necromancer, Confinist, Elementalist",1,Wand,,TRUE,,FALSE
-Mage's Tower,6,3,10,7,7,0,7,0,0,0,0,0,0,0,6,6,6,0,0,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops, item production, cast leyline ritual",Casters,,6,TRUE,"Celestial Generalist, Earth Generalist, Healer, Druid, Necromancer, Confinist, Elementalist",1,Wand,,TRUE,,FALSE
-Mage's Tower,7,3,11,8,8,0,8,0,0,0,0,0,0,0,7,7,7,0,0,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops, item production, cast leyline ritual",Casters,,7,TRUE,"Celestial Generalist, Earth Generalist, Healer, Druid, Necromancer, Confinist, Elementalist",1,Wand,,TRUE,,FALSE
-Mage's Tower,8,3,12,9,9,0,9,0,0,0,0,0,0,0,8,8,8,0,0,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops, item production, cast leyline ritual",Casters,,8,TRUE,"Celestial Generalist, Earth Generalist, Healer, Druid, Necromancer, Confinist, Elementalist",1,Wand,,TRUE,,FALSE
-Mage's Tower,9,3,13,10,10,0,10,0,0,0,0,0,0,0,9,9,9,0,0,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops, item production, cast leyline ritual",Casters,,9,TRUE,"Celestial Generalist, Earth Generalist, Healer, Druid, Necromancer, Confinist, Elementalist",1,Wand,,TRUE,,FALSE
-Mage's Tower,10,4,14,11,11,0,11,0,0,0,0,0,0,0,10,10,10,0,0,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops, item production, cast leyline ritual",Casters,,10,TRUE,"Celestial Generalist, Earth Generalist, Healer, Druid, Necromancer, Confinist, Elementalist",1,Wand,,TRUE,,FALSE
-Market,1,2,4,4,0,0,2,0,0,0,0,0,0,3,0,0,0,0,2,0,0,0,0,0,1,0,0,0,200,FALSE,FALSE,TRUE,FALSE,"di support, resource production",,,,,,1,,,FALSE,,FALSE
-Market,2,2,5,5,0,0,3,0,0,0,0,0,0,6,0,0,0,0,4,0,0,0,0,0,2,0,0,0,400,FALSE,FALSE,TRUE,FALSE,"di support, resource production",,,,,,1,,,FALSE,,FALSE
-Market,3,2,6,6,0,0,4,0,0,0,0,0,0,9,0,0,0,0,6,0,0,0,0,0,3,0,0,0,600,FALSE,FALSE,TRUE,FALSE,"di support, resource production",,,,,,1,,,FALSE,,FALSE
-Market,4,2,7,7,0,0,5,0,0,0,0,0,0,12,0,0,0,0,8,0,0,0,0,0,4,0,0,0,800,FALSE,FALSE,TRUE,FALSE,"di support, resource production",,,,,,1,,,FALSE,,FALSE
-Market,5,4,8,8,0,0,6,0,0,0,0,0,0,15,0,0,0,0,10,0,0,0,0,0,5,0,0,0,1000,FALSE,FALSE,TRUE,FALSE,"di support, resource production",,,,,,1,,,FALSE,,FALSE
-Market,6,4,9,9,0,0,7,0,0,0,0,0,0,18,0,0,0,0,12,0,0,0,0,0,6,0,0,0,1200,FALSE,FALSE,TRUE,FALSE,"di support, resource production",,,,,,1,,,FALSE,,FALSE
-Market,7,4,10,10,0,0,8,0,0,0,0,0,0,21,0,0,0,0,14,0,0,0,0,0,7,0,0,0,1400,FALSE,FALSE,TRUE,FALSE,"di support, resource production",,,,,,1,,,FALSE,,FALSE
-Market,8,4,11,11,0,0,9,0,0,0,0,0,0,24,0,0,0,0,16,0,0,0,0,0,8,0,0,0,1600,FALSE,FALSE,TRUE,FALSE,"di support, resource production",,,,,,1,,,FALSE,,FALSE
-Market,9,4,12,12,0,0,10,0,0,0,0,0,0,27,0,0,0,0,18,0,0,0,0,0,9,0,0,0,1800,FALSE,FALSE,TRUE,FALSE,"di support, resource production",,,,,,1,,,FALSE,,FALSE
-Market,10,6,13,13,0,0,11,0,0,0,0,0,0,30,0,0,0,0,20,0,0,0,0,0,10,0,0,0,2000,FALSE,FALSE,TRUE,FALSE,"di support, resource production",,,,,,1,,,FALSE,,FALSE
-Marshall Yard,1,1,3,2,3,0,2,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops","Commandos, Footmen, Guardsmen",,1,FALSE,,1,,,FALSE,,FALSE
-Marshall Yard,2,1,4,3,4,0,3,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops","Commandos, Footmen, Guardsmen",,2,FALSE,,1,,,FALSE,,FALSE
-Marshall Yard,3,1,5,4,5,0,4,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops","Commandos, Footmen, Guardsmen",,3,FALSE,,1,,,FALSE,,FALSE
-Marshall Yard,4,1,6,5,6,0,5,0,0,0,0,0,0,0,0,4,4,0,0,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops","Commandos, Footmen, Guardsmen",,4,FALSE,,1,,,FALSE,,FALSE
-Marshall Yard,5,2,7,6,7,0,6,0,0,0,0,0,0,0,0,5,5,0,0,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops","Commandos, Footmen, Guardsmen",,5,FALSE,,1,,,FALSE,,FALSE
-Marshall Yard,6,2,8,7,8,0,7,0,0,0,0,0,0,0,0,6,6,0,0,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops","Commandos, Footmen, Guardsmen",,6,FALSE,,1,,,FALSE,,FALSE
-Marshall Yard,7,2,9,8,9,0,8,0,0,0,0,0,0,0,0,7,7,0,0,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops","Commandos, Footmen, Guardsmen",,7,FALSE,,1,,,FALSE,,FALSE
-Marshall Yard,8,2,10,9,10,0,9,0,0,0,0,0,0,0,0,8,8,0,0,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops","Commandos, Footmen, Guardsmen",,8,FALSE,,1,,,FALSE,,FALSE
-Marshall Yard,9,2,11,10,11,0,10,0,0,0,0,0,0,0,0,9,9,0,0,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops","Commandos, Footmen, Guardsmen",,9,FALSE,,1,,,FALSE,,FALSE
-Marshall Yard,10,3,12,11,12,0,11,0,0,0,0,0,0,0,0,10,10,0,0,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops","Commandos, Footmen, Guardsmen",,10,FALSE,,1,,,FALSE,,FALSE
-Military Trade School,1,1,2,3,2,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,teach troops,Combat Skills,,,,,1,,,FALSE,,FALSE
-Military Trade School,2,1,3,4,3,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,2,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,teach troops,Combat Skills,,,,,2,,,FALSE,,FALSE
-Military Trade School,3,1,4,5,4,0,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,3,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,teach troops,Combat Skills,,,,,3,,,FALSE,,FALSE
-Military Trade School,4,1,5,6,5,0,0,0,0,0,0,0,0,0,4,4,0,0,0,0,0,4,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,teach troops,Combat Skills,,,,,4,,,FALSE,,FALSE
-Military Trade School,5,2,6,7,6,0,0,0,0,0,0,0,0,0,5,5,0,0,0,0,0,5,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,teach troops,Combat Skills,,,,,5,,,FALSE,,FALSE
-Military Trade School,6,2,7,8,7,0,0,0,0,0,0,0,0,0,6,6,0,0,0,0,0,6,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,teach troops,Combat Skills,,,,,6,,,FALSE,,FALSE
-Military Trade School,7,2,8,9,8,0,0,0,0,0,0,0,0,0,7,7,0,0,0,0,0,7,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,teach troops,Combat Skills,,,,,7,,,FALSE,,FALSE
-Military Trade School,8,2,9,10,9,0,0,0,0,0,0,0,0,0,8,8,0,0,0,0,0,8,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,teach troops,Combat Skills,,,,,8,,,FALSE,,FALSE
-Military Trade School,9,2,10,11,10,0,0,0,0,0,0,0,0,0,9,9,0,0,0,0,0,9,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,teach troops,Combat Skills,,,,,9,,,FALSE,,FALSE
-Military Trade School,10,3,11,12,11,0,0,0,0,0,0,0,0,0,10,10,0,0,0,0,0,10,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,teach troops,Combat Skills,,,,,10,,,FALSE,,FALSE
-Mint,1,4,4,4,8,0,8,4,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,-1,0,0,0,200,FALSE,FALSE,TRUE,FALSE,di support,,,,,,,,,FALSE,,FALSE
-Mint,2,4,5,5,9,0,9,5,0,0,0,0,0,0,0,0,0,0,4,4,0,0,0,0,-2,0,0,0,400,FALSE,FALSE,TRUE,FALSE,di support,,,,,,,,,FALSE,,FALSE
-Mint,3,4,6,6,10,0,10,6,0,0,0,0,0,0,0,0,0,0,6,6,0,0,0,0,-3,0,0,0,600,FALSE,FALSE,TRUE,FALSE,di support,,,,,,,,,FALSE,,FALSE
-Mint,4,6,7,7,11,0,11,7,0,0,0,0,0,0,0,0,0,0,8,8,0,0,0,0,-4,0,0,0,800,FALSE,FALSE,TRUE,FALSE,di support,,,,,,,,,FALSE,,FALSE
-Mint,5,8,8,8,12,0,12,8,0,0,0,0,0,0,0,0,0,0,10,10,0,0,0,0,-5,0,0,0,1000,FALSE,FALSE,TRUE,FALSE,di support,,,,,,,,,FALSE,,FALSE
-Mint,6,8.2,9,9,13,0,13,9,0,0,0,0,0,0,0,0,0,0,12,12,0,0,0,0,-6,0,0,0,1200,FALSE,FALSE,TRUE,FALSE,di support,,,,,,,,,FALSE,,FALSE
-Mint,7,9.2,10,10,14,0,14,10,0,0,0,0,0,0,0,0,0,0,14,14,0,0,0,0,-7,0,0,0,1400,FALSE,FALSE,TRUE,FALSE,di support,,,,,,,,,FALSE,,FALSE
-Mint,8,10.2,11,11,15,0,15,11,0,0,0,0,0,0,0,0,0,0,16,16,0,0,0,0,-8,0,0,0,1600,FALSE,FALSE,TRUE,FALSE,di support,,,,,,,,,FALSE,,FALSE
-Mint,9,11.2,12,12,16,0,16,12,0,0,0,0,0,0,0,0,0,0,18,18,0,0,0,0,-9,0,0,0,1800,FALSE,FALSE,TRUE,FALSE,di support,,,,,,,,,FALSE,,FALSE
-Mint,10,12.2,13,13,17,0,17,13,0,0,0,0,0,0,0,0,0,0,20,20,0,0,0,0,-10,0,0,0,2000,FALSE,FALSE,TRUE,FALSE,di support,,,,,,,,,FALSE,,FALSE
-Monument,1,2,5,5,5,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,1,0,0,100,TRUE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Monument,2,2,6,6,6,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,2,0,0,2,0,0,200,TRUE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Monument,3,2,7,7,7,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,3,0,0,3,0,0,300,TRUE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Monument,4,2,8,8,8,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,4,0,0,4,0,0,400,TRUE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Monument,5,3,9,9,9,0,1,0,0,0,0,0,0,0,0,5,0,0,1,0,0,0,5,0,0,5,0,0,500,TRUE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Monument,6,3,10,10,10,0,2,0,0,0,0,0,0,0,0,6,0,0,2,0,0,0,6,0,0,6,0,0,600,TRUE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Monument,7,3,11,11,11,0,3,0,0,0,0,0,0,0,0,7,0,0,3,0,0,0,7,0,0,7,0,0,700,TRUE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Monument,8,3,12,12,12,0,4,0,0,0,0,0,0,0,0,8,0,0,4,0,0,0,8,0,0,8,0,0,800,TRUE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Monument,9,3,13,13,13,0,5,0,0,0,0,0,0,0,0,9,0,0,5,0,0,0,9,0,0,9,0,0,900,TRUE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Monument,10,4,14,14,14,0,6,0,0,0,0,0,0,0,0,10,0,0,5,0,0,0,10,0,0,10,0,0,1000,TRUE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Poison Magazine,1,2,2,3,2,0,3,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Cause Damage 1 point | Charm 2 Points | Paralysis 3 points| Berserk 4 points| Agony 4 points,1,FALSE,,FALSE
-Poison Magazine,2,2,3,4,3,0,4,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Cause Damage 1 point | Charm 2 Points | Paralysis 3 points| Berserk 4 points| Agony 4 points,2,FALSE,,FALSE
-Poison Magazine,3,2,4,5,4,0,5,0,0,0,0,0,0,0,3,0,0,0,3,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Cause Damage 1 point | Charm 2 Points | Paralysis 3 points| Berserk 4 points| Agony 4 points,3,FALSE,,FALSE
-Poison Magazine,4,2,5,6,5,0,6,0,0,0,0,0,0,0,4,0,0,0,4,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Cause Damage 1 point | Charm 2 Points | Paralysis 3 points| Berserk 4 points| Agony 4 points,4,FALSE,,FALSE
-Poison Magazine,5,3,6,7,6,0,7,0,0,0,0,0,0,0,5,0,0,0,5,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Cause Damage 1 point | Charm 2 Points | Paralysis 3 points| Berserk 4 points| Agony 4 points,5,FALSE,,FALSE
-Poison Magazine,6,3,7,8,7,0,8,0,0,0,0,0,0,0,6,0,0,0,6,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Cause Damage 1 point | Charm 2 Points | Paralysis 3 points| Berserk 4 points| Agony 4 points,6,FALSE,,FALSE
-Poison Magazine,7,3,8,9,8,0,9,0,0,0,0,0,0,0,7,0,0,0,7,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Cause Damage 1 point | Charm 2 Points | Paralysis 3 points| Berserk 4 points| Agony 4 points,7,FALSE,,FALSE
-Poison Magazine,8,3,9,10,9,0,10,0,0,0,0,0,0,0,8,0,0,0,8,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Cause Damage 1 point | Charm 2 Points | Paralysis 3 points| Berserk 4 points| Agony 4 points,8,FALSE,,FALSE
-Poison Magazine,9,3,10,11,10,0,11,0,0,0,0,0,0,0,9,0,0,0,9,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Cause Damage 1 point | Charm 2 Points | Paralysis 3 points| Berserk 4 points| Agony 4 points,9,FALSE,,FALSE
-Poison Magazine,10,4,11,12,11,0,12,0,0,0,0,0,0,0,10,0,0,0,10,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Cause Damage 1 point | Charm 2 Points | Paralysis 3 points| Berserk 4 points| Agony 4 points,10,FALSE,,FALSE
-Potion Brewery,1,2,2,2,3,0,3,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Cause Damage 1 point | Charm 2 Points | Paralysis 3 points| Berserk 4 points| Agony 4 points,1,FALSE,,FALSE
-Potion Brewery,2,2,3,3,4,0,4,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Generic Potion 1 point |Bless 2 points |Toxin Shield 3 points| Spirit Armor 4 points | Defend 4 points,2,FALSE,,FALSE
-Potion Brewery,3,2,4,4,5,0,5,0,0,0,0,0,0,0,3,0,0,0,3,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Generic Potion 1 point |Bless 2 points |Toxin Shield 3 points| Spirit Armor 4 points | Defend 4 points,3,FALSE,,FALSE
-Potion Brewery,4,2,5,5,6,0,6,0,0,0,0,0,0,0,4,0,0,0,4,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Generic Potion 1 point |Bless 2 points |Toxin Shield 3 points| Spirit Armor 4 points | Defend 4 points,4,FALSE,,FALSE
-Potion Brewery,5,3,6,6,7,0,7,0,0,0,0,0,0,0,5,0,0,0,5,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Generic Potion 1 point |Bless 2 points |Toxin Shield 3 points| Spirit Armor 4 points | Defend 4 points,5,FALSE,,FALSE
-Potion Brewery,6,3,7,7,8,0,8,0,0,0,0,0,0,0,6,0,0,0,6,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Generic Potion 1 point |Bless 2 points |Toxin Shield 3 points| Spirit Armor 4 points | Defend 4 points,6,FALSE,,FALSE
-Potion Brewery,7,3,8,8,9,0,9,0,0,0,0,0,0,0,7,0,0,0,7,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Generic Potion 1 point |Bless 2 points |Toxin Shield 3 points| Spirit Armor 4 points | Defend 4 points,7,FALSE,,FALSE
-Potion Brewery,8,3,9,9,10,0,10,0,0,0,0,0,0,0,8,0,0,0,8,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Generic Potion 1 point |Bless 2 points |Toxin Shield 3 points| Spirit Armor 4 points | Defend 4 points,8,FALSE,,FALSE
-Potion Brewery,9,3,10,10,11,0,11,0,0,0,0,0,0,0,9,0,0,0,9,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Generic Potion 1 point |Bless 2 points |Toxin Shield 3 points| Spirit Armor 4 points | Defend 4 points,9,FALSE,,FALSE
-Potion Brewery,10,4,11,11,12,0,12,0,0,0,0,0,0,0,10,0,0,0,10,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,Generic Potion 1 point |Bless 2 points |Toxin Shield 3 points| Spirit Armor 4 points | Defend 4 points,10,FALSE,,FALSE
-Quarry,1,1,2,1,2,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,TRUE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Quarry,2,1,3,2,3,0,0,0,0,10,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,200,TRUE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Quarry,3,1,4,3,4,0,0,0,0,15,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,300,TRUE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Quarry,4,1,5,4,5,0,0,0,0,20,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,400,TRUE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Quarry,5,2,6,5,6,0,0,0,0,25,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,500,TRUE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Quarry,6,2,7,6,7,0,0,0,0,30,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,600,TRUE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Quarry,7,2,8,7,8,0,0,0,0,35,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,700,TRUE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Quarry,8,2,9,8,9,0,0,0,0,40,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,800,TRUE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Quarry,9,2,10,9,10,0,0,0,0,45,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,900,TRUE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Quarry,10,3,11,10,11,0,0,0,0,50,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,1000,TRUE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Rare Mine,1,1,3,2,3,0,0,0,0,0,0,0,3,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,100,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Rare Mine,2,1,4,3,4,0,0,0,0,0,0,0,6,0,2,0,2,0,0,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Rare Mine,3,1,5,4,5,0,0,0,0,0,0,0,9,0,3,0,3,0,0,0,0,0,0,0,0,0,0,0,300,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Rare Mine,4,1,6,5,6,0,0,0,0,0,0,0,12,0,4,0,4,0,0,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Rare Mine,5,2,7,6,7,0,0,0,0,0,0,0,15,0,5,0,5,0,0,0,0,0,0,0,0,0,0,0,500,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Rare Mine,6,2,8,7,8,0,0,0,0,0,0,0,18,0,6,0,6,0,0,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Rare Mine,7,2,9,8,9,0,0,0,0,0,0,0,21,0,7,0,7,0,0,0,0,0,0,0,0,0,0,0,700,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Rare Mine,8,2,10,9,10,0,0,0,0,0,0,0,24,0,8,0,8,0,0,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Rare Mine,9,2,11,10,11,0,0,0,0,0,0,0,27,0,9,0,9,0,0,0,0,0,0,0,0,0,0,0,900,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Rare Mine,10,3,12,11,12,0,0,0,0,0,0,0,30,0,10,0,10,0,0,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Refinery,1,1,3,3,3,0,0,0,0,0,0,0,5,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Refinery,2,1,4,4,4,0,0,0,0,0,0,0,10,0,2,2,2,0,0,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Refinery,3,1,5,5,5,0,0,0,0,0,0,0,15,0,3,3,3,0,0,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Refinery,4,1,6,6,6,0,0,0,0,0,0,0,20,0,4,4,4,0,0,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Refinery,5,2,7,7,7,0,1,0,0,0,0,0,25,0,5,5,5,0,0,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Refinery,6,2,8,8,8,0,2,0,0,0,0,0,30,0,6,6,6,0,0,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Refinery,7,2,9,9,9,0,3,0,0,0,0,0,35,0,7,7,7,0,0,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Refinery,8,2,10,10,10,0,4,0,0,0,0,0,40,0,8,8,8,0,0,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Refinery,9,2,11,11,11,0,5,0,0,0,0,0,45,0,9,9,9,0,0,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Refinery,10,3,12,12,12,0,6,0,0,0,0,0,50,0,10,10,10,0,0,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,TRUE,TRUE,resource production,,,,,,,,,FALSE,,FALSE
-Rookery,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,100,TRUE,TRUE,TRUE,TRUE,communication,,,,,,,,,FALSE,,FALSE
-Rookery,2,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,200,TRUE,TRUE,TRUE,TRUE,communication,,,,,,,,,FALSE,,FALSE
-Rookery,3,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,300,TRUE,TRUE,TRUE,TRUE,communication,,,,,,,,,FALSE,,FALSE
-Rookery,4,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,400,TRUE,TRUE,TRUE,TRUE,communication,,,,,,,,,FALSE,,FALSE
-Rookery,5,2,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,500,TRUE,TRUE,TRUE,TRUE,communication,,,,,,,,,FALSE,,FALSE
-Rookery,6,2,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,600,TRUE,TRUE,TRUE,TRUE,communication,,,,,,,,,FALSE,,FALSE
-Rookery,7,2,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,700,TRUE,TRUE,TRUE,TRUE,communication,,,,,,,,,FALSE,,FALSE
-Rookery,8,2,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,800,TRUE,TRUE,TRUE,TRUE,communication,,,,,,,,,FALSE,,FALSE
-Rookery,9,2,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,900,TRUE,TRUE,TRUE,TRUE,communication,,,,,,,,,FALSE,,FALSE
-Rookery,10,3,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,1000,TRUE,TRUE,TRUE,TRUE,communication,,,,,,,,,FALSE,,FALSE
-Sanatorium,1,2,5,2,2,0,2,0,0,0,0,0,0,0,1,1,1,0,0,0,1,0,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,FALSE,"settlement needs, train troops","Casters, Healer",,1,FALSE,,1,,,FALSE,,FALSE
-Sanatorium,2,2,6,3,3,0,3,0,0,0,0,0,0,0,2,2,2,0,0,0,2,0,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,FALSE,"settlement needs, train troops","Casters, Healer",,2,FALSE,,1,,,FALSE,,FALSE
-Sanatorium,3,2,7,4,4,0,4,0,0,0,0,0,0,0,3,3,3,0,0,0,3,0,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,FALSE,"settlement needs, train troops","Casters, Healer",,3,FALSE,,1,,,FALSE,,FALSE
-Sanatorium,4,2,8,5,5,0,5,0,0,0,0,0,0,0,4,4,4,0,0,0,4,0,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,FALSE,"settlement needs, train troops","Casters, Healer",,4,FALSE,,1,,,FALSE,,FALSE
-Sanatorium,5,4,9,6,6,0,6,0,0,0,0,0,0,0,5,5,5,0,1,0,5,0,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,FALSE,"settlement needs, train troops","Casters, Healer",,5,FALSE,,1,,,FALSE,,FALSE
-Sanatorium,6,4,10,7,7,0,7,0,0,0,0,0,0,0,6,6,6,0,2,0,6,0,0,0,0,0,0,0,1200,FALSE,FALSE,TRUE,FALSE,"settlement needs, train troops","Casters, Healer",,6,FALSE,,1,,,FALSE,,FALSE
-Sanatorium,7,4,11,8,8,0,8,0,0,0,0,0,0,0,7,7,7,0,3,0,7,0,0,0,0,0,0,0,1400,FALSE,FALSE,TRUE,FALSE,"settlement needs, train troops","Casters, Healer",,7,FALSE,,1,,,FALSE,,FALSE
-Sanatorium,8,4,12,9,9,0,9,0,0,0,0,0,0,0,8,8,8,0,4,0,8,0,0,0,0,0,0,0,1600,FALSE,FALSE,TRUE,FALSE,"settlement needs, train troops","Casters, Healer",,8,FALSE,,1,,,FALSE,,FALSE
-Sanatorium,9,4,13,10,10,0,10,0,0,0,0,0,0,0,9,9,9,0,5,0,9,0,0,0,0,0,0,0,1800,FALSE,FALSE,TRUE,FALSE,"settlement needs, train troops","Casters, Healer",,9,FALSE,,1,,,FALSE,,FALSE
-Sanatorium,10,5,14,11,11,0,11,0,0,0,0,0,0,0,10,10,10,0,6,0,10,0,0,0,0,0,0,0,2000,FALSE,FALSE,TRUE,FALSE,"settlement needs, train troops","Casters, Healer",,10,FALSE,,1,,,FALSE,,FALSE
-Scrivener,1,2,3,2,2,0,3,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,"Mage Armor 2 points (CG, Con, ELe, Scribe) | Major Spell Shield 4 points (CG, Con, ELe, Scribe) | Slow 2 points (Con) | Trap 1 point (CG, Con, Scribe) | Imprison 4 points (Con) | Enchant Blade 1 point (CG, Scribe) | Doom 5 points (CG, Scribe) | Elemental Blade 1 point (Ele) | Elemental Shield 4 points (Ele) | Elemental Blast 5 points (Ele)",1,FALSE,,FALSE
-Scrivener,2,2,4,3,3,0,4,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,"Mage Armor 2 points (CG, Con, ELe, Scribe) | Major Spell Shield 4 points (CG, Con, ELe, Scribe) | Slow 2 points (Con) | Trap 1 point (CG, Con, Scribe) | Imprison 4 points (Con) | Enchant Blade 1 point (CG, Scribe) | Doom 5 points (CG, Scribe) | Elemental Blade 1 point (Ele) | Elemental Shield 4 points (Ele) | Elemental Blast 5 points (Ele)",2,FALSE,,FALSE
-Scrivener,3,2,5,4,4,0,5,0,0,0,0,0,0,0,3,0,0,0,3,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,"Mage Armor 2 points (CG, Con, ELe, Scribe) | Major Spell Shield 4 points (CG, Con, ELe, Scribe) | Slow 2 points (Con) | Trap 1 point (CG, Con, Scribe) | Imprison 4 points (Con) | Enchant Blade 1 point (CG, Scribe) | Doom 5 points (CG, Scribe) | Elemental Blade 1 point (Ele) | Elemental Shield 4 points (Ele) | Elemental Blast 5 points (Ele)",3,FALSE,,FALSE
-Scrivener,4,2,6,5,5,0,6,0,0,0,0,0,0,0,4,0,0,0,4,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,"Mage Armor 2 points (CG, Con, ELe, Scribe) | Major Spell Shield 4 points (CG, Con, ELe, Scribe) | Slow 2 points (Con) | Trap 1 point (CG, Con, Scribe) | Imprison 4 points (Con) | Enchant Blade 1 point (CG, Scribe) | Doom 5 points (CG, Scribe) | Elemental Blade 1 point (Ele) | Elemental Shield 4 points (Ele) | Elemental Blast 5 points (Ele)",4,FALSE,,FALSE
-Scrivener,5,3,7,6,6,0,7,0,0,0,0,0,0,0,5,0,0,0,5,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,"Mage Armor 2 points (CG, Con, ELe, Scribe) | Major Spell Shield 4 points (CG, Con, ELe, Scribe) | Slow 2 points (Con) | Trap 1 point (CG, Con, Scribe) | Imprison 4 points (Con) | Enchant Blade 1 point (CG, Scribe) | Doom 5 points (CG, Scribe) | Elemental Blade 1 point (Ele) | Elemental Shield 4 points (Ele) | Elemental Blast 5 points (Ele)",5,FALSE,,FALSE
-Scrivener,6,3,8,7,7,0,8,0,0,0,0,0,0,0,6,0,0,0,6,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,"Mage Armor 2 points (CG, Con, ELe, Scribe) | Major Spell Shield 4 points (CG, Con, ELe, Scribe) | Slow 2 points (Con) | Trap 1 point (CG, Con, Scribe) | Imprison 4 points (Con) | Enchant Blade 1 point (CG, Scribe) | Doom 5 points (CG, Scribe) | Elemental Blade 1 point (Ele) | Elemental Shield 4 points (Ele) | Elemental Blast 5 points (Ele)",6,FALSE,,FALSE
-Scrivener,7,3,9,8,8,0,9,0,0,0,0,0,0,0,7,0,0,0,7,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,"Mage Armor 2 points (CG, Con, ELe, Scribe) | Major Spell Shield 4 points (CG, Con, ELe, Scribe) | Slow 2 points (Con) | Trap 1 point (CG, Con, Scribe) | Imprison 4 points (Con) | Enchant Blade 1 point (CG, Scribe) | Doom 5 points (CG, Scribe) | Elemental Blade 1 point (Ele) | Elemental Shield 4 points (Ele) | Elemental Blast 5 points (Ele)",7,FALSE,,FALSE
-Scrivener,8,3,10,9,9,0,10,0,0,0,0,0,0,0,8,0,0,0,8,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,"Mage Armor 2 points (CG, Con, ELe, Scribe) | Major Spell Shield 4 points (CG, Con, ELe, Scribe) | Slow 2 points (Con) | Trap 1 point (CG, Con, Scribe) | Imprison 4 points (Con) | Enchant Blade 1 point (CG, Scribe) | Doom 5 points (CG, Scribe) | Elemental Blade 1 point (Ele) | Elemental Shield 4 points (Ele) | Elemental Blast 5 points (Ele)",8,FALSE,,FALSE
-Scrivener,9,3,11,10,10,0,11,0,0,0,0,0,0,0,9,0,0,0,9,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,"Mage Armor 2 points (CG, Con, ELe, Scribe) | Major Spell Shield 4 points (CG, Con, ELe, Scribe) | Slow 2 points (Con) | Trap 1 point (CG, Con, Scribe) | Imprison 4 points (Con) | Enchant Blade 1 point (CG, Scribe) | Doom 5 points (CG, Scribe) | Elemental Blade 1 point (Ele) | Elemental Shield 4 points (Ele) | Elemental Blast 5 points (Ele)",9,FALSE,,FALSE
-Scrivener,10,4,12,11,11,0,12,0,0,0,0,0,0,0,10,0,0,0,10,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,item production,,,,,,,"Mage Armor 2 points (CG, Con, ELe, Scribe) | Major Spell Shield 4 points (CG, Con, ELe, Scribe) | Slow 2 points (Con) | Trap 1 point (CG, Con, Scribe) | Imprison 4 points (Con) | Enchant Blade 1 point (CG, Scribe) | Doom 5 points (CG, Scribe) | Elemental Blade 1 point (Ele) | Elemental Shield 4 points (Ele) | Elemental Blast 5 points (Ele)",10,FALSE,,FALSE
-Shipyard,1,2,5,3,2,0,4,0,0,0,0,0,0,0,1,0,0,0,2,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,TRUE,ship builder,Ship,ship,,,,1,,,FALSE,class * level <= structure.level,FALSE
-Shipyard,2,2,6,4,3,0,5,0,0,0,0,0,0,0,2,0,0,0,3,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,TRUE,ship builder,Ship,ship,,,,1,,,FALSE,class * level <= structure.level,FALSE
-Shipyard,3,2,7,5,4,0,6,0,0,0,0,0,0,0,3,0,0,0,4,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,TRUE,ship builder,Ship,ship,,,,1,,,FALSE,class * level <= structure.level,FALSE
-Shipyard,4,2,8,6,5,0,7,0,0,0,0,0,0,0,4,0,0,0,5,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,TRUE,ship builder,Ship,ship,,,,1,,,FALSE,class * level <= structure.level,FALSE
-Shipyard,5,3,9,7,6,0,8,0,0,0,0,0,0,0,5,0,1,0,6,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,TRUE,ship builder,Ship,ship,,,,1,,,FALSE,class * level <= structure.level,FALSE
-Shipyard,6,3,10,8,7,0,9,0,0,0,0,0,0,0,6,0,2,0,7,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,TRUE,TRUE,ship builder,Ship,ship,,,,1,,,FALSE,class * level <= structure.level,FALSE
-Shipyard,7,3,11,9,8,0,10,0,0,0,0,0,0,0,7,0,3,0,8,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,TRUE,TRUE,ship builder,Ship,ship,,,,1,,,FALSE,class * level <= structure.level,FALSE
-Shipyard,8,3,12,10,9,0,11,0,0,0,0,0,0,0,8,0,4,0,9,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,TRUE,TRUE,ship builder,Ship,ship,,,,1,,,FALSE,class * level <= structure.level,FALSE
-Shipyard,9,3,13,11,10,0,12,0,0,0,0,0,0,0,9,0,5,0,10,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,TRUE,TRUE,ship builder,Ship,ship,,,,1,,,FALSE,class * level <= structure.level,FALSE
-Shipyard,10,4,14,12,11,0,13,0,0,0,0,0,0,0,10,0,6,0,11,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,TRUE,TRUE,ship builder,Ship,ship,,,,1,,,FALSE,class * level <= structure.level,FALSE
-Shop,1,1,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TRUE,FALSE,TRUE,TRUE,player workshop,,,,,,,,,FALSE,,FALSE
-Skilled Worker (Coin),1,1,0,0,0,0,0,2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TRUE,FALSE,TRUE,TRUE,non structure,,,,,,,,,FALSE,,FALSE
-Skilled Worker (Food),1,1,0,0,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TRUE,FALSE,TRUE,TRUE,non structure,,,,,,,,,FALSE,,FALSE
-Skilled Worker (Lumber),1,1,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TRUE,FALSE,TRUE,TRUE,non structure,,,,,,,,,FALSE,,FALSE
-Skilled Worker (Metal Ore),1,1,0,0,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TRUE,FALSE,TRUE,TRUE,non structure,,,,,,,,,FALSE,,FALSE
-Skilled Worker (Refined Goods),1,1,0,0,0,0,0,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TRUE,FALSE,TRUE,TRUE,non structure,,,,,,,,,FALSE,,FALSE
-Skilled Worker (Stone),1,1,0,0,0,0,0,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TRUE,FALSE,TRUE,TRUE,non structure,,,,,,,,,FALSE,,FALSE
-Skilled Worker (Medical),1,1,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,non structure,,,,,,,,,FALSE,,FALSE
-Skilled Worker (Education),1,1,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,non structure,,,,,,,,,FALSE,,FALSE
-Skilled Worker (Morale),1,1,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,non structure,,,,,,,,,FALSE,,FALSE
-Skilled Worker (Vice),1,1,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,FALSE,FALSE,TRUE,TRUE,non structure,,,,,,,,,FALSE,,FALSE
-Stables,1,1,5,0,2,0,4,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",Cavalry,,1,FALSE,,,,,FALSE,,FALSE
-Stables,2,1,6,0,3,0,5,0,0,0,0,0,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",Cavalry,,2,FALSE,,,,,FALSE,,FALSE
-Stables,3,1,7,0,4,0,6,0,0,0,0,0,0,0,0,0,3,0,3,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",Cavalry,,3,FALSE,,,,,FALSE,,FALSE
-Stables,4,1,8,0,5,0,7,0,0,0,0,0,0,0,0,0,4,0,4,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",Cavalry,,4,FALSE,,,,,FALSE,,FALSE
-Stables,5,2,9,0,6,0,8,0,0,0,0,0,0,0,0,0,5,0,5,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",Cavalry,,5,FALSE,,,,,FALSE,,FALSE
-Stables,6,2,10,0,7,0,9,0,0,0,0,0,0,0,0,0,6,0,6,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",Cavalry,,6,FALSE,,,,,FALSE,,FALSE
-Stables,7,2,11,0,8,0,10,0,0,0,0,0,0,0,0,0,7,0,7,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",Cavalry,,7,FALSE,,,,,FALSE,,FALSE
-Stables,8,2,12,0,9,0,11,0,0,0,0,0,0,0,0,0,8,0,8,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",Cavalry,,8,FALSE,,,,,FALSE,,FALSE
-Stables,9,2,13,0,10,0,12,0,0,0,0,0,0,0,0,0,9,0,9,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",Cavalry,,9,FALSE,,,,,FALSE,,FALSE
-Stables,10,3,14,0,11,0,13,0,0,0,0,0,0,0,0,0,10,0,10,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",Cavalry,,10,FALSE,,,,,FALSE,,FALSE
-Tavern,1,1,2,4,2,0,2,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,200,FALSE,FALSE,TRUE,TRUE,"settlement needs, train troops, di support","Irregular Archers, Irregular Infantry, Irregular Cavalry",,1,,,1,,,FALSE,,FALSE
-Tavern,2,1,3,5,3,0,3,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,2,0,400,FALSE,FALSE,TRUE,TRUE,"settlement needs, train troops, di support","Irregular Archers, Irregular Infantry, Irregular Cavalry",,1,,,2,,,FALSE,,FALSE
-Tavern,3,1,4,6,4,0,4,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,3,0,0,0,3,0,600,FALSE,FALSE,TRUE,TRUE,"settlement needs, train troops, di support","Irregular Archers, Irregular Infantry, Irregular Cavalry",,1,,,3,,,FALSE,,FALSE
-Tavern,4,1,5,7,5,0,5,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,4,0,0,0,4,0,800,FALSE,FALSE,TRUE,TRUE,"settlement needs, train troops, di support","Irregular Archers, Irregular Infantry, Irregular Cavalry",,1,,,4,,,FALSE,,FALSE
-Tavern,5,2,6,8,6,0,6,0,0,0,0,0,0,0,0,0,1,0,5,0,0,0,5,0,0,0,5,0,1000,FALSE,FALSE,TRUE,TRUE,"settlement needs, train troops, di support","Irregular Archers, Irregular Infantry, Irregular Cavalry",,1,,,5,,,FALSE,,FALSE
-Tavern,6,2,7,9,7,0,7,0,0,0,0,0,0,0,0,0,2,0,6,0,0,0,6,0,0,0,6,0,1200,FALSE,FALSE,TRUE,TRUE,"settlement needs, train troops, di support","Irregular Archers, Irregular Infantry, Irregular Cavalry",,1,,,6,,,FALSE,,FALSE
-Tavern,7,2,8,10,8,0,8,0,0,0,0,0,0,0,0,0,3,0,7,0,0,0,7,0,0,0,7,0,1400,FALSE,FALSE,TRUE,TRUE,"settlement needs, train troops, di support","Irregular Archers, Irregular Infantry, Irregular Cavalry",,1,,,7,,,FALSE,,FALSE
-Tavern,8,2,9,11,9,0,9,0,0,0,0,0,0,0,0,0,4,0,8,0,0,0,8,0,0,0,8,0,1600,FALSE,FALSE,TRUE,TRUE,"settlement needs, train troops, di support","Irregular Archers, Irregular Infantry, Irregular Cavalry",,1,,,8,,,FALSE,,FALSE
-Tavern,9,2,10,12,10,0,10,0,0,0,0,0,0,0,0,0,5,0,9,0,0,0,9,0,0,0,9,0,1800,FALSE,FALSE,TRUE,TRUE,"settlement needs, train troops, di support","Irregular Archers, Irregular Infantry, Irregular Cavalry",,1,,,9,,,FALSE,,FALSE
-Tavern,10,3,11,13,11,0,11,0,0,0,0,0,0,0,0,0,6,0,10,0,0,0,10,0,0,0,10,0,2000,FALSE,FALSE,TRUE,TRUE,"settlement needs, train troops, di support","Irregular Archers, Irregular Infantry, Irregular Cavalry",,1,,,10,,,FALSE,,FALSE
-Theater,1,1,1,1,0,0,2,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,200,FALSE,FALSE,TRUE,FALSE,settlement needs,,,,,,,,,FALSE,,FALSE
-Theater,2,1,2,2,0,0,3,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,400,FALSE,FALSE,TRUE,FALSE,settlement needs,,,,,,,,,FALSE,,FALSE
-Theater,3,1,3,3,0,0,4,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,3,0,0,0,0,0,600,FALSE,FALSE,TRUE,FALSE,settlement needs,,,,,,,,,FALSE,,FALSE
-Theater,4,1,4,4,0,0,5,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,4,0,0,0,0,0,800,FALSE,FALSE,TRUE,FALSE,settlement needs,,,,,,,,,FALSE,,FALSE
-Theater,5,2,5,5,0,0,6,0,0,0,0,0,0,0,1,0,0,0,5,0,0,0,5,0,0,0,0,0,1000,FALSE,FALSE,TRUE,FALSE,settlement needs,,,,,,,,,FALSE,,FALSE
-Theater,6,2,6,6,0,0,7,0,0,0,0,0,0,0,2,0,0,0,6,0,0,0,6,0,0,0,0,0,1200,FALSE,FALSE,TRUE,FALSE,settlement needs,,,,,,,,,FALSE,,FALSE
-Theater,7,2,7,7,0,0,8,0,0,0,0,0,0,0,3,0,0,0,7,0,0,0,7,0,0,0,0,0,1400,FALSE,FALSE,TRUE,FALSE,settlement needs,,,,,,,,,FALSE,,FALSE
-Theater,8,2,8,8,0,0,9,0,0,0,0,0,0,0,4,0,0,0,8,0,0,0,8,0,0,0,0,0,1600,FALSE,FALSE,TRUE,FALSE,settlement needs,,,,,,,,,FALSE,,FALSE
-Theater,9,2,9,9,0,0,10,0,0,0,0,0,0,0,5,0,0,0,9,0,0,0,9,0,0,0,0,0,1800,FALSE,FALSE,TRUE,FALSE,settlement needs,,,,,,,,,FALSE,,FALSE
-Theater,10,3,10,10,0,0,11,0,0,0,0,0,0,0,6,0,0,0,10,0,0,0,10,0,0,0,0,0,2000,FALSE,FALSE,TRUE,FALSE,settlement needs,,,,,,,,,FALSE,,FALSE
-Tower,1,2,5,5,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,100,TRUE,TRUE,TRUE,TRUE,"house troops, di support",,,,,,,,,FALSE,,FALSE
-Tower,2,2,6,6,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,2,0,0,0,2,200,TRUE,TRUE,TRUE,TRUE,"house troops, di support",,,,,,,,,FALSE,,FALSE
-Tower,3,2,7,7,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,3,0,0,0,3,300,TRUE,TRUE,TRUE,TRUE,"house troops, di support",,,,,,,,,FALSE,,FALSE
-Tower,4,2,8,8,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,4,0,0,0,4,400,TRUE,TRUE,TRUE,TRUE,"house troops, di support",,,,,,,,,FALSE,,FALSE
-Tower,5,3,8,8,0,0,1,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,5,0,0,0,5,500,TRUE,TRUE,TRUE,TRUE,"house troops, di support",,,,,,,,,FALSE,,FALSE
-Tower,6,3,9.2,9.2,0,0,2,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,6,0,0,0,6,600,TRUE,TRUE,TRUE,TRUE,"house troops, di support",,,,,,,,,FALSE,,FALSE
-Tower,7,3,10,10,0,0,3,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,7,0,0,0,7,700,TRUE,TRUE,TRUE,TRUE,"house troops, di support",,,,,,,,,FALSE,,FALSE
-Tower,8,3,10.8,10.8,0,0,4,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,8,0,0,0,8,800,TRUE,TRUE,TRUE,TRUE,"house troops, di support",,,,,,,,,FALSE,,FALSE
-Tower,9,3,11.6,11.6,0,0,5,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,0,9,0,0,0,9,900,TRUE,TRUE,TRUE,TRUE,"house troops, di support",,,,,,,,,FALSE,,FALSE
-Tower,10,4,12.4,12.4,0,0,6,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,10,0,0,0,10,1000,TRUE,TRUE,TRUE,TRUE,"house troops, di support",,,,,,,,,FALSE,,FALSE
-Trade School,1,1,2,3,2,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,FALSE,train skilled workers,Skilled Worker,,1,TRUE,"Coin, Food, Lumber, Metal Ore, Refined Goods, Stone, Medical, Education, Morale, and Vice",1,,,FALSE,,FALSE
-Trade School,2,1,3,4,3,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,2,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,FALSE,train skilled workers,Skilled Worker,,1,TRUE,"Coin, Food, Lumber, Metal Ore, Refined Goods, Stone, Medical, Education, Morale, and Vice",2,,,FALSE,,FALSE
-Trade School,3,1,4,5,4,0,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,3,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,FALSE,train skilled workers,Skilled Worker,,1,TRUE,"Coin, Food, Lumber, Metal Ore, Refined Goods, Stone, Medical, Education, Morale, and Vice",3,,,FALSE,,FALSE
-Trade School,4,1,5,6,5,0,0,0,0,0,0,0,0,0,4,4,0,0,0,0,0,4,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,FALSE,train skilled workers,Skilled Worker,,1,TRUE,"Coin, Food, Lumber, Metal Ore, Refined Goods, Stone, Medical, Education, Morale, and Vice",4,,,FALSE,,FALSE
-Trade School,5,2,6,7,6,0,0,0,0,0,0,0,0,0,5,5,0,0,0,0,0,5,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,FALSE,train skilled workers,Skilled Worker,,1,TRUE,"Coin, Food, Lumber, Metal Ore, Refined Goods, Stone, Medical, Education, Morale, and Vice",5,,,FALSE,,FALSE
-Trade School,6,2,7,8,7,0,0,0,0,0,0,0,0,0,6,6,0,0,0,0,0,6,0,0,0,0,0,0,1200,FALSE,FALSE,TRUE,FALSE,train skilled workers,Skilled Worker,,1,TRUE,"Coin, Food, Lumber, Metal Ore, Refined Goods, Stone, Medical, Education, Morale, and Vice",6,,,FALSE,,FALSE
-Trade School,7,2,8,9,8,0,0,0,0,0,0,0,0,0,7,7,0,0,0,0,0,7,0,0,0,0,0,0,1400,FALSE,FALSE,TRUE,FALSE,train skilled workers,Skilled Worker,,1,TRUE,"Coin, Food, Lumber, Metal Ore, Refined Goods, Stone, Medical, Education, Morale, and Vice",7,,,FALSE,,FALSE
-Trade School,8,2,9,10,9,0,0,0,0,0,0,0,0,0,8,8,0,0,0,0,0,8,0,0,0,0,0,0,1600,FALSE,FALSE,TRUE,FALSE,train skilled workers,Skilled Worker,,1,TRUE,"Coin, Food, Lumber, Metal Ore, Refined Goods, Stone, Medical, Education, Morale, and Vice",8,,,FALSE,,FALSE
-Trade School,9,2,10,11,10,0,0,0,0,0,0,0,0,0,9,9,0,0,0,0,0,9,0,0,0,0,0,0,1800,FALSE,FALSE,TRUE,FALSE,train skilled workers,Skilled Worker,,1,TRUE,"Coin, Food, Lumber, Metal Ore, Refined Goods, Stone, Medical, Education, Morale, and Vice",9,,,FALSE,,FALSE
-Trade School,10,3,11,12,11,0,0,0,0,0,0,0,0,0,10,10,0,0,0,0,0,10,0,0,0,0,0,0,2000,FALSE,FALSE,TRUE,FALSE,train skilled workers,Skilled Worker,,1,TRUE,"Coin, Food, Lumber, Metal Ore, Refined Goods, Stone, Medical, Education, Morale, and Vice",10,,,FALSE,,FALSE
-Walls,1,2,4,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,0,1,0,0,0,1,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",,,,,,,,,FALSE,,FALSE
-Walls,2,2,4,2,0,0,3,0,0,0,0,0,0,0,2,1,0,0,0,1,0,0,0,2,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",,,,,,,,,FALSE,,FALSE
-Walls,3,2,4,4,0,0,4,0,0,0,0,0,0,0,3,2,0,0,0,2,0,0,0,3,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",,,,,,,,,FALSE,,FALSE
-Walls,4,2,5,5,0,0,5,0,0,0,0,0,0,0,3,3,0,0,0,3,0,0,0,4,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",,,,,,,,,FALSE,,FALSE
-Walls,5,2,6,6,0,0,6,0,0,0,0,0,0,0,4,4,0,0,0,4,0,0,0,5,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",,,,,,,,,FALSE,,FALSE
-Walls,6,2,6,7,0,0,7,0,0,0,0,0,0,0,4,5,0,0,0,4,0,0,0,6,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",,,,,,,,,FALSE,,FALSE
-Walls,7,2,7,8,0,0,8,0,0,0,0,0,0,0,5,6,0,0,0,5,0,0,0,7,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",,,,,,,,,FALSE,,FALSE
-Walls,8,2,8,9,0,0,9,0,0,0,0,0,0,0,5,7,0,0,0,5,0,0,0,8,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",,,,,,,,,FALSE,,FALSE
-Walls,9,2,8,10,0,0,10,0,0,0,0,0,0,0,6,8,0,0,0,6,0,0,0,9,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",,,,,,,,,FALSE,,FALSE
-Walls,10,2,9,11,0,0,11,0,0,0,0,0,0,0,6,9,0,0,0,6,0,0,0,10,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",,,,,,,,,FALSE,,FALSE
-Palisade,1,1,3,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,1,0,0,0,0,1,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",,,,,,,,,FALSE,,FALSE
-Palisade,2,1,4,0,0,0,3,0,0,0,0,0,0,0,3,0,0,0,2,0,0,0,0,2,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",,,,,,,,,FALSE,,FALSE
-Palisade,3,1,5,0,0,0,4,0,0,0,0,0,0,0,4,0,0,0,3,0,0,0,0,3,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",,,,,,,,,FALSE,,FALSE
-Palisade,4,1,6,0,0,0,5,0,0,0,0,0,0,0,5,0,0,0,4,0,0,0,0,4,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",,,,,,,,,FALSE,,FALSE
-Palisade,5,1,7,0,0,0,6,0,0,0,0,0,0,0,6,0,0,0,5,0,0,0,0,5,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",,,,,,,,,FALSE,,FALSE
-Palisade,6,1,8,0,0,0,7,0,0,0,0,0,0,0,7,0,0,0,6,0,0,0,0,6,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",,,,,,,,,FALSE,,FALSE
-Palisade,7,1,9,0,0,0,8,0,0,0,0,0,0,0,8,0,0,0,7,0,0,0,0,7,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",,,,,,,,,FALSE,,FALSE
-Palisade,8,1,10,0,0,0,9,0,0,0,0,0,0,0,9,0,0,0,8,0,0,0,0,8,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",,,,,,,,,FALSE,,FALSE
-Palisade,9,1,11,0,0,0,10,0,0,0,0,0,0,0,10,0,0,0,9,0,0,0,0,9,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",,,,,,,,,FALSE,,FALSE
-Palisade,10,1,12,0,0,0,11,0,0,0,0,0,0,0,11,0,0,0,10,0,0,0,0,10,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",,,,,,,,,FALSE,,FALSE
-Moat,1,1,3,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",,,,,,,,,FALSE,,FALSE
-Warehouse,1,1,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,TRUE,settlement support,,,,,,,,,FALSE,,FALSE
-Warehouse,2,1,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,TRUE,settlement support,,,,,,,,,FALSE,,FALSE
-Warehouse,3,1,4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,TRUE,settlement support,,,,,,,,,FALSE,,FALSE
-Warehouse,4,1,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,TRUE,settlement support,,,,,,,,,FALSE,,FALSE
-Warehouse,5,2,6,6,6,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,TRUE,settlement support,,,,,,,,,FALSE,,FALSE
-Warehouse,6,1.8,7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,TRUE,TRUE,settlement support,,,,,,,,,FALSE,,FALSE
-Warehouse,7,2,8,8,8,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,TRUE,TRUE,settlement support,,,,,,,,,FALSE,,FALSE
-Warehouse,8,2.2,9,9,9,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,TRUE,TRUE,settlement support,,,,,,,,,FALSE,,FALSE
-Warehouse,9,2.4,10,10,10,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,TRUE,TRUE,settlement support,,,,,,,,,FALSE,,FALSE
-Warehouse,10,2.6,11,11,11,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,TRUE,TRUE,settlement support,,,,,,,,,FALSE,,FALSE
-Gateway,1,12,12,12,12,0,12,12,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,1,0,0,0,100,FALSE,FALSE,TRUE,TRUE,"resource production, di support",,,,,,,,,FALSE,,FALSE
-Gateway,2,14,14,14,14,0,14,14,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,2,0,0,0,200,FALSE,FALSE,TRUE,TRUE,"resource production, di support",,,,,,,,,FALSE,,FALSE
-Gateway,3,16,16,16,16,0,16,16,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,3,0,0,0,300,FALSE,FALSE,TRUE,TRUE,"resource production, di support",,,,,,,,,FALSE,,FALSE
-Gateway,4,18,18,18,18,0,18,18,0,0,0,0,0,12,0,0,0,0,0,0,0,0,0,0,4,0,0,0,400,FALSE,FALSE,TRUE,TRUE,"resource production, di support",,,,,,,,,FALSE,,FALSE
-Gateway,5,20,20,20,20,0,20,20,0,0,0,0,0,15,0,0,0,0,0,0,0,0,0,0,5,0,0,0,500,FALSE,FALSE,TRUE,TRUE,"resource production, di support",,,,,,,,,FALSE,,FALSE
-Gateway,6,22,22,22,22,0,22,22,0,0,0,0,0,18,0,0,0,0,0,0,0,0,0,0,6,0,0,0,600,FALSE,FALSE,TRUE,TRUE,"resource production, di support",,,,,,,,,FALSE,,FALSE
-Gateway,7,24,24,24,24,0,24,24,0,0,0,0,0,21,0,0,0,0,0,0,0,0,0,0,7,0,0,0,700,FALSE,FALSE,TRUE,TRUE,"resource production, di support",,,,,,,,,FALSE,,FALSE
-Gateway,8,26,26,26,26,0,26,26,0,0,0,0,0,24,0,0,0,0,0,0,0,0,0,0,8,0,0,0,800,FALSE,FALSE,TRUE,TRUE,"resource production, di support",,,,,,,,,FALSE,,FALSE
-Gateway,9,28,28,28,28,0,28,28,0,0,0,0,0,27,0,0,0,0,0,0,0,0,0,0,9,0,0,0,900,FALSE,FALSE,TRUE,TRUE,"resource production, di support",,,,,,,,,FALSE,,FALSE
-Gateway,10,30,30,30,30,0,30,30,0,0,0,0,0,30,0,0,0,0,0,0,0,0,0,0,10,0,0,0,1000,FALSE,FALSE,TRUE,TRUE,"resource production, di support",,,,,,,,,FALSE,,FALSE
-Estate,1,2,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,NPC housing,,,,,,,,,FALSE,,FALSE
-Estate,2,2,4,4,4,4,4,0,0,0,0,0,0,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,NPC housing,,,,,,,,,FALSE,,FALSE
-Estate,3,2,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,3,0,3,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,NPC housing,,,,,,,,,FALSE,,FALSE
-Estate,4,2,6,6,6,6,6,0,0,0,0,0,0,0,0,0,0,4,0,4,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,NPC housing,,,,,,,,,FALSE,,FALSE
-Estate,5,2,7,7,7,7,7,0,0,0,0,0,0,0,0,0,0,5,0,5,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,NPC housing,,,,,,,,,FALSE,,FALSE
-Estate,6,2,8,8,8,8,8,1,0,0,0,0,0,0,0,0,0,6,1,6,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,NPC housing,,,,,,,,,FALSE,,FALSE
-Estate,7,2,9,9,9,9,9,2,0,0,0,0,0,0,0,0,0,7,2,7,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,NPC housing,,,,,,,,,FALSE,,FALSE
-Estate,8,2,10,10,10,10,10,3,0,0,0,0,0,0,0,0,0,8,3,8,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,NPC housing,,,,,,,,,FALSE,,FALSE
-Estate,9,2,11,11,11,11,11,4,0,0,0,0,0,0,0,0,0,9,4,9,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,NPC housing,,,,,,,,,FALSE,,FALSE
-Estate,10,2,12,12,12,12,12,5,0,0,0,0,0,0,0,0,0,10,5,10,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,NPC housing,,,,,,,,,FALSE,,FALSE
-Homeward,1,2,5,7,7,0,7,0,0,0,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,Creature housing,,,,,,,,,FALSE,,FALSE
-Homeward,2,2,6,8,8,0,8,0,0,0,0,0,0,0,0,0,0,0,6,6,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,Creature housing,,,,,,,,,FALSE,,FALSE
-Homeward,3,2,7,9,9,0,9,0,0,0,0,0,0,0,0,0,0,0,9,9,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,Creature housing,,,,,,,,,FALSE,,FALSE
-Homeward,4,2,8,10,10,0,10,0,0,0,0,0,0,0,0,0,0,0,12,12,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,Creature housing,,,,,,,,,FALSE,,FALSE
-Homeward,5,2,9,11,11,0,11,0,0,0,0,0,0,0,0,0,0,0,15,15,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,Creature housing,,,,,,,,,FALSE,,FALSE
-Homeward,6,2,10,12,12,0,12,1,0,0,0,0,0,0,0,0,0,0,18,18,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,Creature housing,,,,,,,,,FALSE,,FALSE
-Homeward,7,2,11,13,13,0,13,2,0,0,0,0,0,0,0,0,0,0,21,21,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,Creature housing,,,,,,,,,FALSE,,FALSE
-Homeward,8,2,12,14,14,0,14,3,0,0,0,0,0,0,0,0,0,0,24,24,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,Creature housing,,,,,,,,,FALSE,,FALSE
-Homeward,9,2,13,15,15,0,15,4,0,0,0,0,0,0,0,0,0,0,27,27,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,Creature housing,,,,,,,,,FALSE,,FALSE
-Homeward,10,2,14,16,16,0,16,5,0,0,0,0,0,0,0,0,0,0,30,30,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,Creature housing,,,,,,,,,FALSE,,FALSE
-Castle,1,12,30,30,30,0,30,30,0,0,0,0,0,0,5,5,5,5,5,5,0,0,0,1,1,1,-1,8,200,FALSE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Castle,2,24,60,60,60,0,60,60,0,0,0,0,0,0,10,10,10,10,10,10,0,0,0,2,2,2,-2,16,400,FALSE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Castle,3,36,90,90,90,0,90,90,0,0,0,0,0,0,15,15,15,15,15,15,0,0,0,3,3,3,-3,24,600,FALSE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Castle,4,48,120,120,120,0,120,120,0,0,0,0,0,0,20,20,20,20,20,20,0,0,0,4,4,4,-4,32,800,FALSE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Castle,5,60,150,150,150,0,150,150,0,0,0,0,0,0,25,25,25,25,25,25,0,0,0,5,5,5,-5,40,1000,FALSE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Castle,6,72,180,180,180,0,180,180,0,0,0,0,0,0,30,30,30,30,30,30,0,0,0,6,6,6,-6,48,1200,FALSE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Castle,7,84,210,210,210,0,210,210,0,0,0,0,0,0,35,35,35,35,35,35,0,0,0,7,7,7,-7,56,1400,FALSE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Castle,8,96,240,240,240,0,240,240,0,0,0,0,0,0,40,40,40,40,40,40,0,0,0,8,8,8,-8,64,1600,FALSE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Castle,9,108,270,270,270,0,270,270,0,0,0,0,0,0,45,45,45,45,45,45,0,0,0,9,9,9,-9,72,1800,FALSE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-Castle,10,120,300,300,300,0,300,300,0,0,0,0,0,0,50,50,50,50,50,50,0,0,0,10,10,10,-10,80,2000,FALSE,FALSE,TRUE,TRUE,di support,,,,,,,,,FALSE,,FALSE
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FALSE
+Name,Level,build_turns,build_cost_L,build_cost_S,build_cost_M,build_cost_F,build_cost_R,build_cost_C,production_L,production_S,production_M,production_F,production_R,production_C,upkeep_L,upkeep_S,upkeep_M,upkeep_F,upkeep_R,upkeep_C,settlement_needs_Med,settlement_needs_Edu,settlement_needs_Mor,domestic_index_Stability,domestic_index_Economy,domestic_index_Loyalty,domestic_index_Unrest,garrison,population,building_location_Village Inn,building_location_Outpost,building_location_City,building_location_Fortress,structure_role,can_train,build_type,max_unit_level,requires_specialization,specialization_options,train_limit_per_turn,produces_items,produce_item_limit_per_turn,can_cast_rituals,max_build_formula,requires_approval
+Academy,1,8,15,15,15,15,15,5,0,0,0,0,0,0,0,0,0,5,5,5,0,2,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",FALSE,,,,,,,,FALSE,,FALSE
+Academy,2,8,16,16,16,16,16,6,0,0,0,0,0,0,0,0,0,10,10,10,0,4,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",FALSE,,,,,,,,FALSE,,FALSE
+Academy,3,8,17,17,17,17,17,7,0,0,0,0,0,0,0,0,0,15,15,15,0,6,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",FALSE,,,,,,,,FALSE,,FALSE
+Academy,4,8,18,18,18,18,18,8,0,0,0,0,0,0,0,0,0,20,20,20,0,8,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",FALSE,,,,,,,,FALSE,,FALSE
+Academy,5,8,19,19,19,19,19,9,0,0,0,0,0,0,0,0,0,25,25,25,0,10,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",FALSE,,,,,,,,FALSE,,FALSE
+Academy,6,8,20,20,20,20,20,10,0,0,0,0,0,0,0,0,0,30,30,30,0,12,0,0,0,0,0,0,1200,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",FALSE,,,,,,,,FALSE,,FALSE
+Academy,7,8,21,21,21,21,21,11,0,0,0,0,0,0,0,0,0,35,35,35,0,14,0,0,0,0,0,0,1400,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",FALSE,,,,,,,,FALSE,,FALSE
+Academy,8,8,22,22,22,22,22,12,0,0,0,0,0,0,0,0,0,40,40,40,0,16,0,0,0,0,0,0,1600,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",FALSE,,,,,,,,FALSE,,FALSE
+Academy,9,8,23,23,23,23,23,13,0,0,0,0,0,0,0,0,0,45,45,45,0,18,0,0,0,0,0,0,1800,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",FALSE,,,,,,,,FALSE,,FALSE
+Academy,10,8,24,24,24,24,24,14,0,0,0,0,0,0,0,0,0,50,50,50,0,20,0,0,0,0,0,0,2000,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",FALSE,,,,,,,,FALSE,,FALSE
+Airship Yard,1,4,10,6,4,0,8,0,0,0,0,0,0,0,1,0,0,0,2,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,TRUE,airship builder,TRUE,airship,1,,,1,,,FALSE,,TRUE
+Airship Yard,2,4,12,8,6,0,10,0,0,0,0,0,0,0,2,0,0,0,3,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,TRUE,airship builder,TRUE,airship,2,,,1,,,FALSE,,TRUE
+Airship Yard,3,4,14,10,8,0,12,0,0,0,0,0,0,0,3,0,0,0,4,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,TRUE,airship builder,TRUE,airship,3,,,1,,,FALSE,,TRUE
+Airship Yard,4,4,16,12,10,0,14,0,0,0,0,0,0,0,4,0,0,0,5,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,TRUE,airship builder,TRUE,airship,4,,,1,,,FALSE,,TRUE
+Airship Yard,5,6,18,14,12,0,16,0,0,0,0,0,0,0,5,0,1,0,6,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,TRUE,airship builder,TRUE,airship,5,,,1,,,FALSE,,TRUE
+Airship Yard,6,6,20,16,14,0,18,0,0,0,0,0,0,0,6,0,2,0,7,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,TRUE,TRUE,airship builder,TRUE,airship,6,,,1,,,FALSE,,TRUE
+Airship Yard,7,6,22,18,16,0,20,0,0,0,0,0,0,0,7,0,3,0,8,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,TRUE,TRUE,airship builder,TRUE,airship,7,,,1,,,FALSE,,TRUE
+Airship Yard,8,6,24,20,18,0,22,0,0,0,0,0,0,0,8,0,4,0,9,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,TRUE,TRUE,airship builder,TRUE,airship,8,,,1,,,FALSE,,TRUE
+Airship Yard,9,6,26,22,20,0,24,0,0,0,0,0,0,0,9,0,5,0,10,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,TRUE,TRUE,airship builder,TRUE,airship,9,,,1,,,FALSE,,TRUE
+Airship Yard,10,8,28,24,22,0,26,0,0,0,0,0,0,0,10,0,6,0,11,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,TRUE,TRUE,airship builder,TRUE,airship,10,,,1,,,FALSE,,TRUE
+Airship Dry Dock,1,4,10,4,0,0,10,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,100,FALSE,FALSE,TRUE,TRUE,airship repair,FALSE,,,,,,,,FALSE,,TRUE
+Airship Dry Dock,2,4,12,6,0,0,12,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,TRUE,airship repair,FALSE,,,,,,,,FALSE,,TRUE
+Airship Dry Dock,3,4,14,8,0,0,14,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,300,FALSE,FALSE,TRUE,TRUE,airship repair,FALSE,,,,,,,,FALSE,,TRUE
+Airship Dry Dock,4,4,16,10,0,0,16,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,TRUE,airship repair,FALSE,,,,,,,,FALSE,,TRUE
+Airship Dry Dock,5,6,18,12,0,0,18,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,500,FALSE,FALSE,TRUE,TRUE,airship repair,FALSE,,,,,,,,FALSE,,TRUE
+Airship Dry Dock,6,6,20,14,0,0,20,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,TRUE,airship repair,FALSE,,,,,,,,FALSE,,TRUE
+Airship Dry Dock,7,6,22,16,0,0,22,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,700,FALSE,FALSE,TRUE,TRUE,airship repair,FALSE,,,,,,,,FALSE,,TRUE
+Airship Dry Dock,8,6,24,18,0,0,24,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,TRUE,airship repair,FALSE,,,,,,,,FALSE,,TRUE
+Airship Dry Dock,9,6,26,20,0,0,26,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,900,FALSE,FALSE,TRUE,TRUE,airship repair,FALSE,,,,,,,,FALSE,,TRUE
+Airship Dry Dock,10,8,28,22,0,0,28,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,TRUE,airship repair,FALSE,,,,,,,,FALSE,,TRUE
+Airship Port,1,4,10,4,0,0,10,0,0,0,0,0,0,3,1,1,1,0,0,0,0,0,0,0,1,0,0,0,200,FALSE,FALSE,TRUE,TRUE,"resource production, di support",FALSE,,,,,,,,FALSE,,TRUE
+Airship Port,2,4,12,6,0,0,12,0,0,0,0,0,0,6,2,2,2,0,0,0,0,0,0,0,2,0,0,0,400,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,TRUE
+Airship Port,3,4,14,8,0,0,14,0,0,0,0,0,0,9,3,3,3,0,0,0,0,0,0,0,3,0,0,0,600,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,TRUE
+Airship Port,4,4,16,10,0,0,16,0,0,0,0,0,0,12,4,4,4,0,0,0,0,0,0,0,4,0,0,0,800,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,TRUE
+Airship Port,5,6,18,12,0,0,18,0,0,0,0,0,0,15,5,5,5,0,0,0,0,0,0,0,5,0,0,0,1000,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,TRUE
+Airship Port,6,6,20,14,0,0,20,0,0,0,0,0,0,18,6,6,6,0,0,0,0,0,0,0,6,0,0,0,1200,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,TRUE
+Airship Port,7,6,22,16,0,0,22,0,0,0,0,0,0,21,7,7,7,0,0,0,0,0,0,0,7,0,0,0,1400,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,TRUE
+Airship Port,8,6,24,18,0,0,24,0,0,0,0,0,0,24,8,8,8,0,0,0,0,0,0,0,8,0,0,0,1600,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,TRUE
+Airship Port,9,6,26,20,0,0,26,0,0,0,0,0,0,27,9,9,9,0,0,0,0,0,0,0,9,0,0,0,1800,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,TRUE
+Airship Port,10,8,28,22,0,0,28,0,0,0,0,0,0,30,10,10,10,0,0,0,0,0,0,0,10,0,0,0,2000,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,TRUE
+Alchemy Laboratory,1,2,2,3,2,0,3,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Cure Elixir 1 point | Lesser Acid Attack 1 points |Greater Acid Attack 3 points | Vorpal Coating +1 2 points | Vorpal Coating +2 4 points,1,FALSE,,FALSE
+Alchemy Laboratory,2,2,3,4,3,0,4,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Cure Elixir 1 point | Lesser Acid Attack 1 points |Greater Acid Attack 3 points | Vorpal Coating +1 2 points | Vorpal Coating +2 4 points,2,FALSE,,FALSE
+Alchemy Laboratory,3,2,4,5,4,0,5,0,0,0,0,0,0,0,3,0,0,0,3,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Cure Elixir 1 point | Lesser Acid Attack 1 points |Greater Acid Attack 3 points | Vorpal Coating +1 2 points | Vorpal Coating +2 4 points,3,FALSE,,FALSE
+Alchemy Laboratory,4,2,5,6,5,0,6,0,0,0,0,0,0,0,4,0,0,0,4,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Cure Elixir 1 point | Lesser Acid Attack 1 points |Greater Acid Attack 3 points | Vorpal Coating +1 2 points | Vorpal Coating +2 4 points,4,FALSE,,FALSE
+Alchemy Laboratory,5,3,6,7,6,0,7,0,0,0,0,0,0,0,5,0,0,0,5,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Cure Elixir 1 point | Lesser Acid Attack 1 points |Greater Acid Attack 3 points | Vorpal Coating +1 2 points | Vorpal Coating +2 4 points,5,FALSE,,FALSE
+Alchemy Laboratory,6,3,7,8,7,0,8,0,0,0,0,0,0,0,6,0,0,0,6,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Cure Elixir 1 point | Lesser Acid Attack 1 points |Greater Acid Attack 3 points | Vorpal Coating +1 2 points | Vorpal Coating +2 4 points,6,FALSE,,FALSE
+Alchemy Laboratory,7,3,8,9,8,0,9,0,0,0,0,0,0,0,7,0,0,0,7,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Cure Elixir 1 point | Lesser Acid Attack 1 points |Greater Acid Attack 3 points | Vorpal Coating +1 2 points | Vorpal Coating +2 4 points,7,FALSE,,FALSE
+Alchemy Laboratory,8,3,9,10,9,0,10,0,0,0,0,0,0,0,8,0,0,0,8,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Cure Elixir 1 point | Lesser Acid Attack 1 points |Greater Acid Attack 3 points | Vorpal Coating +1 2 points | Vorpal Coating +2 4 points,8,FALSE,,FALSE
+Alchemy Laboratory,9,3,10,11,10,0,11,0,0,0,0,0,0,0,9,0,0,0,9,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Cure Elixir 1 point | Lesser Acid Attack 1 points |Greater Acid Attack 3 points | Vorpal Coating +1 2 points | Vorpal Coating +2 4 points,9,FALSE,,FALSE
+Alchemy Laboratory,10,4,11,12,11,0,12,0,0,0,0,0,0,0,10,0,0,0,10,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Cure Elixir 1 point | Lesser Acid Attack 1 points |Greater Acid Attack 3 points | Vorpal Coating +1 2 points | Vorpal Coating +2 4 points,10,FALSE,,FALSE
+Archery Range,1,1,2,0,2,0,5,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,1,FALSE,,1,,,FALSE,,FALSE
+Archery Range,2,1,3,0,3,0,6,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,2,FALSE,,1,,,FALSE,,FALSE
+Archery Range,3,1,4,0,4,0,7,0,0,0,0,0,0,0,3,0,0,0,3,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,3,FALSE,,1,,,FALSE,,FALSE
+Archery Range,4,1,5,0,5,0,8,0,0,0,0,0,0,0,4,0,0,0,4,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,4,FALSE,,1,,,FALSE,,FALSE
+Archery Range,5,2,6,0,6,0,9,0,0,0,0,0,0,0,5,0,0,0,5,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,5,FALSE,,1,,,FALSE,,FALSE
+Archery Range,6,2,7,0,7,0,10,0,0,0,0,0,0,0,6,0,0,0,6,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,6,FALSE,,1,,,FALSE,,FALSE
+Archery Range,7,2,8,0,8,0,11,0,0,0,0,0,0,0,7,0,0,0,7,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,7,FALSE,,1,,,FALSE,,FALSE
+Archery Range,8,2,9,0,9,0,12,0,0,0,0,0,0,0,8,0,0,0,8,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,8,FALSE,,1,,,FALSE,,FALSE
+Archery Range,9,2,10,0,10,0,13,0,0,0,0,0,0,0,9,0,0,0,9,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,9,FALSE,,1,,,FALSE,,FALSE
+Archery Range,10,3,11,0,11,0,14,0,0,0,0,0,0,0,10,0,0,0,10,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,10,FALSE,,1,,,FALSE,,FALSE
+Archive,1,4,3,4,3,0,4,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,"convert troops, retrain troops",TRUE,,1,,,1,,,FALSE,,TRUE
+Archive,2,4,4,5,4,0,5,0,0,0,0,0,0,0,0,2,2,0,2,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,convert troops,TRUE,,2,,,1,,,FALSE,,TRUE
+Archive,3,4,5,6,5,0,6,0,0,0,0,0,0,0,0,3,3,0,3,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,convert troops,TRUE,,3,,,1,,,FALSE,,TRUE
+Archive,4,4,6,7,6,0,7,0,0,0,0,0,0,0,0,4,4,0,4,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,convert troops,TRUE,,4,,,1,,,FALSE,,TRUE
+Archive,5,4,7,8,7,0,8,0,0,0,0,0,0,0,0,5,5,0,5,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,convert troops,TRUE,,5,,,1,,,FALSE,,TRUE
+Archive,6,4,8,9,8,0,9,0,0,0,0,0,0,0,0,6,6,0,6,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,convert troops,TRUE,,6,,,1,,,FALSE,,TRUE
+Archive,7,4,9,10,9,0,10,0,0,0,0,0,0,0,0,7,7,0,7,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,convert troops,TRUE,,7,,,1,,,FALSE,,TRUE
+Archive,8,4,10,11,10,0,11,0,0,0,0,0,0,0,0,8,8,0,8,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,convert troops,TRUE,,8,,,1,,,FALSE,,TRUE
+Archive,9,4,11,12,11,0,12,0,0,0,0,0,0,0,0,9,9,0,9,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,convert troops,TRUE,,9,,,1,,,FALSE,,TRUE
+Archive,10,4,12,13,12,0,13,0,0,0,0,0,0,0,0,10,10,0,10,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,convert troops,TRUE,,10,,,1,,,FALSE,,TRUE
+Arena,1,1,2,1,0,0,2,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,200,FALSE,FALSE,TRUE,FALSE,"train troops, retrain troops",TRUE,,1,FALSE,,1,,,FALSE,,FALSE
+Arena,2,1,3,2,0,0,3,2,0,0,0,0,0,0,2,0,0,0,2,0,0,0,2,0,0,2,0,0,400,FALSE,FALSE,TRUE,FALSE,"train troops, retrain troops",TRUE,,2,FALSE,,1,,,FALSE,,FALSE
+Arena,3,1,4,3,0,0,4,3,0,0,0,0,0,0,3,0,0,0,3,0,0,0,3,0,0,3,0,0,600,FALSE,FALSE,TRUE,FALSE,"train troops, retrain troops",TRUE,,3,FALSE,,1,,,FALSE,,FALSE
+Arena,4,1,5,4,0,0,5,4,0,0,0,0,0,0,4,0,0,0,4,0,0,0,4,0,0,4,0,0,800,FALSE,FALSE,TRUE,FALSE,"train troops, retrain troops",TRUE,,4,FALSE,,1,,,FALSE,,FALSE
+Arena,5,2,6,5,0,0,6,5,0,0,0,0,0,0,5,0,0,0,5,0,0,0,5,0,0,5,0,0,1000,FALSE,FALSE,TRUE,FALSE,"train troops, retrain troops",TRUE,,5,FALSE,,1,,,FALSE,,FALSE
+Arena,6,2,7,6,0,0,7,6,0,0,0,0,0,0,6,0,0,0,6,0,0,0,6,0,0,6,0,0,1200,FALSE,FALSE,TRUE,FALSE,"train troops, retrain troops",TRUE,,6,FALSE,,1,,,FALSE,,FALSE
+Arena,7,2,8,7,0,0,8,7,0,0,0,0,0,0,7,0,0,0,7,0,0,0,7,0,0,7,0,0,1400,FALSE,FALSE,TRUE,FALSE,"train troops, retrain troops",TRUE,,7,FALSE,,1,,,FALSE,,FALSE
+Arena,8,2,9,8,0,0,9,8,0,0,0,0,0,0,8,0,0,0,8,0,0,0,8,0,0,8,0,0,1600,FALSE,FALSE,TRUE,FALSE,"train troops, retrain troops",TRUE,,8,FALSE,,1,,,FALSE,,FALSE
+Arena,9,2,10,9,0,0,10,9,0,0,0,0,0,0,9,0,0,0,9,0,0,0,9,0,0,9,0,0,1800,FALSE,FALSE,TRUE,FALSE,"train troops, retrain troops",TRUE,,9,FALSE,,1,,,FALSE,,FALSE
+Arena,10,3,11,10,0,0,11,10,0,0,0,0,0,0,10,0,0,0,10,0,0,0,10,0,0,10,0,0,2000,FALSE,FALSE,TRUE,FALSE,"train troops, retrain troops",TRUE,,10,FALSE,,1,,,FALSE,,FALSE
+Armorsmith,1,2,2,3,4,0,3,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Silver Weapons| Masterwork Armor,1,FALSE,,FALSE
+Armorsmith,2,2,3,4,5,0,4,0,0,0,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Silver Weapons| Masterwork Armor,2,FALSE,,FALSE
+Armorsmith,3,2,4,5,6,0,5,0,0,0,0,0,0,0,3,0,3,0,0,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Silver Weapons| Masterwork Armor,3,FALSE,,FALSE
+Armorsmith,4,2,5,6,7,0,6,0,0,0,0,0,0,0,4,0,4,0,0,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Silver Weapons| Masterwork Armor,4,FALSE,,FALSE
+Armorsmith,5,3,6,7,8,0,7,0,0,0,0,0,0,0,5,0,5,0,0,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Silver Weapons| Masterwork Armor,5,FALSE,,FALSE
+Armorsmith,6,3,7,8,9,0,8,0,0,0,0,0,0,0,6,0,6,0,0,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Silver Weapons| Masterwork Armor,6,FALSE,,FALSE
+Armorsmith,7,3,8,9,10,0,9,0,0,0,0,0,0,0,7,0,7,0,0,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Silver Weapons| Masterwork Armor,7,FALSE,,FALSE
+Armorsmith,8,3,9,10,11,0,10,0,0,0,0,0,0,0,8,0,8,0,0,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Silver Weapons| Masterwork Armor,8,FALSE,,FALSE
+Armorsmith,9,3,10,11,12,0,11,0,0,0,0,0,0,0,9,0,9,0,0,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Silver Weapons| Masterwork Armor,9,FALSE,,FALSE
+Armorsmith,10,4,11,12,13,0,12,0,0,0,0,0,0,0,10,0,10,0,0,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Silver Weapons| Masterwork Armor,10,FALSE,,FALSE
+Basic Mine,1,1,2,2,1,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Basic Mine,2,1,3,3,2,0,0,0,0,0,10,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,200,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Basic Mine,3,1,4,4,6,0,0,0,0,0,15,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,300,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Basic Mine,4,1,5,5,4,0,0,0,0,0,20,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,400,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Basic Mine,5,2,6,6,5,0,0,0,0,0,25,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,500,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Basic Mine,6,2,7,7,6,0,0,0,0,0,30,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,600,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Basic Mine,7,2,8,8,7,0,0,0,0,0,35,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,700,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Basic Mine,8,2,9,9,8,0,0,0,0,0,40,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,800,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Basic Mine,9,2,10,10,9,0,0,0,0,0,45,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,900,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Basic Mine,10,3,11,11,10,0,0,0,0,0,50,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,1000,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Brewery,1,1,2,4,0,0,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,0,200,FALSE,FALSE,TRUE,FALSE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Brewery,2,1,3,5,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,2,0,400,FALSE,FALSE,TRUE,FALSE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Brewery,3,1,4,6,0,0,4,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,3,0,0,0,3,0,600,FALSE,FALSE,TRUE,FALSE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Brewery,4,1,5,7,0,0,5,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,4,0,0,0,4,0,800,FALSE,FALSE,TRUE,FALSE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Brewery,5,2,6,8,0,0,6,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,5,0,0,0,5,0,1000,FALSE,FALSE,TRUE,FALSE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Brewery,6,2,7,9,0,0,7,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,6,0,0,0,6,0,1200,FALSE,FALSE,TRUE,FALSE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Brewery,7,2,8,10,0,0,8,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,7,0,0,0,7,0,1400,FALSE,FALSE,TRUE,FALSE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Brewery,8,2,9,11,0,0,9,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,8,0,0,0,8,0,1600,FALSE,FALSE,TRUE,FALSE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Brewery,9,2,10,12,0,0,10,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,9,0,0,0,9,0,1800,FALSE,FALSE,TRUE,FALSE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Brewery,10,3,11,13,0,0,11,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,10,0,0,0,10,0,2000,FALSE,FALSE,TRUE,FALSE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Casino,1,2,4,4,2,0,4,0,0,0,0,0,0,5,2,2,0,0,1,0,0,0,1,0,0,0,1,0,200,FALSE,FALSE,TRUE,FALSE,"di support, resource production",FALSE,,,,,,,,FALSE,,FALSE
+Casino,2,2,5,5,3,0,5,0,0,0,0,0,0,10,3,3,0,0,2,0,0,0,2,0,0,0,2,0,400,FALSE,FALSE,TRUE,FALSE,"di support, resource production",FALSE,,,,,,,,FALSE,,FALSE
+Casino,3,2,6,6,4,0,6,0,0,0,0,0,0,15,4,4,0,0,3,0,0,0,3,0,0,0,3,0,600,FALSE,FALSE,TRUE,FALSE,"di support, resource production",FALSE,,,,,,,,FALSE,,FALSE
+Casino,4,2,7,7,5,0,7,0,0,0,0,0,0,20,5,5,0,0,4,0,0,0,4,0,0,0,4,0,800,FALSE,FALSE,TRUE,FALSE,"di support, resource production",FALSE,,,,,,,,FALSE,,FALSE
+Casino,5,3,8,8,6,0,8,0,0,0,0,0,0,25,6,6,0,0,5,0,0,0,5,0,0,0,5,0,1000,FALSE,FALSE,TRUE,FALSE,"di support, resource production",FALSE,,,,,,,,FALSE,,FALSE
+Casino,6,3,9,9,7,0,9,0,0,0,0,0,0,30,7,7,0,0,6,0,0,0,6,0,0,0,6,0,1200,FALSE,FALSE,TRUE,FALSE,"di support, resource production",FALSE,,,,,,,,FALSE,,FALSE
+Casino,7,3,10,10,8,0,10,0,0,0,0,0,0,35,8,8,0,0,7,0,0,0,7,0,0,0,7,0,1400,FALSE,FALSE,TRUE,FALSE,"di support, resource production",FALSE,,,,,,,,FALSE,,FALSE
+Casino,8,3,11,11,9,0,11,0,0,0,0,0,0,40,9,9,0,0,8,0,0,0,8,0,0,0,8,0,1600,FALSE,FALSE,TRUE,FALSE,"di support, resource production",FALSE,,,,,,,,FALSE,,FALSE
+Casino,9,3,12,12,10,0,12,0,0,0,0,0,0,45,10,10,0,0,9,0,0,0,9,0,0,0,9,0,1800,FALSE,FALSE,TRUE,FALSE,"di support, resource production",FALSE,,,,,,,,FALSE,,FALSE
+Casino,10,4,13,13,11,0,13,0,0,0,0,0,0,50,11,11,0,0,10,0,0,0,10,0,0,0,10,0,2000,FALSE,FALSE,TRUE,FALSE,"di support, resource production",FALSE,,,,,,,,FALSE,,FALSE
+Chapter House,1,4,0,2,2,0,6,3,0,0,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,"convert troops, retrain troops",TRUE,,1,TRUE,Light Knights | Dark Knights,1,,,FALSE,,TRUE
+Chapter House,2,4,0,3,3,0,7,4,0,0,0,0,0,0,0,0,0,0,3,2,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,"convert troops, retrain troops",TRUE,,2,TRUE,Light Knights | Dark Knights,1,,,FALSE,,TRUE
+Chapter House,3,4,0,4,4,0,8,5,0,0,0,0,0,0,0,0,0,0,4,3,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,"convert troops, retrain troops",TRUE,,3,TRUE,Light Knights | Dark Knights,1,,,FALSE,,TRUE
+Chapter House,4,4,0,5,5,0,9,6,0,0,0,0,0,0,0,0,0,0,5,4,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,"convert troops, retrain troops",TRUE,,4,TRUE,Light Knights | Dark Knights,1,,,FALSE,,TRUE
+Chapter House,5,4,0,6,6,0,10,7,0,0,0,0,0,0,0,0,0,0,6,5,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,"convert troops, retrain troops",TRUE,,5,TRUE,Light Knights | Dark Knights,1,,,FALSE,,TRUE
+Chapter House,6,4,0,7,7,0,11,8,0,0,0,0,0,0,0,0,0,0,7,6,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,"convert troops, retrain troops",TRUE,,6,TRUE,Light Knights | Dark Knights,1,,,FALSE,,TRUE
+Chapter House,7,4,0,8,8,0,12,9,0,0,0,0,0,0,0,0,0,0,8,7,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,"convert troops, retrain troops",TRUE,,7,TRUE,Light Knights | Dark Knights,1,,,FALSE,,TRUE
+Chapter House,8,4,0,9,9,0,13,10,0,0,0,0,0,0,0,0,0,0,9,8,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,"convert troops, retrain troops",TRUE,,8,TRUE,Light Knights | Dark Knights,1,,,FALSE,,TRUE
+Chapter House,9,4,0,10,10,0,14,11,0,0,0,0,0,0,0,0,0,0,10,9,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,"convert troops, retrain troops",TRUE,,9,TRUE,Light Knights | Dark Knights,1,,,FALSE,,TRUE
+Chapter House,10,4,0,11,11,0,15,12,0,0,0,0,0,0,0,0,0,0,11,10,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,"convert troops, retrain troops",TRUE,,10,TRUE,Light Knights | Dark Knights,1,,,FALSE,,TRUE
+Crypt,1,1,0,2,0,0,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,100,TRUE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Crypt,2,1,0,3,0,0,3,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,2,0,0,0,0,0,200,TRUE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Crypt,3,1,0,4,0,0,4,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,3,0,0,0,0,0,300,TRUE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Crypt,4,1,0,5,0,0,5,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,4,0,0,0,0,0,400,TRUE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Crypt,5,2,0,6,0,0,6,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,5,0,0,0,0,0,500,TRUE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Crypt,6,2,0,7,0,0,7,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,6,0,0,0,0,0,600,TRUE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Crypt,7,2,0,8,0,0,8,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,7,0,0,0,0,0,700,TRUE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Crypt,8,2,0,9,0,0,9,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,8,0,0,0,0,0,800,TRUE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Crypt,9,2,0,10,0,0,10,0,0,0,0,0,0,0,0,9,0,0,0,0,0,0,9,0,0,0,0,0,900,TRUE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Crypt,10,3,0,11,0,0,11,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,10,0,0,0,0,0,1000,TRUE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Drydock,1,1,2,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,100,TRUE,TRUE,TRUE,TRUE,ship repair,FALSE,,,,,,,,FALSE,,FALSE
+Drydock,2,1,3,2,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,200,TRUE,TRUE,TRUE,TRUE,ship repair,FALSE,,,,,,,,FALSE,,FALSE
+Drydock,3,1,4,3,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,300,TRUE,TRUE,TRUE,TRUE,ship repair,FALSE,,,,,,,,FALSE,,FALSE
+Drydock,4,1,5,4,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,400,TRUE,TRUE,TRUE,TRUE,ship repair,FALSE,,,,,,,,FALSE,,FALSE
+Drydock,5,1,6,5,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,500,TRUE,TRUE,TRUE,TRUE,ship repair,FALSE,,,,,,,,FALSE,,FALSE
+Drydock,6,2,7,6,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,600,TRUE,TRUE,TRUE,TRUE,ship repair,FALSE,,,,,,,,FALSE,,FALSE
+Drydock,7,2,8,7,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,700,TRUE,TRUE,TRUE,TRUE,ship repair,FALSE,,,,,,,,FALSE,,FALSE
+Drydock,8,2,9,8,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,800,TRUE,TRUE,TRUE,TRUE,ship repair,FALSE,,,,,,,,FALSE,,FALSE
+Drydock,9,2,10,9,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,900,TRUE,TRUE,TRUE,TRUE,ship repair,FALSE,,,,,,,,FALSE,,FALSE
+Drydock,10,3,11,10,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,1000,TRUE,TRUE,TRUE,TRUE,ship repair,FALSE,,,,,,,,FALSE,,FALSE
+Engineer's Workshop,1,2,3,3,5,0,3,0,0,0,0,0,0,0,0,2,0,0,2,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,siege weapon builder,TRUE,,,FALSE,,1,,,FALSE,,FALSE
+Engineer's Workshop,2,2,4,4,6,0,4,0,0,0,0,0,0,0,0,4,0,0,4,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,siege weapon builder,TRUE,,,FALSE,,2,,,FALSE,,FALSE
+Engineer's Workshop,3,2,5,5,7,0,5,0,0,0,0,0,0,0,0,6,0,0,6,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,siege weapon builder,TRUE,,,FALSE,,3,,,FALSE,,FALSE
+Engineer's Workshop,4,2,6,6,8,0,6,0,0,0,0,0,0,0,0,8,0,0,8,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,siege weapon builder,TRUE,,,FALSE,,4,,,FALSE,,FALSE
+Engineer's Workshop,5,3,7,7,9,0,7,0,0,0,0,0,0,0,0,10,0,0,10,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,siege weapon builder,TRUE,,,FALSE,,5,,,FALSE,,FALSE
+Engineer's Workshop,6,3,8,8,10,0,8,0,0,0,0,0,0,0,0,12,0,0,12,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,siege weapon builder,TRUE,,,FALSE,,6,,,FALSE,,FALSE
+Engineer's Workshop,7,3,9,9,11,0,9,0,0,0,0,0,0,0,0,14,0,0,14,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,siege weapon builder,TRUE,,,FALSE,,7,,,FALSE,,FALSE
+Engineer's Workshop,8,3,10,10,12,0,10,0,0,0,0,0,0,0,0,16,0,0,16,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,siege weapon builder,TRUE,,,FALSE,,8,,,FALSE,,FALSE
+Engineer's Workshop,9,3,11,11,13,0,11,0,0,0,0,0,0,0,0,18,0,0,18,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,siege weapon builder,TRUE,,,FALSE,,9,,,FALSE,,FALSE
+Engineer's Workshop,10,4,12,12,14,0,12,0,0,0,0,0,0,0,0,20,0,0,20,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,siege weapon builder,TRUE,,,FALSE,,10,,,FALSE,,FALSE
+Farm,1,1,1,1,1,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Farm,2,1,2,2,2,0,0,0,0,0,0,10,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,200,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Farm,3,1,3,3,3,0,0,0,0,0,0,15,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,300,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Farm,4,1,4,4,4,0,0,0,0,0,0,20,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,400,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Farm,5,2,5,5,5,0,0,0,0,0,0,25,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,500,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Farm,6,2,6,6,6,0,0,0,0,0,0,30,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,600,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Farm,7,2,7,7,7,0,0,0,0,0,0,35,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,700,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Farm,8,2,8,8,8,0,0,0,0,0,0,40,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,800,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Farm,9,2,9,9,9,0,0,0,0,0,0,45,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,900,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Farm,10,3,10,10,10,0,0,0,0,0,0,50,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,1000,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Fishing Camp,1,1,1,1,1,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Fishing Camp,2,1,2,2,2,0,0,0,0,0,0,10,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,200,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Fishing Camp,3,1,3,3,3,0,0,0,0,0,0,15,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,300,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Fishing Camp,4,1,4,4,4,0,0,0,0,0,0,20,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,400,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Fishing Camp,5,2,5,5,5,0,0,0,0,0,0,25,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,500,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Fishing Camp,6,2,6,6,6,0,0,0,0,0,0,30,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,600,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Fishing Camp,7,2,7,7,7,0,0,0,0,0,0,35,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,700,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Fishing Camp,8,2,8,8,8,0,0,0,0,0,0,40,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,800,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Fishing Camp,9,2,9,9,9,0,0,0,0,0,0,45,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,900,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Fishing Camp,10,3,10,10,10,0,0,0,0,0,0,50,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,1000,TRUE,TRUE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Focusing Array,1,2,2,2,5,0,4,0,0,0,0,0,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,TRUE,project leyline ritual,FALSE,,,,,,,,TRUE,,FALSE
+Focusing Array,2,2,3,3,6,0,5,0,0,0,0,0,0,0,0,0,4,0,4,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,TRUE,project leyline ritual,FALSE,,,,,,,,TRUE,,FALSE
+Focusing Array,3,2,4,4,7,0,6,0,0,0,0,0,0,0,0,0,6,0,6,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,TRUE,project leyline ritual,FALSE,,,,,,,,TRUE,,FALSE
+Focusing Array,4,2,5,5,8,0,7,0,0,0,0,0,0,0,0,0,8,0,8,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,TRUE,project leyline ritual,FALSE,,,,,,,,TRUE,,FALSE
+Focusing Array,5,4,6,6,9,0,8,0,0,0,0,0,0,0,0,0,10,0,10,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,TRUE,project leyline ritual,FALSE,,,,,,,,TRUE,,FALSE
+Focusing Array,6,4,7,7,10,0,9,0,0,0,0,0,0,0,0,0,12,0,12,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,TRUE,TRUE,project leyline ritual,FALSE,,,,,,,,TRUE,,FALSE
+Focusing Array,7,4,8,8,11,0,10,0,0,0,0,0,0,0,0,0,14,0,14,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,TRUE,TRUE,project leyline ritual,FALSE,,,,,,,,TRUE,,FALSE
+Focusing Array,8,4,9,9,12,0,11,0,0,0,0,0,0,0,0,0,16,0,16,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,TRUE,TRUE,project leyline ritual,FALSE,,,,,,,,TRUE,,FALSE
+Focusing Array,9,4,10,10,13,0,12,0,0,0,0,0,0,0,0,0,18,0,18,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,TRUE,TRUE,project leyline ritual,FALSE,,,,,,,,TRUE,,FALSE
+Focusing Array,10,6,11,11,14,0,13,0,0,0,0,0,0,0,0,0,20,0,20,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,TRUE,TRUE,project leyline ritual,FALSE,,,,,,,,TRUE,,FALSE
+Forge,1,1,3,3,3,0,0,0,0,0,0,0,5,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Forge,2,1,4,4,4,0,0,0,0,0,0,0,10,0,2,2,2,0,0,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Forge,3,1,5,5,5,0,0,0,0,0,0,0,15,0,3,3,3,0,0,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Forge,4,1,6,6,6,0,0,0,0,0,0,0,20,0,4,4,4,0,0,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Forge,5,2,7,7,7,0,1,0,0,0,0,0,25,0,5,5,5,0,0,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Forge,6,2,8,8,8,0,2,0,0,0,0,0,30,0,6,6,6,0,0,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Forge,7,2,9,9,9,0,3,0,0,0,0,0,35,0,7,7,7,0,0,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Forge,8,2,10,10,10,0,4,0,0,0,0,0,40,0,8,8,8,0,0,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Forge,9,2,11,11,11,0,5,0,0,0,0,0,45,0,9,9,9,0,0,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Forge,10,3,12,12,12,0,6,0,0,0,0,0,50,0,10,10,10,0,0,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Garrison,1,1,1,2,1,1,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,4,200,FALSE,TRUE,TRUE,TRUE,"house troops, di support",FALSE,,,,,,,,FALSE,,FALSE
+Garrison,2,1,2,3,2,2,3,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,8,400,FALSE,TRUE,TRUE,TRUE,"house troops, di support",FALSE,,,,,,,,FALSE,,FALSE
+Garrison,3,1,3,4,3,3,4,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,3,0,0,0,12,600,FALSE,TRUE,TRUE,TRUE,"house troops, di support",FALSE,,,,,,,,FALSE,,FALSE
+Garrison,4,1,4,5,4,4,5,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,4,0,0,0,16,800,FALSE,TRUE,TRUE,TRUE,"house troops, di support",FALSE,,,,,,,,FALSE,,FALSE
+Garrison,5,2,5,6,5,5,6,0,0,0,0,0,0,0,0,5,0,0,1,0,0,0,0,5,0,0,0,20,1000,FALSE,TRUE,TRUE,TRUE,"house troops, di support",FALSE,,,,,,,,FALSE,,FALSE
+Garrison,6,2,6,7,6,6,7,0,0,0,0,0,0,0,0,6,0,0,2,0,0,0,0,6,0,0,0,24,1200,FALSE,TRUE,TRUE,TRUE,"house troops, di support",FALSE,,,,,,,,FALSE,,FALSE
+Garrison,7,2,7,8,7,7,8,0,0,0,0,0,0,0,0,7,0,0,3,0,0,0,0,7,0,0,0,28,1400,FALSE,TRUE,TRUE,TRUE,"house troops, di support",FALSE,,,,,,,,FALSE,,FALSE
+Garrison,8,2,8,9,8,8,9,0,0,0,0,0,0,0,0,8,0,0,4,0,0,0,0,8,0,0,0,32,1600,FALSE,TRUE,TRUE,TRUE,"house troops, di support",FALSE,,,,,,,,FALSE,,FALSE
+Garrison,9,2,9,10,9,9,10,0,0,0,0,0,0,0,0,9,0,0,5,0,0,0,0,9,0,0,0,36,1800,FALSE,TRUE,TRUE,TRUE,"house troops, di support",FALSE,,,,,,,,FALSE,,FALSE
+Garrison,10,3,10,11,10,10,11,0,0,0,0,0,0,0,0,10,0,0,6,0,0,0,0,10,0,0,0,40,2000,FALSE,TRUE,TRUE,TRUE,"house troops, di support",FALSE,,,,,,,,FALSE,,FALSE
+Grand Library,1,2,5,5,2,5,5,2,0,0,0,0,0,0,0,1,1,0,1,0,0,2,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",FALSE,,,,,,,,FALSE,,FALSE
+Grand Library,2,2,6,6,3,6,6,3,0,0,0,0,0,0,0,2,2,0,2,0,0,3,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",FALSE,,,,,,,,FALSE,,FALSE
+Grand Library,3,2,7,7,4,7,7,4,0,0,0,0,0,0,0,3,3,0,3,0,0,4,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",FALSE,,,,,,,,FALSE,,FALSE
+Grand Library,4,2,8,8,5,8,8,5,0,0,0,0,0,0,0,4,4,0,4,0,0,5,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",FALSE,,,,,,,,FALSE,,FALSE
+Grand Library,5,4,9,9,6,9,9,6,0,0,0,0,0,0,0,5,5,0,5,0,0,6,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",FALSE,,,,,,,,FALSE,,FALSE
+Grand Library,6,4,10,10,7,10,10,7,0,0,0,0,0,0,0,6,6,0,6,0,0,7,0,0,0,0,0,0,1200,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",FALSE,,,,,,,,FALSE,,FALSE
+Grand Library,7,4,11,11,8,11,11,8,0,0,0,0,0,0,0,7,7,0,7,0,0,8,0,0,0,0,0,0,1400,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",FALSE,,,,,,,,FALSE,,FALSE
+Grand Library,8,4,12,12,9,12,12,9,0,0,0,0,0,0,0,8,8,0,8,0,0,9,0,0,0,0,0,0,1600,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",FALSE,,,,,,,,FALSE,,FALSE
+Grand Library,9,4,13,13,10,13,13,10,0,0,0,0,0,0,0,9,9,0,9,0,0,10,0,0,0,0,0,0,1800,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",FALSE,,,,,,,,FALSE,,FALSE
+Grand Library,10,4,14,14,11,14,14,11,0,0,0,0,0,0,0,10,10,0,10,0,0,11,0,0,0,0,0,0,2000,FALSE,FALSE,TRUE,FALSE,"train player skill, settlement needs",FALSE,,,,,,,,FALSE,,FALSE
+Harbor,1,2,5,2,0,0,5,0,0,0,0,0,0,3,1,1,1,0,0,0,0,0,0,0,1,0,0,0,200,FALSE,FALSE,TRUE,TRUE,"resource production, di support",FALSE,,,,,,,,FALSE,,FALSE
+Harbor,2,2,6,3,0,0,6,0,0,0,0,0,0,6,2,2,2,0,0,0,0,0,0,0,2,0,0,0,400,FALSE,FALSE,TRUE,TRUE,"resource production, di support",FALSE,,,,,,,,FALSE,,FALSE
+Harbor,3,2,7,4,0,0,7,0,0,0,0,0,0,9,3,3,3,0,0,0,0,0,0,0,3,0,0,0,600,FALSE,FALSE,TRUE,TRUE,"resource production, di support",FALSE,,,,,,,,FALSE,,FALSE
+Harbor,4,2,8,5,0,0,8,0,0,0,0,0,0,12,4,4,4,0,0,0,0,0,0,0,4,0,0,0,800,FALSE,FALSE,TRUE,TRUE,"resource production, di support",FALSE,,,,,,,,FALSE,,FALSE
+Harbor,5,3,9,6,0,0,9,0,0,0,0,0,0,15,5,5,5,0,0,0,0,0,0,0,5,0,0,0,1000,FALSE,FALSE,TRUE,TRUE,"resource production, di support",FALSE,,,,,,,,FALSE,,FALSE
+Harbor,6,3,10,7,0,0,10,0,0,0,0,0,0,18,6,6,6,0,0,0,0,0,0,0,6,0,0,0,1200,FALSE,FALSE,TRUE,TRUE,"resource production, di support",FALSE,,,,,,,,FALSE,,FALSE
+Harbor,7,3,11,8,0,0,11,0,0,0,0,0,0,21,7,7,7,0,0,0,0,0,0,0,7,0,0,0,1400,FALSE,FALSE,TRUE,TRUE,"resource production, di support",FALSE,,,,,,,,FALSE,,FALSE
+Harbor,8,3,12,9,0,0,12,0,0,0,0,0,0,24,8,8,8,0,0,0,0,0,0,0,8,0,0,0,1600,FALSE,FALSE,TRUE,TRUE,"resource production, di support",FALSE,,,,,,,,FALSE,,FALSE
+Harbor,9,3,13,10,0,0,13,0,0,0,0,0,0,27,9,9,9,0,0,0,0,0,0,0,9,0,0,0,1800,FALSE,FALSE,TRUE,TRUE,"resource production, di support",FALSE,,,,,,,,FALSE,,FALSE
+Harbor,10,4,14,11,0,0,14,0,0,0,0,0,0,30,10,10,10,0,0,0,0,0,0,0,10,0,0,0,2000,FALSE,FALSE,TRUE,TRUE,"resource production, di support",FALSE,,,,,,,,FALSE,,FALSE
+Leyline Observation Tower,1,2,4,4,6,0,2,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,0,1,0,0,0,0,100,TRUE,TRUE,TRUE,TRUE,detect leyline ritual,FALSE,,,,,,,,FALSE,,FALSE
+Leyline Observation Tower,2,2,5,5,7,0,3,0,0,0,0,0,0,0,2,2,0,0,2,0,0,0,0,2,0,0,0,0,200,TRUE,TRUE,TRUE,TRUE,detect leyline ritual,FALSE,,,,,,,,FALSE,,FALSE
+Leyline Observation Tower,3,2,6,6,8,0,4,0,0,0,0,0,0,0,3,3,0,0,3,0,0,0,0,3,0,0,0,0,300,TRUE,TRUE,TRUE,TRUE,detect leyline ritual,FALSE,,,,,,,,FALSE,,FALSE
+Leyline Observation Tower,4,2,7,7,9,0,5,0,0,0,0,0,0,0,4,4,0,0,4,0,0,0,0,4,0,0,0,0,400,TRUE,TRUE,TRUE,TRUE,detect leyline ritual,FALSE,,,,,,,,FALSE,,FALSE
+Leyline Observation Tower,5,3,8,8,10,0,6,0,0,0,0,0,0,0,5,5,0,0,5,0,0,0,0,5,0,0,0,0,500,TRUE,TRUE,TRUE,TRUE,detect leyline ritual,FALSE,,,,,,,,FALSE,,FALSE
+Leyline Observation Tower,6,3,9,9,11,0,7,0,0,0,0,0,0,0,6,6,0,0,6,0,0,0,0,6,0,0,0,0,600,TRUE,TRUE,TRUE,TRUE,detect leyline ritual,FALSE,,,,,,,,FALSE,,FALSE
+Leyline Observation Tower,7,3,10,10,12,0,8,0,0,0,0,0,0,0,7,7,0,0,7,0,0,0,0,7,0,0,0,0,700,TRUE,TRUE,TRUE,TRUE,detect leyline ritual,FALSE,,,,,,,,FALSE,,FALSE
+Leyline Observation Tower,8,3,11,11,13,0,9,0,0,0,0,0,0,0,8,8,0,0,8,0,0,0,0,8,0,0,0,0,800,TRUE,TRUE,TRUE,TRUE,detect leyline ritual,FALSE,,,,,,,,FALSE,,FALSE
+Leyline Observation Tower,9,3,12,12,14,0,10,0,0,0,0,0,0,0,9,9,0,0,9,0,0,0,0,9,0,0,0,0,900,TRUE,TRUE,TRUE,TRUE,detect leyline ritual,FALSE,,,,,,,,FALSE,,FALSE
+Leyline Observation Tower,10,4,13,13,15,0,11,0,0,0,0,0,0,0,10,10,0,0,10,0,0,0,0,10,0,0,0,0,1000,TRUE,TRUE,TRUE,TRUE,detect leyline ritual,FALSE,,,,,,,,FALSE,,FALSE
+Lighthouse,1,2,5,5,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,100,TRUE,TRUE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Lighthouse,2,2,6,6,0,0,2,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,0,200,TRUE,TRUE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Lighthouse,3,2,7,7,0,0,3,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,3,0,0,0,0,300,TRUE,TRUE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Lighthouse,4,2,8,8,0,0,4,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,4,0,0,0,0,400,TRUE,TRUE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Lighthouse,5,3,9,9,0,0,5,0,0,0,0,0,0,0,0,5,0,0,1,0,0,0,0,5,0,0,0,0,500,TRUE,TRUE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Lighthouse,6,3,10,10,0,0,6,0,0,0,0,0,0,0,0,6,0,0,2,0,0,0,0,6,0,0,0,0,600,TRUE,TRUE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Lighthouse,7,3,11,11,0,0,7,0,0,0,0,0,0,0,0,7,0,0,3,0,0,0,0,7,0,0,0,0,700,TRUE,TRUE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Lighthouse,8,3,12,12,0,0,8,0,0,0,0,0,0,0,0,8,0,0,4,0,0,0,0,8,0,0,0,0,800,TRUE,TRUE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Lighthouse,9,3,13,13,0,0,9,0,0,0,0,0,0,0,0,9,0,0,5,0,0,0,0,9,0,0,0,0,900,TRUE,TRUE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Lighthouse,10,4,14,14,0,0,10,0,0,0,0,0,0,0,0,10,0,0,6,0,0,0,0,10,0,0,0,0,1000,TRUE,TRUE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Lumber Mill,1,1,1,2,2,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,TRUE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Lumber Mill,2,1,2,3,3,0,0,0,10,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,200,TRUE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Lumber Mill,3,1,3,4,4,0,0,0,15,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,300,TRUE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Lumber Mill,4,1,4,5,5,0,0,0,20,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,400,TRUE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Lumber Mill,5,2,5,6,6,0,0,0,25,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,500,TRUE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Lumber Mill,6,2,6,7,7,0,0,0,30,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,600,TRUE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Lumber Mill,7,2,7,8,8,0,0,0,35,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,700,TRUE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Lumber Mill,8,2,8,9,9,0,0,0,40,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,800,TRUE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Lumber Mill,9,2,9,10,10,0,0,0,45,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,900,TRUE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Lumber Mill,10,3,10,11,11,0,0,0,50,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,1000,TRUE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Mage's Tower,1,2,5,2,2,0,2,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops, item production, cast leyline ritual",TRUE,,1,TRUE,"Celestial Generalist, Earth Generalist, Healer, Druid, Necromancer, Confinist, Elementalist",1,Wand,,TRUE,,FALSE
+Mage's Tower,2,2,6,3,3,0,3,0,0,0,0,0,0,0,2,2,2,0,0,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops, item production, cast leyline ritual",TRUE,,2,TRUE,"Celestial Generalist, Earth Generalist, Healer, Druid, Necromancer, Confinist, Elementalist",1,Wand,,TRUE,,FALSE
+Mage's Tower,3,2,7,4,4,0,4,0,0,0,0,0,0,0,3,3,3,0,0,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops, item production, cast leyline ritual",TRUE,,3,TRUE,"Celestial Generalist, Earth Generalist, Healer, Druid, Necromancer, Confinist, Elementalist",1,Wand,,TRUE,,FALSE
+Mage's Tower,4,2,8,5,5,0,5,0,0,0,0,0,0,0,4,4,4,0,0,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops, item production, cast leyline ritual",TRUE,,4,TRUE,"Celestial Generalist, Earth Generalist, Healer, Druid, Necromancer, Confinist, Elementalist",1,Wand,,TRUE,,FALSE
+Mage's Tower,5,3,9,6,6,0,6,0,0,0,0,0,0,0,5,5,5,0,0,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops, item production, cast leyline ritual",TRUE,,5,TRUE,"Celestial Generalist, Earth Generalist, Healer, Druid, Necromancer, Confinist, Elementalist",1,Wand,,TRUE,,FALSE
+Mage's Tower,6,3,10,7,7,0,7,0,0,0,0,0,0,0,6,6,6,0,0,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops, item production, cast leyline ritual",TRUE,,6,TRUE,"Celestial Generalist, Earth Generalist, Healer, Druid, Necromancer, Confinist, Elementalist",1,Wand,,TRUE,,FALSE
+Mage's Tower,7,3,11,8,8,0,8,0,0,0,0,0,0,0,7,7,7,0,0,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops, item production, cast leyline ritual",TRUE,,7,TRUE,"Celestial Generalist, Earth Generalist, Healer, Druid, Necromancer, Confinist, Elementalist",1,Wand,,TRUE,,FALSE
+Mage's Tower,8,3,12,9,9,0,9,0,0,0,0,0,0,0,8,8,8,0,0,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops, item production, cast leyline ritual",TRUE,,8,TRUE,"Celestial Generalist, Earth Generalist, Healer, Druid, Necromancer, Confinist, Elementalist",1,Wand,,TRUE,,FALSE
+Mage's Tower,9,3,13,10,10,0,10,0,0,0,0,0,0,0,9,9,9,0,0,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops, item production, cast leyline ritual",TRUE,,9,TRUE,"Celestial Generalist, Earth Generalist, Healer, Druid, Necromancer, Confinist, Elementalist",1,Wand,,TRUE,,FALSE
+Mage's Tower,10,4,14,11,11,0,11,0,0,0,0,0,0,0,10,10,10,0,0,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops, item production, cast leyline ritual",TRUE,,10,TRUE,"Celestial Generalist, Earth Generalist, Healer, Druid, Necromancer, Confinist, Elementalist",1,Wand,,TRUE,,FALSE
+Market,1,2,4,4,0,0,2,0,0,0,0,0,0,3,0,0,0,0,2,0,0,0,0,0,1,0,0,0,200,FALSE,FALSE,TRUE,FALSE,"di support, resource production",FALSE,,,,,1,,,FALSE,,FALSE
+Market,2,2,5,5,0,0,3,0,0,0,0,0,0,6,0,0,0,0,4,0,0,0,0,0,2,0,0,0,400,FALSE,FALSE,TRUE,FALSE,"di support, resource production",FALSE,,,,,1,,,FALSE,,FALSE
+Market,3,2,6,6,0,0,4,0,0,0,0,0,0,9,0,0,0,0,6,0,0,0,0,0,3,0,0,0,600,FALSE,FALSE,TRUE,FALSE,"di support, resource production",FALSE,,,,,1,,,FALSE,,FALSE
+Market,4,2,7,7,0,0,5,0,0,0,0,0,0,12,0,0,0,0,8,0,0,0,0,0,4,0,0,0,800,FALSE,FALSE,TRUE,FALSE,"di support, resource production",FALSE,,,,,1,,,FALSE,,FALSE
+Market,5,4,8,8,0,0,6,0,0,0,0,0,0,15,0,0,0,0,10,0,0,0,0,0,5,0,0,0,1000,FALSE,FALSE,TRUE,FALSE,"di support, resource production",FALSE,,,,,1,,,FALSE,,FALSE
+Market,6,4,9,9,0,0,7,0,0,0,0,0,0,18,0,0,0,0,12,0,0,0,0,0,6,0,0,0,1200,FALSE,FALSE,TRUE,FALSE,"di support, resource production",FALSE,,,,,1,,,FALSE,,FALSE
+Market,7,4,10,10,0,0,8,0,0,0,0,0,0,21,0,0,0,0,14,0,0,0,0,0,7,0,0,0,1400,FALSE,FALSE,TRUE,FALSE,"di support, resource production",FALSE,,,,,1,,,FALSE,,FALSE
+Market,8,4,11,11,0,0,9,0,0,0,0,0,0,24,0,0,0,0,16,0,0,0,0,0,8,0,0,0,1600,FALSE,FALSE,TRUE,FALSE,"di support, resource production",FALSE,,,,,1,,,FALSE,,FALSE
+Market,9,4,12,12,0,0,10,0,0,0,0,0,0,27,0,0,0,0,18,0,0,0,0,0,9,0,0,0,1800,FALSE,FALSE,TRUE,FALSE,"di support, resource production",FALSE,,,,,1,,,FALSE,,FALSE
+Market,10,6,13,13,0,0,11,0,0,0,0,0,0,30,0,0,0,0,20,0,0,0,0,0,10,0,0,0,2000,FALSE,FALSE,TRUE,FALSE,"di support, resource production",FALSE,,,,,1,,,FALSE,,FALSE
+Marshall Yard,1,1,3,2,3,0,2,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,1,FALSE,,1,,,FALSE,,FALSE
+Marshall Yard,2,1,4,3,4,0,3,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,2,FALSE,,1,,,FALSE,,FALSE
+Marshall Yard,3,1,5,4,5,0,4,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,3,FALSE,,1,,,FALSE,,FALSE
+Marshall Yard,4,1,6,5,6,0,5,0,0,0,0,0,0,0,0,4,4,0,0,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,4,FALSE,,1,,,FALSE,,FALSE
+Marshall Yard,5,2,7,6,7,0,6,0,0,0,0,0,0,0,0,5,5,0,0,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,5,FALSE,,1,,,FALSE,,FALSE
+Marshall Yard,6,2,8,7,8,0,7,0,0,0,0,0,0,0,0,6,6,0,0,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,6,FALSE,,1,,,FALSE,,FALSE
+Marshall Yard,7,2,9,8,9,0,8,0,0,0,0,0,0,0,0,7,7,0,0,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,7,FALSE,,1,,,FALSE,,FALSE
+Marshall Yard,8,2,10,9,10,0,9,0,0,0,0,0,0,0,0,8,8,0,0,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,8,FALSE,,1,,,FALSE,,FALSE
+Marshall Yard,9,2,11,10,11,0,10,0,0,0,0,0,0,0,0,9,9,0,0,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,9,FALSE,,1,,,FALSE,,FALSE
+Marshall Yard,10,3,12,11,12,0,11,0,0,0,0,0,0,0,0,10,10,0,0,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,10,FALSE,,1,,,FALSE,,FALSE
+Military Trade School,1,1,2,3,2,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,teach troops,TRUE,,10,,,1,,,FALSE,,FALSE
+Military Trade School,2,1,3,4,3,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,2,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,teach troops,TRUE,,10,,,2,,,FALSE,,FALSE
+Military Trade School,3,1,4,5,4,0,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,3,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,teach troops,TRUE,,10,,,3,,,FALSE,,FALSE
+Military Trade School,4,1,5,6,5,0,0,0,0,0,0,0,0,0,4,4,0,0,0,0,0,4,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,teach troops,TRUE,,10,,,4,,,FALSE,,FALSE
+Military Trade School,5,2,6,7,6,0,0,0,0,0,0,0,0,0,5,5,0,0,0,0,0,5,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,teach troops,TRUE,,10,,,5,,,FALSE,,FALSE
+Military Trade School,6,2,7,8,7,0,0,0,0,0,0,0,0,0,6,6,0,0,0,0,0,6,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,teach troops,TRUE,,10,,,6,,,FALSE,,FALSE
+Military Trade School,7,2,8,9,8,0,0,0,0,0,0,0,0,0,7,7,0,0,0,0,0,7,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,teach troops,TRUE,,10,,,7,,,FALSE,,FALSE
+Military Trade School,8,2,9,10,9,0,0,0,0,0,0,0,0,0,8,8,0,0,0,0,0,8,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,teach troops,TRUE,,10,,,8,,,FALSE,,FALSE
+Military Trade School,9,2,10,11,10,0,0,0,0,0,0,0,0,0,9,9,0,0,0,0,0,9,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,teach troops,TRUE,,10,,,9,,,FALSE,,FALSE
+Military Trade School,10,3,11,12,11,0,0,0,0,0,0,0,0,0,10,10,0,0,0,0,0,10,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,teach troops,TRUE,,10,,,10,,,FALSE,,FALSE
+Mint,1,4,4,4,8,0,8,4,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,-1,0,0,0,200,FALSE,FALSE,TRUE,FALSE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Mint,2,4,5,5,9,0,9,5,0,0,0,0,0,0,0,0,0,0,4,4,0,0,0,0,-2,0,0,0,400,FALSE,FALSE,TRUE,FALSE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Mint,3,4,6,6,10,0,10,6,0,0,0,0,0,0,0,0,0,0,6,6,0,0,0,0,-3,0,0,0,600,FALSE,FALSE,TRUE,FALSE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Mint,4,6,7,7,11,0,11,7,0,0,0,0,0,0,0,0,0,0,8,8,0,0,0,0,-4,0,0,0,800,FALSE,FALSE,TRUE,FALSE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Mint,5,8,8,8,12,0,12,8,0,0,0,0,0,0,0,0,0,0,10,10,0,0,0,0,-5,0,0,0,1000,FALSE,FALSE,TRUE,FALSE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Mint,6,8.2,9,9,13,0,13,9,0,0,0,0,0,0,0,0,0,0,12,12,0,0,0,0,-6,0,0,0,1200,FALSE,FALSE,TRUE,FALSE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Mint,7,9.2,10,10,14,0,14,10,0,0,0,0,0,0,0,0,0,0,14,14,0,0,0,0,-7,0,0,0,1400,FALSE,FALSE,TRUE,FALSE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Mint,8,10.2,11,11,15,0,15,11,0,0,0,0,0,0,0,0,0,0,16,16,0,0,0,0,-8,0,0,0,1600,FALSE,FALSE,TRUE,FALSE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Mint,9,11.2,12,12,16,0,16,12,0,0,0,0,0,0,0,0,0,0,18,18,0,0,0,0,-9,0,0,0,1800,FALSE,FALSE,TRUE,FALSE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Mint,10,12.2,13,13,17,0,17,13,0,0,0,0,0,0,0,0,0,0,20,20,0,0,0,0,-10,0,0,0,2000,FALSE,FALSE,TRUE,FALSE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Monument,1,2,5,5,5,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,1,0,0,100,TRUE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Monument,2,2,6,6,6,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,2,0,0,2,0,0,200,TRUE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Monument,3,2,7,7,7,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,3,0,0,3,0,0,300,TRUE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Monument,4,2,8,8,8,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,4,0,0,4,0,0,400,TRUE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Monument,5,3,9,9,9,0,1,0,0,0,0,0,0,0,0,5,0,0,1,0,0,0,5,0,0,5,0,0,500,TRUE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Monument,6,3,10,10,10,0,2,0,0,0,0,0,0,0,0,6,0,0,2,0,0,0,6,0,0,6,0,0,600,TRUE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Monument,7,3,11,11,11,0,3,0,0,0,0,0,0,0,0,7,0,0,3,0,0,0,7,0,0,7,0,0,700,TRUE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Monument,8,3,12,12,12,0,4,0,0,0,0,0,0,0,0,8,0,0,4,0,0,0,8,0,0,8,0,0,800,TRUE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Monument,9,3,13,13,13,0,5,0,0,0,0,0,0,0,0,9,0,0,5,0,0,0,9,0,0,9,0,0,900,TRUE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Monument,10,4,14,14,14,0,6,0,0,0,0,0,0,0,0,10,0,0,5,0,0,0,10,0,0,10,0,0,1000,TRUE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Poison Magazine,1,2,2,3,2,0,3,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Cause Damage 1 point | Charm 2 Points | Paralysis 3 points| Berserk 4 points| Agony 4 points,1,FALSE,,FALSE
+Poison Magazine,2,2,3,4,3,0,4,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Cause Damage 1 point | Charm 2 Points | Paralysis 3 points| Berserk 4 points| Agony 4 points,2,FALSE,,FALSE
+Poison Magazine,3,2,4,5,4,0,5,0,0,0,0,0,0,0,3,0,0,0,3,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Cause Damage 1 point | Charm 2 Points | Paralysis 3 points| Berserk 4 points| Agony 4 points,3,FALSE,,FALSE
+Poison Magazine,4,2,5,6,5,0,6,0,0,0,0,0,0,0,4,0,0,0,4,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Cause Damage 1 point | Charm 2 Points | Paralysis 3 points| Berserk 4 points| Agony 4 points,4,FALSE,,FALSE
+Poison Magazine,5,3,6,7,6,0,7,0,0,0,0,0,0,0,5,0,0,0,5,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Cause Damage 1 point | Charm 2 Points | Paralysis 3 points| Berserk 4 points| Agony 4 points,5,FALSE,,FALSE
+Poison Magazine,6,3,7,8,7,0,8,0,0,0,0,0,0,0,6,0,0,0,6,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Cause Damage 1 point | Charm 2 Points | Paralysis 3 points| Berserk 4 points| Agony 4 points,6,FALSE,,FALSE
+Poison Magazine,7,3,8,9,8,0,9,0,0,0,0,0,0,0,7,0,0,0,7,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Cause Damage 1 point | Charm 2 Points | Paralysis 3 points| Berserk 4 points| Agony 4 points,7,FALSE,,FALSE
+Poison Magazine,8,3,9,10,9,0,10,0,0,0,0,0,0,0,8,0,0,0,8,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Cause Damage 1 point | Charm 2 Points | Paralysis 3 points| Berserk 4 points| Agony 4 points,8,FALSE,,FALSE
+Poison Magazine,9,3,10,11,10,0,11,0,0,0,0,0,0,0,9,0,0,0,9,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Cause Damage 1 point | Charm 2 Points | Paralysis 3 points| Berserk 4 points| Agony 4 points,9,FALSE,,FALSE
+Poison Magazine,10,4,11,12,11,0,12,0,0,0,0,0,0,0,10,0,0,0,10,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Cause Damage 1 point | Charm 2 Points | Paralysis 3 points| Berserk 4 points| Agony 4 points,10,FALSE,,FALSE
+Potion Brewery,1,2,2,2,3,0,3,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Cause Damage 1 point | Charm 2 Points | Paralysis 3 points| Berserk 4 points| Agony 4 points,1,FALSE,,FALSE
+Potion Brewery,2,2,3,3,4,0,4,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Generic Potion 1 point |Bless 2 points |Toxin Shield 3 points| Spirit Armor 4 points | Defend 4 points,2,FALSE,,FALSE
+Potion Brewery,3,2,4,4,5,0,5,0,0,0,0,0,0,0,3,0,0,0,3,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Generic Potion 1 point |Bless 2 points |Toxin Shield 3 points| Spirit Armor 4 points | Defend 4 points,3,FALSE,,FALSE
+Potion Brewery,4,2,5,5,6,0,6,0,0,0,0,0,0,0,4,0,0,0,4,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Generic Potion 1 point |Bless 2 points |Toxin Shield 3 points| Spirit Armor 4 points | Defend 4 points,4,FALSE,,FALSE
+Potion Brewery,5,3,6,6,7,0,7,0,0,0,0,0,0,0,5,0,0,0,5,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Generic Potion 1 point |Bless 2 points |Toxin Shield 3 points| Spirit Armor 4 points | Defend 4 points,5,FALSE,,FALSE
+Potion Brewery,6,3,7,7,8,0,8,0,0,0,0,0,0,0,6,0,0,0,6,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Generic Potion 1 point |Bless 2 points |Toxin Shield 3 points| Spirit Armor 4 points | Defend 4 points,6,FALSE,,FALSE
+Potion Brewery,7,3,8,8,9,0,9,0,0,0,0,0,0,0,7,0,0,0,7,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Generic Potion 1 point |Bless 2 points |Toxin Shield 3 points| Spirit Armor 4 points | Defend 4 points,7,FALSE,,FALSE
+Potion Brewery,8,3,9,9,10,0,10,0,0,0,0,0,0,0,8,0,0,0,8,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Generic Potion 1 point |Bless 2 points |Toxin Shield 3 points| Spirit Armor 4 points | Defend 4 points,8,FALSE,,FALSE
+Potion Brewery,9,3,10,10,11,0,11,0,0,0,0,0,0,0,9,0,0,0,9,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Generic Potion 1 point |Bless 2 points |Toxin Shield 3 points| Spirit Armor 4 points | Defend 4 points,9,FALSE,,FALSE
+Potion Brewery,10,4,11,11,12,0,12,0,0,0,0,0,0,0,10,0,0,0,10,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,Generic Potion 1 point |Bless 2 points |Toxin Shield 3 points| Spirit Armor 4 points | Defend 4 points,10,FALSE,,FALSE
+Quarry,1,1,2,1,2,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100,TRUE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Quarry,2,1,3,2,3,0,0,0,0,10,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,200,TRUE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Quarry,3,1,4,3,4,0,0,0,0,15,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,300,TRUE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Quarry,4,1,5,4,5,0,0,0,0,20,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,400,TRUE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Quarry,5,2,6,5,6,0,0,0,0,25,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,500,TRUE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Quarry,6,2,7,6,7,0,0,0,0,30,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,600,TRUE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Quarry,7,2,8,7,8,0,0,0,0,35,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,0,0,0,700,TRUE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Quarry,8,2,9,8,9,0,0,0,0,40,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,800,TRUE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Quarry,9,2,10,9,10,0,0,0,0,45,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,900,TRUE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Quarry,10,3,11,10,11,0,0,0,0,50,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,1000,TRUE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Rare Mine,1,1,3,2,3,0,0,0,0,0,0,0,3,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,100,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Rare Mine,2,1,4,3,4,0,0,0,0,0,0,0,6,0,2,0,2,0,0,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Rare Mine,3,1,5,4,5,0,0,0,0,0,0,0,9,0,3,0,3,0,0,0,0,0,0,0,0,0,0,0,300,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Rare Mine,4,1,6,5,6,0,0,0,0,0,0,0,12,0,4,0,4,0,0,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Rare Mine,5,2,7,6,7,0,0,0,0,0,0,0,15,0,5,0,5,0,0,0,0,0,0,0,0,0,0,0,500,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Rare Mine,6,2,8,7,8,0,0,0,0,0,0,0,18,0,6,0,6,0,0,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Rare Mine,7,2,9,8,9,0,0,0,0,0,0,0,21,0,7,0,7,0,0,0,0,0,0,0,0,0,0,0,700,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Rare Mine,8,2,10,9,10,0,0,0,0,0,0,0,24,0,8,0,8,0,0,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Rare Mine,9,2,11,10,11,0,0,0,0,0,0,0,27,0,9,0,9,0,0,0,0,0,0,0,0,0,0,0,900,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Rare Mine,10,3,12,11,12,0,0,0,0,0,0,0,30,0,10,0,10,0,0,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Refinery,1,1,3,3,3,0,0,0,0,0,0,0,5,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Refinery,2,1,4,4,4,0,0,0,0,0,0,0,10,0,2,2,2,0,0,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Refinery,3,1,5,5,5,0,0,0,0,0,0,0,15,0,3,3,3,0,0,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Refinery,4,1,6,6,6,0,0,0,0,0,0,0,20,0,4,4,4,0,0,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Refinery,5,2,7,7,7,0,1,0,0,0,0,0,25,0,5,5,5,0,0,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Refinery,6,2,8,8,8,0,2,0,0,0,0,0,30,0,6,6,6,0,0,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Refinery,7,2,9,9,9,0,3,0,0,0,0,0,35,0,7,7,7,0,0,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Refinery,8,2,10,10,10,0,4,0,0,0,0,0,40,0,8,8,8,0,0,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Refinery,9,2,11,11,11,0,5,0,0,0,0,0,45,0,9,9,9,0,0,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Refinery,10,3,12,12,12,0,6,0,0,0,0,0,50,0,10,10,10,0,0,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,TRUE,TRUE,resource production,FALSE,,,,,,,,FALSE,,FALSE
+Rookery,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,100,TRUE,TRUE,TRUE,TRUE,communication,FALSE,,,,,,,,FALSE,,FALSE
+Rookery,2,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,200,TRUE,TRUE,TRUE,TRUE,communication,FALSE,,,,,,,,FALSE,,FALSE
+Rookery,3,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,300,TRUE,TRUE,TRUE,TRUE,communication,FALSE,,,,,,,,FALSE,,FALSE
+Rookery,4,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,400,TRUE,TRUE,TRUE,TRUE,communication,FALSE,,,,,,,,FALSE,,FALSE
+Rookery,5,2,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,500,TRUE,TRUE,TRUE,TRUE,communication,FALSE,,,,,,,,FALSE,,FALSE
+Rookery,6,2,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,600,TRUE,TRUE,TRUE,TRUE,communication,FALSE,,,,,,,,FALSE,,FALSE
+Rookery,7,2,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,700,TRUE,TRUE,TRUE,TRUE,communication,FALSE,,,,,,,,FALSE,,FALSE
+Rookery,8,2,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,800,TRUE,TRUE,TRUE,TRUE,communication,FALSE,,,,,,,,FALSE,,FALSE
+Rookery,9,2,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,900,TRUE,TRUE,TRUE,TRUE,communication,FALSE,,,,,,,,FALSE,,FALSE
+Rookery,10,3,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,1000,TRUE,TRUE,TRUE,TRUE,communication,FALSE,,,,,,,,FALSE,,FALSE
+Sanatorium,1,2,5,2,2,0,2,0,0,0,0,0,0,0,1,1,1,0,0,0,1,0,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,FALSE,"settlement needs, train troops",TRUE,,1,FALSE,,1,,,FALSE,,FALSE
+Sanatorium,2,2,6,3,3,0,3,0,0,0,0,0,0,0,2,2,2,0,0,0,2,0,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,FALSE,"settlement needs, train troops",TRUE,,2,FALSE,,1,,,FALSE,,FALSE
+Sanatorium,3,2,7,4,4,0,4,0,0,0,0,0,0,0,3,3,3,0,0,0,3,0,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,FALSE,"settlement needs, train troops",TRUE,,3,FALSE,,1,,,FALSE,,FALSE
+Sanatorium,4,2,8,5,5,0,5,0,0,0,0,0,0,0,4,4,4,0,0,0,4,0,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,FALSE,"settlement needs, train troops",TRUE,,4,FALSE,,1,,,FALSE,,FALSE
+Sanatorium,5,4,9,6,6,0,6,0,0,0,0,0,0,0,5,5,5,0,1,0,5,0,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,FALSE,"settlement needs, train troops",TRUE,,5,FALSE,,1,,,FALSE,,FALSE
+Sanatorium,6,4,10,7,7,0,7,0,0,0,0,0,0,0,6,6,6,0,2,0,6,0,0,0,0,0,0,0,1200,FALSE,FALSE,TRUE,FALSE,"settlement needs, train troops",TRUE,,6,FALSE,,1,,,FALSE,,FALSE
+Sanatorium,7,4,11,8,8,0,8,0,0,0,0,0,0,0,7,7,7,0,3,0,7,0,0,0,0,0,0,0,1400,FALSE,FALSE,TRUE,FALSE,"settlement needs, train troops",TRUE,,7,FALSE,,1,,,FALSE,,FALSE
+Sanatorium,8,4,12,9,9,0,9,0,0,0,0,0,0,0,8,8,8,0,4,0,8,0,0,0,0,0,0,0,1600,FALSE,FALSE,TRUE,FALSE,"settlement needs, train troops",TRUE,,8,FALSE,,1,,,FALSE,,FALSE
+Sanatorium,9,4,13,10,10,0,10,0,0,0,0,0,0,0,9,9,9,0,5,0,9,0,0,0,0,0,0,0,1800,FALSE,FALSE,TRUE,FALSE,"settlement needs, train troops",TRUE,,9,FALSE,,1,,,FALSE,,FALSE
+Sanatorium,10,5,14,11,11,0,11,0,0,0,0,0,0,0,10,10,10,0,6,0,10,0,0,0,0,0,0,0,2000,FALSE,FALSE,TRUE,FALSE,"settlement needs, train troops",TRUE,,10,FALSE,,1,,,FALSE,,FALSE
+Scrivener,1,2,3,2,2,0,3,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,"Mage Armor 2 points (CG, Con, ELe, Scribe) | Major Spell Shield 4 points (CG, Con, ELe, Scribe) | Slow 2 points (Con) | Trap 1 point (CG, Con, Scribe) | Imprison 4 points (Con) | Enchant Blade 1 point (CG, Scribe) | Doom 5 points (CG, Scribe) | Elemental Blade 1 point (Ele) | Elemental Shield 4 points (Ele) | Elemental Blast 5 points (Ele)",1,FALSE,,FALSE
+Scrivener,2,2,4,3,3,0,4,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,"Mage Armor 2 points (CG, Con, ELe, Scribe) | Major Spell Shield 4 points (CG, Con, ELe, Scribe) | Slow 2 points (Con) | Trap 1 point (CG, Con, Scribe) | Imprison 4 points (Con) | Enchant Blade 1 point (CG, Scribe) | Doom 5 points (CG, Scribe) | Elemental Blade 1 point (Ele) | Elemental Shield 4 points (Ele) | Elemental Blast 5 points (Ele)",2,FALSE,,FALSE
+Scrivener,3,2,5,4,4,0,5,0,0,0,0,0,0,0,3,0,0,0,3,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,"Mage Armor 2 points (CG, Con, ELe, Scribe) | Major Spell Shield 4 points (CG, Con, ELe, Scribe) | Slow 2 points (Con) | Trap 1 point (CG, Con, Scribe) | Imprison 4 points (Con) | Enchant Blade 1 point (CG, Scribe) | Doom 5 points (CG, Scribe) | Elemental Blade 1 point (Ele) | Elemental Shield 4 points (Ele) | Elemental Blast 5 points (Ele)",3,FALSE,,FALSE
+Scrivener,4,2,6,5,5,0,6,0,0,0,0,0,0,0,4,0,0,0,4,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,"Mage Armor 2 points (CG, Con, ELe, Scribe) | Major Spell Shield 4 points (CG, Con, ELe, Scribe) | Slow 2 points (Con) | Trap 1 point (CG, Con, Scribe) | Imprison 4 points (Con) | Enchant Blade 1 point (CG, Scribe) | Doom 5 points (CG, Scribe) | Elemental Blade 1 point (Ele) | Elemental Shield 4 points (Ele) | Elemental Blast 5 points (Ele)",4,FALSE,,FALSE
+Scrivener,5,3,7,6,6,0,7,0,0,0,0,0,0,0,5,0,0,0,5,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,"Mage Armor 2 points (CG, Con, ELe, Scribe) | Major Spell Shield 4 points (CG, Con, ELe, Scribe) | Slow 2 points (Con) | Trap 1 point (CG, Con, Scribe) | Imprison 4 points (Con) | Enchant Blade 1 point (CG, Scribe) | Doom 5 points (CG, Scribe) | Elemental Blade 1 point (Ele) | Elemental Shield 4 points (Ele) | Elemental Blast 5 points (Ele)",5,FALSE,,FALSE
+Scrivener,6,3,8,7,7,0,8,0,0,0,0,0,0,0,6,0,0,0,6,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,"Mage Armor 2 points (CG, Con, ELe, Scribe) | Major Spell Shield 4 points (CG, Con, ELe, Scribe) | Slow 2 points (Con) | Trap 1 point (CG, Con, Scribe) | Imprison 4 points (Con) | Enchant Blade 1 point (CG, Scribe) | Doom 5 points (CG, Scribe) | Elemental Blade 1 point (Ele) | Elemental Shield 4 points (Ele) | Elemental Blast 5 points (Ele)",6,FALSE,,FALSE
+Scrivener,7,3,9,8,8,0,9,0,0,0,0,0,0,0,7,0,0,0,7,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,"Mage Armor 2 points (CG, Con, ELe, Scribe) | Major Spell Shield 4 points (CG, Con, ELe, Scribe) | Slow 2 points (Con) | Trap 1 point (CG, Con, Scribe) | Imprison 4 points (Con) | Enchant Blade 1 point (CG, Scribe) | Doom 5 points (CG, Scribe) | Elemental Blade 1 point (Ele) | Elemental Shield 4 points (Ele) | Elemental Blast 5 points (Ele)",7,FALSE,,FALSE
+Scrivener,8,3,10,9,9,0,10,0,0,0,0,0,0,0,8,0,0,0,8,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,"Mage Armor 2 points (CG, Con, ELe, Scribe) | Major Spell Shield 4 points (CG, Con, ELe, Scribe) | Slow 2 points (Con) | Trap 1 point (CG, Con, Scribe) | Imprison 4 points (Con) | Enchant Blade 1 point (CG, Scribe) | Doom 5 points (CG, Scribe) | Elemental Blade 1 point (Ele) | Elemental Shield 4 points (Ele) | Elemental Blast 5 points (Ele)",8,FALSE,,FALSE
+Scrivener,9,3,11,10,10,0,11,0,0,0,0,0,0,0,9,0,0,0,9,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,"Mage Armor 2 points (CG, Con, ELe, Scribe) | Major Spell Shield 4 points (CG, Con, ELe, Scribe) | Slow 2 points (Con) | Trap 1 point (CG, Con, Scribe) | Imprison 4 points (Con) | Enchant Blade 1 point (CG, Scribe) | Doom 5 points (CG, Scribe) | Elemental Blade 1 point (Ele) | Elemental Shield 4 points (Ele) | Elemental Blast 5 points (Ele)",9,FALSE,,FALSE
+Scrivener,10,4,12,11,11,0,12,0,0,0,0,0,0,0,10,0,0,0,10,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,item production,FALSE,,,,,,"Mage Armor 2 points (CG, Con, ELe, Scribe) | Major Spell Shield 4 points (CG, Con, ELe, Scribe) | Slow 2 points (Con) | Trap 1 point (CG, Con, Scribe) | Imprison 4 points (Con) | Enchant Blade 1 point (CG, Scribe) | Doom 5 points (CG, Scribe) | Elemental Blade 1 point (Ele) | Elemental Shield 4 points (Ele) | Elemental Blast 5 points (Ele)",10,FALSE,,FALSE
+Shipyard,1,2,5,3,2,0,4,0,0,0,0,0,0,0,1,0,0,0,2,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,TRUE,ship builder,TRUE,ship,,,,1,,,FALSE,class * level <= structure.level,FALSE
+Shipyard,2,2,6,4,3,0,5,0,0,0,0,0,0,0,2,0,0,0,3,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,TRUE,ship builder,TRUE,ship,,,,1,,,FALSE,class * level <= structure.level,FALSE
+Shipyard,3,2,7,5,4,0,6,0,0,0,0,0,0,0,3,0,0,0,4,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,TRUE,ship builder,TRUE,ship,,,,1,,,FALSE,class * level <= structure.level,FALSE
+Shipyard,4,2,8,6,5,0,7,0,0,0,0,0,0,0,4,0,0,0,5,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,TRUE,ship builder,TRUE,ship,,,,1,,,FALSE,class * level <= structure.level,FALSE
+Shipyard,5,3,9,7,6,0,8,0,0,0,0,0,0,0,5,0,1,0,6,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,TRUE,ship builder,TRUE,ship,,,,1,,,FALSE,class * level <= structure.level,FALSE
+Shipyard,6,3,10,8,7,0,9,0,0,0,0,0,0,0,6,0,2,0,7,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,TRUE,TRUE,ship builder,TRUE,ship,,,,1,,,FALSE,class * level <= structure.level,FALSE
+Shipyard,7,3,11,9,8,0,10,0,0,0,0,0,0,0,7,0,3,0,8,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,TRUE,TRUE,ship builder,TRUE,ship,,,,1,,,FALSE,class * level <= structure.level,FALSE
+Shipyard,8,3,12,10,9,0,11,0,0,0,0,0,0,0,8,0,4,0,9,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,TRUE,TRUE,ship builder,TRUE,ship,,,,1,,,FALSE,class * level <= structure.level,FALSE
+Shipyard,9,3,13,11,10,0,12,0,0,0,0,0,0,0,9,0,5,0,10,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,TRUE,TRUE,ship builder,TRUE,ship,,,,1,,,FALSE,class * level <= structure.level,FALSE
+Shipyard,10,4,14,12,11,0,13,0,0,0,0,0,0,0,10,0,6,0,11,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,TRUE,TRUE,ship builder,TRUE,ship,,,,1,,,FALSE,class * level <= structure.level,FALSE
+Shop,1,1,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TRUE,FALSE,TRUE,TRUE,player workshop,FALSE,,,,,,,,FALSE,,FALSE
+Skilled Worker (Coin),1,1,0,0,0,0,0,2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TRUE,FALSE,TRUE,TRUE,non structure,FALSE,,,,,,,,FALSE,,FALSE
+Skilled Worker (Food),1,1,0,0,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TRUE,FALSE,TRUE,TRUE,non structure,FALSE,,,,,,,,FALSE,,FALSE
+Skilled Worker (Lumber),1,1,0,0,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TRUE,FALSE,TRUE,TRUE,non structure,FALSE,,,,,,,,FALSE,,FALSE
+Skilled Worker (Metal Ore),1,1,0,0,0,0,0,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TRUE,FALSE,TRUE,TRUE,non structure,FALSE,,,,,,,,FALSE,,FALSE
+Skilled Worker (Refined Goods),1,1,0,0,0,0,0,2,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TRUE,FALSE,TRUE,TRUE,non structure,FALSE,,,,,,,,FALSE,,FALSE
+Skilled Worker (Stone),1,1,0,0,0,0,0,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,TRUE,FALSE,TRUE,TRUE,non structure,FALSE,,,,,,,,FALSE,,FALSE
+Skilled Worker (Medical),1,1,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,non structure,FALSE,,,,,,,,FALSE,,FALSE
+Skilled Worker (Education),1,1,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,non structure,FALSE,,,,,,,,FALSE,,FALSE
+Skilled Worker (Morale),1,1,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,non structure,FALSE,,,,,,,,FALSE,,FALSE
+Skilled Worker (Vice),1,1,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,FALSE,FALSE,TRUE,TRUE,non structure,FALSE,,,,,,,,FALSE,,FALSE
+Stables,1,1,5,0,2,0,4,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,1,FALSE,,,,,FALSE,,FALSE
+Stables,2,1,6,0,3,0,5,0,0,0,0,0,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,2,FALSE,,,,,FALSE,,FALSE
+Stables,3,1,7,0,4,0,6,0,0,0,0,0,0,0,0,0,3,0,3,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,3,FALSE,,,,,FALSE,,FALSE
+Stables,4,1,8,0,5,0,7,0,0,0,0,0,0,0,0,0,4,0,4,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,4,FALSE,,,,,FALSE,,FALSE
+Stables,5,2,9,0,6,0,8,0,0,0,0,0,0,0,0,0,5,0,5,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,5,FALSE,,,,,FALSE,,FALSE
+Stables,6,2,10,0,7,0,9,0,0,0,0,0,0,0,0,0,6,0,6,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,6,FALSE,,,,,FALSE,,FALSE
+Stables,7,2,11,0,8,0,10,0,0,0,0,0,0,0,0,0,7,0,7,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,7,FALSE,,,,,FALSE,,FALSE
+Stables,8,2,12,0,9,0,11,0,0,0,0,0,0,0,0,0,8,0,8,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,8,FALSE,,,,,FALSE,,FALSE
+Stables,9,2,13,0,10,0,12,0,0,0,0,0,0,0,0,0,9,0,9,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,9,FALSE,,,,,FALSE,,FALSE
+Stables,10,3,14,0,11,0,13,0,0,0,0,0,0,0,0,0,10,0,10,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,FALSE,TRUE,"train troops, retrain troops",TRUE,,10,FALSE,,,,,FALSE,,FALSE
+Tavern,1,1,2,4,2,0,2,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,1,0,200,FALSE,FALSE,TRUE,TRUE,"settlement needs, train troops, di support",TRUE,,1,,,1,,,FALSE,,FALSE
+Tavern,2,1,3,5,3,0,3,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,2,0,400,FALSE,FALSE,TRUE,TRUE,"settlement needs, train troops, di support",TRUE,,1,,,2,,,FALSE,,FALSE
+Tavern,3,1,4,6,4,0,4,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,3,0,0,0,3,0,600,FALSE,FALSE,TRUE,TRUE,"settlement needs, train troops, di support",TRUE,,1,,,3,,,FALSE,,FALSE
+Tavern,4,1,5,7,5,0,5,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,4,0,0,0,4,0,800,FALSE,FALSE,TRUE,TRUE,"settlement needs, train troops, di support",TRUE,,1,,,4,,,FALSE,,FALSE
+Tavern,5,2,6,8,6,0,6,0,0,0,0,0,0,0,0,0,1,0,5,0,0,0,5,0,0,0,5,0,1000,FALSE,FALSE,TRUE,TRUE,"settlement needs, train troops, di support",TRUE,,1,,,5,,,FALSE,,FALSE
+Tavern,6,2,7,9,7,0,7,0,0,0,0,0,0,0,0,0,2,0,6,0,0,0,6,0,0,0,6,0,1200,FALSE,FALSE,TRUE,TRUE,"settlement needs, train troops, di support",TRUE,,1,,,6,,,FALSE,,FALSE
+Tavern,7,2,8,10,8,0,8,0,0,0,0,0,0,0,0,0,3,0,7,0,0,0,7,0,0,0,7,0,1400,FALSE,FALSE,TRUE,TRUE,"settlement needs, train troops, di support",TRUE,,1,,,7,,,FALSE,,FALSE
+Tavern,8,2,9,11,9,0,9,0,0,0,0,0,0,0,0,0,4,0,8,0,0,0,8,0,0,0,8,0,1600,FALSE,FALSE,TRUE,TRUE,"settlement needs, train troops, di support",TRUE,,1,,,8,,,FALSE,,FALSE
+Tavern,9,2,10,12,10,0,10,0,0,0,0,0,0,0,0,0,5,0,9,0,0,0,9,0,0,0,9,0,1800,FALSE,FALSE,TRUE,TRUE,"settlement needs, train troops, di support",TRUE,,1,,,9,,,FALSE,,FALSE
+Tavern,10,3,11,13,11,0,11,0,0,0,0,0,0,0,0,0,6,0,10,0,0,0,10,0,0,0,10,0,2000,FALSE,FALSE,TRUE,TRUE,"settlement needs, train troops, di support",TRUE,,1,,,10,,,FALSE,,FALSE
+Theater,1,1,1,1,0,0,2,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,200,FALSE,FALSE,TRUE,FALSE,settlement needs,FALSE,,,,,,,,FALSE,,FALSE
+Theater,2,1,2,2,0,0,3,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,400,FALSE,FALSE,TRUE,FALSE,settlement needs,FALSE,,,,,,,,FALSE,,FALSE
+Theater,3,1,3,3,0,0,4,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,3,0,0,0,0,0,600,FALSE,FALSE,TRUE,FALSE,settlement needs,FALSE,,,,,,,,FALSE,,FALSE
+Theater,4,1,4,4,0,0,5,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,4,0,0,0,0,0,800,FALSE,FALSE,TRUE,FALSE,settlement needs,FALSE,,,,,,,,FALSE,,FALSE
+Theater,5,2,5,5,0,0,6,0,0,0,0,0,0,0,1,0,0,0,5,0,0,0,5,0,0,0,0,0,1000,FALSE,FALSE,TRUE,FALSE,settlement needs,FALSE,,,,,,,,FALSE,,FALSE
+Theater,6,2,6,6,0,0,7,0,0,0,0,0,0,0,2,0,0,0,6,0,0,0,6,0,0,0,0,0,1200,FALSE,FALSE,TRUE,FALSE,settlement needs,FALSE,,,,,,,,FALSE,,FALSE
+Theater,7,2,7,7,0,0,8,0,0,0,0,0,0,0,3,0,0,0,7,0,0,0,7,0,0,0,0,0,1400,FALSE,FALSE,TRUE,FALSE,settlement needs,FALSE,,,,,,,,FALSE,,FALSE
+Theater,8,2,8,8,0,0,9,0,0,0,0,0,0,0,4,0,0,0,8,0,0,0,8,0,0,0,0,0,1600,FALSE,FALSE,TRUE,FALSE,settlement needs,FALSE,,,,,,,,FALSE,,FALSE
+Theater,9,2,9,9,0,0,10,0,0,0,0,0,0,0,5,0,0,0,9,0,0,0,9,0,0,0,0,0,1800,FALSE,FALSE,TRUE,FALSE,settlement needs,FALSE,,,,,,,,FALSE,,FALSE
+Theater,10,3,10,10,0,0,11,0,0,0,0,0,0,0,6,0,0,0,10,0,0,0,10,0,0,0,0,0,2000,FALSE,FALSE,TRUE,FALSE,settlement needs,FALSE,,,,,,,,FALSE,,FALSE
+Tower,1,2,5,5,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,100,TRUE,TRUE,TRUE,TRUE,"house troops, di support",FALSE,,,,,,,,FALSE,,FALSE
+Tower,2,2,6,6,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,2,0,0,0,2,200,TRUE,TRUE,TRUE,TRUE,"house troops, di support",FALSE,,,,,,,,FALSE,,FALSE
+Tower,3,2,7,7,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,3,0,0,0,3,300,TRUE,TRUE,TRUE,TRUE,"house troops, di support",FALSE,,,,,,,,FALSE,,FALSE
+Tower,4,2,8,8,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,4,0,0,0,4,400,TRUE,TRUE,TRUE,TRUE,"house troops, di support",FALSE,,,,,,,,FALSE,,FALSE
+Tower,5,3,8,8,0,0,1,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,5,0,0,0,5,500,TRUE,TRUE,TRUE,TRUE,"house troops, di support",FALSE,,,,,,,,FALSE,,FALSE
+Tower,6,3,9.2,9.2,0,0,2,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,6,0,0,0,6,600,TRUE,TRUE,TRUE,TRUE,"house troops, di support",FALSE,,,,,,,,FALSE,,FALSE
+Tower,7,3,10,10,0,0,3,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,7,0,0,0,7,700,TRUE,TRUE,TRUE,TRUE,"house troops, di support",FALSE,,,,,,,,FALSE,,FALSE
+Tower,8,3,10.8,10.8,0,0,4,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,8,0,0,0,8,800,TRUE,TRUE,TRUE,TRUE,"house troops, di support",FALSE,,,,,,,,FALSE,,FALSE
+Tower,9,3,11.6,11.6,0,0,5,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,0,9,0,0,0,9,900,TRUE,TRUE,TRUE,TRUE,"house troops, di support",FALSE,,,,,,,,FALSE,,FALSE
+Tower,10,4,12.4,12.4,0,0,6,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,10,0,0,0,10,1000,TRUE,TRUE,TRUE,TRUE,"house troops, di support",FALSE,,,,,,,,FALSE,,FALSE
+Trade School,1,1,2,3,2,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,FALSE,train skilled workers,TRUE,,1,TRUE,"Coin, Food, Lumber, Metal Ore, Refined Goods, Stone, Medical, Education, Morale, and Vice",1,,,FALSE,,FALSE
+Trade School,2,1,3,4,3,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,2,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,FALSE,train skilled workers,TRUE,,1,TRUE,"Coin, Food, Lumber, Metal Ore, Refined Goods, Stone, Medical, Education, Morale, and Vice",2,,,FALSE,,FALSE
+Trade School,3,1,4,5,4,0,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,3,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,FALSE,train skilled workers,TRUE,,1,TRUE,"Coin, Food, Lumber, Metal Ore, Refined Goods, Stone, Medical, Education, Morale, and Vice",3,,,FALSE,,FALSE
+Trade School,4,1,5,6,5,0,0,0,0,0,0,0,0,0,4,4,0,0,0,0,0,4,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,FALSE,train skilled workers,TRUE,,1,TRUE,"Coin, Food, Lumber, Metal Ore, Refined Goods, Stone, Medical, Education, Morale, and Vice",4,,,FALSE,,FALSE
+Trade School,5,2,6,7,6,0,0,0,0,0,0,0,0,0,5,5,0,0,0,0,0,5,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,FALSE,train skilled workers,TRUE,,1,TRUE,"Coin, Food, Lumber, Metal Ore, Refined Goods, Stone, Medical, Education, Morale, and Vice",5,,,FALSE,,FALSE
+Trade School,6,2,7,8,7,0,0,0,0,0,0,0,0,0,6,6,0,0,0,0,0,6,0,0,0,0,0,0,1200,FALSE,FALSE,TRUE,FALSE,train skilled workers,TRUE,,1,TRUE,"Coin, Food, Lumber, Metal Ore, Refined Goods, Stone, Medical, Education, Morale, and Vice",6,,,FALSE,,FALSE
+Trade School,7,2,8,9,8,0,0,0,0,0,0,0,0,0,7,7,0,0,0,0,0,7,0,0,0,0,0,0,1400,FALSE,FALSE,TRUE,FALSE,train skilled workers,TRUE,,1,TRUE,"Coin, Food, Lumber, Metal Ore, Refined Goods, Stone, Medical, Education, Morale, and Vice",7,,,FALSE,,FALSE
+Trade School,8,2,9,10,9,0,0,0,0,0,0,0,0,0,8,8,0,0,0,0,0,8,0,0,0,0,0,0,1600,FALSE,FALSE,TRUE,FALSE,train skilled workers,TRUE,,1,TRUE,"Coin, Food, Lumber, Metal Ore, Refined Goods, Stone, Medical, Education, Morale, and Vice",8,,,FALSE,,FALSE
+Trade School,9,2,10,11,10,0,0,0,0,0,0,0,0,0,9,9,0,0,0,0,0,9,0,0,0,0,0,0,1800,FALSE,FALSE,TRUE,FALSE,train skilled workers,TRUE,,1,TRUE,"Coin, Food, Lumber, Metal Ore, Refined Goods, Stone, Medical, Education, Morale, and Vice",9,,,FALSE,,FALSE
+Trade School,10,3,11,12,11,0,0,0,0,0,0,0,0,0,10,10,0,0,0,0,0,10,0,0,0,0,0,0,2000,FALSE,FALSE,TRUE,FALSE,train skilled workers,TRUE,,1,TRUE,"Coin, Food, Lumber, Metal Ore, Refined Goods, Stone, Medical, Education, Morale, and Vice",10,,,FALSE,,FALSE
+Walls,1,2,4,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,0,1,0,0,0,1,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",FALSE,,,,,,,,FALSE,,FALSE
+Walls,2,2,4,2,0,0,3,0,0,0,0,0,0,0,2,1,0,0,0,1,0,0,0,2,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",FALSE,,,,,,,,FALSE,,FALSE
+Walls,3,2,4,4,0,0,4,0,0,0,0,0,0,0,3,2,0,0,0,2,0,0,0,3,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",FALSE,,,,,,,,FALSE,,FALSE
+Walls,4,2,5,5,0,0,5,0,0,0,0,0,0,0,3,3,0,0,0,3,0,0,0,4,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",FALSE,,,,,,,,FALSE,,FALSE
+Walls,5,2,6,6,0,0,6,0,0,0,0,0,0,0,4,4,0,0,0,4,0,0,0,5,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",FALSE,,,,,,,,FALSE,,FALSE
+Walls,6,2,6,7,0,0,7,0,0,0,0,0,0,0,4,5,0,0,0,4,0,0,0,6,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",FALSE,,,,,,,,FALSE,,FALSE
+Walls,7,2,7,8,0,0,8,0,0,0,0,0,0,0,5,6,0,0,0,5,0,0,0,7,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",FALSE,,,,,,,,FALSE,,FALSE
+Walls,8,2,8,9,0,0,9,0,0,0,0,0,0,0,5,7,0,0,0,5,0,0,0,8,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",FALSE,,,,,,,,FALSE,,FALSE
+Walls,9,2,8,10,0,0,10,0,0,0,0,0,0,0,6,8,0,0,0,6,0,0,0,9,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",FALSE,,,,,,,,FALSE,,FALSE
+Walls,10,2,9,11,0,0,11,0,0,0,0,0,0,0,6,9,0,0,0,6,0,0,0,10,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",FALSE,,,,,,,,FALSE,,FALSE
+Palisade,1,1,3,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,1,0,0,0,0,1,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",FALSE,,,,,,,,FALSE,,FALSE
+Palisade,2,1,4,0,0,0,3,0,0,0,0,0,0,0,3,0,0,0,2,0,0,0,0,2,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",FALSE,,,,,,,,FALSE,,FALSE
+Palisade,3,1,5,0,0,0,4,0,0,0,0,0,0,0,4,0,0,0,3,0,0,0,0,3,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",FALSE,,,,,,,,FALSE,,FALSE
+Palisade,4,1,6,0,0,0,5,0,0,0,0,0,0,0,5,0,0,0,4,0,0,0,0,4,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",FALSE,,,,,,,,FALSE,,FALSE
+Palisade,5,1,7,0,0,0,6,0,0,0,0,0,0,0,6,0,0,0,5,0,0,0,0,5,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",FALSE,,,,,,,,FALSE,,FALSE
+Palisade,6,1,8,0,0,0,7,0,0,0,0,0,0,0,7,0,0,0,6,0,0,0,0,6,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",FALSE,,,,,,,,FALSE,,FALSE
+Palisade,7,1,9,0,0,0,8,0,0,0,0,0,0,0,8,0,0,0,7,0,0,0,0,7,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",FALSE,,,,,,,,FALSE,,FALSE
+Palisade,8,1,10,0,0,0,9,0,0,0,0,0,0,0,9,0,0,0,8,0,0,0,0,8,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",FALSE,,,,,,,,FALSE,,FALSE
+Palisade,9,1,11,0,0,0,10,0,0,0,0,0,0,0,10,0,0,0,9,0,0,0,0,9,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",FALSE,,,,,,,,FALSE,,FALSE
+Palisade,10,1,12,0,0,0,11,0,0,0,0,0,0,0,11,0,0,0,10,0,0,0,0,10,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",FALSE,,,,,,,,FALSE,,FALSE
+Moat,1,1,3,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,"di support, settlement support",FALSE,,,,,,,,FALSE,,FALSE
+Warehouse,1,1,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,200,FALSE,FALSE,TRUE,TRUE,settlement support,FALSE,,,,,,,,FALSE,,FALSE
+Warehouse,2,1,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,400,FALSE,FALSE,TRUE,TRUE,settlement support,FALSE,,,,,,,,FALSE,,FALSE
+Warehouse,3,1,4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,600,FALSE,FALSE,TRUE,TRUE,settlement support,FALSE,,,,,,,,FALSE,,FALSE
+Warehouse,4,1,5,5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,800,FALSE,FALSE,TRUE,TRUE,settlement support,FALSE,,,,,,,,FALSE,,FALSE
+Warehouse,5,2,6,6,6,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,1000,FALSE,FALSE,TRUE,TRUE,settlement support,FALSE,,,,,,,,FALSE,,FALSE
+Warehouse,6,1.8,7,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,1200,FALSE,FALSE,TRUE,TRUE,settlement support,FALSE,,,,,,,,FALSE,,FALSE
+Warehouse,7,2,8,8,8,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,1400,FALSE,FALSE,TRUE,TRUE,settlement support,FALSE,,,,,,,,FALSE,,FALSE
+Warehouse,8,2.2,9,9,9,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,1600,FALSE,FALSE,TRUE,TRUE,settlement support,FALSE,,,,,,,,FALSE,,FALSE
+Warehouse,9,2.4,10,10,10,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,1800,FALSE,FALSE,TRUE,TRUE,settlement support,FALSE,,,,,,,,FALSE,,FALSE
+Warehouse,10,2.6,11,11,11,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,2000,FALSE,FALSE,TRUE,TRUE,settlement support,FALSE,,,,,,,,FALSE,,FALSE
+Gateway,1,12,12,12,12,0,12,12,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,1,0,0,0,100,FALSE,FALSE,TRUE,TRUE,"resource production, di support",FALSE,,,,,,,,FALSE,,FALSE
+Gateway,2,14,14,14,14,0,14,14,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,2,0,0,0,200,FALSE,FALSE,TRUE,TRUE,"resource production, di support",FALSE,,,,,,,,FALSE,,FALSE
+Gateway,3,16,16,16,16,0,16,16,0,0,0,0,0,9,0,0,0,0,0,0,0,0,0,0,3,0,0,0,300,FALSE,FALSE,TRUE,TRUE,"resource production, di support",FALSE,,,,,,,,FALSE,,FALSE
+Gateway,4,18,18,18,18,0,18,18,0,0,0,0,0,12,0,0,0,0,0,0,0,0,0,0,4,0,0,0,400,FALSE,FALSE,TRUE,TRUE,"resource production, di support",FALSE,,,,,,,,FALSE,,FALSE
+Gateway,5,20,20,20,20,0,20,20,0,0,0,0,0,15,0,0,0,0,0,0,0,0,0,0,5,0,0,0,500,FALSE,FALSE,TRUE,TRUE,"resource production, di support",FALSE,,,,,,,,FALSE,,FALSE
+Gateway,6,22,22,22,22,0,22,22,0,0,0,0,0,18,0,0,0,0,0,0,0,0,0,0,6,0,0,0,600,FALSE,FALSE,TRUE,TRUE,"resource production, di support",FALSE,,,,,,,,FALSE,,FALSE
+Gateway,7,24,24,24,24,0,24,24,0,0,0,0,0,21,0,0,0,0,0,0,0,0,0,0,7,0,0,0,700,FALSE,FALSE,TRUE,TRUE,"resource production, di support",FALSE,,,,,,,,FALSE,,FALSE
+Gateway,8,26,26,26,26,0,26,26,0,0,0,0,0,24,0,0,0,0,0,0,0,0,0,0,8,0,0,0,800,FALSE,FALSE,TRUE,TRUE,"resource production, di support",FALSE,,,,,,,,FALSE,,FALSE
+Gateway,9,28,28,28,28,0,28,28,0,0,0,0,0,27,0,0,0,0,0,0,0,0,0,0,9,0,0,0,900,FALSE,FALSE,TRUE,TRUE,"resource production, di support",FALSE,,,,,,,,FALSE,,FALSE
+Gateway,10,30,30,30,30,0,30,30,0,0,0,0,0,30,0,0,0,0,0,0,0,0,0,0,10,0,0,0,1000,FALSE,FALSE,TRUE,TRUE,"resource production, di support",FALSE,,,,,,,,FALSE,,FALSE
+Estate,1,2,3,3,3,3,3,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,NPC housing,FALSE,,,,,,,,FALSE,,FALSE
+Estate,2,2,4,4,4,4,4,0,0,0,0,0,0,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,NPC housing,FALSE,,,,,,,,FALSE,,FALSE
+Estate,3,2,5,5,5,5,5,0,0,0,0,0,0,0,0,0,0,3,0,3,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,NPC housing,FALSE,,,,,,,,FALSE,,FALSE
+Estate,4,2,6,6,6,6,6,0,0,0,0,0,0,0,0,0,0,4,0,4,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,NPC housing,FALSE,,,,,,,,FALSE,,FALSE
+Estate,5,2,7,7,7,7,7,0,0,0,0,0,0,0,0,0,0,5,0,5,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,NPC housing,FALSE,,,,,,,,FALSE,,FALSE
+Estate,6,2,8,8,8,8,8,1,0,0,0,0,0,0,0,0,0,6,1,6,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,NPC housing,FALSE,,,,,,,,FALSE,,FALSE
+Estate,7,2,9,9,9,9,9,2,0,0,0,0,0,0,0,0,0,7,2,7,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,NPC housing,FALSE,,,,,,,,FALSE,,FALSE
+Estate,8,2,10,10,10,10,10,3,0,0,0,0,0,0,0,0,0,8,3,8,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,NPC housing,FALSE,,,,,,,,FALSE,,FALSE
+Estate,9,2,11,11,11,11,11,4,0,0,0,0,0,0,0,0,0,9,4,9,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,NPC housing,FALSE,,,,,,,,FALSE,,FALSE
+Estate,10,2,12,12,12,12,12,5,0,0,0,0,0,0,0,0,0,10,5,10,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,NPC housing,FALSE,,,,,,,,FALSE,,FALSE
+Homeward,1,2,5,7,7,0,7,0,0,0,0,0,0,0,0,0,0,0,3,3,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,Creature housing,FALSE,,,,,,,,FALSE,,FALSE
+Homeward,2,2,6,8,8,0,8,0,0,0,0,0,0,0,0,0,0,0,6,6,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,Creature housing,FALSE,,,,,,,,FALSE,,FALSE
+Homeward,3,2,7,9,9,0,9,0,0,0,0,0,0,0,0,0,0,0,9,9,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,Creature housing,FALSE,,,,,,,,FALSE,,FALSE
+Homeward,4,2,8,10,10,0,10,0,0,0,0,0,0,0,0,0,0,0,12,12,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,Creature housing,FALSE,,,,,,,,FALSE,,FALSE
+Homeward,5,2,9,11,11,0,11,0,0,0,0,0,0,0,0,0,0,0,15,15,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,Creature housing,FALSE,,,,,,,,FALSE,,FALSE
+Homeward,6,2,10,12,12,0,12,1,0,0,0,0,0,0,0,0,0,0,18,18,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,Creature housing,FALSE,,,,,,,,FALSE,,FALSE
+Homeward,7,2,11,13,13,0,13,2,0,0,0,0,0,0,0,0,0,0,21,21,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,Creature housing,FALSE,,,,,,,,FALSE,,FALSE
+Homeward,8,2,12,14,14,0,14,3,0,0,0,0,0,0,0,0,0,0,24,24,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,Creature housing,FALSE,,,,,,,,FALSE,,FALSE
+Homeward,9,2,13,15,15,0,15,4,0,0,0,0,0,0,0,0,0,0,27,27,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,Creature housing,FALSE,,,,,,,,FALSE,,FALSE
+Homeward,10,2,14,16,16,0,16,5,0,0,0,0,0,0,0,0,0,0,30,30,0,0,0,0,0,0,0,0,0,FALSE,FALSE,TRUE,TRUE,Creature housing,FALSE,,,,,,,,FALSE,,FALSE
+Castle,1,12,30,30,30,0,30,30,0,0,0,0,0,0,5,5,5,5,5,5,0,0,0,1,1,1,-1,8,200,FALSE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Castle,2,24,60,60,60,0,60,60,0,0,0,0,0,0,10,10,10,10,10,10,0,0,0,2,2,2,-2,16,400,FALSE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Castle,3,36,90,90,90,0,90,90,0,0,0,0,0,0,15,15,15,15,15,15,0,0,0,3,3,3,-3,24,600,FALSE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Castle,4,48,120,120,120,0,120,120,0,0,0,0,0,0,20,20,20,20,20,20,0,0,0,4,4,4,-4,32,800,FALSE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Castle,5,60,150,150,150,0,150,150,0,0,0,0,0,0,25,25,25,25,25,25,0,0,0,5,5,5,-5,40,1000,FALSE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Castle,6,72,180,180,180,0,180,180,0,0,0,0,0,0,30,30,30,30,30,30,0,0,0,6,6,6,-6,48,1200,FALSE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Castle,7,84,210,210,210,0,210,210,0,0,0,0,0,0,35,35,35,35,35,35,0,0,0,7,7,7,-7,56,1400,FALSE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Castle,8,96,240,240,240,0,240,240,0,0,0,0,0,0,40,40,40,40,40,40,0,0,0,8,8,8,-8,64,1600,FALSE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Castle,9,108,270,270,270,0,270,270,0,0,0,0,0,0,45,45,45,45,45,45,0,0,0,9,9,9,-9,72,1800,FALSE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+Castle,10,120,300,300,300,0,300,300,0,0,0,0,0,0,50,50,50,50,50,50,0,0,0,10,10,10,-10,80,2000,FALSE,FALSE,TRUE,TRUE,di support,FALSE,,,,,,,,FALSE,,FALSE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,FALSE,,,,,,,,FALSE,,FALSE
