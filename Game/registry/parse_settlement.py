@@ -14,11 +14,6 @@ def parse_int(value):
 def parse_bool(value):
     return value.strip().upper() == "TRUE"
 
-def parse_name_level(value):
-    match = re.match(r"(.+?) level (\d+)", value.strip())
-    if match:
-        return match.group(1).strip(), int(match.group(2))
-    return value.strip(), 1
 
 def parse_structure_requirements(cell):
     result = []

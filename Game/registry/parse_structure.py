@@ -1,74 +1,124 @@
 import csv
 import json
 import re
+import os
 
-RESOURCE_KEYS = ['L', 'S', 'M', 'F', 'R', 'C']
-DI_KEYS = ['Stability', 'Economy', 'Loyalty', 'Unrest']
-NEED_KEYS = ['Mor', 'Edu', 'Med']
-LOCATION_KEYS = ['Village Inn', 'Outpost', 'City', 'Fortress']
+script_dir = os.path.dirname(__file__)
+csv_path = os.path.join(script_dir, "..", "data", "units", "Structure.csv")
+output_path = os.path.join(script_dir, "..", "data", "units", "StructureData_refactored.json")
 
-def parse_name_level(value):
-    match = re.match(r"(.+?) lvl (\d+)", value)
-    if match:
-        return match.group(1).strip(), int(match.group(2))
-    return value.strip(), 1
 
-def parse_int(val):
+
+def safe_int(value, default=0):
     try:
-        return int(float(val))
-    except:
-        return 0
+        return int(float(value))
+    except (ValueError, TypeError):
+        return default
 
-def parse_bool(val):
-    return val.strip().upper() == 'TRUE'
+def parse_roles(row, column="structure_role"):
+    value = row.get(column, "")
+    return [r.strip() for r in value.split(",") if r.strip()]
 
-def parse_cost(row, start_idx):
-    return {
-        key: parse_int(row[start_idx + i])
-        for i, key in enumerate(RESOURCE_KEYS)
-        if row[start_idx + i].strip() and parse_int(row[start_idx + i]) > 0
+def parse_resource_block(row, columns):
+    block = {}
+    for col in columns:
+        raw = row.get(col)
+        value = safe_int(raw)
+        if value > 0:
+            block[col] = value
+    return block
+
+def extract_prefixed_block(row, prefix):
+    block = {}
+    for key, value in row.items():
+        if key.startswith(prefix + "_"):
+            res_type = key[len(prefix)+1:]
+            amount = safe_int(value)
+            if amount > 0:
+                block[res_type] = amount
+    return block
+
+def migrate_row(row, headers):
+    name = row.get("name") or row.get("Name")
+    
+    level = row.get("level") or row.get("Level")
+    if not name or not level:
+        return None
+    
+
+    entry = {
+        "name": name.strip(),
+        "level": safe_int(level),
+        "structure_role": parse_roles(row),
+        "limits": {},
+        "access_control": {},
+        "build_turns": {},
+        "build_cost": {},
+        "production": {},
+        "upkeep": {},
+        "settlement_needs": {},
+        "domestic_index": {},
+        "garrrison": safe_int(row.get("garrison", 0)),
+       "population": safe_int(row.get("population", 0)),
+       
     }
 
-def parse_structure_row(row):
-    name, level = parse_name_level(row[0])
-    return {
-        "name": name,
-        "level": level,
-        "build_time": parse_int(row[1]),
-        "build_cost": parse_cost(row, 2),
-        "production": parse_cost(row, 8),
-        "upkeep": parse_cost(row, 14),
-        "settlement_needs": {
-            "Morale": parse_int(row[20]),
-            "Education": parse_int(row[21]),
-            "Medical": parse_int(row[22])
-        },
-        "di_modifiers": {
-            "Stability": parse_int(row[23]),
-            "Economy": parse_int(row[24]),
-            "Loyalty": parse_int(row[25]),
-            "Unrest": parse_int(row[26])
-        },
-        "garrison": parse_int(row[27]),
-        "population": parse_int(row[28]),
-        "buildable_in": {
-            "Village Inn": parse_bool(row[29]),
-            "Outpost": parse_bool(row[30]),
-            "City": parse_bool(row[31]),
-            "Fortress": parse_bool(row[32])
-        }
+    entry["build_cost"] = extract_prefixed_block(row, "build_cost")
+    entry["production"] = extract_prefixed_block(row, "production")
+    entry["upkeep"] = extract_prefixed_block(row, "upkeep")
+    entry["settlement_needs"] = extract_prefixed_block(row, "settlement_needs")
+    entry["domestic_index"] = extract_prefixed_block(row, "domestic_index")
+    entry["building_location"] = extract_prefixed_block(row, "build_location")
+
+    build_turns = safe_int(row.get("build_turns"))
+    if build_turns > 0:
+        entry["build_turns"] = build_turns
+
+
+    # Resource blocks
+    for block_name in ["build_cost", "production", "upkeep"]:
+        block = parse_resource_block(row, headers[block_name])
+        if block:
+            entry[block_name] = block
+    
+    print(f"{entry['name']} → {block_name}: {block}")
+
+
+    return entry
+def get_header_indices(headers, target_names):
+    return [i for i, h in enumerate(headers) if h.strip() in target_names]
+
+def parse_structure_csv(path):
+    with open(path, newline='', encoding='utf-8-sig') as f:
+        lines = f.readlines()
+
+    # Use line 2 as the real header (row 1 is grouped labels)
+    headers_row = [h.strip() for h in lines[1].strip().split(",")]
+    reader = csv.DictReader(lines[2:], fieldnames=headers_row)
+    print("🔍 CSV headers detected:", reader.fieldnames)
+
+        # Define column slices
+    header_map = {
+        "build_cost": get_header_indices(headers_row, ["L", "S", "M", "F", "R", "C"]),
+        "production": get_header_indices(headers_row, ["L", "S", "M", "F", "R", "C"]),
+        "upkeep": get_header_indices(headers_row, ["L", "S", "M", "F", "R", "C"]),
+        "settlement_needs": get_header_indices(headers_row, ["Med","Edu","Mor"]),
+        "domestic_index": get_header_indices(headers_row, ["Stability", "Economy", "Loyalty", "Unrest"])
     }
 
-def parse_structure_csv(csv_file, json_file):
-    with open(csv_file, newline='', encoding='utf-8') as f:
-        reader = csv.reader(f)
-        next(reader)  # skip header 1
-        next(reader)  # skip header 2
-        structures = [parse_structure_row(row) for row in reader if row and row[0].strip()]
+    data = []
+    for row in reader:
+        migrated = migrate_row(row, header_map)
+        if migrated:
+            data.append(migrated)
 
-    with open(json_file, 'w', encoding='utf-8') as out:
-        json.dump(structures, out, indent=2)
-    print(f"✅ Parsed {len(structures)} structures into {json_file}")
+    return data
 
+# Example usage
 if __name__ == "__main__":
-    parse_structure_csv("Structure.csv", "StructureData.json")
+    structures = parse_structure_csv(csv_path)
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(structures, f, indent=2)
+    
+    print(f"✅ Structure data parsed and saved to → {output_path}")

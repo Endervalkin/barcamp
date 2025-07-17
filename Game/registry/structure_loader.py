@@ -10,7 +10,7 @@ def load_structures(json_path=None):
     Loads all structure entries from JSON and returns a list of Structure objects.
     """
     if not json_path:
-        json_path = os.path.join("data", "structure", "StructureData.json")
+        json_path = os.path.join("data", "units", "structure", "StructureData.json")
 
     with open(json_path, "r", encoding="utf-8") as f:
         structure_data = json.load(f)

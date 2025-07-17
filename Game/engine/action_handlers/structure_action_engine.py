@@ -143,3 +143,10 @@ class StructureActionEngine:
         if ship_data["name"] == "Skycutter" and ship_data["name"] not in approval_registry:
             return False
         return ship_data["class"] == 5 and ship_data["level"] <= structure.level
+    
+    def is_ship_valid(structure, ship_data, approval_registry):
+        if ship_data["type"] != "Ship":
+            return False
+        if ship_data.get("requires_approval", False) and ship_data["name"] not in approval_registry:
+            return False
+        return ship_data["class"] * ship_data["level"] <= structure.level
