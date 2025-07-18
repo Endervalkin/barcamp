@@ -7,6 +7,43 @@ from utils.di import get_stability_rating, get_economy_rating, get_loyalty_ratin
 from models.settlement import Settlement
 from models.structure import StructureBuilder
 from engine.turn import ActionEngine  # if you need class hints or structure
+from structure_action_engine import (
+    load_registry, get_trainable_units, apply_training,
+    get_producible_items, apply_production,
+    get_conversions, apply_conversion,
+    get_buildable, apply_build
+)
+
+# Initialize registry once
+STRUCTURES = load_registry()
+
+def train(struct_name, game_state, unit, qty=1, specialization=None):
+    struct = STRUCTURES[struct_name]
+    valid = get_trainable_units(struct, specialization)
+    if unit not in valid:
+        raise ValueError(f"{struct_name} cannot train {unit}")
+    return apply_training(struct, game_state, unit, qty)
+
+def produce(struct_name, game_state, item_name):
+    struct = STRUCTURES[struct_name]
+    valid = [r["name"] for r in get_producible_items(struct, game_state)]
+    if item_name not in valid:
+        raise ValueError(f"{item_name} not producible this turn")
+    return apply_production(struct, game_state, item_name)
+
+def convert(struct_name, game_state, from_unit, to_unit):
+    struct = STRUCTURES[struct_name]
+    conv = {c["from"]: c["to"] for c in get_conversions(struct)}
+    if conv.get(from_unit) != to_unit:
+        raise ValueError("Invalid conversion")
+    return apply_conversion(struct, game_state, from_unit, to_unit)
+
+def build(struct_name, game_state, unit_name, catalog, **kwargs):
+    struct = STRUCTURES[struct_name]
+    valid = [c["name"] for c in get_buildable(struct, catalog, game_state)]
+    if unit_name not in valid:
+        raise ValueError(f"{unit_name} cannot be built here")
+    return apply_build(struct, game_state, unit_name, **kwargs)
 
 def build_structure(settlement, structure_data, action_engine):
     name = structure_data["name"]

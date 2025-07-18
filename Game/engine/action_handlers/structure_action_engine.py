@@ -5,6 +5,8 @@ from utils.parsing import parse_name_level, parse_int
 from utils.di import get_stability_rating, get_economy_rating, get_loyalty_rating, get_unrest_rating
 from engine.turn import ActionEngine  # if you need class hints or structure
 from models.structure import StructureBuilder
+from registry.item_parser import get_valid_recipes, validate_produce_items
+
 
 
 class StructureActionEngine:
@@ -53,100 +55,91 @@ class StructureActionEngine:
             turn_cost=1
         )
         
-    def train_unit(self, structure, settlement):
-        if structure.turns_remaining < 1:
-            return f"❌ {structure.name} has no turns available."
 
-        # Step 1: Determine valid unit types
-        allowed_units = structure.can_train
-        max_level = structure.level
-        selected_unit = self.select_unit_to_train(structure)  # stubbed for now
-        if structure.name == "Mage's Tower":
-            if unit["type"] != "Caster" or unit["subtype"] != structure.specialization:
-                return f"🚫 {unit['subtype']} cannot be trained at {structure.specialization} Mage Tower."
-        
 
-        if selected_unit["type"] not in allowed_units:
-            return f"🚫 {structure.name} cannot train {selected_unit['type']} units."
 
-        if selected_unit["level"] > max_level:
-            return f"📏 {structure.name} can only train up to level {max_level}."
+    def load_registry(path="StructureData_refactored.json"):
+        with open(path, "r", encoding="utf-8") as f:
+            return {s["name"]: s for s in json.load(f)}
 
-        # Step 2: Calculate cost
-        per_level_cost = structure.train_cost_per_level
-        train_cost = {
-            k: v * selected_unit["level"] for k, v in per_level_cost.items()
-        }
+    # 1. TRAINING LOGIC
+    def get_trainable_units(struct, player_specialization=None):
+        # e.g. ["Archer"], ["Commando","Footman","Guardsman"], ["Celestial Generalist","Earth Generalist"]
+        units = struct.get("trainable_units", [])
+        # If Mage's Tower, filter by chosen spec
+        if struct.get("requires_specialization") and player_specialization:
+            return [u for u in units if player_specialization in u]
+        return units
 
-        if not settlement.ledger.can_afford(train_cost):
-            return f"💰 Insufficient resources to train {selected_unit['name']}."
+    def can_train(struct, game_state):
+        """Return how many units can be trained this turn (per-turn limit)."""
+        lim = struct.get("limits", {}).get("unit_training", {})
+        return lim.get("per_turn", 0)
 
-        # Step 3: Apply training
-        settlement.ledger.spend(train_cost, purpose="Train", by=structure.name)
-        structure.turns_remaining -= 1
-        settlement.units.append(selected_unit)  # or use add_unit()
+    def apply_training(struct, game_state, unit, quantity=1):
+        pts_left = game_state["structures"][struct["name"]].get("train_points", struct["level"])
+        per_turn = can_train(struct, game_state)
+        if quantity > per_turn or quantity > pts_left:
+            raise ValueError("Too many units requested")
+        # Deduct your turn‐based “points” or whatever currency you use
+        game_state["structures"][struct["name"]]["train_points"] = pts_left - quantity
+        # Add units to player’s roster
+        game_state["player_units"].append({ "type": unit, "count": quantity })
+        return True
 
-        return self.action_engine.perform_action(
-            actor=structure,
-            action_type="Train",
-            details=f"{selected_unit['name']} level {selected_unit['level']} trained",
-            cost=train_cost,
-            turn_cost=1
-        )
-    
-    def retrain_unit(self, structure, settlement):
-        if not structure.can_retrain():
-            return f"❌ {structure.name} cannot retrain units this turn."
+    # 2. ITEM PRODUCTION LOGIC
+    def get_producible_items(struct, game_state):
+        # Reads structured produce_items + per-turn limit + level points
+        return get_valid_recipes(struct)
 
-        unit = structure.retrain_unit()
-        settlement.units.update(unit)
-        structure.decrement_turns()
+    def apply_production(struct, game_state, item_name):
+        recipes = {r["name"]: r for r in struct.get("produce_items", [])}
+        recipe = recipes.get(item_name)
+        if not recipe:
+            raise ValueError(f"{item_name} not in catalog")
+        # check points & per-turn
+        pts_left = game_state["structures"][struct["name"]].get("prod_points", struct["level"])
+        if recipe["cost"] > pts_left:
+            raise ValueError("Insufficient points")
+        per_turn = struct.get("limits", {}).get("item_production", {}).get("per_turn", 1)
+        used = game_state["structures"][struct["name"]].get("produced_this_turn", 0)
+        if used >= per_turn:
+            raise ValueError("Production limit reached")
+        # Apply
+        game_state["structures"][struct["name"]]["prod_points"] = pts_left - recipe["cost"]
+        game_state["structures"][struct["name"]]["produced_this_turn"] = used + 1
+        game_state["player_items"].append({ "name": item_name })
+        return True
 
-        return f"✅ {structure.name} retrained unit: {unit.name}"
-    
-    def produce_items(self, structure, settlement):
-        if not structure.can_craft():
-            return f"❌ {structure.name} cannot produce items this turn."
+    # 3. UNIT CONVERSION LOGIC
+    def get_conversions(struct):
+        return struct.get("unit_conversions", [])
 
-        items = structure.craft_items()
-        settlement.items.add(items)
-        structure.decrement_turns()
+    def apply_conversion(struct, game_state, from_unit, to_unit):
+        # Remove one from_unit, add one to_unit
+        inv = game_state["player_units"]
+        # find and decrement
+        for u in inv:
+            if u["type"] == from_unit and u["count"] > 0:
+                u["count"] -= 1
+                break
+        else:
+            raise ValueError("No unit to convert")
+        # add the new
+        game_state["player_units"].append({ "type": to_unit, "count": 1 })
+        return True
 
-        return f"✅ {structure.name} crafted items: {', '.join(item.name for item in items)}"
-    
-    def specialize_unit(self, structure, settlement):
-        if not structure.can_specialize():
-            return f"❌ {structure.name} cannot specialize units this turn."
+    # 4. SHIP / AIRSHIP BUILDING
+    def get_buildable(struct, catalog, game_state):
+        # catalog: list of {"name","class"} for ships/airships loaded separately
+        lvl = struct["level"]
+        if struct["build_type"] == "ships":
+            # formula: class * level
+            max_power = lvl * lvl  # or whatever your formula means
+            return [c for c in catalog if c["class"] * lvl <= max_power]
+        else:
+            return [c for c in catalog if c["class"] <= struct.get("build_rules", {}).get("max_class", 0)]
 
-        specialized_unit = structure.specialize_unit()
-        settlement.units.update(specialized_unit)
-        structure.decrement_turns()
-
-        return f"✅ {structure.name} specialized unit: {specialized_unit.name}" 
-    
-    def teach_skill(self, structure, settlement):
-        if not structure.can_teach():
-            return f"❌ {structure.name} cannot teach skills this turn."
-
-        skill = structure.teach_skill()
-        settlement.skills.add(skill)
-        structure.decrement_turns()
-
-        return f"✅ {structure.name} taught skill: {skill.name}"
-    
-    def can_build_ship(structure, ship_data):
-        ship_class = ship_data["class"]
-        ship_level = ship_data["level"]
-        return ship_class * ship_level <= structure.level
-    
-    def can_build_airship(structure, ship_data, approval_registry):
-        if ship_data["name"] == "Skycutter" and ship_data["name"] not in approval_registry:
-            return False
-        return ship_data["class"] == 5 and ship_data["level"] <= structure.level
-    
-    def is_ship_valid(structure, ship_data, approval_registry):
-        if ship_data["type"] != "Ship":
-            return False
-        if ship_data.get("requires_approval", False) and ship_data["name"] not in approval_registry:
-            return False
-        return ship_data["class"] * ship_data["level"] <= structure.level
+    def apply_build(struct, game_state, unit_name):
+        # similar pattern: check build points, per-turn, deduct, add to queue
+        raise NotImplementedError
