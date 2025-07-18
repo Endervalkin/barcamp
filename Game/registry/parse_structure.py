@@ -2,6 +2,7 @@ import csv
 import json
 import re
 import os
+from item_parser import parse_produce_items, validate_produce_items, get_valid_recipes
 
 script_dir = os.path.dirname(__file__)
 csv_path = os.path.join(script_dir, "..", "data", "units", "Structure.csv")
@@ -90,6 +91,7 @@ def migrate_row(row):
     entry["settlement_needs"] = extract_prefixed_block(row, "settlement_needs")
     entry["domestic_index"] = extract_prefixed_block(row, "domestic_index")
     entry["building_location"] = extract_boolean_block(row, "building_location")
+    
 
     build_turns = safe_int(row.get("build_turns"))
     if build_turns > 0:
@@ -103,8 +105,7 @@ def migrate_row(row):
         "requires_specialization",
         "specialization_options",
         "train_limit_per_turn",
-        "produces_items",
-        "produce_item_limit_per_turn",
+        
         "can_cast_rituals",
         "max_build_formula",
         "requires_approval"
@@ -144,6 +145,16 @@ def migrate_row(row):
             "per_turn": safe_int(row.get("produce_item_limit_per_turn"), 1)
         }
 
+    # 🧪 Item production metadata
+    raw_items = row.get("produce_items", "")
+    item_block = parse_produce_items(raw_items)
+    if item_block:
+        entry["produce_items"] = item_block
+        validate_produce_items(item_block, entry["name"])
+
+        # 🧮 Compute valid recipes based on level and limits
+        entry["valid_recipes"] = get_valid_recipes(entry)
+   
     # 🛠️ Ship Building Formula
     if row.get("max_build_formula"):
         entry["limits"]["ship_building"] = {
@@ -153,6 +164,13 @@ def migrate_row(row):
     # 🔐 Requires Approval
     if str(row.get("requires_approval", "")).strip().lower() == "true":
         entry["access_control"]["approval_required"] = True
+
+    raw_units = row.get("trainable_units", "")
+    if raw_units:
+        units = [u.strip() for u in raw_units.split(",") if u.strip()]
+        entry["trainable_units"] = units
+
+
     return entry
 def get_header_indices(headers, target_names):
     return [i for i, h in enumerate(headers) if h.strip() in target_names]

@@ -2,6 +2,7 @@ import csv
 import json
 import re
 
+
 RESOURCE_KEYS = ['L', 'S', 'M', 'F', 'R', 'C']
 NEED_KEYS = ['Med', 'Edu', 'Mor']
 
