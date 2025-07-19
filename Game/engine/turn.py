@@ -5,8 +5,8 @@ from Game.models.homeward import NPC
 from models.homeward import Homeward
 from models.barony import Barony
 from models.units import Units
-from engine.action_handlers.structure_actions import build_structure, upgrade_structure, upgrade_settlement
-from engine.action_handlers.settlement_actions import build_settlement
+from Game.engine.structure_actions import build_structure, upgrade_structure, upgrade_settlement
+from Game.engine.settlement_actions import build_settlement
 
 
 
@@ -317,3 +317,34 @@ class TurnPlanner:
         # DEFAULT
         else:
             return []
+        
+def end_turn(self):
+    """
+    End the current turn and prepare for the next one.
+    """
+    # Reset turn pool
+    self.turn_pool = {}
+
+    # Reset action engine
+    self.action_engine = None
+
+    # Log end of turn
+    print("🔚 Turn ended. Ready for next month.")
+
+def end_month(self):
+    """
+    End the current month and prepare for the next one.
+    """
+    # Reset turn pool
+    self.turn_pool = {}
+
+    # Reset action engine
+    self.action_engine = None
+
+    # Log end of month
+    for s in player["settlements"].values():
+        num_routes = len(s.get("trade_routes", []))
+        s["domestic_index"]["Economy"] += num_routes
+        player["resources"]["C"] += num_routes
+
+    print("🔚 Month ended. Ready for next month.")

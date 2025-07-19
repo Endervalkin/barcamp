@@ -5,8 +5,8 @@ import os
 from item_parser import parse_produce_items, validate_produce_items, get_valid_recipes
 
 script_dir = os.path.dirname(__file__)
-csv_path = os.path.join(script_dir, "..", "data", "units", "Structure.csv")
-output_path = os.path.join(script_dir, "..", "data", "units", "StructureData_refactored.json")
+csv_path = os.path.join(script_dir, "..", "data", "structures", "Structure.csv")
+output_path = os.path.join(script_dir, "..", "data", "structures", "StructureData_refactored.json")
 
 
 
@@ -58,6 +58,12 @@ def extract_boolean_block(row, prefix):
             elif val in ["false", "no", "0"]:
                 block[loc] = False
     return block
+
+PREFIX_BLOCKS = [
+  "build_cost", "production", "upkeep",
+  "settlement_needs", "domestic_index",
+  "build_location"
+]
 
 
 def migrate_row(row):

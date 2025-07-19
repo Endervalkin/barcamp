@@ -1,0 +1,23 @@
+{
+    "name": "Caravan",
+    "description": "A mobile unit that can transport goods and resources across the map, following roads to maximize efficiency.",
+    "build_turn": 2,
+    "build_cost": {
+         "L": 2, 
+         "R": 2, 
+         "C": 1 
+        },
+    "upkeep": {
+        "F": 1,
+        "R": 1 
+    },
+    "stats": {
+      "attack": 0,
+      "armor": 1,
+      "combat_movement": 1,
+      "range": 0,
+      "damage_reduction": 0,
+      "cargo": 2,
+      "map_movement": 20
+    }
+  }

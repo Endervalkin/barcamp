@@ -51,3 +51,37 @@ def build_settlement(character, location_data, action_engine, template_path=None
     character.owned_settlements.append(new_settlement)
 
     return f"🌆 {character.name} founded a {chosen_type} at {new_settlement.location}.\n{result}"
+
+def place_structure(settlement, structure_data, action_engine):
+    """
+    Place a structure in the settlement.
+    """
+    name = structure_data["name"]
+    level = structure_data["level"]
+    build_cost = structure_data["build_cost"]
+
+    # Check if settlement can build this structure
+    if not settlement.can_build_structure(name):
+        return f"⛔ {settlement.name} cannot build {name}."
+
+    # Check resource availability
+    if not settlement.ledger.can_afford(build_cost):
+        return f"💰 {settlement.name} lacks resources to build {name}."
+
+    # Spend resources and turn
+    settlement.ledger.spend(build_cost, purpose="Build Structure", by=settlement.name)
+    settlement.decrement_turns()
+
+    # Log action
+    result = action_engine.perform_action(
+        actor=settlement,
+        action_type="Place Structure",
+        details=f"{name} level {level}",
+        cost=build_cost,
+        turn_cost=1
+    )
+
+    # Add structure to settlement
+    settlement.add_structure(structure_data)
+
+    return f"✅ {settlement.name} placed {name} level {level}.\n{result}"

@@ -7,7 +7,7 @@ from utils.di import get_stability_rating, get_economy_rating, get_loyalty_ratin
 from models.settlement import Settlement
 from models.structure import StructureBuilder
 from engine.turn import ActionEngine  # if you need class hints or structure
-from structure_action_engine import (
+from Game.engine.structure_action_engine import (
     load_registry, get_trainable_units, apply_training,
     get_producible_items, apply_production,
     get_conversions, apply_conversion,

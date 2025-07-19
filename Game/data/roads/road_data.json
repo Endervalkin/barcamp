@@ -1,0 +1,59 @@
+[
+    {
+        "name": "Dirt Road",
+        "description": "A dirt road that connects different areas, allowing for faster movement.",
+        "hex_size": 1,
+        "build_turns": 1,
+        "build_cost_per_batch": {
+            "L": 1,
+            "C": 1
+        },
+        "upkeep_cost_per_batch": {
+            "C": 1
+        },
+        "batch_size": 10,
+        "travel_speed_bonuss": 1,
+        "trade_coin_bonus": 1,
+        "icon": "road_dirt"
+    }
+    ,
+    {
+        "name": "Woodened Framed Road",
+        "description": "A woodened framed road that provides better durability and speed than dirt roads.",
+        "hex_size": 1,
+        "build_turns": 1,
+        "build_cost_per_batch": {
+            "L": 2,
+            "M": 1,
+            "C": 1
+        },
+        "upkeep_cost_per_batch": {
+            "L": 1,
+            "C": 1
+        },
+        "batch_size": 10,
+        "travel_speed_bonuss": 2,
+        "trade_coin_bonus": 2,
+        "icon": "road_wooden"
+    },
+    {
+        "name": "Cobblestone Road",
+        "description": "A stone road that provides high durability and speed, suitable for heavy traffic.",
+        "hex_size": 1,
+        "build_turns": 1,
+        "build_cost_per_batch": {
+            "L": 1,
+            "S": 3,
+            "C": 1
+        },
+        "upkeep_cost_per_batch": {
+            "L": 1,
+            "S": 1,
+            "C": 1
+        },
+        "batch_size": 10,
+        "travel_speed_bonuss": 3,
+        "trade_coin_bonus": 3,
+        "icon": "road_stone"
+    }
+]
