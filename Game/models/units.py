@@ -1,14 +1,15 @@
+import sys
 import json
 import os
-from utils.parsing import parse_name_level, parse_int, parse_structure_requirements
-from utils.di      import get_stability_rating, get_economy_rating, get_loyalty_rating, get_unrest_rating
+from Game.utils.parsing import parse_name_level, parse_int, parse_structure_requirements
+from Game.utils.di      import get_stability_rating, get_economy_rating, get_loyalty_rating, get_unrest_rating
 
 # Ensure relative import works if running from another location
-UNIT_PATH = os.path.abspath(os.path.join("data", "units"))
+UNIT_PATH = os.path.abspath(os.path.join("Game","data", "units"))
 if UNIT_PATH not in sys.path:
     sys.path.append(UNIT_PATH)
 
-from unit_registry import UnitRegistry
+from Game.registry.unit_registry import UnitRegistry
 
 
 class Units:

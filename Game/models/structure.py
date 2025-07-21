@@ -1,7 +1,7 @@
 import json
 import os
-from utils.parsing import parse_name_level, parse_int, parse_structure_requirements
-from utils.di      import get_stability_rating, get_economy_rating, get_loyalty_rating, get_unrest_rating
+from Game.utils.parsing import parse_name_level, parse_int, parse_structure_requirements
+from Game.utils.di      import get_stability_rating, get_economy_rating, get_loyalty_rating, get_unrest_rating
 
 class Structure:
     def __init__(self, data):

@@ -1,6 +1,6 @@
 def build_settlement(character, location_data, action_engine, template_path=None):
     import json, os
-    from models.settlement import Settlement
+    from Game.models.settlement import Settlement
 
     # Default template path
     if not template_path:

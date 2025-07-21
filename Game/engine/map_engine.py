@@ -1,6 +1,6 @@
 import os
 import json
-from data.roads import road_data, hex_registry
+from Game.data.roads import road_data, hex_registry
 
 def generate_axial_hexes(q_range, r_range):
     hex_map = {}

@@ -1,11 +1,11 @@
 import os
 import json
-from models.settlement import Settlement
-from utils.parsing import parse_name_level, parse_int
-from utils.di import get_stability_rating, get_economy_rating, get_loyalty_rating, get_unrest_rating
-from engine.turn import ActionEngine  # if you need class hints or structure
-from models.structure import StructureBuilder
-from registry.item_parser import get_valid_recipes, validate_produce_items
+from Game.models.settlement import Settlement
+from Game.utils.parsing import parse_name_level, parse_int
+from Game.utils.di import get_stability_rating, get_economy_rating, get_loyalty_rating, get_unrest_rating
+from Game.engine.action_engine import ActionEngine  # if you need class hints or structure
+from Game.models.structure import StructureBuilder
+from Game.registry.item_parser import get_valid_recipes, validate_produce_items
 
 
 
@@ -56,9 +56,7 @@ class StructureActionEngine:
         )
         
 
-
-
-    def load_registry(path="StructureData_refactored.json"):
+    def load_registry(path="Game/data/StructureData_refactored.json"):
         with open(path, "r", encoding="utf-8") as f:
             return {s["name"]: s for s in json.load(f)}
 

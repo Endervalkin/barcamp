@@ -1,7 +1,7 @@
 # utils/parsing.py
 
 import re
-from registry import *
+from Game.registry import *
 
 
 def parse_int(val: str) -> int:

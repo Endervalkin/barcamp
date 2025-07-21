@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+  margin: 2em;
+  background-color: #f0f2f5;
+}
+
+.panel {
+  margin-bottom: 1em;
+}
+
+input {
+  padding: 0.5em;
+  margin-right: 0.5em;
+}
+button {
+  padding: 0.5em 1em;
+}
+pre {
+  background: #fff;
+  padding: 1em;
+  border: 1px solid #ccc;
+}

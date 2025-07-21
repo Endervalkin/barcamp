@@ -1,0 +1,266 @@
+{
+  "Homunculus": {
+    "creature_level": 1
+  },
+  "Rust Golem": {
+    "creature_level": 1
+  },
+  "Skeleton": {
+    "creature_level": 1
+  },
+  "Straw Golem": {
+    "creature_level": 1
+  },
+  "Zombie": {
+    "creature_level": 1
+  },
+  "Clockwork Golem": {
+    "creature_level": 2
+  },
+  "Glass Golem": {
+    "creature_level": 2
+  },
+  "Iron Golem": {
+    "creature_level": 2
+  },
+  "Lesser Shadow": {
+    "creature_level": 2
+  },
+  "Skeleton Minion": {
+    "creature_level": 2
+  },
+  "Wright": {
+    "creature_level": 2
+  },
+  "Cold Wrought Iron Golem": {
+    "creature_level": 3
+  },
+  "Ghoul": {
+    "creature_level": 3
+  },
+  "Mummy": {
+    "creature_level": 3
+  },
+  "Nature's Companion": {
+    "creature_level": 3
+  },
+  "Quartz Golem": {
+    "creature_level": 3
+  },
+  "Zombie Master": {
+    "creature_level": 3
+  },
+  "Gargoyle": {
+    "creature_level": 4
+  },
+  "Ghast": {
+    "creature_level": 4
+  },
+  "Pearl Golem": {
+    "creature_level": 4
+  },
+  "Salamander": {
+    "creature_level": 4
+  },
+  "Silver Golem": {
+    "creature_level": 4
+  },
+  "Spectre": {
+    "creature_level": 4
+  },
+  "Undine": {
+    "creature_level": 4
+  },
+  "Wood Golem": {
+    "creature_level": 4
+  },
+  "Amethyst Golem": {
+    "creature_level": 5
+  },
+  "Chaos Fiend": {
+    "creature_level": 5
+  },
+  "Coral Golem": {
+    "creature_level": 5
+  },
+  "DeathMaster": {
+    "creature_level": 5
+  },
+  "Ghob": {
+    "creature_level": 5
+  },
+  "Law Seeker": {
+    "creature_level": 5
+  },
+  "Mercury Golem": {
+    "creature_level": 5
+  },
+  "Nature's Ally": {
+    "creature_level": 5
+  },
+  "Revenant": {
+    "creature_level": 5
+  },
+  "Sylph": {
+    "creature_level": 5
+  },
+  "Death Stalker": {
+    "creature_level": 6
+  },
+  "Flame Squire": {
+    "creature_level": 6
+  },
+  "Ghost": {
+    "creature_level": 6
+  },
+  "Gold Golem": {
+    "creature_level": 6
+  },
+  "Ice Squire": {
+    "creature_level": 6
+  },
+  "Life Watcher": {
+    "creature_level": 6
+  },
+  "Lightning Squire": {
+    "creature_level": 6
+  },
+  "Sapphire Golem": {
+    "creature_level": 6
+  },
+  "Skeleton Beast": {
+    "creature_level": 6
+  },
+  "Skeleton Mage": {
+    "creature_level": 6
+  },
+  "Stone Golem": {
+    "creature_level": 6
+  },
+  "Stone Squire": {
+    "creature_level": 6
+  },
+  "Wraith": {
+    "creature_level": 6
+  },
+  "Clay Golem": {
+    "creature_level": 7
+  },
+  "Demilich": {
+    "creature_level": 7
+  },
+  "Emerald Golem": {
+    "creature_level": 7
+  },
+  "Flame Warder": {
+    "creature_level": 7
+  },
+  "Greater Ghoul": {
+    "creature_level": 7
+  },
+  "Greater Mummy": {
+    "creature_level": 7
+  },
+  "Greater Spectre": {
+    "creature_level": 7
+  },
+  "Ice Warder": {
+    "creature_level": 7
+  },
+  "Lightning Warder": {
+    "creature_level": 7
+  },
+  "Nature's Guardian": {
+    "creature_level": 7
+  },
+  "Stone Warder": {
+    "creature_level": 7
+  },
+  "Air Elemental": {
+    "creature_level": 8
+  },
+  "Earth Elemental": {
+    "creature_level": 8
+  },
+  "Fire Elemental": {
+    "creature_level": 8
+  },
+  "Flame Knight": {
+    "creature_level": 8
+  },
+  "Greater Ghost": {
+    "creature_level": 8
+  },
+  "Greater Revenant": {
+    "creature_level": 8
+  },
+  "Greater Wraith": {
+    "creature_level": 8
+  },
+  "Ice Knight": {
+    "creature_level": 8
+  },
+  "Jade Golem": {
+    "creature_level": 8
+  },
+  "Lesser Medusa": {
+    "creature_level": 8
+  },
+  "Lightning Knight": {
+    "creature_level": 8
+  },
+  "Mithril Golem": {
+    "creature_level": 8
+  },
+  "Stone Knight": {
+    "creature_level": 8
+  },
+  "Water Elemental": {
+    "creature_level": 8
+  },
+  "Chaos Elemental": {
+    "creature_level": 9
+  },
+  "Death Elemental": {
+    "creature_level": 9
+  },
+  "Death Knight": {
+    "creature_level": 9
+  },
+  "Death Lord": {
+    "creature_level": 9
+  },
+  "Death Rogue": {
+    "creature_level": 9
+  },
+  "Diamond Golem": {
+    "creature_level": 9
+  },
+  "Flame Guardian": {
+    "creature_level": 9
+  },
+  "Flesh Golem": {
+    "creature_level": 9
+  },
+  "Ice Guardian": {
+    "creature_level": 9
+  },
+  "Life Elemental": {
+    "creature_level": 9
+  },
+  "Lightning Guardian": {
+    "creature_level": 9
+  },
+  "Meteoric Iron Golem": {
+    "creature_level": 9
+  },
+  "Nature's Champion": {
+    "creature_level": 9
+  },
+  "Order Elemental": {
+    "creature_level": 9
+  },
+  "Stone Guardian": {
+    "creature_level": 9
+  }
+}

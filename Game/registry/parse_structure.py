@@ -2,7 +2,7 @@ import csv
 import json
 import re
 import os
-from item_parser import parse_produce_items, validate_produce_items, get_valid_recipes
+from Game.registry.item_parser import parse_produce_items, validate_produce_items, get_valid_recipes
 
 script_dir = os.path.dirname(__file__)
 csv_path = os.path.join(script_dir, "..", "data", "structures", "Structure.csv")
