@@ -64,3 +64,25 @@ def build_settlement():
     build_settlement(game_state["player"], hex_id, settlement_type)
 
     return jsonify({ "status": "ok", "built": settlement_type, "hex": hex_id })
+
+from Game.engine.map_engine import generate_axial_hexes, hex_points
+
+
+def build_hex_overlay():
+    axial_map = generate_axial_hexes(width=184, height=106)
+    hex_list = []
+
+    for hex_id, (q, r) in axial_map.items():
+        hex_list.append({
+            "id": hex_id,
+            "points": hex_points(q, r, size=20)
+        })
+
+    return hex_list
+
+# Create your game state early in the app:
+game_state = {
+    "player": {},
+    "hex_registry": generate_axial_hexes(184, 106),
+    "hexes": build_hex_overlay()
+}

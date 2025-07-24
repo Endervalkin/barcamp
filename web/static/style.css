@@ -23,6 +23,8 @@ pre {
 
 #map-container {
   position: relative;
+  width: 2686px; /* original image width */
+  height: 4096px; /* original image height */
   overflow: scroll;
 }
 
@@ -30,17 +32,33 @@ pre {
   position: absolute;
   top: 0; left: 0;
   z-index: 0;
+  width: 2686px; /* original image width */
+  height: 4096px; /* original image height */
 }
 
 #hex-overlay {
   position: absolute;
   top: 0; left: 0;
   z-index: 1;
-  pointer-events: none; /* until you set specific hexes to be interactive */
+  width: 2686px; /* match image width */
+  height: 4096px; /* match image height */
+  pointer-events: all; /* 🔥 allow interaction on child elements */
 }
+
 .hex {
-  fill: rgba(255,255,255,0.01); /* invisible but clickable */
-  stroke: transparent;
+  fill: rgba(255,0,0,0.2); /* invisible but clickable */
+  stroke: white;
+  stroke-width: 1;
   pointer-events: all;
   cursor: pointer;
+}
+
+#debug-box.clicked {
+  animation: pulse 0.5s ease;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
 }

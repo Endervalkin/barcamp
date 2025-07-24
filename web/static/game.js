@@ -65,6 +65,11 @@ async function handleHexClick(hexId) {
   } else {
     showBuildMenu(hexId);
   }
+
+  async function handleHexClick(hexId) {
+  updateDebug(`Hex clicked: ${hexId}`);
+  // existing logic
+}
 }
 
 function showBuildMenu(hexId) {
@@ -116,3 +121,11 @@ function drawSettlement(hexId) {
 
   document.getElementById("hex-overlay").appendChild(circle);
 }
+
+function updateDebug(message) {
+  const debugBox = document.getElementById("debug-box");
+  if (debugBox) debugBox.textContent = `Debug: ${message}`;
+}
+
+debugBox.classList.add("clicked");
+setTimeout(() => debugBox.classList.remove("clicked"), 500);
