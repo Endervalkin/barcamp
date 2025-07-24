@@ -1,73 +1,92 @@
 import os
 import json
-from Game.data.roads import road_data, hex_registry
+from typing import Dict, List, Tuple
 
-def generate_axial_hexes(q_range, r_range):
-    hex_map = {}
-    for q in range(*q_range):
-        for r in range(*r_range):
-            hex_map[f"{q},{r}"] = {
-                "terrain": "Unassigned",
-                "settlement": None,
-                "roads": [],
-                "troops": [],
-                "waterway": False,
-                "special_zone": None
-            }
-    return hex_map
+# ─────────────────────────────────────────────────
+# Data loading
+# ─────────────────────────────────────────────────
 
-# Example call:
-hexes = generate_axial_hexes((-53, 53), (-92, 92))
+# Compute the path to your Game/data folder
+DATA_ROOT = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), "..", "data")
+)
 
-def get_neighboring_hexes(q, r):
-    neighbors = [
-        (q + 1, r), (q - 1, r), (q, r + 1), (q, r - 1),
-        (q + 1, r - 1), (q - 1, r + 1)
-    ]
-    return [f"{n[0]},{n[1]}" for n in neighbors if f"{n[0]},{n[1]}" in hexes]
+# Load road definitions
+_ROAD_PATH = os.path.join(DATA_ROOT, "roads", "road_data.json")
+with open(_ROAD_PATH, "r", encoding="utf-8") as f:
+    road_data: Dict[str, dict] = json.load(f)
 
-def is_valid_hex(q, r):
-    return f"{q},{r}" in hexes
+# Load hex registry
+_HEX_PATH = os.path.join(DATA_ROOT, "roads", "hex_registry.json")
+with open(_HEX_PATH, "r", encoding="utf-8") as f:
+    hex_registry: Dict[str, dict] = json.load(f)
 
-def place_settlement(q, r, settlement):
-    hex_key = f"{q},{r}"
-    if is_valid_hex(q, r):
-        hexes[hex_key]["settlement"] = settlement
-        return True
-    return False
 
-def place_road(q1, r1, q2, r2):
-    hex_key1 = f"{q1},{r1}"
-    hex_key2 = f"{q2},{r2}"
-    if is_valid_hex(q1, r1) and is_valid_hex(q2, r2):
-        hexes[hex_key1]["roads"].append(hex_key2)
-        hexes[hex_key2]["roads"].append(hex_key1)
-        return True
-    return False
+# ─────────────────────────────────────────────────
+# Core Functions
+# ─────────────────────────────────────────────────
 
-def move_troops(stack_id, from_hex, to_hex):
-    if is_valid_hex(*from_hex) and is_valid_hex(*to_hex):
-        from_key = f"{from_hex[0]},{from_hex[1]}"
-        to_key = f"{to_hex[0]},{to_hex[1]}"
-        if stack_id in hexes[from_key]["troops"]:
-            hexes[from_key]["troops"].remove(stack_id)
-            hexes[to_key]["troops"].append(stack_id)
-            return True
-    return False
+def generate_axial_hexes(width: int, height: int) -> Dict[str, Tuple[int, int]]:
+    """
+    Generate an axial-coordinate grid of hexes of given width/height.
+    Returns {hex_id: (q, r)}.
+    """
+    hexes = {}
+    for r in range(height):
+        for q in range(width):
+            hex_id = f"{q},{r}"
+            hexes[hex_id] = (q, r)
+    return hexes
 
-def place_road(hexes, road_type, player):
-    road = road_data[road_type]
-    if len(hexes) > road["batch_size"]:
-        raise ValueError("Too many hexes in one batch")
 
-    # Deduct full batch cost even for < 10 hexes
-    for res, amt in road["build_cost_per_batch"].items():
-        if player["resources"].get(res, 0) < amt:
-            raise ValueError(f"Insufficient {res}")
-        player["resources"][res] -= amt
+def get_neighbors(coord: Tuple[int, int]) -> List[Tuple[int, int]]:
+    """
+    Given an axial coordinate (q, r), return the six neighbor coords.
+    """
+    q, r = coord
+    directions = [(+1, 0), (0, +1), (-1, +1), (-1, 0), (0, -1), (+1, -1)]
+    return [(q + dq, r + dr) for dq, dr in directions]
 
-    # Tag hexes
-    for hex_id in hexes:
-        hex_registry[hex_id]["roads"].append(road_type)
 
-    return {"built": hexes, "type": road_type, "cost": dict(road["build_cost_per_batch"])}
+def place_road(settlement: dict, from_hex: str, to_hex: str) -> bool:
+    """
+    Adds a road between two hex IDs in the settlement’s road network.
+    """
+    settlement.setdefault("roads", [])
+    road_key = tuple(sorted([from_hex, to_hex]))
+    if road_key in settlement["roads"]:
+        return False  # already built
+    settlement["roads"].append(road_key)
+    return True
+
+
+def move_troop(player: dict, from_hex: str, to_hex: str) -> bool:
+    """
+    Moves one troop marker from one hex to another, if valid.
+    """
+    troops = player.setdefault("troops", {})
+    if troops.get(from_hex, 0) < 1:
+        return False
+    troops[from_hex] -= 1
+    troops[to_hex] = troops.get(to_hex, 0) + 1
+    return True
+
+def place_settlement(player: dict, hex_id: str, settlement_data: dict) -> bool:
+    """ Place a settlement on the specified hex if valid."""
+    if hex_id not in hex_registry:
+        return False  # Invalid hex
+
+    settlement = {
+        "id": settlement_data["id"],
+        "name": settlement_data["name"],
+        "type": settlement_data["type"],
+        "location": hex_id,
+        "owner": player["id"],
+        "resources": settlement_data.get("resources", {}),
+        "structures": {}
+    }
+
+    # Register the settlement
+    player.setdefault("settlements", {})[hex_id] = settlement
+    hex_registry[hex_id]["settlement"] = settlement
+    return True

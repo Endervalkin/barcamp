@@ -1,15 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>BarCamp Strategy</title>
-    <link rel="stylesheet" href="/static/style.css" />
+  <title>Barcamp Map</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #sidebar {
+      width: 300px;
+      background: #f4f4f4;
+      padding: 20px;
+      box-shadow: 2px 0 6px rgba(0,0,0,0.1);
+      z-index: 10;
+    }
+
+    #map-container {
+      flex: 1;
+      overflow: scroll;
+      background: #222;
+      position: relative;
+    }
+
+    #map {
+      transform-origin: top left;
+      transition: transform 0.2s ease;
+      display: block;
+    }
+
+    #controls {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to BarCamp</h1>
-    <input id="playerName" placeholder="Enter your name" />
+  <div id="sidebar">
+    <h3>Create Character</h3>
+    <input type="text" id="playerName" placeholder="Name">
     <button onclick="createPlayer()">Create Player</button>
     <button onclick="endMonth()">End Month</button>
-    <pre id="output"></pre>
-    <script src="/static/game.js"></script>
+    <div id="status"></div>
+  </div>
+  <div id="map-container">
+    <img id="map" src="{{ url_for('static', filename='cerroneth_map.jpg') }}" alt="Cerroneth Map">
+    <svg id="hex-overlay" width="100%" height="100%" style="position: absolute; top: 0; left: 0;">
+      <!-- Hex overlay will be dynamically generated -->
+      {% for hex in game_state['hexes'] %}
+        <polygon points="{{ hex.points }}" fill="none" stroke="#fff" stroke-width="1"/>
+      {% endfor %}
+    </svg>
+  </div>
+
+  <script>
+    let scale = 1;
+    const map = document.getElementById("map");
+    const container = document.getElementById("map-container");
+
+    // Simple zoom handler
+    container.addEventListener("wheel", e => {
+      e.preventDefault();
+      scale += e.deltaY < 0 ? 0.1 : -0.1;
+      scale = Math.max(0.2, Math.min(scale, 3));
+      map.style.transform = `scale(${scale})`;
+    });
+
+    function createPlayer() {
+      const name = document.getElementById("playerName").value;
+      fetch("/create_player", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name })
+      }).then(res => res.json())
+        .then(data => document.getElementById("status").innerText = `Created: ${data.name}`);
+    }
+
+    function endMonth() {
+      fetch("/end_month", { method: "POST" })
+        .then(res => res.json())
+        .then(data => document.getElementById("status").innerText = `Month Ended. Income: ${data.trade_income}`);
+    }
+  </script>
 </body>
 </html>

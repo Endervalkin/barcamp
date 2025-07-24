@@ -20,3 +20,27 @@ pre {
   padding: 1em;
   border: 1px solid #ccc;
 }
+
+#map-container {
+  position: relative;
+  overflow: scroll;
+}
+
+#map-img {
+  position: absolute;
+  top: 0; left: 0;
+  z-index: 0;
+}
+
+#hex-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  z-index: 1;
+  pointer-events: none; /* until you set specific hexes to be interactive */
+}
+.hex {
+  fill: rgba(255,255,255,0.01); /* invisible but clickable */
+  stroke: transparent;
+  pointer-events: all;
+  cursor: pointer;
+}

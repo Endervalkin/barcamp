@@ -1,350 +1,178 @@
 import json
 import os
 
-from Game.models.structure import Structure
-from Game.utils.parsing import parse_name_level, parse_int
-from Game.utils.di import get_stability_rating, get_economy_rating, get_loyalty_rating, get_unrest_rating
-from Game.models.settlement import Settlement
-from Game.models.structure import StructureBuilder
-from Game.engine.action_engine import ActionEngine  # if you need class hints or structure
-from Game.engine.structure_action_engine import StructureActionEngine
-from Game.registry.parse_structure import *
+# ────────────────────────────────
+# Registry Loader
+# ────────────────────────────────
 
-# Initialize registry once
+def load_registry(
+    path=None
+):
+    """
+    Load structure definitions from StructureData_refactored.json.
+    Returns a dict keyed by structure name, with build_cost, upgrade_cost, build_time, etc.
+    """
+    if path is None:
+        # assume this file lives in Game/engine/, adjust relative path
+        root = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+        path = os.path.join(root, "Game", "data", "structures", "StructureData_refactored.json")
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+# Load once at module import
 STRUCTURES = load_registry()
 
-def train(struct_name, game_state, unit, qty=1, specialization=None):
-    struct = STRUCTURES[struct_name]
-    valid = get_trainable_units(struct, specialization)
-    if unit not in valid:
-        raise ValueError(f"{struct_name} cannot train {unit}")
-    return apply_training(struct, game_state, unit, qty)
 
-def produce(struct_name, game_state, item_name):
-    struct = STRUCTURES[struct_name]
-    valid = [r["name"] for r in get_producible_items(struct, game_state)]
-    if item_name not in valid:
-        raise ValueError(f"{item_name} not producible this turn")
-    return apply_production(struct, game_state, item_name)
+# ────────────────────────────────
+# Utility Validators
+# ────────────────────────────────
 
-def convert(struct_name, game_state, from_unit, to_unit):
-    struct = STRUCTURES[struct_name]
-    conv = {c["from"]: c["to"] for c in get_conversions(struct)}
-    if conv.get(from_unit) != to_unit:
-        raise ValueError("Invalid conversion")
-    return apply_conversion(struct, game_state, from_unit, to_unit)
-
-def build(struct_name, game_state, unit_name, catalog, **kwargs):
-    struct = STRUCTURES[struct_name]
-    valid = [c["name"] for c in get_buildable(struct, catalog, game_state)]
-    if unit_name not in valid:
-        raise ValueError(f"{unit_name} cannot be built here")
-    return apply_build(struct, game_state, unit_name, **kwargs)
-
-def build_structure(settlement, structure_data, action_engine):
-    name = structure_data["name"]
-    level = structure_data["level"]
-    build_cost = structure_data["build_cost"]
-    buildable_in = structure_data["buildable_in"]
-
-    # 1. Check turns
-    if settlement.get_turns_remaining() < 1:
-        return f"❌ {settlement.name} has no turns left."
-
-    # 2. Check buildable location
-    if not buildable_in.get(settlement.name, False):
-        return f"⛔ {name} cannot be built in a {settlement.name}."
-
-    # 3. Check resource availability
-    if not settlement.ledger.can_afford(build_cost):
-        return f"💰 {settlement.name} lacks resources to build {name}."
-
-    # 4. Spend resources and turn
-    structure = Structure(structure_data)  # Create instance
-    settlement.add_structure(structure)    # Attach to settlement
-    settlement.ledger.spend(build_cost, purpose="Build", by=settlement.name)
-
-    # 5. Submit to action engine
-    result = action_engine.perform_action(
-        actor=settlement,
-        action_type="Build Structure",
-        details=f"{name} level {level}",
-        cost=build_cost,
-        turn_cost=1
-    )
-
-    return f"✅ {settlement.name} built {name} level {level}.\n{result}"
-
-def select_structure_to_build(settlement, registry_path=None):
+def _check_resources(entity, cost):
     """
-    Returns a valid structure_data dict that the settlement can build.
-    You can later replace this with a menu or AI logic.
+    Ensure entity (player or settlement) has sufficient resources to cover `cost` dict.
     """
-    if not registry_path:
-        registry_path = os.path.join("data", "structure", "StructureData.json")
+    for res, amount in cost.items():
+        have = entity["resources"].get(res, 0)
+        if have < amount:
+            return False, f"Insufficient {res}: have {have}, need {amount}"
+    return True, ""
 
-    with open(registry_path, "r", encoding="utf-8") as f:
-        all_structures = json.load(f)
 
-    # Filter by buildable_in
-    buildable = [
-        s for s in all_structures
-        if s.get("buildable_in", {}).get(settlement.name, False)
-    ]
+def _deduct_resources(entity, cost):
+    """
+    Subtracts `cost` resources from entity.
+    """
+    for res, amount in cost.items():
+        entity["resources"][res] -= amount
 
-    # Optional: filter out structures already built
-    existing = settlement.get_structure_levels()  # e.g. { "Forge": 1, "Walls": 2 }
-    buildable = [
-        s for s in buildable
-        if existing.get(s["name"], 0) < s["level"]
-    ]
 
-    # Optional: sort by DI impact or cost
-    buildable.sort(key=lambda s: sum(s.get("di_modifiers", {}).values()), reverse=True)
+# ────────────────────────────────
+# Core Actions
+# ────────────────────────────────
 
-    # Return first valid option (stub for now)
-    return buildable[0] if buildable else None
+def build_structure(player, settlement, structure_name):
+    """
+    Build a new structure in `settlement` if player and settlement meet requirements.
+    Deducts build_cost, adds to settlement["structures"], and returns True on success.
+    """
+    if structure_name not in STRUCTURES:
+        raise KeyError(f"{structure_name} not in registry")
 
-def upgrade_structure(settlement, action_engine, registry_path=None):
-    import json, os
-    from models.structure import Structure
+    meta = STRUCTURES[structure_name]
+    cost = meta.get("build_cost", {})
+    time = meta.get("build_time", 1)
 
-    if not registry_path:
-        registry_path = os.path.join("data", "structure", "StructureData.json")
+    ok, msg = _check_resources(player, cost)
+    if not ok:
+        raise ValueError(f"Cannot build {structure_name}: {msg}")
 
-    with open(registry_path, "r", encoding="utf-8") as f:
-        all_structures = json.load(f)
+    # Deduct resources and queue build
+    _deduct_resources(player, cost)
 
-    current_levels = settlement.get_structure_levels()  # e.g. { "Forge": 1, "Walls": 2 }
+    # Initialize settlement structures list if missing
+    settlement.setdefault("structures", {})
+    settlement["structures"].setdefault(structure_name, {
+        "level": 0,
+        "turns_until_ready": 0
+    })
 
-    # Find all structures in settlement that have a higher level entry in the registry
-    upgradable = []
-    for s_name, s_lvl in current_levels.items():
-        for entry in all_structures:
-            if entry["name"] == s_name and entry["level"] == s_lvl + 1:
-                upgradable.append(entry)
-                break
+    slot = settlement["structures"][structure_name]
+    # Cannot build if already at or above max level
+    if slot["level"] >= meta.get("max_level", 1):
+        raise ValueError(f"{structure_name} already at max level")
 
-    if not upgradable:
-        return f"🔒 No upgradable structures available for {settlement.name}."
+    # Queue the build as level+1
+    slot["turns_until_ready"] = time
+    return True
 
-    # Stub: pick first one (later use menu/AI logic)
-    upgrade_data = upgradable[0]
-    name = upgrade_data["name"]
-    new_lvl = upgrade_data["level"]
-    cost = upgrade_data.get("build_cost", {})
 
-    if settlement.get_turns_remaining() < 1:
-        return f"❌ {settlement.name} lacks turns to upgrade {name}."
+def upgrade_structure(player, settlement, structure_name):
+    """
+    Upgrade an existing structure (must exist) by one level.
+    Deducts upgrade_cost, sets turns_until_ready based on upgrade_time.
+    """
+    if structure_name not in STRUCTURES:
+        raise KeyError(f"{structure_name} not in registry")
 
-    if not settlement.ledger.can_afford(cost):
-        return f"💰 {settlement.name} lacks resources to upgrade {name}."
+    meta = STRUCTURES[structure_name]
+    slot = settlement.get("structures", {}).get(structure_name)
+    if not slot or slot["level"] == 0:
+        raise ValueError(f"{structure_name} does not exist to upgrade")
 
-    # Apply upgrade
-    settlement.upgrade_structure(name, new_lvl)
-    settlement.ledger.spend(cost, purpose="Upgrade", by=settlement.name)
+    current = slot["level"]
+    next_lvl = current + 1
+    if next_lvl > meta.get("max_level", current):
+        raise ValueError(f"{structure_name} is already at max level")
 
-    result = action_engine.perform_action(
-        actor=settlement,
-        action_type="Upgrade Structure",
-        details=f"{name} to level {new_lvl}",
-        cost=cost,
-        turn_cost=1
-    )
+    cost = meta.get("upgrade_cost", {}).get(str(next_lvl), {})
+    time = meta.get("upgrade_time", {}).get(str(next_lvl), 1)
 
-    return f"✅ {settlement.name} upgraded {name} to level {new_lvl}.\n{result}"
+    ok, msg = _check_resources(player, cost)
+    if not ok:
+        raise ValueError(f"Cannot upgrade {structure_name}: {msg}")
 
-def upgrade_settlement(settlement, action_engine):
-    if settlement.get_turns_remaining() < 1:
-        return f"❌ {settlement.name} lacks turns to upgrade itself."
+    _deduct_resources(player, cost)
+    slot["turns_until_ready"] = time
+    return True
 
-    upgrade_data = settlement.upgrade_reqs
-    if not upgrade_data:
-        return f"🚫 No upgrade path defined for {settlement.name}."
 
-    unmet_needs = []
-    for need, required in upgrade_data["needs_required"].items():
-        actual = settlement.needs.get(need, 0)
-        if actual < required:
-            unmet_needs.append(f"{need}: {actual}/{required}")
+def finalize_builds(settlement):
+    """
+    Called at the end of a turn/month to decrement turns_until_ready
+    and apply completed builds/upgrades by increasing level.
+    """
+    for name, slot in settlement.get("structures", {}).items():
+        if slot["turns_until_ready"] > 0:
+            slot["turns_until_ready"] -= 1
+            if slot["turns_until_ready"] == 0:
+                slot["level"] += 1
 
-    if unmet_needs:
-        need_report = "\n📉 Unmet Needs:\n" + "\n".join(f"  - {n}" for n in unmet_needs)
-    else:
-        need_report = ""
 
-    structure_groups = upgrade_data.get("structures_required", [])
-    owned_structures = settlement.get_structure_levels()
+def upgrade_settlement(player, settlement, settlement_type):
+    """
+    Upgrade the settlement's tier/type (e.g. Village→Town→City).
+    Uses settlement_type as key in registry under special "Settlement" entry.
+    """
+    meta = STRUCTURES.get("Settlement", {})
+    # upgrade_cost and upgrade_time keyed by settlement_type
+    cost = meta.get("upgrade_cost", {}).get(settlement_type, {})
+    time = meta.get("upgrade_time", {}).get(settlement_type, 1)
 
-    failed_groups = []
-    for group in structure_groups:
-        satisfied = False
-        missing_entries = []
-        for item in group:
-            name, level = item["name"], item["level"]
-            owned_level = owned_structures.get(name, 0)
-            if owned_level >= level:
-                satisfied = True
-                break
-            else:
-                missing_entries.append(f"{name} (lv {owned_level}/{level})")
-        if not satisfied:
-            failed_groups.append(missing_entries)
+    ok, msg = _check_resources(player, cost)
+    if not ok:
+        raise ValueError(f"Cannot upgrade settlement to {settlement_type}: {msg}")
 
-    if failed_groups:
-        structure_report = "\n🏗️ Missing Structure Requirements:"
-        for i, group in enumerate(failed_groups, 1):
-            structure_report += f"\n  OR Group {i}:\n    - " + "\n    - ".join(group)
-    else:
-        structure_report = ""
+    _deduct_resources(player, cost)
+    settlement["upgrade"] = {
+        "target_type": settlement_type,
+        "turns_until_ready": time
+    }
+    return True
 
-    if unmet_needs or failed_groups:
-        return f"⚠️ {settlement.name} cannot upgrade yet." + need_report + structure_report
 
-    # Upgrade settlement
-    settlement.level += 1
-    settlement.reset_unrest_on_upgrade()
-    settlement.recalculate_di()
+def finalize_settlement_upgrade(settlement):
+    """
+    Called end-of-turn to process settlement tier upgrades.
+    """
+    up = settlement.get("upgrade")
+    if not up:
+        return
 
-    result = action_engine.perform_action(
-        actor=settlement,
-        action_type="Upgrade Settlement",
-        details=f"Upgraded to level {settlement.level}",
-        cost=None,
-        turn_cost=1
-    )
+    if up["turns_until_ready"] > 0:
+        up["turns_until_ready"] -= 1
+        if up["turns_until_ready"] == 0:
+            settlement["type"] = up["target_type"]
+            del settlement["upgrade"]
 
-    return f"🏛️ {settlement.name} successfully upgraded to level {settlement.level}.\n{result}"
 
-class StructureActionEngine:
-    def __init__(self, action_engine, registry):
-        self.action_engine = action_engine
-        self.registry = registry  # StructureData.json parsed
+# ────────────────────────────────
+# Example Hook In Your Turn Engine
+# ────────────────────────────────
 
-    def take_turn(self, structure, settlement):
-        if structure.turns_remaining < 1:
-            return f"⏳ {structure.name} has no turns remaining."
-
-        action_type = structure.get_action_type()  # Defined per entry
-        if action_type == "produce":
-            return self.produce_resources(structure, settlement)
-        elif action_type == "train":
-            return self.train_unit(structure, settlement)
-        elif action_type == "retrain":
-            return self.retrain_unit(structure, settlement)
-        elif action_type == "craft":
-            return self.produce_items(structure, settlement)
-        elif action_type == "specialize":
-            return self.specialize_unit(structure, settlement)
-        elif action_type == "learn":
-            return self.teach_skill(structure, settlement)
-        else:
-            return f"❌ No valid action for {structure.name}"
-        
-    def produce_resources(self, structure, settlement):
-        prod_type = structure.produces_resource  # e.g. "L"
-        base_amount = structure.get_production_amount()  # includes DI or worker boosts
-
-        # Check skilled workers
-        attached = structure.get_skilled_workers()
-        multiplier = 1 + len(attached)
-
-        total = base_amount * multiplier
-
-        settlement.ledger.add({prod_type: total})
-        structure.turns_remaining -= 1
-
-        return self.action_engine.perform_action(
-            actor=structure,
-            action_type="Produce",
-            details=f"{total} {prod_type} produced by {structure.name}",
-            cost=None,
-            turn_cost=1
-        )
-        
-
-    def load_registry(path="Game/data/StructureData_refactored.json"):
-        with open(path, "r", encoding="utf-8") as f:
-            return {s["name"]: s for s in json.load(f)}
-
-    # 1. TRAINING LOGIC
-    def get_trainable_units(struct, player_specialization=None):
-        # e.g. ["Archer"], ["Commando","Footman","Guardsman"], ["Celestial Generalist","Earth Generalist"]
-        units = struct.get("trainable_units", [])
-        # If Mage's Tower, filter by chosen spec
-        if struct.get("requires_specialization") and player_specialization:
-            return [u for u in units if player_specialization in u]
-        return units
-
-    def can_train(struct, game_state):
-        """Return how many units can be trained this turn (per-turn limit)."""
-        lim = struct.get("limits", {}).get("unit_training", {})
-        return lim.get("per_turn", 0)
-
-    def apply_training(struct, game_state, unit, quantity=1):
-        pts_left = game_state["structures"][struct["name"]].get("train_points", struct["level"])
-        per_turn = can_train(struct, game_state)
-        if quantity > per_turn or quantity > pts_left:
-            raise ValueError("Too many units requested")
-        # Deduct your turn‐based “points” or whatever currency you use
-        game_state["structures"][struct["name"]]["train_points"] = pts_left - quantity
-        # Add units to player’s roster
-        game_state["player_units"].append({ "type": unit, "count": quantity })
-        return True
-
-    # 2. ITEM PRODUCTION LOGIC
-    def get_producible_items(struct, game_state):
-        # Reads structured produce_items + per-turn limit + level points
-        return get_valid_recipes(struct)
-
-    def apply_production(struct, game_state, item_name):
-        recipes = {r["name"]: r for r in struct.get("produce_items", [])}
-        recipe = recipes.get(item_name)
-        if not recipe:
-            raise ValueError(f"{item_name} not in catalog")
-        # check points & per-turn
-        pts_left = game_state["structures"][struct["name"]].get("prod_points", struct["level"])
-        if recipe["cost"] > pts_left:
-            raise ValueError("Insufficient points")
-        per_turn = struct.get("limits", {}).get("item_production", {}).get("per_turn", 1)
-        used = game_state["structures"][struct["name"]].get("produced_this_turn", 0)
-        if used >= per_turn:
-            raise ValueError("Production limit reached")
-        # Apply
-        game_state["structures"][struct["name"]]["prod_points"] = pts_left - recipe["cost"]
-        game_state["structures"][struct["name"]]["produced_this_turn"] = used + 1
-        game_state["player_items"].append({ "name": item_name })
-        return True
-
-    # 3. UNIT CONVERSION LOGIC
-    def get_conversions(struct):
-        return struct.get("unit_conversions", [])
-
-    def apply_conversion(struct, game_state, from_unit, to_unit):
-        # Remove one from_unit, add one to_unit
-        inv = game_state["player_units"]
-        # find and decrement
-        for u in inv:
-            if u["type"] == from_unit and u["count"] > 0:
-                u["count"] -= 1
-                break
-        else:
-            raise ValueError("No unit to convert")
-        # add the new
-        game_state["player_units"].append({ "type": to_unit, "count": 1 })
-        return True
-
-    # 4. SHIP / AIRSHIP BUILDING
-    def get_buildable(struct, catalog, game_state):
-        # catalog: list of {"name","class"} for ships/airships loaded separately
-        lvl = struct["level"]
-        if struct["build_type"] == "ships":
-            # formula: class * level
-            max_power = lvl * lvl  # or whatever your formula means
-            return [c for c in catalog if c["class"] * lvl <= max_power]
-        else:
-            return [c for c in catalog if c["class"] <= struct.get("build_rules", {}).get("max_class", 0)]
-
-    def apply_build(struct, game_state, unit_name):
-        # similar pattern: check build points, per-turn, deduct, add to queue
-        raise NotImplementedError
+# In your turn_engine.py end_month(), you would call:
+#
+# for settlement in player["settlements"].values():
+#     finalize_builds(settlement)
+#     finalize_settlement_upgrade(settlement)
+#
+# This applies all queued builds and settlement upgrades.
