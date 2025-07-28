@@ -2,7 +2,8 @@ import os
 import json
 import math
 from math import sqrt
-
+from flask import Flask, render_template, request, jsonify
+from Game.engine.hex_renderer import axial_to_pixel, hex_points
 
 from typing import Dict, List, Tuple
 
@@ -30,36 +31,25 @@ with open(_HEX_PATH, "r", encoding="utf-8") as f:
 # Core Functions
 # ─────────────────────────────────────────────────
 
-def axial_to_pixel(q, r, size):
-    x = size * 3/2 * q
-    y = size * sqrt(3) * (r + q / 2)
-    return (x, y)
-
-def hex_corner(center_x, center_y, size, i):
-    angle_deg = 60 * i - 30
-    angle_rad = math.radians(angle_deg)
-    return (
-        center_x + size * math.cos(angle_rad),
-        center_y + size * math.sin(angle_rad)
-    )
-
-def hex_points(q, r, size):
-    cx, cy = axial_to_pixel(q, r, size)
-    corners = [hex_corner(cx, cy, size, i) for i in range(6)]
-    return " ".join(f"{int(x)},{int(y)}" for x, y in corners)
 
 
-def generate_axial_hexes(width: int, height: int) -> Dict[str, Tuple[int, int]]:
-    """
-    Generate an axial-coordinate grid of hexes of given width/height.
-    Returns {hex_id: (q, r)}.
-    """
-    hexes = {}
-    for r in range(height):
-        for q in range(width):
-            hex_id = f"{q},{r}"
-            hexes[hex_id] = (q, r)
-    return hexes
+def generate_axial_hexes(cols, rows):
+    return {
+        f"{q},{r}": (q, r)
+        for q in range(cols)
+        for r in range(rows)
+    }
+
+def generate_centered_axial_hexes(cols, rows):
+    q_min = -cols // 2
+    r_min = -rows // 2
+    return {
+        f"{q},{r}": (q, r)
+        for q in range(q_min, q_min + cols)
+        for r in range(r_min, r_min + rows)
+    }
+
+
 
 
 def get_neighbors(coord: Tuple[int, int]) -> List[Tuple[int, int]]:
@@ -72,7 +62,7 @@ def get_neighbors(coord: Tuple[int, int]) -> List[Tuple[int, int]]:
 
 
 # Width and height of your hex grid, matching your map layout
-axial_map = generate_axial_hexes(width=184, height=106)  # example
+axial_map = generate_centered_axial_hexes(217, 184)  # example
 hex_list = []
 
 for hex_id, (q, r) in axial_map.items():
@@ -81,12 +71,7 @@ for hex_id, (q, r) in axial_map.items():
         "points": hex_points(q, r, size=20)
     })
 
-def get_hex_by_id(hex_id: str) -> dict:
-    """
-    Retrieve hex data by its ID.
-    Returns the hex dictionary or None if not found.
-    """
-    return hex_registry.get(hex_id, None)
+
 
 def place_road(settlement: dict, from_hex: str, to_hex: str) -> bool:
     """

@@ -20,38 +20,53 @@ pre {
   padding: 1em;
   border: 1px solid #ccc;
 }
-
-#map-container {
+#viewport {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
   position: relative;
-  width: 2686px; /* original image width */
-  height: 4096px; /* original image height */
-  overflow: scroll;
+  cursor: grab;
 }
 
-#map-img {
+#viewport {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background: black; /* Optional backdrop */
+  cursor: grab;
+}
+
+#zoom-layer {
   position: absolute;
-  top: 0; left: 0;
-  z-index: 0;
-  width: 2686px; /* original image width */
-  height: 4096px; /* original image height */
+  top: 0;
+  left: 0;
+  width: 2686px;
+  height: 4096px;
+  transform-origin: top left;
+  will-change: transform;
+}
+
+#map-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
 }
 
 #hex-overlay {
   position: absolute;
-  top: 0; left: 0;
-  z-index: 1;
-  width: 2686px; /* match image width */
-  height: 4096px; /* match image height */
-  pointer-events: all; /* 🔥 allow interaction on child elements */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+  pointer-events: all; /* or 'auto' for interaction */
 }
 
-.hex {
-  fill: rgba(255,0,0,0.2); /* invisible but clickable */
-  stroke: white;
-  stroke-width: 1;
-  pointer-events: all;
-  cursor: pointer;
-}
+
 
 #debug-box.clicked {
   animation: pulse 0.5s ease;
@@ -62,3 +77,4 @@ pre {
   50% { transform: scale(1.05); }
   100% { transform: scale(1); }
 }
+

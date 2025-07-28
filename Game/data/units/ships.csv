@@ -1,5 +1,4 @@
-,,,,,,,,,,,,,training_cost,,,,,,Upkeep,,,,,,Production,,,,,
-name,level,class,type,armor,weapon_mount,attack,combat_movement,range,damage_reduction,cargo,map_movement,training,L,S,M,F,R,C,L,S,M,F,R,C,L,S,M,F,R,C
+name,level,class,type,armor,weapon_mount,attack,combat_movement,range,damage_reduction,cargo,map_movement,training,build_cost_L,build_cost_S,build_cost_M,build_cost_F,build_cost_R,build_cost_C,upkeep_L,upkeep_S,upkeep_M,upkeep_F,upkeep_R,upkeep_C,production_L,production_S,production_M,production_F,production_R,production_C
 Schooner,1,1,Scout,16,1,1,2,0,0,1,40,1,2,0,1,0,2,1,1,0,0,1,0,1,0,0,0,0,0,1
 Schooner,2,1,Scout,16,1,2,2,0,0,1,42,1,4,0,2,0,4,2,1,0,0,1,0,2,0,0,0,0,0,1
 Schooner,3,1,Scout,16,1,2,2,0,0,2,44,1,6,0,3,0,6,3,1,0,0,1,0,3,0,0,0,0,0,1

@@ -44,20 +44,21 @@
     <button onclick="endMonth()">End Month</button>
     <div id="status"></div>
   </div>
-  <div id="map-container">
-    <img id="map" src="{{ url_for('static', filename='cerroneth_map.jpg') }}" alt="Cerroneth Map">
-    <svg id="hex-overlay" width="2686" height="4096" style="position: absolute; top: 0; left: 0;">
-      <!-- Hex overlay will be dynamically generated -->
-      {% for hex in game_state['hexes'] %}
-        <polygon 
-        points="{{ hex.points }}" 
-        data-hex-id="{{hex.id}}" 
-        class="hex"
-        fill="semitransparent red"
-        stroke="#fff"
-        stroke-width="1"/>
-      {% endfor %}
-    </svg>
+  <div id="viewport">
+    <div id="zoom-layer">
+      <object id="map-svg"
+              type="image/svg+xml"
+              data="{{ url_for('static', filename='CerroMap2025_nogrid-01.svg') }}">
+      </object>
+
+      <svg id="hex-overlay"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 2686 4096"
+          width="2686"
+          height="4096">
+        <!-- hex polygons go here -->
+      </svg>
+    </div>
   </div>
 
   <script>

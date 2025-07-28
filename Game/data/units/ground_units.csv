@@ -1,5 +1,4 @@
-,,,,,,,,,,,,,training_cost,,,,,,Upkeep,,,,,
-name,level,map_movement,physical_attack,spell_attack,body,armor,physical_range,spell_range,combat_movement,damage_reduction,spell_slot,training,L,S,M,F,R,C,L,S,M,F,R,C
+name,level,map_movement,physical_attack,spell_attack,body,armor,physical_range,spell_range,combat_movement,damage_reduction,spell_slot,training,build_cost_L,build_cost_S,build_cost_M,build_cost_F,build_cost_R,build_cost_C,upkeep_L,upkeep_S,upkeep_M,upkeep_F,upkeep_R,upkeep_C
 Archers,1,13,1,0,1,1,3,0,2,0,0,2,1,0,0,1,0,2,0,0,0,1,0,1
 Archers,2,13,2,0,1,1,3,0,2,0,0,2,2,0,0,1,0,4,0,0,0,1,0,2
 Archers,3,13,2,0,1,1,4,0,2,0,0,2,3,0,0,1,0,6,0,0,0,1,0,3

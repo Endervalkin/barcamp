@@ -1,3 +1,33 @@
+console.log("✅ game.js loaded");
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("DOM ready, registering hex clicks…");
+  registerHexClicks();
+});
+
+function registerHexClicks() {
+  const hexes = document.querySelectorAll(".hex");
+  console.log("🔍 Found hex polygons:", hexes.length);
+
+  hexes.forEach(hex => {
+    hex.addEventListener("click", () => {
+      const hexId = hex.dataset.hexId;
+      console.log("✏️ Hex clicked:", hexId);
+      updateDebug(`Hex clicked: ${hexId}`);
+    });
+  });
+}
+
+function updateDebug(message) {
+  const debugBox = document.getElementById("debug-box");
+  if (!debugBox) return;
+  debugBox.textContent = message;
+
+  // add & remove a CSS class if you defined a pulse animation
+  debugBox.classList.add("clicked");
+  setTimeout(() => debugBox.classList.remove("clicked"), 300);
+}
+
 async function createPlayer() {
     const name = document.getElementById("playerName").value;
     const res = await fetch("/create_player", {
@@ -19,31 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
   registerHexClicks();
 });
 
-function registerHexClicks() {
-  const hexes = document.querySelectorAll("[data-hex-id]");
-
-  hexes.forEach(hex => {
-    hex.addEventListener("click", async (e) => {
-      const hexId = hex.dataset.hexId;
-      console.log("Hex clicked:", hexId);
-
-      try {
-        const response = await fetch("/select_hex", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ hex: hexId })
-        });
-
-        const result = await response.json();
-        console.log("Server confirmed:", result);
-        updateStatus(`Hex ${hexId} selected successfully.`);
-      } catch (err) {
-        console.error("Hex selection failed:", err);
-        updateStatus(`Error selecting hex ${hexId}.`);
-      }
-    });
-  });
-}
 
 function updateStatus(message) {
   const statusEl = document.getElementById("status");
@@ -127,5 +132,59 @@ function updateDebug(message) {
   if (debugBox) debugBox.textContent = `Debug: ${message}`;
 }
 
-debugBox.classList.add("clicked");
-setTimeout(() => debugBox.classList.remove("clicked"), 500);
+function updateDebug(message) {
+  // grab the element each time (or cache it at top of file)
+  const debugBox = document.getElementById("debug-box");
+  if (!debugBox) return;
+
+  debugBox.textContent = message;
+
+  // optional pulse animation:
+  debugBox.classList.add("clicked");
+  setTimeout(() => debugBox.classList.remove("clicked"), 300);
+}
+
+let zoom = 1, offsetX = 0, offsetY = 0;
+const zoomLayer = document.getElementById('zoom-layer');
+
+function updateTransform() {
+  zoomLayer.style.transform =
+    `translate(${offsetX}px, ${offsetY}px) scale(${zoom})`;
+}
+
+// Mousewheel zoom
+zoomLayer.addEventListener('wheel', e => {
+  const delta = e.deltaY > 0 ? -0.1 : 0.1;
+  zoom = Math.max(0.5, Math.min(zoom + delta, 5)); // clamp zoom
+  updateTransform();
+  e.preventDefault();
+});
+
+// Drag-to-pan
+let isDragging = false, startX, startY;
+
+zoomLayer.addEventListener('mousedown', e => {
+  isDragging = true;
+  startX = e.clientX - offsetX;
+  startY = e.clientY - offsetY;
+  document.body.style.cursor = "grabbing";
+});
+
+document.addEventListener('mousemove', e => {
+  if (!isDragging) return;
+  offsetX = e.clientX - startX;
+  offsetY = e.clientY - startY;
+  updateTransform();
+});
+
+document.addEventListener('mouseup', () => {
+  isDragging = false;
+  document.body.style.cursor = "default";
+});
+
+// 🔍 Listen for scroll and adjust zoom
+document.addEventListener('scroll', () => {
+  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  offsetY = -scrollTop; // Adjust offset based on scroll position
+  updateTransform();
+});
