@@ -32,7 +32,6 @@ with open(_HEX_PATH, "r", encoding="utf-8") as f:
 # ─────────────────────────────────────────────────
 
 
-
 def generate_axial_hexes(cols, rows):
     return {
         f"{q},{r}": (q, r)
@@ -115,3 +114,24 @@ def place_settlement(player: dict, hex_id: str, settlement_data: dict) -> bool:
     player.setdefault("settlements", {})[hex_id] = settlement
     hex_registry[hex_id]["settlement"] = settlement
     return True
+
+class MapEngine:
+    def __init__(self, map_data):
+        self.map_data = map_data
+        self.hex_size = map_data.get("hex_size", 50)
+        self.bounds = map_data.get("bounds", {"q_min": -10, "q_max": 10, "r_min": -10, "r_max": 10})
+        self.regions = map_data.get("regions", {})
+
+    def get_region(self, q, r):
+        return self.regions.get(f"{q},{r}")
+
+    def get_all_regions(self):
+        return self.regions
+
+    def get_active_hexes(self):
+        """Return a list of (q, r) tuples for hexes that should be rendered."""
+        q_min, q_max = self.bounds["q_min"], self.bounds["q_max"]
+        r_min, r_max = self.bounds["r_min"], self.bounds["r_max"]
+        return [(q, r) for q in range(q_min, q_max + 1)
+                        for r in range(r_min, r_max + 1)
+                        if self.get_region(q, r) is not None]
