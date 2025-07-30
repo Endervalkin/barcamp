@@ -1,80 +1,52 @@
-from flask import Flask, render_template, Response
+import os
+import sys
+import json
+import math
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from flask import Flask, render_template, Response, jsonify, request
+
 from Game.engine.map_engine import MapEngine
 from Game.engine.hex_renderer import render_hex_grid
-import json
-import os
-
-app = Flask(__name__)
-
-# Load map data from JSON
-def load_map_data():
-    path = os.path.join(app.root_path, 'static', 'map_data.json')
-    with open(path, 'r') as f:
-        return json.load(f)
-
-@app.route('/')
-def index():
-    return render_template('index.html')
-
-@app.route('/hex-overlay.svg')
-def hex_overlay_svg():
-    map_data = load_map_data()
-    engine = MapEngine(map_data)
-
-    hexes = engine.get_active_hexes()
-    svg = render_hex_grid(
-        hexes,
-        width=2686,
-        height=4096,
-        size=engine.hex_size
-    )
-    return Response(svg, mimetype='image/svg+xml')
-
-
-
-
-
-import sys
-
-import math
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from math import sqrt, radians, cos, sin
-
 from Game.state.player_factory import create_player
 from Game.engine.map_engine import generate_centered_axial_hexes
 from Game.engine.hex_renderer import hex_points, axial_to_pixel
 from Game.engine.turn_engine import TurnEngine
 
 app = Flask(__name__, static_folder="static", template_folder="templates")
-
-
-
-
-
-app = Flask(__name__)
-
-# Create your game_state at startup
-game_state = {
-    "player": {},
-    "hex_registry": generate_centered_axial_hexes(217, 184),
-    "hexes": build_hex_overlay(
-    cols=217,  # number of q values
-    rows=184,  # number of r values
-    map_w=2686,
-    map_h=4096
-)
-
-}
-
 @app.route("/")
 def index():
     return render_template("index.html", game_state=game_state)
 
-
 @app.route("/game_state")
 def get_game_state():
     return jsonify(game_state)
+
+game_state = {
+    "player": {},
+
+}
+# Load map data from JSON
+def load_map_data():
+    path = os.path.join(app.root_path, 'static', 'map_data.json')
+    with open(path, 'r') as f:
+        return json.load(f)
+
+@app.route('/hex-overlay.svg')
+def hex_overlay_svg():
+    map_data = load_map_data()
+    engine = MapEngine(map_data)
+    hexes = engine.get_active_hexes()
+    svg = render_hex_grid(
+        map_data["q_range"],
+        map_data["r_range"],
+        map_data["width"],
+        map_data["height"],
+        map_data.get("hex_size", 50)  # Optional, defaults to 50
+    )
+
+    return Response(svg, mimetype='image/svg+xml')
+
 
 @app.route("/select_hex", methods=["POST"])
 def select_hex():
@@ -87,8 +59,6 @@ def create():
     name = request.json["name"]
     game_state["player"] = create_player(name)
     return jsonify({"status": "ok", "player": game_state["player"]})
-
-
 
 @app.route("/end_month", methods=["POST"])
 def end_month_route():

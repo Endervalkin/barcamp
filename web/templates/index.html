@@ -44,29 +44,38 @@
     <button onclick="endMonth()">End Month</button>
     <div id="status"></div>
   </div>
-  <div id="viewport">
-    <div id="zoom-layer">
-      <object id="map-svg"
-              type="image/svg+xml"
-              data="{{ url_for('static', filename='CerroMap2025_nogrid-01.svg') }}">
-      </object>
-      <svg id="hex-overlay"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 2686 4096"
-          width="2686"
-          height="4096">
-<!-- hex polygons go here -->
-      </svg>
-      <div id="svg-container"></div>
-          <script>
-          fetch('/hex-overlay.svg')
-            .then(res => res.text())
-            .then(svg => {
-              document.getElementById('svg-container').innerHTML = svg;
-            });
-          </script>
+  <!-- Map container -->
+  <div id="map-container" style="position: relative; width: 100%; height: 100%;">
+    <img src="{{ url_for('static', filename='CerroMap2025_nogrid-01.svg') }}" alt="Map" id="map-image"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0;">
+
+    <!-- SVG overlay will be injected here -->
+    <div id="svg-container">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+            <!-- Root group for zoom and pan -->
+            <g id="zoomLayer">
+              <!-- Optional: translate before scaling -->
+              <g id="viewport">
+                <g id="hexes" fill="none" stroke="black" stroke-width="2">
+                  <!-- Dummy hexes in axial grid -->
+                  <polygon id="hex-0-0" points="300,173 250,200 200,173 200,127 250,100 300,127" />
+                  <polygon id="hex-1-0" points="375,173 325,200 275,173 275,127 325,100 375,127" />
+                  <polygon id="hex-2-0" points="450,173 400,200 350,173 350,127 400,100 450,127" />
+              </g>
+            </g>
+          </g>
+        </svg>
     </div>
   </div>
+
+  <script>
+    fetch('/hex-overlay.svg')
+      .then(res => res.text())
+      .then(svg => {
+        document.getElementById('svg-container').innerHTML = svg;
+      });
+  </script>
+
 
   <script>
     let scale = 1;

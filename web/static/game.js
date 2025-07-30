@@ -1,9 +1,46 @@
 console.log("✅ game.js loaded");
 
-document.addEventListener("DOMContentLoaded", () => {
+
+
+document.addEventListener('DOMContentLoaded', () => {
   console.log("DOM ready, registering hex clicks…");
   registerHexClicks();
+
+
+  
+  
+  const svgContainer = document.getElementById('svg-container');
+  console.log('svg-container innerHTML:', svgContainer.innerHTML);
+  const observer = new MutationObserver(() => {
+    const svg = svgContainer.querySelector('svg');
+    const zoomLayer = svg?.querySelector('#zoomLayer');
+
+    if (zoomLayer) {
+      zoomLayer.addEventListener('wheel', e => {
+        const delta = e.deltaY > 0 ? -0.1 : 0.1;
+        zoom = Math.max(0.5, Math.min(zoom + delta, 5));
+        zoomLayer.setAttribute('transform', `scale(${zoom})`);
+        e.preventDefault();
+      });
+
+      const hexes = svg.querySelectorAll('#hexes polygon');
+      hexes.forEach(hex => {
+        hex.addEventListener('click', () => {
+          console.log(`Clicked hex: ${hex.id}`);
+          hex.setAttribute('stroke', 'red');
+        });
+      });
+
+      console.log(`🔍 Found hex polygons: ${hexes.length}`);
+      observer.disconnect(); // Done observing
+    } else {
+      console.warn('No zoomLayer found in injected SVG.');
+    }
+  });
+
+  observer.observe(svgContainer, { childList: true });
 });
+
 
 function registerHexClicks() {
   const hexes = document.querySelectorAll(".hex");
@@ -127,6 +164,8 @@ function drawSettlement(hexId) {
   document.getElementById("hex-overlay").appendChild(circle);
 }
 
+
+
 function updateDebug(message) {
   const debugBox = document.getElementById("debug-box");
   if (debugBox) debugBox.textContent = `Debug: ${message}`;
@@ -152,35 +191,51 @@ function updateTransform() {
     `translate(${offsetX}px, ${offsetY}px) scale(${zoom})`;
 }
 
-// Mousewheel zoom
-zoomLayer.addEventListener('wheel', e => {
-  const delta = e.deltaY > 0 ? -0.1 : 0.1;
-  zoom = Math.max(0.5, Math.min(zoom + delta, 5)); // clamp zoom
-  updateTransform();
-  e.preventDefault();
+const injectedSVG = document.querySelector('#svg-container svg');
+
+if (injectedSVG) {
+  injectedSVG.addEventListener('wheel', e => {
+    const delta = e.deltaY > 0 ? -0.1 : 0.1;
+    zoom = Math.max(0.5, Math.min(zoom + delta, 5));
+    injectedSVG.style.transform = `scale(${zoom})`;
+    e.preventDefault();
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const svgContainer = document.getElementById('svg-container');
+
+  const observer = new MutationObserver(() => {
+    const svg = svgContainer.querySelector('svg');
+    const zoomLayer = svg?.querySelector('#zoomLayer');
+
+    if (zoomLayer) {
+      zoomLayer.addEventListener('wheel', e => {
+        const delta = e.deltaY > 0 ? -0.1 : 0.1;
+        zoom = Math.max(0.5, Math.min(zoom + delta, 5));
+        zoomLayer.setAttribute('transform', `scale(${zoom})`);
+        e.preventDefault();
+      });
+
+      const hexes = svg.querySelectorAll('#hexes polygon');
+      hexes.forEach(hex => {
+        hex.addEventListener('click', () => {
+          console.log(`Clicked hex: ${hex.id}`);
+          hex.setAttribute('stroke', 'red');
+        });
+      });
+
+      console.log(`🔍 Found hex polygons: ${hexes.length}`);
+      observer.disconnect(); // Done observing
+    } else {
+      console.warn('No zoomLayer found in injected SVG.');
+    }
+  });
+
+  observer.observe(svgContainer, { childList: true });
 });
 
-// Drag-to-pan
-let isDragging = false, startX, startY;
 
-zoomLayer.addEventListener('mousedown', e => {
-  isDragging = true;
-  startX = e.clientX - offsetX;
-  startY = e.clientY - offsetY;
-  document.body.style.cursor = "grabbing";
-});
-
-document.addEventListener('mousemove', e => {
-  if (!isDragging) return;
-  offsetX = e.clientX - startX;
-  offsetY = e.clientY - startY;
-  updateTransform();
-});
-
-document.addEventListener('mouseup', () => {
-  isDragging = false;
-  document.body.style.cursor = "default";
-});
 
 // 🔍 Listen for scroll and adjust zoom
 document.addEventListener('scroll', () => {
