@@ -44,6 +44,7 @@
     <button onclick="endMonth()">End Month</button>
     <div id="status"></div>
   </div>
+  <div id="zoomLayer">
   <!-- Map container -->
   <div id="map-container" style="position: relative; width: 100%; height: 100%;">
     <img src="{{ url_for('static', filename='CerroMap2025_nogrid-01.svg') }}" alt="Map" id="map-image"
@@ -67,7 +68,7 @@
         </svg>
     </div>
   </div>
-
+</div>
   <script>
     fetch('/hex-overlay.svg')
       .then(res => res.text())
@@ -79,7 +80,7 @@
 
   <script>
     let scale = 1;
-    const map = document.getElementById("map");
+    const map = document.getElementById("map-container");
     const container = document.getElementById("map-container");
 
     // Simple zoom handler

@@ -39,6 +39,8 @@ pre {
   height: 4096px;
   transform-origin: top left;
   will-change: transform;
+  transition: transform 0.3s ease;
+  overflow: hidden;
 }
 
 #map-svg {
@@ -46,7 +48,8 @@ pre {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  overflow: auto;
   z-index: 1;
 }
 
