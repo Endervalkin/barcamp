@@ -1,7 +1,22 @@
 {
   "width": 2686,
   "height": 4096,
-  "hex_size": 50,
+  "hex_size": 20,
   "q_range": [-10, 10],
-  "r_range": [-10, 10]
+  "r_range": [-10, 10],
+  "hexes": [
+    { "q": -10, "r": -10, "terrain": "grassland", "settlement": null, "roads": [] },
+    { "q": -10, "r": -9, "terrain": "forest", "settlement": null, "roads": [] },
+    { "q": -10, "r": -8, "terrain": "mountain", "settlement": null, "roads": [] },
+    { "q": -10, "r": -7, "terrain": "desert", "settlement": null, "roads": [] },
+    { "q": -10, "r": -6, "terrain": "grassland", "settlement": null, "roads": [] },
+    { "q": -10, "r": -5, "terrain": "forest", "settlement": null, "roads": [] },
+    { "q": -10, "r": -4, "terrain": "mountain", "settlement": null, "roads": [] },
+    { "q": -10, "r": -3, "terrain": "desert", "settlement": null, "roads": [] },
+    { "q": -10, "r": -2, "terrain": "grassland", "settlement": null, "roads": [] },
+    { "q": -10, "r": -1, "terrain": null,  "settlement": null,  "roads": [] },
+    { "q": -10,  "r": 0,  "terrain": null,  "settlement": null,  "roads": [] },
+    { "q": 10,  "r": 9,  "terrain": null,  "settlement": null,  "roads": [] },
+    { "q": 10,  "r": 10, "terrain": null,  "settlement": null,  "roads": [] }
+  ]
 }

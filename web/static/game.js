@@ -1,90 +1,98 @@
 console.log("✅ game.js loaded");
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("svg-container").appendChild(svg);
+  const svgContainer = document.getElementById("svg-container");
+  if (!svgContainer) {
+    console.error("🚫 svg-container not found");
+    return;
+  }
 
-  const zoomLayer = document.getElementById('zoomLayer');
-  const svgContainer = document.getElementById('svg-container');
-  let zoom = 1;
-  let panX = 0;
-  let panY = 0;
-  let isMiddleMouseDown = false;
-
-  // Track mouse position for panning
-  let lastMouseX = 0;
-  let lastMouseY = 0;
-
-  // Wait for SVG injection
-
-
-  const observer = new MutationObserver(() => {
-    const svg = svgContainer.querySelector('svg');
-    const zoomLayer = svg?.querySelector('#zoomLayer');
-
-    if (!zoomLayer) {
-      console.warn('🚫 No zoomLayer found in injected SVG.');
-      return;
-    }
-
-    console.log('🔍 zoomLayer ready');
-
-    // Apply transform
-    const updateTransform = () => {
-      zoomLayer.setAttribute(
-        'transform',
-        `translate(${panX}, ${panY}) scale(${zoom})`
-      );
-    };
-
-    // Mouse wheel zoom
-    svg.addEventListener('wheel', e => {
-      const delta = e.deltaY > 0 ? -0.1 : 0.1;
-      zoom = Math.max(0.5, Math.min(zoom + delta, 5)); // clamp zoom
-      updateTransform();
-      e.preventDefault();
+  fetch("static/hex_grid-01.svg")
+    .then(res => res.text())
+    .then(svgText => {
+      const parser = new DOMParser();
+      const svgDoc = parser.parseFromString(svgText, "image/svg+xml");
+      const svgElement = svgDoc.documentElement;
+      svgElement.id = "hex-overlay";
+      svgElement.style.position = "absolute";
+      svgElement.style.top = "0";
+      svgElement.style.left = "0";
+      svgElement.style.zIndex = "2";
+      document.getElementById("map-container").appendChild(svgElement);
     });
 
-    // Middle mouse drag to pan
-    svg.addEventListener('mousedown', e => {
-      if (e.button === 1) {
-        isMiddleMouseDown = true;
-        lastMouseX = e.clientX;
-        lastMouseY = e.clientY;
-        e.preventDefault();
-      }
+  fetch("/static/map_data.json")
+    .then(res => res.json())
+    .then(data => {
+      renderHexes(data.hexes); // now this will work
+    })
+    .catch(err => console.error("🚫 Failed to load map_data.json", err));
+
+function axialToPixel(q, r, size) {
+  const x = size * Math.sqrt(3) * (q + r / 2);
+  const y = size * 1.5 * size * r;
+  return { x, y };
+}
+
+function createHexPath(cx, cy, size) {
+  const svgNS = "http://www.w3.org/2000/svg";
+  const path = document.createElementNS(svgNS, "polygon");
+  const points = [];
+
+  for (let i = 0; i < 6; i++) {
+    const angle = Math.PI / 180 * (60 * i - 30);
+    const x = cx + size * Math.cos(angle);
+    const y = cy + size * Math.sin(angle);
+    points.push(`${x},${y}`);
+  }
+
+  path.setAttribute("points", points.join(" "));
+  return path;
+}
+
+function renderHexes(hexes) {
+  const svgNS = "http://www.w3.org/2000/svg";
+  const svg = document.createElementNS(svgNS, "svg");
+  svg.setAttribute("width", "100%");
+  svg.setAttribute("height", "100%");
+  svg.setAttribute("id", "hex-overlay");
+  svg.style.position = "absolute";
+  svg.style.top = "0";
+  svg.style.left = "0";
+  svg.style.zIndex = "2";
+
+  hexes.forEach(hex => {
+    const { q, r } = hex;
+    const { x, y } = axialToPixel(q, r, 30); // hex size = 30px
+
+    const hexPath = createHexPath(x, y, 30);
+    hexPath.setAttribute("data-q", q);
+    hexPath.setAttribute("data-r", r);
+    hexPath.setAttribute("fill", "#ccc");
+    hexPath.setAttribute("stroke", "black");
+    hexPath.setAttribute("stroke-width", "2");
+    hexPath.style.cursor = "pointer";
+
+    hexPath.addEventListener("click", () => {
+      buildSettlement(q, r);
     });
 
-    svg.addEventListener('mouseup', e => {
-      if (e.button === 1) {
-        isMiddleMouseDown = false;
-        e.preventDefault();
-      }
-    });
-
-    svg.addEventListener('mousemove', e => {
-      if (isMiddleMouseDown) {
-        const dx = e.clientX - lastMouseX;
-        const dy = e.clientY - lastMouseY;
-        panX += dx;
-        panY += dy;
-        lastMouseX = e.clientX;
-        lastMouseY = e.clientY;
-        updateTransform();
-        e.preventDefault();
-      }
-    });
-
-    // Optional: hex click feedback
-    const hexes = svg.querySelectorAll('#hexes polygon');
-    hexes.forEach(hex => {
-      hex.addEventListener('click', () => {
-        console.log(`🟨 Clicked hex: ${hex.id}`);
-        hex.setAttribute('stroke', 'red');
-      });
-    });
-
-    console.log(`🔍 Found hex polygons: ${hexes.length}`);
-    observer.disconnect(); // Done observing
+    svg.appendChild(hexPath);
   });
 
-  observer.observe(svgContainer, { childList: true });
+  const container = document.getElementById("svg-container");
+  container.appendChild(svg);
+}
+
+function buildSettlement(q, r) {
+  console.log(`🏗️ Building settlement at (${q}, ${r})`);
+  const selector = `[data-q="${q}"][data-r="${r}"]`;
+  const hex = document.querySelector(selector);
+  if (hex) {
+    hex.setAttribute("fill", "#88c"); // visually mark settlement
+  } else {
+    console.warn("🚫 Hex not found for settlement");
+  }
+}
 });
